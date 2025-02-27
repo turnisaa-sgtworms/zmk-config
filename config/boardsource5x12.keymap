@@ -23,11 +23,11 @@
 
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp HOME  &kp ENTER &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &mo 1     &kp HOME  &kp HOME  &kp SPACE &kp HOME  &kp HOME  &kp HOME  &mo 2         &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &trans   &trans    &trans   &trans   
+				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &trans   &trans   &trans   &trans   
+				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &trans    &kp ENTER &trans        &trans   &trans   &trans   &trans  
+                &mo 1     &trans    &trans    &kp SPACE &trans    &trans    &trans    &mo 2         &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
             >;
         };
 
@@ -39,11 +39,11 @@
             // | HOME |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp HOME  &kp ENTER &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp SPACE &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &trans   &trans   &trans   &trans   
+				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &trans   &trans   &trans   &trans   
+				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &trans    &kp ENTER &trans        &trans   &trans   &trans   &trans  
+                &mo 1     &trans    &trans    &kp SPACE &trans    &trans    &trans    &mo 2         &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
             >;
         };
 
@@ -55,11 +55,11 @@
             // | HOME |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp HOME  &kp ENTER &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp SPACE &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &trans   &trans   &trans   &trans   
+				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &trans   &trans   &trans   &trans   
+				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &trans    &kp ENTER &trans        &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &kp SPACE &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
             >;
         };
 
@@ -71,11 +71,11 @@
             // | HOME |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp HOME  &kp ENTER &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp SPACE &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &trans   &trans   &trans   &trans   
+				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &trans   &trans   &trans   &trans   
+				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &trans    &kp ENTER &trans        &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &kp SPACE &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
             >;
         };
 
@@ -87,11 +87,11 @@
             // | HOME |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &kp HOME &kp HOME &kp HOME &kp HOME 
-				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp HOME  &kp ENTER &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp SPACE &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
-                &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME  &kp HOME      &kp HOME &kp HOME &kp HOME &kp HOME
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &trans   &trans   &trans   &trans   
+				&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &trans   &trans   &trans   &trans   
+				&kp LSHFT &kp X     &kp C     &kp F     &kp J     &trans    &kp ENTER &trans        &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &kp SPACE &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
+                &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans        &trans   &trans   &trans   &trans  
             >;
         };
     };

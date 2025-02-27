@@ -23,12 +23,12 @@
 
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp NO_OP &kp RET   &kp NO_OP                  &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp mo 1  &kp NO_OP &kp NO_OP &kp SPACE &kp NO_OP &kp NO_OP &kp NO_OP &kp mo 2                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp TRANS &kp RET   &kp TRANS                  &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp mo 1  &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo 2                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
                 
-				 &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+				 &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
             >;
         };
 
@@ -40,12 +40,12 @@
             // | trans |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp NO_OP &kp RET   &kp NO_OP                  &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp mo 1  &kp NO_OP &kp NO_OP &kp SPACE &kp NO_OP &kp NO_OP &kp NO_OP &kp mo 2                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp TRANS &kp RET   &kp TRANS                  &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp mo 1  &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo 2                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
                 
-				 &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+				 &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
             >;
         };
 
@@ -57,12 +57,12 @@
             // | trans |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp NO_OP &kp RET   &kp NO_OP                  &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp mo 1  &kp NO_OP &kp NO_OP &kp SPACE &kp NO_OP &kp NO_OP &kp NO_OP &kp mo 2                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp TRANS &kp RET   &kp TRANS                  &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp mo 1  &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo 2                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
                 
-				 &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+				 &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
             >;
         };
 
@@ -74,12 +74,12 @@
             // | trans |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp NO_OP &kp RET   &kp NO_OP                  &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp mo 1  &kp NO_OP &kp NO_OP &kp SPACE &kp NO_OP &kp NO_OP &kp NO_OP &kp mo 2                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp TRANS &kp RET   &kp TRANS                  &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp mo 1  &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo 2                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
                 
-				 &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+				 &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
             >;
         };
 
@@ -91,12 +91,12 @@
             // | trans |                  space                   | rshft |
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp NO_OP &kp RET   &kp NO_OP                  &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
-                &kp mo 1  &kp NO_OP &kp NO_OP &kp SPACE &kp NO_OP &kp NO_OP &kp NO_OP &kp mo 2                   &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P                      &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp TRANS &kp RET   &kp TRANS                  &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp mo 1  &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo 2                   &kp TRANS &kp TRANS &kp TRANS &kp TRANS
                 
-				 &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP &kp NO_OP
+				 &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
             >;
         };
     };

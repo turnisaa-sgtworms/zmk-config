@@ -18,14 +18,16 @@
             // ------------------------------------------------------------
             // |  q    |  w   |  e   |  v   |  m   |  i   |   o   |  back |
             // |  a    |  s   |  d   |  r   |  u   |  k   |   l   |  p    |
-            // | shift |  x   |  c   |  f   |  j   |--------enter---------|
-            // | lower |------------------space-------------------| raise |
+            // | shift |  x   |  c   |  f   |  j   |        enter         |
+            // | lower |                  space                   | raise |
 
 
             bindings = <
-                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC  &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp A &kp S &kp D &kp R &kp U &kp K &kp L &kp P &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp LSHFT &kp X &kp C &kp F &kp J &kp TRANS &kp RET// &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
-                &kp mo(1) &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo(2) &kp TRANS &kp TRANS &kp TRANS &kp TRANS
-                &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp Q     &kp W     &kp E     &kp V     &kp M     &kp I     &kp O     &kp BSPC      &kp TRANS &kp TRANS &kp TRANS &kp TRANS 
+		&kp A     &kp S     &kp D     &kp R     &kp U     &kp K     &kp L     &kp P         &kp TRANS &kp TRANS &kp TRANS &kp TRANS 
+		&kp LSHFT &kp X     &kp C     &kp F     &kp J     &kp TRANS &kp RET   &kp TRANS     &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp mo1   &kp TRANS &kp TRANS &kp SPACE &kp TRANS &kp TRANS &kp TRANS &kp mo(2)     &kp TRANS &kp TRANS &kp TRANS &kp TRANS
+                &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS &kp TRANS     &kp TRANS &kp TRANS &kp TRANS &kp TRANS
             >;
         };
 

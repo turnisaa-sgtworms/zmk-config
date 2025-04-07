@@ -1,0 +1,4 @@
+config SHIELD_TWENNY_LEFT
+	def_bool $(shield_list_contains,twenny_left)
+config SHIELD_TWENNY_RIGHT
+	def_bool $(shield_list_contains,twenny_right)

@@ -29,10 +29,7 @@
 				RC(0,8) RC(0,9) 	RC(0,l5) RC(0,16)		
 					RC(0,7) 	RC(0,17)			
 	};
-};
-
-/ {
-    chosen {
-        zmk,physical-layout = &physical_layout0;
-    };
+    	chosen {
+        	zmk,physical-layout = &physical_layout0;
+   	};
 };

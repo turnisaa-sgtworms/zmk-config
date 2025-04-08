@@ -19,7 +19,7 @@
 #
 ---
 include:
-  - board: nrf52840dk_nrf52840
+  - board: seeeduino_xiao_ble
     shield: twenny_left
-  - board: nrf52840dk_nrf52840
+  - board: seeeduino_xiao_ble
     shield: twenny_right

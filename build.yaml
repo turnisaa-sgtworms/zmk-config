@@ -5,11 +5,11 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
+# board: [ "seeed_xiao_ble" ]
+# shield: [ "twenny_left", "twenny_right" ]
 # include:
 #   - board: bdn9_rev2
-#   - board: nice_nano_v2
+#   - board: seeed_xiao_ble
 #     shield: reviung41
 #   - board: nice_nano_v2
 #     shield: corne_left
@@ -20,6 +20,6 @@
 ---
 include:
   - board: nrf52840dk_nrf52840
-    shield: corne_left
+    shield: twenny_left
   - board: nrf52840dk_nrf52840
-    shield: corne_right
+    shield: twenny_right

@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
 	chosen {
-        	zmk,physical-layout = &physical_layout0;
+        	zmk,physical-layout = &twenny_physical_layout;
 		zmk,kscan = &kscan0;
 		zmk,matrix_transform = &keymap_transform0;
    	};

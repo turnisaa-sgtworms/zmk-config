@@ -1,3 +1,4 @@
+#include <physical_layouts.dtsi>
 / {
     twenny_physical_layout: twenny_physical_layout {
         compatible = "zmk,physical-layout";

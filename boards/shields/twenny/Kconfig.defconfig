@@ -1,7 +1,7 @@
 if SHIELD_TWENNY_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "left twenny"
+	default "twenny_left"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y

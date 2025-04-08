@@ -20,6 +20,6 @@
 ---
 include:
   - board: nrf52840dk_nrf52840
-    shield: twenny_left
+    shield: twenny
   - board: nrf52840dk_nrf52840
-    shield: twenny_right
+    shield: twenny

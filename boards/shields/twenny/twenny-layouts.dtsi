@@ -1,9 +1,3 @@
-
-GitHub
-Position map columns
-Indent size
-Export layouts
-
 / {
     twenny_physical_layout: twenny_physical_layout {
         compatible = "zmk,physical-layout";

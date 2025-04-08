@@ -4,7 +4,6 @@
 	chosen {
         	zmk,physical-layout = &twenny_physical_layout;
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &keymap_transform_twenny;
    	};
 	kscan0: kscan0 {
 		compatible = "zmk,kscan-gpio-direct";

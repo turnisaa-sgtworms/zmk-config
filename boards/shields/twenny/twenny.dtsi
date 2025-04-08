@@ -4,7 +4,7 @@
 	chosen {
         	zmk,physical-layout = &twenny_physical_layout;
 		zmk,kscan = &kscan0;
-		zmk,matrix_transform = &keymap_transform0;
+		zmk,matrix_transform = &keymap_transform_twenny;
    	};
 	kscan0: kscan0 {
 		compatible = "zmk,kscan-gpio-direct";
@@ -23,7 +23,7 @@
 		, <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		;
 	};
-	default_transform: keymap_transform0 {
+	default_transform: keymap_transform_twenny {
 		compatible = "zmk,matrix_transform";
 		columns = <4>;
 		rows = <4>;

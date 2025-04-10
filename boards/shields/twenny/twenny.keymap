@@ -5,7 +5,7 @@
 keymap {
 	compatible = "zmk,keymap";
 
-	default_layer {
+	one {
 		display-name = "base";
 		bindings = <
 				&kp W &kp E &kp T &kp U	&kp I &kp O
@@ -14,5 +14,9 @@ keymap {
 				&kp SPACE &kp SPACE
 			>;
 		};
+	two { status = "reserved" };
+	three { status = "reserved" };
+	four { status = "reserved" };
+	five { status = "reserved" };
 	};
 };

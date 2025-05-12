@@ -83,8 +83,7 @@ keymap {
 	five { status = "reserved"; };
 	};
 };
-
-{
+/ {
 combos {
 	compatible = "zmk,combos";
 	combo_tab {
@@ -183,6 +182,7 @@ combos {
 		bindings = <&kp X>;
 		layers = <0>;
 	};
+};
 };
 
 

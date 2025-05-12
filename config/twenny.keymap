@@ -14,19 +14,19 @@
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			bindings = <LBRC>,<RBRC>;
+			bindings = <&kp LBRC>,<&kp RBRC>;
 		};
 		td2: tap_dance_2 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			bindings = <LBKT>,<RBKT>;
+			bindings = <&kp LBKT>,<&kp RBKT>;
 		};
 		td3: tap_dance_3 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			bindings = <TAB>,<ESC>;
+			bindings = <&kp TAB>,<&kp ESC>;
 		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";

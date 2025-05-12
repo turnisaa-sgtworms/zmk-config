@@ -7,25 +7,25 @@
 behaviors {
 	td0: tap_dance_0 {
 		compatible = "zmk,behavior-tap-dance";
-		#binding-cells <0>;
+		#binding-cells = <0>;
 		tapping-term-ms = <150>;
 		bindings = <&kp KP_LPAR>, <&kp KP_RPAR>;
 	};
 	td1: tap_dance_1 {
 		compatible = "zmk,behavior-tap-dance";
-		#binding-cells <0>;
+		#binding-cells = <0>;
 		tapping-term-ms = <150>;
 		bindings = <LBRC>,<RBRC>;
 	};
 	td2: tap_dance_2 {
 		compatible = "zmk,behavior-tap-dance";
-		#binding-cells <0>;
+		#binding-cells = <0>;
 		tapping-term-ms = <150>;
 		bindings = <LBKT>,<RBKT>;
 	};
 	td3: tap_dance_3 {
 		compatible = "zmk,behavior-tap-dance";
-		#binding-cells <0>;
+		#binding-cells = <0>;
 		tapping-term-ms = <150>;
 		bindings = <TAB>,<ESC>;
 	};

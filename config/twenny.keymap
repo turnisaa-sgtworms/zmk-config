@@ -22,9 +22,9 @@ keymap {
 				&kp 0 &none
 			>;
 		};
-	three { status = "reserved" };
-	four { status = "reserved" };
-	five { status = "reserved" };
+	three { status = "reserved"; };
+	four { status = "reserved"; };
+	five { status = "reserved"; };
 	};
 };
 

@@ -3,7 +3,6 @@
 
 
 / {
-
 behaviors {
 	td0: tap_dance_0 {
 		compatible = "zmk,behavior-tap-dance";
@@ -85,9 +84,7 @@ keymap {
 	};
 };
 
-
-
-/ {
+{
 combos {
 	compatible = "zmk,combos";
 	combo_tab {

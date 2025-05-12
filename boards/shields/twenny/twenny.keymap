@@ -33,7 +33,6 @@ keymap {
 
 / {
 combos {
-//mods
 	compatible = "zmk,combos";
 	combo_tab {
 		timeout-ms <50>;
@@ -59,7 +58,6 @@ combos {
 		bindings = <&kp ENTER>;
 		layers = <0>;
 	};
-//arrows
 	combo_up {
 		timeout-ms <50>;
 		key-positions = <1 4>;
@@ -84,7 +82,6 @@ combos {
 		bindings = <&kp RIGHT>;
 		layers = <0>;
 	};
-//alphas
 	combo_q {
 		timeout-ms <50>;
 		key-positions = <0 6>;
@@ -137,28 +134,24 @@ combos {
 
 / {
 behaviors {
-	// "(",")"
 	td0: tap_dance_0 {
 		compatible = "zmk,behavior-tap-dance";
 		#binding-cells <0>;
 		tapping-term-ms = <150>;
 		bindings = <&kp KP_LPAR>, <&kp KP_RPAR>;
 	};
-	// "{","}"
 	td1: tap_dance_1 {
 		compatible = "zmk,behavior-tap-dance";
 		#binding-cells <0>;
 		tapping-term-ms = <150>;
 		bindings = <LBRC>,<RBRC>;
 	};
-	// "[","]"
 	td2: tap_dance_2 {
 		compatible = "zmk,behavior-tap-dance";
 		#binding-cells <0>;
 		tapping-term-ms = <150>;
 		bindings = <LBKT>,<RBKT>;
 	};
-	// tab,esc
 	td3: tap_dance_3 {
 		compatible = "zmk,behavior-tap-dance";
 		#binding-cells <0>;

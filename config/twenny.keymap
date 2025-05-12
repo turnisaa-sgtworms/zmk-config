@@ -58,6 +58,7 @@
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
         	};
+	};
 	keymap {
 		compatible = "zmk,keymap";
 		one {
@@ -81,9 +82,6 @@
 		four { status = "reserved"; };
 		five { status = "reserved"; };
 	};
-};
-
-/ {
 	combos {
 		compatible = "zmk,combos";
 		combo_tab {

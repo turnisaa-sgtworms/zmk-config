@@ -82,6 +82,8 @@
 		four { status = "reserved"; };
 		five { status = "reserved"; };
 	};
+};
+/ {
 	combos {
 		compatible = "zmk,combos";
 		combo_tab {

@@ -4,34 +4,6 @@
 
 
 / {
-keymap {
-	compatible = "zmk,keymap";
-	one {
-		display-name = "base";
-		bindings = <
-				&kp W &kp E &kp T &kp U &kp I &kp O
-				&kp A &kp S &hml LALT D &hml LCTRL F &hmr RCTRL H &hmr LALT K &kp L &kp P
-				&kp C &kp B &kp N &kp M
-				&mt LSHIFT SPACE &lt 1 SPACE
-			>;
-		};
-	two { display-name = "numico";
-		bindings = <
-				AS(1) AS(2) AS(3) &td0 &td1 &td2
-				AS(4) AS(5) AS(6) AS(7) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				AS(8) AS(9) AS(MINUS) AS(EQUAL)
-				AS(0) &none
-			>;
-		};
-	three { status = "reserved" };
-	four { status = "reserved" };
-	five { status = "reserved" };
-	};
-};
-
-
-
-/ {
 combos {
 	compatible = "zmk,combos";
 	combo_tab {
@@ -192,5 +164,32 @@ behaviors {
         };
 };
 
+
+
+/ {
+keymap {
+	compatible = "zmk,keymap";
+	one {
+		display-name = "base";
+		bindings = <
+				&kp W &kp E &kp T &kp U &kp I &kp O
+				&kp A &kp S &hml LALT D &hml LCTRL F &hmr RCTRL H &hmr LALT K &kp L &kp P
+				&kp C &kp B &kp N &kp M
+				&mt LSHIFT SPACE &lt 1 SPACE
+			>;
+		};
+	two { display-name = "numico";
+		bindings = <
+				AS(1) AS(2) AS(3) &td0 &td1 &td2
+				AS(4) AS(5) AS(6) AS(7) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
+				AS(8) AS(9) AS(MINUS) AS(EQUAL)
+				AS(0) &none
+			>;
+		};
+	three { status = "reserved" };
+	four { status = "reserved" };
+	five { status = "reserved" };
+	};
+};
 
 

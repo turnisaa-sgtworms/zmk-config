@@ -15,7 +15,7 @@ keymap {
 
 				&kp C &kp B &kp N &kp M
 
-				&kp SPACE &lt0
+				&kp SPACE &lt 1 SPACE
 			>;
 		};
 	two { display-name = "numico";
@@ -164,12 +164,12 @@ behaviors {
 		tapping-term-ms = <150>;
 		bindings = <TAB>,<ESC>;
 	};
-	lt0: layer_tap_0 {
+	lt: layer_tap {
             	compatible = "zmk,behavior-hold-tap";
            	#binding-cells = <2>;
             	flavor = "tap-preferred";
             	tapping-term-ms = <200>;
-            	bindings = <&mo 1>, <&kp SPACE>;
+            	bindings = <&mo>, <&kp>;
             	display-name = "Layer-Tap";
         };
 	hml: home_row_mod_left {

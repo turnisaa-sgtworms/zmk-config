@@ -50,14 +50,6 @@
             		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
             		hold-trigger-on-release;
         	};
-		as: auto_shift {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		tapping_term_ms = <135>;
-            		quick_tap_ms = <0>;
-            		flavor = "tap-preferred";
-            		bindings = <&kp>, <&kp>;
-        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";

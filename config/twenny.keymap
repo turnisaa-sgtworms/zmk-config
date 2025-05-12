@@ -1,6 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
+#define AS(keycode) &as LS(keycode) keycode   
 
 / {
 	behaviors {
@@ -72,10 +72,10 @@
 		};
 		two { display-name = "numico";
 			bindings = <
-				AS(1) &kp 2 &kp 3 &td0 &td1 &td2
-				&kp 4 &kp 5 &kp 6 &kp 7 &kp SEMI &kp COMMA &kp DOT &kp FSLH
-				&kp 8 &kp 9 &kp MINUS &kp EQUAL
-				&kp 0 &none
+				AS(1) AS(2) AS(3) &td0 &td1 &td2
+				AS(4) AS(5) AS(6) AS(7) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
+				AS(8) AS(9) AS(MINUS) AS(EQUAL)
+				AS(0) &none
 			>;
 		};
 		three { status = "reserved"; };

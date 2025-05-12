@@ -136,11 +136,12 @@ behaviors {
 		#binding-cells <0>;
 		tapping-term-ms = <150>;
 		bindings = <TAB>,<ESC>;
+	};
 };
+
 / {
 keymap {
 	compatible = "zmk,keymap";
-
 	one {
 		display-name = "base";
 		bindings = <

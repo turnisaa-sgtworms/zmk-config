@@ -10,23 +10,17 @@ keymap {
 		display-name = "base";
 		bindings = <
 				&kp W &kp E &kp T &kp U &kp I &kp O
-
 				&kp A &kp S &hml LALT D &hml LCTRL F &hmr RCTRL H &hmr LALT K &kp L &kp P
-
 				&kp C &kp B &kp N &kp M
-
 				&kp SPACE &lt 1 SPACE
 			>;
 		};
 	two { display-name = "numico";
 		bindings = <
 				AS(1) AS(2) AS(3) &td0 &td1 &td2
-
 				AS(4) AS(5) AS(6) AS(7) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-
 				AS(8) AS(9) AS(MINUS) AS(EQUAL)
-
-				AS(0) &TRANS
+				AS(0) &none
 			>;
 		};
 	three { status = "reserved" };
@@ -138,6 +132,8 @@ combos {
 	};
 };
 
+
+
 / {
 behaviors {
 	td0: tap_dance_0 {
@@ -164,14 +160,6 @@ behaviors {
 		tapping-term-ms = <150>;
 		bindings = <TAB>,<ESC>;
 	};
-	lt: layer_tap {
-            	compatible = "zmk,behavior-hold-tap";
-           	#binding-cells = <2>;
-            	flavor = "tap-preferred";
-            	tapping-term-ms = <200>;
-            	bindings = <&mo>, <&kp>;
-            	display-name = "Layer-Tap";
-        };
 	hml: home_row_mod_left {
             	compatible = "zmk,behavior-hold-tap";
             	#binding-cells = <2>;

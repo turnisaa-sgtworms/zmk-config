@@ -15,7 +15,7 @@ keymap {
 
 								&kp C 		&kp B 		&kp N 		&kp M
 
-										&kp SPACE 	&kp lt0
+										&kp SPACE 	&lt0
 			>;
 		};
 	two { display-name = "numico";

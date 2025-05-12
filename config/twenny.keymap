@@ -72,7 +72,7 @@
 		};
 		two { display-name = "numico";
 			bindings = <
-				AS(1) &kp 2 &kp 3 &td0 &td1 &td2
+				&kp 1 &kp 2 &kp 3 &td0 &td1 &td2
 				&kp 4 &kp 5 &kp 6 &kp 7 &kp SEMI &kp COMMA &kp DOT &kp FSLH
 				&kp 8 &kp 9 &kp MINUS &kp EQUAL
 				&kp 0 &none

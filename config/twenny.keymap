@@ -100,8 +100,8 @@
 		three { display-name = "game";
 			bindings = <
 				&kp Q &kp W &kp E &none &none &none 
-				&kp LSHIFT &kp A &kp S &kp D &kp f2 &kp f3 &kp f5 &kp f6 
-				&C &F &none &none 
+				&td4 &kp A &kp S &kp D &kp F2 &kp F3 &kp F5 &kp F6 
+				&td5 &td6 &none &none 
 				&kp R &none
 			>;
 		};
@@ -145,7 +145,6 @@
 			timeout-ms = <50>;
 			key-positions = <2 3 9 10 15 16 18 19>;
 			bindings = <&soft_off>;
-			layers = <0>;
 		};
 
 // mod keys
@@ -153,7 +152,7 @@
 			timeout-ms = <50>;
 			key-positions = <0 2>;
 			bindings = <&kp TAB>;
-			layers = <0 2>;
+			layers = <0>;
 		};
 		combo_esc {
 			timeout-ms = <50>;

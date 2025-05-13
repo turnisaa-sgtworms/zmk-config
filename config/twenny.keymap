@@ -86,6 +86,12 @@
 / {
 	combos {
 		compatible = "zmk,combos";
+		combo_soft_off {
+			timeout-ms = <50>;
+			key-positions = <2 3 9 10 15 16 18 19>;
+			bindings = <&soft_off>;
+			layers = <0>;
+		}
 		combo_tab {
 			timeout-ms = <50>;
 			key-positions = <0 2>;

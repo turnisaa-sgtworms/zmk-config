@@ -99,10 +99,10 @@
 		};
 		three { display-name = "game";
 			bindings = <
-				&kp Q &kp W &kp E &none &none &none 
+				&kp Q &kp W &kp E &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
 				&td4 &kp A &kp S &kp D &kp F2 &kp F3 &kp F5 &kp F6 
-				&td5 &td6 &none &none 
-				&kp R &none
+				&td5 &td6 &kp C_PREV &kp C_NEXT 
+				&kp R &kp C_PP
 			>;
 		};
 		four { status = "reserved"; };

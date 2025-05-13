@@ -33,19 +33,19 @@
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			bindings = <&kp LSHIFT>, <&kp LCTRL>;
+			bindings = <&kp LSHIFT>,<&kp LCTRL>;
 		};
 		td5: tap_dance_5 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			bindings = <&kp C>, <&kp X>;
+			bindings = <&kp C>,<&kp X>;
 		};
 		td6: tap_dance_6 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
-			bindings = <&kp F>, <&kp G>;
+			bindings = <&kp F>,<&kp G>;
 		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
@@ -99,7 +99,10 @@
 		};
 		three { display-name = "game";
 			bindings = <
-				&kp Q &kp W &kp E &none &none &none &td4 &kp A &kp S &kp D &kp f2 &kp f3 &kp f5 &kp f6 &td5 &td6 &none &none &kp R &none
+				&kp Q &kp W &kp E &none &none &none 
+				&td4 &kp A &kp S &kp D &kp f2 &kp f3 &kp f5 &kp f6 
+				&td5 &td6 &none &none 
+				&kp R &none
 			>;
 		};
 		four { status = "reserved"; };

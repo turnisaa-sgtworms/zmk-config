@@ -77,7 +77,7 @@
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
         	};
-		kt: key_tap {
+		kyta: key_tap {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "tap-preferred";
@@ -110,7 +110,7 @@
 				&kp Q &kp W &kp E &none &none &none
 				&td4 &kp A &kp S &kp D &none &none &none &none
 				&td5 &td6 &none &none &none
-				&kt SPACE R &none
+				&kyta SPACE R &none
 			>;
 		};
 		four { status = "reserved"; };

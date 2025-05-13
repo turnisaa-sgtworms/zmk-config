@@ -35,6 +35,18 @@
 			tapping-term-ms = <150>;
 			bindings = <&kp LSHIFT>, <&kp LCTRL>;
 		};
+		td5: tap_dance_5 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <150>;
+			bindings = <&kp C>, <&kp X>;
+		};
+		td6: tap_dance_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <150>;
+			bindings = <&kp F>, <&kp G>;
+		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -65,6 +77,14 @@
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
         	};
+		kt: key_tap {
+            		compatible = "zmk,behavior-hold-tap";
+            		#binding-cells = <2>;
+            		flavor = "tap-preferred";
+            		tapping-term-ms = <150>;
+            		bindings = <&kp>, <&kp>;
+            		display-name = "Key-Tap";
+        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -89,8 +109,8 @@
 			bindings = <
 				&kp Q &kp W &kp E &none &none &none
 				&td4 &kp A &kp S &kp D &none &none &none &none
-				&none &none &none &none &none
-				&none &none
+				&td5 &td6 &none &none &none
+				&kt SPACE R &none
 			>;
 		};
 		four { status = "reserved"; };

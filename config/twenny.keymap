@@ -28,6 +28,12 @@
 			tapping-term-ms = <150>;
 			bindings = <&kp TAB>,<&kp ESC>;
 		};
+		td4: tap_dance_4 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <150>;
+			bindings = <&kp LSHIFT>, <&kp LCTRL>;
+		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -78,14 +84,38 @@
 				AS(0) &none
 			>;
 		};
-		three { status = "reserved"; };
+		three { display-name = "game";
+			bindings = <
+				&kp Q &kp W &kp E &none &none &none
+				&td4 &kp A &kp S &kp D &none &none &none &none
+				&none &none &none &none &none
+				&none &none
+			>;
+		};
 		four { status = "reserved"; };
 		five { status = "reserved"; };
 	};
 };
+
 / {
 	combos {
 		compatible = "zmk,combos";
+
+// game combos
+		combo_1 {
+			timeout-ms = <40>;
+			key-positions = <0 18>;
+			bindings = <&kp 1>;
+			layers = <2>;
+		};
+		combo_3 {
+			timeout-ms = <40>;
+			key-positions = <2 18>;
+			bindings = <&kp 3>;
+			layers = <2>;
+		};
+
+// keyboard functions
 		combo_bt_one {
 			timeout-ms = <50>;
 			key-positions = <6 7 8 9>;
@@ -104,6 +134,8 @@
 			bindings = <&soft_off>;
 			layers = <0>;
 		};
+
+// mod keys
 		combo_tab {
 			timeout-ms = <50>;
 			key-positions = <0 2>;
@@ -128,6 +160,8 @@
 			bindings = <&kp ENTER>;
 			layers = <0>;
 		};
+
+// arrow keys
 		combo_up {
 			timeout-ms = <50>;
 			key-positions = <1 4>;
@@ -152,6 +186,8 @@
 			bindings = <&kp RIGHT>;
 			layers = <0>;
 		};
+
+// alpha keys
 		combo_q {
 			timeout-ms = <50>;
 			key-positions = <0 6>;

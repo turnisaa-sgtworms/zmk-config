@@ -86,6 +86,18 @@
 / {
 	combos {
 		compatible = "zmk,combos";
+		combo_bt_one {
+			timeout-ms = <50>;
+			key-positions = <6 7 8 9>;
+			bindings = <&bt BT_SEL 0>;
+			layers = <0>;
+		};
+		combo_bt_two {
+			timeout-ms = <50>;
+			key-positions = <10 11 12 13>;
+			bindings = <&bt BT_SEL 1>;
+			layers = <0>;
+		};
 		combo_soft_off {
 			timeout-ms = <50>;
 			key-positions = <2 3 9 10 15 16 18 19>;

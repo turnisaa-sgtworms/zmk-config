@@ -107,10 +107,7 @@
 		};
 		three { display-name = "game";
 			bindings = <
-				&kp Q &kp W &kp E &kp C_PREV &kp C_NEXT &kp C_PP
-				&td4 &kp A &kp S &kp D &kp f2 &kp f3 &kp f5 &kp f6
-				&td5 &td6 &kp C_VOL_DN &kp C_VOL_UP
-				&kyta SPACE R &kp C_MUTE
+				&kp Q &kp W &kp E &kp C_PREV &kp C_NEXT &kp C_PP &td4 &kp A &kp S &kp D &kp f2 &kp f3 &kp f5 &kp f6 &td5 &td6 &kp C_VOL_DN &kp C_VOL_UP &kyta SPACE R &kp C_MUTE
 			>;
 		};
 		four { status = "reserved"; };

@@ -77,14 +77,6 @@
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
         	};
-		kyta: key_tap {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		flavor = "tap-preferred";
-            		tapping-term-ms = <150>;
-            		bindings = <&kp>, <&kp>;
-            		display-name = "Key-Tap";
-        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -157,7 +149,7 @@
 		combo_tab_esc {
 			timeout-ms = <50>;
 			key-positions = <0 2>;
-			bindings = <&kyta ESC TAB>;
+			bindings = <&mt ESC TAB>;
 			layers = <2>;
 		};
 		combo_tab {

@@ -32,7 +32,7 @@
 		td4: tap_dance_4 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <150>;
+			tapping-term-ms = <65>;
 			bindings = <&kp LSHIFT>,<&kp LCTRL>;
 		};
 		td5: tap_dance_5 {
@@ -46,6 +46,12 @@
 			#binding-cells = <0>;
 			tapping-term-ms = <150>;
 			bindings = <&kp F>,<&kp G>;
+		};
+		td7: tap_dance_7 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <150>;
+			bindings = <&kp SPACE>,<&kp R>;
 		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
@@ -102,7 +108,7 @@
 				&kp Q &kp W &kp E &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
 				&td4 &kp A &kp S &kp D &kp F2 &kp F3 &kp F5 &kp F6 
 				&td5 &td6 &kp C_PREV &kp C_NEXT 
-				&kp R &kp C_PP
+				&td7 &kp C_PP
 			>;
 		};
 		four { status = "reserved"; };
@@ -146,13 +152,24 @@
 			key-positions = <2 3 9 10 15 16 18 19>;
 			bindings = <&soft_off>;
 		};
-
+		combo_gaming_layer {
+			timeout-ms = <50>;
+			key-positions = <1 6 8>;
+			bindings = <&tog 2>;
+			layers = <0>;
+		};
+		combo_default_layer {
+			timeout-ms = <50>;
+			key-positions = <8 9 10 11>;
+			bindings = <&tog 2>;
+			layers = <2>;
+		};
 // mod keys
 		combo_tab {
 			timeout-ms = <50>;
 			key-positions = <0 2>;
 			bindings = <&kp TAB>;
-			layers = <0>;
+			layers = <0 2>;
 		};
 		combo_esc {
 			timeout-ms = <50>;

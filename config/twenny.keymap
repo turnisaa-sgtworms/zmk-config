@@ -89,26 +89,26 @@
 		one {
 			display-name = "base";
 			bindings = <
-				&kp W &kp E &hml LGUI T &hmr RGUI U &kp I &kp O
-				&kp A &kp S &hml LALT D &hml LCTRL F &hmr RCTRL H &hmr LALT K &kp L &kp P
-				&kp C &kp B &kp N &kp M
-				&mt LSHIFT SPACE &lt 1 SPACE
+				      &kp W &kp E &hml LGUI T 		&hmr RGUI U &kp I &kp O
+				&kp A &kp S &hml LALT D &hml LCTRL F 	&hmr RCTRL H &hmr LALT K &kp L &kp P
+				            &kp C &kp B 		&kp N &kp M
+				                  &mt LSHIFT SPACE 	&lt 1 SPACE
 			>;
 		};
 		two { display-name = "numico";
 			bindings = <
-				AS(1) AS(2) AS(3) &td0 &td1 &td2
-				AS(4) AS(5) AS(6) AS(7) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				AS(8) AS(9) AS(MINUS) AS(EQUAL)
-				AS(0) &none
+				      AS(1) AS(2) AS(3) 		&td0 &td1 &td2
+				AS(4) AS(5) AS(6) AS(7) 		AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
+				            AS(8) AS(9) 		AS(MINUS) AS(EQUAL)
+				                  AS(0) 		&none
 			>;
 		};
 		three { display-name = "game";
 			bindings = <
-				&kp Q &kp W &kp E &kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
-				&td4 &kp A &kp S &kp D &kp F2 &kp F3 &kp F5 &kp F6 
-				&td5 &td6 &kp C_PREV &kp C_NEXT 
-				&td7 &kp C_PP
+				     &kp Q &kp W &kp E 			&kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
+				&td4 &kp A &kp S &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
+				           &td5 &td6 			&kp C_PREV &kp C_NEXT 
+				                &td7 			&kp C_PP
 			>;
 		};
 		four { status = "reserved"; };
@@ -169,25 +169,23 @@
 			timeout-ms = <50>;
 			key-positions = <0 2>;
 			bindings = <&kp TAB>;
-			layers = <0 2>;
 		};
 		combo_esc {
 			timeout-ms = <50>;
 			key-positions = <3 5>;
 			bindings = <&kp ESC>;
-			layers = <0>;
 		};
 		combo_backspace {
 			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&kp BSPC>;
-			layers = <0>;
+			layers = <0 1>;
 		};
 		combo_enter {
 			timeout-ms = <50>;
 			key-positions = <9 10>;
 			bindings = <&kp ENTER>;
-			layers = <0>;
+			layers = <0 1>;
 		};
 
 // arrow keys
@@ -195,25 +193,21 @@
 			timeout-ms = <50>;
 			key-positions = <1 4>;
 			bindings = <&kp UP>;
-			layers = <0>;
 		};
 		combo_left {
 			timeout-ms = <50>;
 			key-positions = <7 10>;
 			bindings = <&kp LEFT>;
-			layers = <0>;
 		};
 		combo_down {
 			timeout-ms = <50>;
 			key-positions = <8 11>;
 			bindings = <&kp DOWN>;
-			layers = <0>;
 		};
 		combo_right {
 			timeout-ms = <50>;
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
-			layers = <0>;
 		};
 
 // alpha keys

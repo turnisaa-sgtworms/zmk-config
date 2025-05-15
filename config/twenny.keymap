@@ -97,10 +97,10 @@
 		};
 		two { display-name = "numico";
 			bindings = <
-				      &kp 1 &kp 2 &kp 3			&td0 &td1 &td2
-				&kp 4 &kp 5 &kp 6 &kp 7 		AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				            &kp 8 &kp 9 		AS(MINUS) AS(EQUAL)
-				                  &mt LSHIFT 0		&none
+				       AS(N1) AS(N2) AS(N3) 		&td0 &td1 &td2
+				AS(N4) AS(N5) AS(N6) AS(N7)  		AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
+				              AS(N8) AS(N9)  		AS(MINUS) AS(EQUAL)
+				                     AS(N0) 		&none
 			>;
 		};
 		three { display-name = "game";

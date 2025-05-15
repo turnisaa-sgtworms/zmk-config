@@ -83,6 +83,12 @@
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
         	};
+		hw_soft_off: hw_soft_off {
+            		compatible = "zmk,behavior-soft-off";
+            		#binding-cells = <0>;
+            		split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
+            		hold-time-ms = <2000>; // Only turn off if the key is held for 2 seconds or longer.
+        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -113,7 +119,7 @@
 		};
 		four { display-name = "numico2";
 			bindings = <
-				      AS(GRAVE) &kp PG_UP &soft_off 		AS(MINUS) &kp UP AS(EQUAL)
+				      AS(GRAVE) &kp PG_UP &hw_soft_off 		AS(MINUS) &kp UP AS(EQUAL)
 				&none &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
 				               &kp C_VOL_UP &kp C_VOL_DN  	&kp C_PREV &kp C_NEXT
 				                     &none 			&kp C_PP

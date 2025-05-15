@@ -78,7 +78,7 @@
 		as: auto_shift {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
-            		tapping_term_ms = <135>;
+            		tapping_term_ms = <175>;
             		quick_tap_ms = <0>;
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
@@ -154,7 +154,7 @@
 		};
 		combo_gaming_layer {
 			timeout-ms = <50>;
-			key-positions = <1 6 8>;
+			key-positions = <1 7 9>;
 			bindings = <&tog 2>;
 			layers = <0>;
 		};

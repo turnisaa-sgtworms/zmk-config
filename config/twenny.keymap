@@ -53,6 +53,12 @@
 			tapping-term-ms = <225>;
 			bindings = <&kp SPACE>,<&kp R>;
 		};
+		td8: tap_dance_8 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <225>;
+			bindings = <&kp LC(V)>,<&kp LC(C)>;
+		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -89,17 +95,17 @@
 		one {
 			display-name = "base";
 			bindings = <
-				      &kp W &kp E &hml LGUI T 		&hmr RGUI U &kp I &kp O
-				&kp A &kp S &hml LALT D &hml LCTRL F 	&hmr RCTRL H &hmr LALT K &kp L &kp P
-				            &kp C &kp B 		&kp N &kp M
-				                  &mt LSHIFT SPACE 	&lt 1 SPACE
+				      &kp W &kp E &hml LGUI T 			&hmr RGUI U &kp I &kp O
+				&mt LSHIFT A &kp S &hml LALT D &hml LCTRL F 	&hmr RCTRL H &hmr LALT K &kp L &mt RSHIFT P
+				            &kp C &kp B 			&kp N &kp M
+				                  &lt 3 SPACE 			&lt 1 SPACE
 			>;
 		};
 		two { display-name = "numico";
 			bindings = <
 				       AS(N1) AS(N2) AS(N3) 		&td0 &td1 &td2
 				AS(N4) AS(N5) AS(N6) AS(N7)  		AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				              AS(N8) AS(N9)  		AS(MINUS) AS(EQUAL)
+				              AS(N8) AS(N9)  		AS(APOS) AS(BSLH)
 				                     AS(N0) 		&none
 			>;
 		};
@@ -111,7 +117,14 @@
 				                &td7 			&kp C_PP
 			>;
 		};
-		four { status = "reserved"; };
+		four { display-name = "numico2";
+			bindings = <
+				      AS(GRAVE) &kp PG_UP &td8 			AS(MINUS) &kp UP AS(EQUAL)
+				&none &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &none 
+				               &kp C_VOL_UP &kp C_VOL_DN  	&kp C_PREV &kp C_NEXT
+				                     &none 			&kp C_PP
+			>;
+		};
 		five { status = "reserved"; };
 	};
 };

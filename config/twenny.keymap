@@ -120,7 +120,7 @@
 		four { display-name = "numico2";
 			bindings = <
 				      AS(GRAVE) &kp PG_UP &hw_soft_off 		AS(MINUS) &kp UP AS(EQUAL)
-				&none &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
+				&studio_unlock &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
 				               &kp C_VOL_UP &kp C_VOL_DN  	&kp C_PREV &kp C_NEXT
 				                     &none 			&kp C_PP
 			>;

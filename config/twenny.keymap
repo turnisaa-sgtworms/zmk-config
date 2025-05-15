@@ -135,19 +135,19 @@
 
 // game combos
 		combo_1 {
-			timeout-ms = <40>;
+			timeout-ms = <75>;
 			key-positions = <0 18>;
 			bindings = <&kp N1>;
 			layers = <2>;
 		};
 		combo_3 {
-			timeout-ms = <40>;
+			timeout-ms = <75>;
 			key-positions = <2 18>;
 			bindings = <&kp N3>;
 			layers = <2>;
 		};
 		combo_b {
-			timeout-ms = <40>;
+			timeout-ms = <50>;
 			key-positions = <14 15>;
 			bindings = <&kp B>;
 			layers = <2>;
@@ -165,11 +165,6 @@
 			key-positions = <10 11 12 13>;
 			bindings = <&bt BT_SEL 1>;
 			layers = <0>;
-		};
-		combo_soft_off {
-			timeout-ms = <50>;
-			key-positions = <2 3 9 10 15 16 18 19>;
-			bindings = <&soft_off>;
 		};
 		combo_gaming_layer {
 			timeout-ms = <50>;

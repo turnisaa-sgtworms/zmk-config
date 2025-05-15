@@ -25,5 +25,3 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: seeeduino_xiao_ble
     shield: twenny_right
-  - board seeduino_xiao_ble
-    shield: settings_reset

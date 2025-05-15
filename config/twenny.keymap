@@ -53,12 +53,6 @@
 			tapping-term-ms = <225>;
 			bindings = <&kp SPACE>,<&kp R>;
 		};
-		td8: tap_dance_8 {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <225>;
-			bindings = <&kp LC(V)>,<&kp LC(C)>;
-		};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -119,8 +113,8 @@
 		};
 		four { display-name = "numico2";
 			bindings = <
-				      AS(GRAVE) &kp PG_UP &td8 			AS(MINUS) &kp UP AS(EQUAL)
-				&none &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &none 
+				      AS(GRAVE) &kp PG_UP &soft_off 		AS(MINUS) &kp UP AS(EQUAL)
+				&none &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
 				               &kp C_VOL_UP &kp C_VOL_DN  	&kp C_PREV &kp C_NEXT
 				                     &none 			&kp C_PP
 			>;

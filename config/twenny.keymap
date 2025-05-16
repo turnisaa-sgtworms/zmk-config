@@ -130,7 +130,7 @@
 				      &kp N1 &kp N2 &kp N3 		&kp Y &kp C_VOL_DN &kp C_MUTE
 				&kp Q &kp W &kp E &kp R 		&kp F2 &kp F3 &kp F4 &kp F5 
 				            &kp D &kp F 		&kp C_PREV &kp C_NEXT 
-				                  &mt CTRL N4 		&kp C_PP
+				                  &mt LCTRL N4 		&kp C_PP
 			>;
 		};
 	};

@@ -89,6 +89,9 @@
             		split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
             		hold-time-ms = <2000>; // Only turn off if the key is held for 2 seconds or longer.
         	};
+		mt: mod_tap {
+            		tapping-term-ms = <300>;
+        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -114,7 +117,7 @@
 				     &kp Q &kp W &kp E 			&kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
 				&td4 &kp A &kp S &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
 				           &td5 &td6 			&kp C_PREV &kp C_NEXT 
-				                &td7 			&kp C_PP
+				                &mt R SPACE 		&kp C_PP
 			>;
 		};
 		four { display-name = "navico";

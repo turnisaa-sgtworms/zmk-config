@@ -109,7 +109,7 @@
 				                     AS(N0) 		&none
 			>;
 		};
-		three { display-name = "game";
+		three { display-name = "fps";
 			bindings = <
 				     &kp Q &kp W &kp E 			&kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
 				&td4 &kp A &kp S &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
@@ -120,12 +120,19 @@
 		four { display-name = "navico";
 			bindings = <
 				      AS(GRAVE) &kp PG_UP &hw_soft_off 		AS(MINUS) &kp UP AS(EQUAL)
-				&studio_unlock &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
+				&studio_unlock &kp HOME &kp PG_DN &kp END  	&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
 				               &kp C_VOL_UP &kp C_VOL_DN  	&kp C_PREV &kp C_NEXT
 				                     &none 			&kp C_PP
 			>;
 		};
-		five { status = "reserved"; };
+		five { display-name = "qwer";
+			bindings = <
+				      &kp N1 &kp N2 &kp N3 		&kp Y &kp C_VOL_DN &kp C_MUTE
+				&kp Q &kp W &kp E &kp R 		&kp F2 &kp F3 &kp F4 &kp F5 
+				            &kp D &kp F 		&kp C_PREV &kp C_NEXT 
+				                  &mt CTRL N4 		&kp C_PP
+			>;
+		};
 	};
 };
 
@@ -166,17 +173,23 @@
 			bindings = <&bt BT_SEL 1>;
 			layers = <0>;
 		};
-		combo_gaming_layer {
+		combo_fps_layer {
 			timeout-ms = <50>;
 			key-positions = <1 7 9>;
-			bindings = <&tog 2>;
+			bindings = <&to 2>;
+			layers = <0>;
+		};
+		combo_qwer_layer {
+			timeout-ms = <50>;
+			key-positions = <6 7 9>;
+			bindings = <&to 4>;
 			layers = <0>;
 		};
 		combo_default_layer {
 			timeout-ms = <50>;
 			key-positions = <8 9 10 11>;
-			bindings = <&tog 2>;
-			layers = <2>;
+			bindings = <&to 0>;
+			layers = <2 4>;
 		};
 // mod keys
 		combo_del {

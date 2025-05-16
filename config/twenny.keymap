@@ -117,7 +117,7 @@
 				                &td7 			&kp C_PP
 			>;
 		};
-		four { display-name = "numico2";
+		four { display-name = "navico";
 			bindings = <
 				      AS(GRAVE) &kp PG_UP &hw_soft_off 		AS(MINUS) &kp UP AS(EQUAL)
 				&studio_unlock &kp HOME &kp PG_DN &kp END  		&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
@@ -179,6 +179,12 @@
 			layers = <2>;
 		};
 // mod keys
+		combo_del {
+			timeout-ms = <50>;
+			key-positions = <6 13>;
+			bindings = <&kp DEL>;
+			layers = <0>;
+		};
 		combo_tab {
 			timeout-ms = <50>;
 			key-positions = <0 2>;

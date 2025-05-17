@@ -1,6 +1,8 @@
 config ZMK_PM_SOFT_OFF
 	default y
 
+CONFIG_ZMK_POINTING=y
+
 if SHIELD_TWENNY_LEFT
 
 config ZMK_KEYBOARD_NAME

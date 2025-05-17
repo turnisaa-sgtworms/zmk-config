@@ -216,7 +216,7 @@
 // mod keys
 		combo_del {
 			timeout-ms = <50>;
-			key-positions = <6 13>;
+			key-positions = <6 7>;
 			bindings = <&kp DEL>;
 			layers = <0>;
 		};

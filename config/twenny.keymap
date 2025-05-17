@@ -1,6 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
+
 #define AS(keycode) &as LS(keycode) keycode   
 
 / {
@@ -122,10 +124,10 @@
 		};
 		four { display-name = "mouse";
 			bindings = <
-				      &none &none &none &none 			&none &none &none &none
-				&none &none &none &none &none 			&none &none &none &none &none 
-				             	  &none &none 			&none &none
-				                     	&none 			&none 
+				      &none &msc SCRL_UP &none 				&mkp MB1 &mmv MOVE_UP &mkp MB2
+				&none &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT 	&mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none 
+				            &none &none 				&none &none
+				                  &none 				&none 
 			>;
 		};
 		five { display-name = "fps";
@@ -184,23 +186,29 @@
 			bindings = <&bt BT_SEL 1>;
 			layers = <0>;
 		};
+		combo_mouse_layer {
+			timeout-ms = <50>;
+			key-positions = <18 19>;
+			bindings = <&to 3>;
+			layers = <0>;
+		};
 		combo_fps_layer {
 			timeout-ms = <50>;
 			key-positions = <1 7 9>;
-			bindings = <&to 2>;
+			bindings = <&to 4>;
 			layers = <0>;
 		};
 		combo_qwer_layer {
 			timeout-ms = <50>;
 			key-positions = <6 7 9>;
-			bindings = <&to 4>;
+			bindings = <&to 5>;
 			layers = <0>;
 		};
 		combo_default_layer {
 			timeout-ms = <50>;
 			key-positions = <8 9 10 11>;
 			bindings = <&to 0>;
-			layers = <4 5>;
+			layers = <3 4 5>;
 		};
 // mod keys
 		combo_del {

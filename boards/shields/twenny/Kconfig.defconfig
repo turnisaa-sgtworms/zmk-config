@@ -1,6 +1,12 @@
 config ZMK_PM_SOFT_OFF
 	default y
 
+config CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
+	default y
+
+config CONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+	default y
+
 config ZMK_POINTING
 	default y
 

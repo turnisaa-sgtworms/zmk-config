@@ -139,7 +139,7 @@
 		};
 		six { display-name = "qwer";
 			bindings = <
-				      &kp N1 &kp N2 &kp N3 			&kp Y &kp C_VOL_DN &kp C_MUTE
+				      &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp Q &kp W &kp E &kp R 			&kp F2 &kp F3 &kp F4 &kp F5 
 				            &kp D &kp F 			&kp C_PREV &kp C_NEXT 
 				                  &mt LCTRL N4 			&kp C_PP
@@ -175,9 +175,14 @@
 			timeout-ms = <90>;
 			key-positions = <6 18>;
 			bindings = <&kp K>;
-			layers = <4 5>;
+			layers = <4>;
 		};
-
+		combo_y {
+			timeout-ms = <90>;
+			key-positions = <6 18>;
+			bindings = <&kp Y>;
+			layers = <5>;
+		};
 // keyboard functions
 		combo_bt_one {
 			timeout-ms = <50>;

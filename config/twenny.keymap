@@ -34,18 +34,26 @@
 			tapping-term-ms = <225>;
 			bindings = <&kp TAB>,<&kp ESC>;
 		};
-		td5: tap_dance_5 {
+		td4: tap_dance_4 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <225>;
 			bindings = <&kp C>,<&kp X>;
 		};
-		td6: tap_dance_6 {
+		td5: tap_dance_5 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <225>;
 			bindings = <&kp F>,<&kp G>;
 		};
+		fmt: fast_mod_tap {
+            		compatible = "zmk,behavior-hold-tap";
+            		#binding-cells = <2>;
+            		flavor = "hold-preferred";
+            		tapping-term-ms = <125>;
+            		bindings = <&kp>, <&kp>;
+            		display-name = "Fast Mod-Tap";
+        	};
 		hml: home_row_mod_left {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -83,7 +91,7 @@
             		hold-time-ms = <2000>; // Only turn off if the key is held for 2 seconds or longer.
         	};
 		mt: mod_tap {
-            		tapping-term-ms = <300>;
+            		tapping-term-ms = <250>;
         	};
 	};
 	keymap {
@@ -123,9 +131,9 @@
 		};
 		five { display-name = "fps";
 			bindings = <
-				     &kp Q &kp W &kp E 				&kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
-				&mt LCTRL LSHIFT &kp A &kp S &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
-				           &td5 &td6 				&kp C_PREV &kp C_NEXT 
+				     &kp Q &td4 &kp E 				&kp C_VOL_UP &kp C_VOL_DN &kp C_MUTE
+				&fmt LCTRL LSHIFT &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
+				           &kp S &td5 				&kp C_PREV &kp C_NEXT 
 				                &mt R SPACE 			&kp C_PP
 			>;
 		};
@@ -185,7 +193,7 @@
 		};
 		combo_fps_layer {
 			timeout-ms = <50>;
-			key-positions = <1 7 9>;
+			key-positions = <7 8 9>;
 			bindings = <&to 4>;
 			layers = <0>;
 		};

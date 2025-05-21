@@ -225,7 +225,7 @@
 		combo_apex_layer {
 			timeout-ms = <50>;
 			key-positions = <1 7 9>;
-			bindings = <&to 4>;
+			bindings = <&to 6>;
 			layers = <0>;
 		};
 		combo_default_layer {

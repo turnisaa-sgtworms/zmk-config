@@ -165,19 +165,19 @@
 			timeout-ms = <90>;
 			key-positions = <0 18>;
 			bindings = <&kp N1>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 		combo_3_game {
 			timeout-ms = <90>;
 			key-positions = <2 18>;
 			bindings = <&kp N3>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 		combo_b_game {
 			timeout-ms = <90>;
 			key-positions = <14 15>;
 			bindings = <&kp B>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 		combo_k_game {
 			timeout-ms = <90>;

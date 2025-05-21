@@ -129,7 +129,7 @@
 				                  &none 				&none 
 			>;
 		};
-		five { display-name = "fps";
+		five { display-name = "val";
 			bindings = <
 				     &kp Q &td4 &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&fmt LCTRL LSHIFT &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
@@ -143,6 +143,14 @@
 				&kp Q &kp W &kp E &kp R 			&kp F2 &kp F3 &kp F4 &kp F5 
 				            &kp D &kp F 			&kp C_PREV &kp C_NEXT 
 				                  &mt LCTRL N4 			&kp C_PP
+			>;
+		};
+		five { display-name = "apex";
+			bindings = <
+				     &kp Q &kp X &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LCTRL &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
+				           &kp S &kp R 				&kp C_PREV &kp C_NEXT 
+				                &kp SPACE 			&kp C_PP
 			>;
 		};
 	};
@@ -202,7 +210,7 @@
 			bindings = <&to 3>;
 			layers = <0>;
 		};
-		combo_fps_layer {
+		combo_val_layer {
 			timeout-ms = <50>;
 			key-positions = <7 8 9>;
 			bindings = <&to 4>;
@@ -214,11 +222,17 @@
 			bindings = <&to 5>;
 			layers = <0>;
 		};
+		combo_apex_layer {
+			timeout-ms = <50>;
+			key-positions = <1 7 9>;
+			bindings = <&to 4>;
+			layers = <0>;
+		};
 		combo_default_layer {
 			timeout-ms = <50>;
 			key-positions = <8 9 10 11>;
 			bindings = <&to 0>;
-			layers = <3 4 5>;
+			layers = <3 4 5 6>;
 		};
 // mod keys
 		combo_del {

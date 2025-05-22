@@ -88,7 +88,7 @@
             		compatible = "zmk,behavior-soft-off";
             		#binding-cells = <0>;
             		split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
-            		hold-time-ms = <2000>; // Only turn off if the key is held for 2 seconds or longer.
+            		hold-time-ms = <1500>; // Only turn off if the key is held for 1.5 seconds or longer.
         	};
 		mt: mod_tap {
             		tapping-term-ms = <250>;
@@ -115,18 +115,18 @@
 		};
 		three { display-name = "navico";
 			bindings = <
-				     AS(GRAVE) &kp PG_UP &hw_soft_off 		AS(MINUS) &kp UP AS(EQUAL)
-				&studio_unlock &kp HOME &kp PG_DN &kp END  	&kp LEFT &kp DOWN &kp RIGHT &bt BT_CLR_ALL 
-				               &kp C_VOL_DN &kp C_VOL_UP  	&kp C_PREV &kp C_NEXT
-				                     &none 			&kp C_PP
+				     AS(GRAVE) &none &hw_soft_off 		AS(MINUS) AS(EQUAL) AS(GRAVE)
+				&studio_unlock &kp HOME &kp PG_UP &kp END  	&kp LEFT &kp UP &kp RIGHT &bt BT_CLR_ALL 
+				               &kp PG_DN &kp C_VOL_UP  		&kp C_NEXT &kp DOWN
+				                     &none 			&kp C_PREV
 			>;
 		};
 		four { display-name = "mouse";
 			bindings = <
-				      &none &msc SCRL_UP &none 				&mkp MB1 &mmv MOVE_UP &mkp MB2
-				&none &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT 	&mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none 
-				            &none &none 				&none &none
-				                  &none 				&none 
+				      &none &none &none 				&mkp MB1 &mkp MB3 &mkp MB2
+				&none &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_RIGHT 	&mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT &none 
+				                     &msc SCRL_DOWN &none 		&none &mmv MOVE_DOWN
+				                                    &none 		&none 
 			>;
 		};
 		five { display-name = "val";
@@ -263,11 +263,17 @@
 			bindings = <&kp ENTER>;
 			layers = <0 1>;
 		};
+		combo_playpause {
+			timeout-ms = <50>;
+			key-positions = <16 19>;
+			bindings = <&kp C_PP>;
+			layers = <2>;
+		};
 
 // arrow keys
 		combo_up {
 			timeout-ms = <50>;
-			key-positions = <1 4>;
+			key-positions = <8 11>;
 			bindings = <&kp UP>;
 		};
 		combo_left {
@@ -277,7 +283,7 @@
 		};
 		combo_down {
 			timeout-ms = <50>;
-			key-positions = <8 11>;
+			key-positions = <14 17>;
 			bindings = <&kp DOWN>;
 		};
 		combo_right {

@@ -108,9 +108,9 @@
 		two { display-name = "numico";
 			bindings = <
 				       AS(N1) AS(N2) AS(N3) 			&td0 &td1 &td2
-				AS(N4) AS(N5) AS(N6) AS(N7)  			AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				              AS(N8) AS(N9)  			AS(APOS) AS(BSLH)
-				                     AS(N0) 			&none
+				AS(N0) AS(N4) AS(N5) AS(N6)  			AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
+				              AS(N7) AS(N8)  			AS(APOS) AS(BSLH)
+				                     AS(N9) 			&none
 			>;
 		};
 		three { display-name = "navico";

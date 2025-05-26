@@ -175,7 +175,7 @@
 		};
 		combo_4_game {
 			timeout-ms = <90>;
-			key-positions = <0 2>;
+			key-positions = <7 9>;
 			bindings = <&kp N4>;
 			layers = <4>;
 		};

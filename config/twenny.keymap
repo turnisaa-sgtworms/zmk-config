@@ -173,6 +173,12 @@
 			bindings = <&kp N3>;
 			layers = <4 6>;
 		};
+		combo_4_game {
+			timeout-ms = <90>;
+			key-positions = <0 2>;
+			bindings = <&kp N4>;
+			layers = <4>;
+		};
 		combo_b_game {
 			timeout-ms = <90>;
 			key-positions = <14 15>;

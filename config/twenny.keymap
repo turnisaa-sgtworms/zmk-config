@@ -93,6 +93,14 @@
 		mt: mod_tap {
             		tapping-term-ms = <250>;
         	};
+		cmt: caps_mod_tap {
+            		compatible = "zmk,behavior-hold-tap";
+            		#binding-cells = <2>;
+            		flavor = "hold-preferred";
+            		tapping-term-ms = <250>;
+            		bindings = <&none>, <&caps_word>;
+            		display-name = "Caps Mod-Tap";
+        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -278,7 +286,7 @@
 		combo_capsword {
 			timeout-ms = <50>;
 			key-positions = <6 13>;
-			bindings = <&mt &caps_word none>;
+			bindings = <&cmt>;
 			layers = <0>;
 		};
 

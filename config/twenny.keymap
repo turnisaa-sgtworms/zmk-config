@@ -101,13 +101,13 @@
             		bindings = <&caps_word>, <&none>;
             		display-name = "Caps Mod-Tap";
         	};
-		nwmt:  num_word_mod_tap {
+		nwmt:  num_word_layer_tap {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "hold-preferred";
             		tapping-term-ms = <250>;
             		bindings = <&mo>, <&num_word>;
-            		display-name = "Caps Mod-Tap";
+            		display-name = "Num Word Layer-Tap";
         	};
 		nav_word: nav_word {
       			compatible = "zmk,behavior-auto-layer";
@@ -179,7 +179,7 @@
 			bindings = <
 				       AS(N1) AS(N2) AS(N3) 			&none &none &none
 				AS(N0) AS(N4) AS(N5) AS(N6)  			&kp STAR AS(COMMA) AS(DOT) &kp FSLH
-				              AS(N7) AS(N8)  			AS(MINUS) AS(EQUALS)
+				              AS(N7) AS(N8)  			AS(MINUS) AS(EQUAL)
 				                     AS(N9) 			&none
 			>;
 		};

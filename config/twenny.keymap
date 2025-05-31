@@ -178,7 +178,7 @@
 		eight { display-name = "num";
 			bindings = <
 				       AS(N1) AS(N2) AS(N3) 			&none &none &none
-				AS(N0) AS(N4) AS(N5) AS(N6)  			&kp star AS(COMMA) AS(DOT) &kp FSLH
+				AS(N0) AS(N4) AS(N5) AS(N6)  			&kp STAR AS(COMMA) AS(DOT) &kp FSLH
 				              AS(N7) AS(N8)  			AS(MINUS) AS(EQUALS)
 				                     AS(N9) 			&none
 			>;

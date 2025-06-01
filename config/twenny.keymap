@@ -262,7 +262,7 @@
 			timeout-ms = <50>;
 			key-positions = <6 7>;
 			bindings = <&kp DEL>;
-			layers = <0>;
+			layers = <0 1 2 7>;
 		};
 		combo_tab {
 			timeout-ms = <50>;
@@ -278,13 +278,13 @@
 			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&kp BSPC>;
-			layers = <0 1 7>;
+			layers = <0 1 2 7>;
 		};
 		combo_enter {
 			timeout-ms = <50>;
 			key-positions = <9 10>;
 			bindings = <&kp ENTER>;
-			layers = <0 1>;
+			layers = <0 1 2 7>;
 		};
 		combo_playpause {
 			timeout-ms = <50>;

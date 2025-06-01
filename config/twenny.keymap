@@ -127,7 +127,7 @@
 				     &none &none &hw_soft_off 				&bt BT_CLR_ALL &none &none
 				&studio_unlock &kp C_PREV &kp C_VOL_UP &kp C_NEXT  	&kp LEFT &kp UP &kp RIGHT &none 
 				               &kp C_VOL_DN &none  			&none &kp DOWN
-				                     &none 				&none
+				                     &none 				&kp C_PP
 			>;
 		};
 		four { display-name = "mouse";

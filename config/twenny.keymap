@@ -102,20 +102,6 @@
             		bindings = <&caps_word>, <&none>;
             		display-name = "Caps Mod-Tap";
         	};
-		nwmt:  num_word_layer_tap {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		flavor = "hold-preferred";
-            		tapping-term-ms = <250>;
-            		bindings = <&mo>, <&num_word>;
-            		display-name = "Num Word Layer-Tap";
-        	};
-		nav_word: nav_word {
-      			compatible = "zmk,behavior-auto-layer";
-      			#binding-cells = <1>;
-			continue-list = <UP DOWN LEFT RIGHT PGUP PGDN HOME END>;
-      			ignore-modifiers;
-   	 	};
 	};
 	keymap {
 		compatible = "zmk,keymap";
@@ -125,23 +111,23 @@
 				              &kp W &kp E &hml LGUI T 		&hmr RGUI U &kp I &kp O
 				&hml LSHIFT A &kp S &hml LALT D &hml LCTRL F 	&hmr RCTRL H &hmr LALT K &kp L &hmr RSHIFT P
 				              &kp C &kp B 			&kp N &kp M
-				                    &nwmt 2 7			&lt 1 SPACE
+				                    &lt 2 SPACE			&lt 1 SPACE
 			>;
 		};
 		two { display-name = "ico";
 			bindings = <
-				       AS(N1) AS(N2) AS(N3) 			&td0 &td1 &td2
-				AS(N0) AS(N4) AS(N5) AS(N6)  			AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				              AS(N7) AS(N8)  			AS(APOS) AS(BSLH)
-				                     AS(N9) 			&none
+				      AS(GRAVE) AS(MINUS) AS(EQUAL) 		&td0 &td1 &td2
+				&none &kp HOME &kp PG_UP &kp END   		AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
+				               &kp PG_DN &none   		AS(APOS) AS(BSLH)
+				                         &none  		&none
 			>;
 		};
 		three { display-name = "navico";
 			bindings = <
-				     AS(GRAVE) &none &hw_soft_off 		AS(MINUS) AS(EQUAL) AS(GRAVE)
-				&studio_unlock &kp HOME &kp PG_UP &kp END  	&kp LEFT &kp UP &kp RIGHT &bt BT_CLR_ALL 
-				               &kp PG_DN &kp C_VOL_UP  		&kp C_NEXT &kp DOWN
-				                     &none 			&kp C_PREV
+				     &none &none &hw_soft_off 				&bt BT_CLR_ALL &none &none
+				&studio_unlock &kp C_PREV &kp C_VOL_UP &kp C_NEXT  	&kp LEFT &kp UP &kp RIGHT &none 
+				               &kp C_VOL_DN &none  			&none &kp DOWN
+				                     &none 				&none
 			>;
 		};
 		four { display-name = "mouse";
@@ -181,7 +167,7 @@
 				       AS(N1) AS(N2) AS(N3) 			&none &none &none
 				AS(N0) AS(N4) AS(N5) AS(N6)  			&kp STAR AS(COMMA) AS(DOT) &kp FSLH
 				              AS(N7) AS(N8)  			AS(MINUS) AS(EQUAL)
-				                     AS(N9) 			&none
+				                     AS(N9) 			&kp SPACE
 			>;
 		};
 	};
@@ -310,6 +296,12 @@
 			timeout-ms = <50>;
 			key-positions = <6 13>;
 			bindings = <&cmt 0 0>;
+			layers = <0>;
+		};
+		combo_numword {
+			timeout-ms = <50>;
+			key-positions = <6 18>;
+			bindings = <&num_word 7>;
 			layers = <0>;
 		};
 

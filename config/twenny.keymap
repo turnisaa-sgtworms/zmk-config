@@ -197,7 +197,7 @@
 			timeout-ms = <90>;
 			key-positions = <6 18>;
 			bindings = <&kp K>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 		combo_y_game {
 			timeout-ms = <90>;

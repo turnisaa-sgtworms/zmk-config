@@ -113,20 +113,20 @@
 				                        &lt 2 SPACE		&lt 1 SPACE
 			>;
 		};
-		two { display-name = "one numbers and arrows";
+		two { display-name = "one numbers icons";
 			bindings = <
-				       AS(N1) AS(N2) AS(N3) 	&kp C_PREV &kp C_PP &kp C_NEXT
-				AS(N0) AS(N4) AS(N5) AS(N6)    	&kp LEFT &kp UP &kp RIGHT &none
-				              AS(N7) AS(N8)    	&kp C_MUTE &kp DOWN
+				       AS(N1) AS(N2) AS(N3) 	&td0 &td1 &td2       
+				AS(N0) AS(N4) AS(N5) AS(N6)    	AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)     
+				              AS(N7) AS(N8)    	AS(APOS) AS(MINUS)     
 						     AS(N9)   	&none
 			>;
 		};
-		three { display-name = "two icons";
+		three { display-name = "two navigation and kb functions";
 			bindings = <
-						&studio_unlock &bt BT_CLR_ALL &hw_soft_off 	&td0 &td1 &td2
-				&none AS(GRAVE) AS(MINUS) AS(EQUAL)  				AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)
-				                &none &none  					AS(APOS) AS(BSLH)
-				                      &none 					&none
+				      &studio_unlock &bt BT_CLR_ALL &hw_soft_off 		&kp C_PREV &kp C_PP &kp C_NEXT
+				&none &kp HOME &kp PGUP &kp END  				&kp LEFT &kp UP &kp RIGHT &none
+				               &kp PGDN &none  					&kp C_VOL_UP &kp DOWN
+				                       &none 					&kp C_VOL_DN
 			>;
 		};
 		four { display-name = "three mouse";
@@ -311,7 +311,19 @@
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
 		};
-
+// symbol keys
+		combo_grave {
+			timeout-ms = <50>;
+			key-positions = <3 4>;
+			bindings = <AS(GRAVE)>;
+			layers = <1>;
+		};
+		combo_equal {
+			timeout-ms = <50>;
+			key-positions = <10 11>;
+			bindings = <AS(EQUAL)>;
+			layers = <1>;
+		};
 // alpha keys
 		combo_q {
 			timeout-ms = <50>;

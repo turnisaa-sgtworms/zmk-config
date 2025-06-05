@@ -1,0 +1,45 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-charlieplex";
+        wakeup-source;
+
+        gpios
+	    = <&pro_micro 0 GPIO_ACTIVE_HIGH>  // 0
+            , <&pro_micro 2 GPIO_ACTIVE_HIGH>  // 1
+            , <&pro_micro 3 GPIO_ACTIVE_HIGH>  // 2
+            , <&pro_micro 4 GPIO_ACTIVE_HIGH>  // 3
+            , <&pro_micro 5 GPIO_ACTIVE_HIGH>  // 4
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH>  // 5
+            , <&pro_micro 7 GPIO_ACTIVE_HIGH>  // 6
+            , <&pro_micro 8 GPIO_ACTIVE_HIGH>  // 7
+            , <&pro_micro 14 GPIO_ACTIVE_HIGH> // 8
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH> // 9
+            , <&pro_micro 16 GPIO_ACTIVE_HIGH> // 10
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH> // 11
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH> // 12
+            , <&pro_micro 20 GPIO_ACTIVE_HIGH> // 13
+            , <&pro_micro 21 GPIO_ACTIVE_HIGH> // 14
+            ;
+
+        interrupt-gpios
+            = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 15??? not sure how this one works for numbering.
+            ;
+	
+    };
+};
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        //columns = <3>; // Length of the "col-gpios" array
+        //rows = <3>; // Length of the "row-gpios" array
+        map = <
+            RC(8,9)  RC(8,11)  RC(8,12)  RC(8,13)  RC(8,14)      RC(6,1) RC(6,2) RC(6,3) RC(6,4) RC(6,5)
+	    RC(9,8)  RC(11,8)  RC(12,8)  RC(13,8)  RC(14,8)      RC(1,6) RC(2,6) RC(3,6) RC(4,6) RC(5,6)
+	    RC(10,9) RC(10,11) RC(10,12) RC(10,13) RC(10,14)     RC(7,1) RC(7,2) RC(7,3) RC(7,4) RC(7,5)
+	                       RC(12,10) RC(13,10) RC(14,10)     RC(1,7) RC(2,7) RC(3,7)         RC(0,15)
+        >;
+    };
+};

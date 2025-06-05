@@ -1,0 +1,10 @@
+file_format: "1"
+id: lebroke
+name: lebroke
+type: shield
+url: https://github.com/turnisaa/le-broke
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio

@@ -1,4 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "lebroke-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
+};
 
 / {
     kscan0: kscan0 {

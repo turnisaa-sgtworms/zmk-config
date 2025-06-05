@@ -33,8 +33,8 @@
 / {
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
-        //columns = <3>; // Length of the "col-gpios" array
-        //rows = <3>; // Length of the "row-gpios" array
+        columns = <10>; // Length of the "col-gpios" array
+        rows = <4>; // Length of the "row-gpios" array
         map = <
             RC(8,9)  RC(8,11)  RC(8,12)  RC(8,13)  RC(8,14)      RC(6,1) RC(6,2) RC(6,3) RC(6,4) RC(6,5)
 	    RC(9,8)  RC(11,8)  RC(12,8)  RC(13,8)  RC(14,8)      RC(1,6) RC(2,6) RC(3,6) RC(4,6) RC(5,6)

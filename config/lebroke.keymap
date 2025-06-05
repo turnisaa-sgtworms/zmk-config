@@ -110,7 +110,7 @@
 				&kp Q &kp W &kp E &hml LGUI R &kp T &kp Y &hmr RGUI U &kp I &kp O &kp DEL
 				&hml LSHIFT A &kp S &hml LALT D &hml LCTRL F &kp G &kp H &hmr RCTRL J &hmr LALT K &kp L &hmr RSHIFT P
 				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &none &none &none
-				&kp SPACE &kp SPACE &lt 2 SPACE &lt 1 SPACE &kp SPACE &kp SPACE
+				&kp SPACE &kp SPACE &lt 2 SPACE &lt 1 SPACE &kp SPACE &kp SPACE 		&none
 			>;
 		};
 		two { display-name = "one numbers icons";
@@ -118,7 +118,7 @@
 				&none AS(N1) AS(N2) AS(N3) &none 	&none &td0 &td1 &td2 AS(GRAVE)
 				&none AS(N4) AS(N5) AS(N6) &none   	&none AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)     
 				&none AS(N7) AS(N8) AS(N9) &none   	&none AS(APOS) AS(MINUS) AS(EQUAL) AS(BSLH)    
-					     &none &none AS(N0)   	&none &none &none
+					     &none &none AS(N0)   	&none &none &none 		&none
 			>;
 		};
 		three { display-name = "two navigation and kb functions";
@@ -126,7 +126,7 @@
 				&none &studio_unlock &bt BT_CLR_ALL &hw_soft_off &none		&none &kp C_PREV &kp C_PP &kp C_NEXT &none
 				&none &kp HOME &kp PGUP &kp END &none 				&none &kp LEFT &kp UP &kp RIGHT &none
 				&none &none &kp PGDN &none &none  				&none &kp C_VOL_UP &kp DOWN &none &none
-				            &none &none &none					&kp C_VOL_DN &none &none
+				            &none &none &none					&kp C_VOL_DN &none &none 		&none
 			>;
 		};
 	};

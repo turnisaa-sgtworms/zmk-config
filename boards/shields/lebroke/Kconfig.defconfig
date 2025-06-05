@@ -1,9 +1,6 @@
 config ZMK_PM_SOFT_OFF
 	default y
 
-config ZMK_POINTING
-	default y
-
 if SHIELD_LEBROKE
 
 config ZMK_KEYBOARD_NAME

@@ -324,6 +324,12 @@
 			bindings = <AS(EQUAL)>;
 			layers = <1>;
 		};
+		combo_bslh {
+			timeout-ms = <50>;
+			key-positions = <16 17>;
+			bindings = <AS(BSLH)>;
+			layers = <1>;
+		};
 // alpha keys
 		combo_q {
 			timeout-ms = <50>;

@@ -3,7 +3,7 @@
 
 / {
     chosen {
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &lebroke_physical_layout;
     };
 };
 

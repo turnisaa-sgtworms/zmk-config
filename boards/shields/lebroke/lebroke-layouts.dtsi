@@ -1,11 +1,8 @@
 #include <physical_layouts.dtsi>
-#include <physical_layouts.dtsi>
-
 / {
     lebroke_physical_layout: lebroke_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "LAYOUT";
-
+        display-name = "lebroke";
         kscan = <&kscan0>;
         transform = <&default_transform>;
 

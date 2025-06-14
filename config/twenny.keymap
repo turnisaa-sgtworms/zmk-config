@@ -241,19 +241,19 @@
 		combo_val_layer {
 			timeout-ms = <50>;
 			key-positions = <7 8 9>;
-			bindings = <&to 4>;
+			bindings = <&to 7>;
 			layers = <0>;
 		};
 		combo_qwer_layer {
 			timeout-ms = <50>;
 			key-positions = <6 7 9>;
-			bindings = <&to 5>;
+			bindings = <&to 8>;
 			layers = <0>;
 		};
 		combo_apex_layer {
 			timeout-ms = <50>;
 			key-positions = <1 7 9>;
-			bindings = <&to 6>;
+			bindings = <&to 9>;
 			layers = <0>;
 		};
 		combo_default_layer {

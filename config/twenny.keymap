@@ -143,7 +143,7 @@
 						&none &none 
 			>;
 		};
-		six { display-name = six - placeholder";
+		six { display-name = "six - placeholder";
 			bindings = <
 				     &none &none &none &none &none &none
 				&none &none &none &none &none &none &none &none 

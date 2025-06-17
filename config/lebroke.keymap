@@ -107,9 +107,9 @@
 		one {
 			display-name = "zero base";
 			bindings = <
-				&kp Q &kp W &kp E &hml LGUI R &kp T &kp Y &hmr RGUI U &kp I &kp O &kp DEL
-				&hml LSHIFT A &kp S &hml LALT D &hml LCTRL F &kp G &kp H &hmr RCTRL J &hmr LALT K &kp L &hmr RSHIFT P
-				&kp Z &kp X &kp C &kp V &kp B &kp B &kp N &kp M &none &none
+				&kp Q &kp W &kp E &hml LGUI T &kp R &kp Y &hmr RGUI U &kp I &kp O &kp DEL
+				&hml LSHIFT A &kp S &hml LALT D &hml LCTRL F &kp G &kp J &hmr RCTRL H &hmr LALT K &kp L &hmr RSHIFT P
+				&kp Z &kp X &kp C &kp B &kp V &none &kp N &kp M &none &none
 				&kp SPACE &kp SPACE &lt 2 SPACE &lt 1 SPACE &kp SPACE &kp SPACE 		&kp Z
 			>;
 		};

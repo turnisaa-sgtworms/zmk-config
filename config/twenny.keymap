@@ -97,9 +97,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				              &kp W &kp D &hml LGUI R 		&hmr RGUI U &kp I &kp O
-				&hml LSHIFT A &kp S &hml LALT E &hml LCTRL T 	&hmr RCTRL N &hmr LALT K &kp L &hmr RSHIFT P
-				                    &kp C &lt 3 B 		&lt 4 H &kp M
+				              &kp U &kp O &hml LGUI D 		&hmr RGUI L &kp F &kp W
+				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL T 	&hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
+				                    &kp X &lt 3 B 		&lt 4 R &kp C
 				                        &lt 2 SPACE		&lt 1 SPACE
 			>;
 		};
@@ -344,10 +344,10 @@
 			bindings = <&kp Q>;
 			layers = <0>;
 		};
-		combo_f {
+		combo_k {
 			timeout-ms = <50>;
 			key-positions = <1 2>;
-			bindings = <&kp F>;
+			bindings = <&kp K>;
 			layers = <0>;
 		};
 		combo_y {
@@ -356,10 +356,10 @@
 			bindings = <&kp Y>;
 			layers = <0>;
 		};
-		combo_z {
+		combo_p {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&kp Z>;
+			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_g {
@@ -380,10 +380,10 @@
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_x {
+		combo_z {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
-			bindings = <&kp X>;
+			bindings = <&kp Z>;
 			layers = <0>;
 		};
 	};

@@ -32,3 +32,4 @@ include:
     shield: lebroke
     snippet: studio-rpc-usb-uart
     snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=y

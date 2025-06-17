@@ -48,15 +48,11 @@
             ;
     };
     
-    kscan2: kscan_matrix {
-        compatible = "zmk,kscan-gpio-matrix";
+    kscan2: kscan_direct {
+        compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
-        diode-direction = "col2row";
-        col-gpios
-            = <&pro_micro 1 GPIO_ACTIVE_HIGH> // 14
-            ;
-        row-gpios
-            = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 14
+        input-gpios
+            = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)> // 0 but 15 after shift
             ;
     };
 };
@@ -72,7 +68,7 @@
             RC(7,8)  RC(7,10) RC(7,11) RC(7,12) RC(7,13)    RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4)
 	    RC(8,7)  RC(10,7) RC(11,7) RC(12,7) RC(13,7)    RC(0,5) RC(1,5) RC(2,5) RC(3,5) RC(4,5)
 	    RC(9,8)  RC(9,10) RC(9,11) RC(9,12) RC(9,13)    RC(6,0) RC(6,1) RC(6,2) RC(6,3) RC(6,4)
-	                      RC(11,9) RC(12,9) RC(13,9)    RC(0,6) RC(1,6) RC(2,6)         RC(14,14)
+	                      RC(11,9) RC(12,9) RC(13,9)    RC(0,6) RC(1,6) RC(2,6)         RC(15,15)
         >;
     };
 };

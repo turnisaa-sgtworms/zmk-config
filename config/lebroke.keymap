@@ -108,7 +108,7 @@
 			display-name = "zero base";
 			bindings = <
 				&kp Q &kp U &kp O &hml LGUI K &kp P &kp J &hmr RGUI W &kp D &kp C &kp Z
-				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL N &kp Y &kp G &hmr RCTRL T &hmr LALT S &kp M &hmr RSHIFT H
+				&hml LSHIFT E &kp I &hml LALT A &hml LCTRL N &kp Y &kp G &hmr RCTRL T &hmr LALT S &kp M &hmr RSHIFT H
 				&none &none &none &kp B &kp V &kp X &kp L &kp F &none &none
 				&none &lt 2 R &none &none &lt 1 SPACE &none 				&hw_soft_off
 			>;

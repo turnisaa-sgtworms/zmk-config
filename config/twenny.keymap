@@ -99,8 +99,8 @@
 			bindings = <
 				              &kp U &kp O &hml LGUI K 		&hmr RGUI D &kp C &kp W
 				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL N 	&hmr RCTRL T &hmr LALT S &kp M &hmr RSHIFT H
-				                    &kp X &lt 3 B 		&lt 4 L &kp F
-				                        &lt 2 R		&lt 1 SPACE
+				                    &none &lt 3 B 		&lt 4 L &kp F
+				                        &lt 2 R			&lt 1 SPACE
 			>;
 		};
 		one { display-name = "one - numbers and icons";
@@ -356,10 +356,10 @@
 			bindings = <&kp P>;
 			layers = <0>;
 		};
-		combo_placeholder {
+		combo_z {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&none>;
+			bindings = <&kp Z>;
 			layers = <0>;
 		};
 		combo_y {
@@ -380,10 +380,10 @@
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_z {
+		combo_x {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
-			bindings = <&kp Z>;
+			bindings = <&kp X>;
 			layers = <0>;
 		};
 	};

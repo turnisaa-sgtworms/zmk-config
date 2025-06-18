@@ -97,10 +97,10 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				              &kp U &kp O &hml LGUI R 		&hmr RGUI D &kp C &kp W
+				              &kp U &kp O &hml LGUI K 		&hmr RGUI D &kp C &kp W
 				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL N 	&hmr RCTRL T &hmr LALT S &kp M &hmr RSHIFT H
 				                    &kp X &lt 3 B 		&lt 4 L &kp F
-				                        &lt 2 SPACE		&lt 1 SPACE
+				                        &lt 2 R		&lt 1 SPACE
 			>;
 		};
 		one { display-name = "one - numbers and icons";

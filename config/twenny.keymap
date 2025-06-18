@@ -350,10 +350,10 @@
 			bindings = <&kp K>;
 			layers = <0>;
 		};
-		combo_g {
+		combo_j {
 			timeout-ms = <50>;
 			key-positions = <3 4>;
-			bindings = <&kp G>;
+			bindings = <&kp J>;
 			layers = <0>;
 		};
 		combo_p {

@@ -107,10 +107,10 @@
 		one {
 			display-name = "zero base";
 			bindings = <
-				&kp Q &kp U &kp O &hml LGUI D &kp K &kp Y &hmr RGUI R &kp C &kp W &kp P
-				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL T &kp G &kp J &hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
-				&none &none &kp X &kp B &kp V &kp Z &kp L &kp F &none &none
-				&kp SPACE &lt 2 SPACE &kp SPACE &kp SPACE &lt 1 SPACE &kp SPACE 		&hw_soft_off
+				&kp Q &kp U &kp O &hml LGUI K &kp J &kp P &hmr RGUI D &kp C &kp W &kp Z
+				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL N &kp Y &kp G &hmr RCTRL T &hmr LALT S &kp M &hmr RSHIFT H
+				&none &none &none &kp B &kp V &kp X &kp L &kp F &none &none
+				&none &lt 2 R &none &none &lt 1 SPACE &none 				&hw_soft_off
 			>;
 		};
 		two { display-name = "one numbers icons";

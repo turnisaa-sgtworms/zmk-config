@@ -344,10 +344,10 @@
 			bindings = <&kp Q>;
 			layers = <0>;
 		};
-		combo_k {
+		combo_p {
 			timeout-ms = <50>;
 			key-positions = <1 2>;
-			bindings = <&kp K>;
+			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_j {
@@ -356,10 +356,10 @@
 			bindings = <&kp J>;
 			layers = <0>;
 		};
-		combo_p {
+		combo_placeholder {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&kp P>;
+			bindings = <&none>;
 			layers = <0>;
 		};
 		combo_y {

@@ -344,16 +344,16 @@
 			bindings = <&kp Q>;
 			layers = <0>;
 		};
-		combo_p {
-			timeout-ms = <50>;
-			key-positions = <1 2>;
-			bindings = <&kp P>;
-			layers = <0>;
-		};
 		combo_j {
 			timeout-ms = <50>;
-			key-positions = <3 4>;
+			key-positions = <1 2>;
 			bindings = <&kp J>;
+			layers = <0>;
+		};
+		combo_p {
+			timeout-ms = <50>;
+			key-positions = <3 4>;
+			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_placeholder {

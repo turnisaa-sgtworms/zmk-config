@@ -99,7 +99,7 @@
 			bindings = <
 				              &kp U &kp O &hml LGUI D 		&hmr RGUI R &kp C &kp W
 				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL T 	&hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
-				                    &kp X &lt 3 B 		&lt 4 L &kp F
+				                    &kp X &lt 3 B 		&lt 4 F &kp L
 				                        &lt 2 SPACE		&lt 1 SPACE
 			>;
 		};
@@ -350,10 +350,10 @@
 			bindings = <&kp K>;
 			layers = <0>;
 		};
-		combo_y {
+		combo_g {
 			timeout-ms = <50>;
 			key-positions = <3 4>;
-			bindings = <&kp Y>;
+			bindings = <&kp G>;
 			layers = <0>;
 		};
 		combo_p {
@@ -362,16 +362,16 @@
 			bindings = <&kp P>;
 			layers = <0>;
 		};
-		combo_g {
+		combo_y {
 			timeout-ms = <50>;
 			key-positions = <8 9>;
-			bindings = <&kp G>;
+			bindings = <&kp Y>;
 			layers = <0>;
 		};
-		combo_j {
+		combo_g {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
-			bindings = <&kp J>;
+			bindings = <&kp G>;
 			layers = <0>;
 		};
 		combo_v {

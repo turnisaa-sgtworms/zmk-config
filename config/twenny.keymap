@@ -15,6 +15,13 @@
                 	= <&macro_tap &kp Q &kp U>
                 	;
         	};
+		ps: ps {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp P &kp S>
+                	;
+        	};
     	};
 	behaviors {
 		td0: tap_dance_parentheseseseses {
@@ -353,6 +360,12 @@
 			bindings = <&qu>;
 			layers = <0>;
 		};
+		combo_ps {
+			timeout-ms = <50>;
+			key-positions = <3 11>;
+			bindings = <&ps>;
+			layers = <0>;
+		};
 		combo_k {
 			timeout-ms = <50>;
 			key-positions = <11 12>;
@@ -385,7 +398,7 @@
 		};
 		combo_placeholder {
 			timeout-ms = <50>;
-			key-positions = <8 9>;
+			key-positions = <1 2>;
 			bindings = <&none>;
 			layers = <0>;
 		};

@@ -30,12 +30,10 @@
     };
 };
 
-
-
 / {
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
-        columns = <10>; // Length of the "col-gpios" array
+        columns = <6>; // Length of the "col-gpios" array
         rows = <4>; // Length of the "row-gpios" array
         map = <
                     RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) 

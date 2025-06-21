@@ -349,25 +349,25 @@
 // alpha keys
 		combo_qu {
 			timeout-ms = <50>;
-			key-positions = <11 12>;
+			key-positions = <4 5>;
 			bindings = <&qu>;
 			layers = <0>;
 		};
 		combo_k {
 			timeout-ms = <50>;
-			key-positions = <1 2>;
+			key-positions = <11 12>;
 			bindings = <&kp K>;
 			layers = <0>;
 		};
 		combo_j {
 			timeout-ms = <50>;
-			key-positions = <13 19>;
+			key-positions = <7 8>;
 			bindings = <&kp J>;
 			layers = <0>;
 		};
 		combo_z {
 			timeout-ms = <50>;
-			key-positions = <7 8>;
+			key-positions = <0 1>;
 			bindings = <&kp Z>;
 			layers = <0>;
 		};
@@ -379,7 +379,7 @@
 		};
 		combo_p {
 			timeout-ms = <50>;
-			key-positions = <10 11>;
+			key-positions = <3 4>;
 			bindings = <&kp P>;
 			layers = <0>;
 		};

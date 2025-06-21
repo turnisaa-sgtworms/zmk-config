@@ -374,13 +374,13 @@
 		};
 		combo_j {
 			timeout-ms = <50>;
-			key-positions = <7 8>;
+			key-positions = <1 2>;
 			bindings = <&kp J>;
 			layers = <0>;
 		};
 		combo_z {
 			timeout-ms = <50>;
-			key-positions = <0 1>;
+			key-positions = <7 8>;
 			bindings = <&kp Z>;
 			layers = <0>;
 		};
@@ -398,7 +398,7 @@
 		};
 		combo_placeholder {
 			timeout-ms = <50>;
-			key-positions = <1 2>;
+			key-positions = <0 1>;
 			bindings = <&none>;
 			layers = <0>;
 		};

@@ -1,0 +1,31 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "pocketpilot-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &pocketpilot_physical_layout;
+    };
+};
+
+/ {
+
+    kscan0: kscan_composite {
+        compatible = "zmk,kscan-matrix";
+        rows = <4>;
+        columns = <6>;
+
+    };
+};
+
+
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <10>; // Length of the "col-gpios" array
+        rows = <4>; // Length of the "row-gpios" array
+        map = <
+            RC(0,0)
+        >;
+    };
+};

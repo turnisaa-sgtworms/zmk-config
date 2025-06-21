@@ -1,0 +1,10 @@
+file_format: "1"
+id: pocketpilot
+name: pocketpilot
+type: shield
+url: https://github.com/turnisaa/pocketpilot
+requires:
+  - seeed_xiao_ble
+features:
+  - keys
+  - studio

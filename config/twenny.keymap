@@ -353,15 +353,15 @@
 			bindings = <&qu>;
 			layers = <0>;
 		};
-		combo_p {
+		combo_k {
 			timeout-ms = <50>;
 			key-positions = <1 2>;
-			bindings = <&kp P>;
+			bindings = <&kp K>;
 			layers = <0>;
 		};
 		combo_j {
 			timeout-ms = <50>;
-			key-positions = <3 4>;
+			key-positions = <13 19>;
 			bindings = <&kp J>;
 			layers = <0>;
 		};
@@ -377,10 +377,10 @@
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_k {
+		combo_p {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
-			bindings = <&kp K>;
+			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_placeholder {

@@ -2,4 +2,4 @@ config ZMK_PM_SOFT_OFF
 	default y
 
 config ZMK_KEYBOARD_NAME
-	default "pocket pilot"
+	default "pocketpilot"

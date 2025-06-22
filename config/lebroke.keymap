@@ -9,6 +9,22 @@
 #define AS(keycode) &as LS(keycode) keycode   
 
 / {
+	macros {
+        	qu: qu {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp Q &kp U>
+                	;
+        	};
+		ps: ps {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp P &kp S>
+                	;
+        	};
+    	};
 	behaviors {
 		td0: tap_dance_0 {
 			compatible = "zmk,behavior-tap-dance";
@@ -107,8 +123,8 @@
 		one {
 			display-name = "zero base";
 			bindings = <
-				&kp Z &kp O &kp U &hml LGUI G &kp J &kp P &hmr RGUI W &kp D &kp C &kp K
-				&hml LSHIFT A &kp E &hml LALT I &hml LCTRL T &none &none &hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
+				&kp Z &kp O &kp U &hml LGUI G &kp J &kp P &hmr RGUI W &kp D &kp C &qu 
+				&hml LSHIFT A &kp E &hml LALT I &hml LCTRL T &none &kp K &hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
 				&none &none &kp Y &kp B &kp V &kp X &kp L &kp F &none &none
 				&none &lt 2 R &none &none &lt 1 SPACE &none 				&hw_soft_off
 			>;

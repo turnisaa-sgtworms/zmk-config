@@ -362,7 +362,7 @@
 		};
 		combo_k {
 			timeout-ms = <50>;
-			key-positions = <11 12d>;
+			key-positions = <11 12>;
 			bindings = <&kp K>;
 			layers = <0>;
 		};

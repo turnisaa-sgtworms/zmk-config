@@ -115,8 +115,8 @@
 			bindings = <
 				              &kp O &kp U &hml LGUI G 		&hmr RGUI W &kp D &kp C
 				&hml LSHIFT A &kp E &hml LALT I &hml LCTRL T 	&hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
-				                    &kp Y &lt 3 B 		&lt 4 L &kp F
-				                       &none &lt 2 R		&lt 1 SPACE &none
+				                    &kp Y &kp B 		&kp L &kp F
+				                    &lt 3 K &lt 2 R		&lt 1 SPACE &lt 4 P
 			>;
 		};
 		one { display-name = "one - numbers and icons";
@@ -124,7 +124,7 @@
 				       AS(N1) AS(N2) AS(N3) 	&td0 &td1 &td2       
 				AS(N0) AS(N4) AS(N5) AS(N6)    	AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)     
 				              AS(N7) AS(N8)    	AS(APOS) AS(MINUS)     
-					       &none AS(N9)   	&none &none
+					      &none  AS(N9)   	&none &none
 			>;
 		};
 		two { display-name = "two - navigation and kb functions";
@@ -143,12 +143,12 @@
 				                              &none &none 		&none &none
 			>;
 		};
-		four { display-name = "four - placeholder";
+		four { display-name = "four - f keys";
 			bindings = <
-				     &none &none &none &none &none &none 
-				&none &none &none &none &none &none &none &none 
-					&none &to 4 &none &none 
-						&none &none &none &none 
+				           &kp F1 &kp F2 &kp F3 	&kp F4 &kp F5 &kp F6  
+				&kp LSHIFT &kp F7 &kp F8 &kp F9 	&kp F10 &kp F11 &kp F12 &kp RGUI 
+					          &none &none 		&none &none 
+					          &kp LCTRL &kp LALT 	&none &none 
 			>;
 		};
 		five { display-name = "five - placeholder";
@@ -366,10 +366,10 @@
 			bindings = <&ps>;
 			layers = <0>;
 		};
-		combo_k {
+		combo_placeholder0 {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
-			bindings = <&kp K>;
+			bindings = <&none>;
 			layers = <0>;
 		};
 		combo_j {
@@ -378,10 +378,10 @@
 			bindings = <&kp J>;
 			layers = <0>;
 		};
-		combo_z {
+		combo_placeholder1 {
 			timeout-ms = <50>;
 			key-positions = <8 9>;
-			bindings = <&kp Z>;
+			bindings = <&none>;
 			layers = <0>;
 		};
 		combo_v {
@@ -390,13 +390,13 @@
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_p {
+		combo_z {
 			timeout-ms = <50>;
 			key-positions = <3 4>;
-			bindings = <&kp P>;
+			bindings = <&kp Z>;
 			layers = <0>;
 		};
-		combo_placeholder {
+		combo_placeholder2 {
 			timeout-ms = <50>;
 			key-positions = <0 1>;
 			bindings = <&none>;

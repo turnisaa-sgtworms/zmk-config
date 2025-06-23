@@ -39,10 +39,10 @@
 
         pocketpilot_physical_layout {
             physical-layout = <&pocketpilot_physical_layout>;
-            positions =    < 16 5  2  7  15 3  >
-		      , < 21 17 0  12 1  19 13 18 >
-		      ,       < 14 6  10 4  >
-		      ,       < 8  9  11 20 >;
+            positions =    < 0  1  2  3  4  5  >
+		      , < 6  7  8  9  10 11 12 13 >
+		      ,       < 14 15 16 17 >
+		      ,       < 18 19 20 21 >;
         };
     };
 };

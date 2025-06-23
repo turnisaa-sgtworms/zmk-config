@@ -360,15 +360,9 @@
 			bindings = <&qu>;
 			layers = <0>;
 		};
-		combo_ps {
-			timeout-ms = <50>;
-			key-positions = <3 11>;
-			bindings = <&ps>;
-			layers = <0>;
-		};
 		combo_k {
 			timeout-ms = <50>;
-			key-positions = <10 11>;
+			key-positions = <11 12d>;
 			bindings = <&kp K>;
 			layers = <0>;
 		};
@@ -380,13 +374,13 @@
 		};
 		combo_z {
 			timeout-ms = <50>;
-			key-positions = <8 9>;
+			key-positions = <14 15>;
 			bindings = <&kp Z>;
 			layers = <0>;
 		};
 		combo_v {
 			timeout-ms = <50>;
-			key-positions = <14 15>;
+			key-positions = <10 11>;
 			bindings = <&kp V>;
 			layers = <0>;
 		};
@@ -394,12 +388,6 @@
 			timeout-ms = <50>;
 			key-positions = <3 4>;
 			bindings = <&kp P>;
-			layers = <0>;
-		};
-		combo_placeholder {
-			timeout-ms = <50>;
-			key-positions = <0 1>;
-			bindings = <&none>;
 			layers = <0>;
 		};
 		combo_x {

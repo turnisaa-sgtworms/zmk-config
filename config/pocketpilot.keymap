@@ -116,7 +116,7 @@
 				              &kp O &kp U &hml LGUI G 		&hmr RGUI W &kp D &kp C
 				&hml LSHIFT A &kp E &hml LALT I &hml LCTRL T 	&hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
 				                    &kp Y &kp B 		&kp L &kp F
-				                    &lt 3 K &lt 2 R		&lt 1 SPACE &lt 4 P
+				                    &lt 3 J &lt 2 R		&lt 1 SPACE &lt 4 Z
 			>;
 		};
 		one { display-name = "one - numbers and icons";
@@ -360,46 +360,22 @@
 			bindings = <&qu>;
 			layers = <0>;
 		};
-		combo_ps {
+		combo_k {
 			timeout-ms = <50>;
-			key-positions = <3 11>;
-			bindings = <&ps>;
-			layers = <0>;
-		};
-		combo_placeholder0 {
-			timeout-ms = <50>;
-			key-positions = <10 11>;
-			bindings = <&none>;
-			layers = <0>;
-		};
-		combo_j {
-			timeout-ms = <50>;
-			key-positions = <1 2>;
-			bindings = <&kp J>;
-			layers = <0>;
-		};
-		combo_placeholder1 {
-			timeout-ms = <50>;
-			key-positions = <8 9>;
-			bindings = <&none>;
+			key-positions = <11 12>;
+			bindings = <&kp K>;
 			layers = <0>;
 		};
 		combo_v {
 			timeout-ms = <50>;
-			key-positions = <14 15>;
+			key-positions = <10 11>;
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_z {
+		combo_p {
 			timeout-ms = <50>;
 			key-positions = <3 4>;
-			bindings = <&kp Z>;
-			layers = <0>;
-		};
-		combo_placeholder2 {
-			timeout-ms = <50>;
-			key-positions = <0 1>;
-			bindings = <&none>;
+			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_x {

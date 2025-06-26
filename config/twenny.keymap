@@ -393,7 +393,7 @@
 		combo_v {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
-			bindings = <&kp F>;
+			bindings = <&kp V>;
 			layers = <0>;
 		};
 	};

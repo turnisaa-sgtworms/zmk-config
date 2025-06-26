@@ -378,19 +378,19 @@
 			bindings = <&kp Z>;
 			layers = <0>;
 		};
-		combo_v {
+		combo_P {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
-			bindings = <&kp V>;
-			layers = <0>;
-		};
-		combo_p {
-			timeout-ms = <50>;
-			key-positions = <3 4>;
 			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_f {
+			timeout-ms = <50>;
+			key-positions = <3 4>;
+			bindings = <&kp F>;
+			layers = <0>;
+		};
+		combo_v {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
 			bindings = <&kp F>;

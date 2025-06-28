@@ -37,7 +37,7 @@
 	    , <&key_physical_attrs 100 100  242  365    1600   292   415> //r
             , <&key_physical_attrs 100 100  342  406    2600   392   456> //space
             , <&key_physical_attrs 100 100  798  406 (-2600)   848   456> //z
-	    , <&key_physical_attrs 50  50  1000  300       0     0     0> 
+	    , <&key_physical_attrs 50  50  1500  800       0     0     0> 
             ;
     };
 

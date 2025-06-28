@@ -180,6 +180,23 @@
 			bindings = <&bt BT_SEL 1>;
 			layers = <0>;
 		};
+		combo_fps_layer {
+			timeout-ms = <50>;
+			key-positions = <11 12 13>;
+			bindings = <&to 7>;
+			layers = <0>;
+		};
+		combo_qwer_layer {
+			timeout-ms = <50>;
+			key-positions = <10 11 13>;
+			bindings = <&to 8>;
+			layers = <0>;
+		};
+		combo_default_layer {
+			timeout-ms = <50>;
+			key-positions = <13 14 15 16>;
+			bindings = <&to 0>;
+		};
 // mod keys
 		combo_del {
 			timeout-ms = <50>;

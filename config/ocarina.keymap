@@ -122,24 +122,24 @@
 		};
 		five { display-name = "five - placeholder";
 			bindings = <
-				&none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none 
+				&none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &none &none &none &none
 				&none &none &none &none &none &none 
 				&none &none &none &none &hw_soft_off
 			>;
 		};
 		six { display-name = "six - placeholder";
 			bindings = <
-				&none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none 
+				&none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &none &none &none &none
 				&none &none &none &none &none &none 
 				&none &none &none &none &hw_soft_off
 			>;
 		};
 		seven { display-name = "seven - placeholder";
 			bindings = <
-				&none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none 
+				&none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &none &none &none &none
 				&none &none &none &none &none &none 
 				&none &none &none &none &hw_soft_off
 			>;

@@ -90,7 +90,7 @@
 		};
 		one { display-name = "one - numbers and icons";
 			bindings = <
-				AS(GRAVE) AS(N1) AS(N2) AS(N3) &none AS(EQUAL) &td0 &td1 &td2       
+				AS(GRAVE) AS(N1) AS(N2) AS(N3) &none AS(EQUAL) &td0 &td1 &td2 &none      
 				AS(N0) AS(N4) AS(N5) AS(N6) &none AS(BSLH) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)     
 				AS(N7) AS(N8) &none &none AS(APOS) AS(MINUS)     
 				&none  AS(N9) &none &none &hw_soft_off

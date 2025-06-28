@@ -183,13 +183,13 @@
 		combo_fps_layer {
 			timeout-ms = <50>;
 			key-positions = <11 12 13>;
-			bindings = <&to 7>;
+			bindings = <&to 8>;
 			layers = <0>;
 		};
 		combo_qwer_layer {
 			timeout-ms = <50>;
 			key-positions = <10 11 13>;
-			bindings = <&to 8>;
+			bindings = <&to 9>;
 			layers = <0>;
 		};
 		combo_default_layer {

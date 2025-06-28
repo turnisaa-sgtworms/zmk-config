@@ -1,0 +1,10 @@
+file_format: "1"
+id: ocarina
+name: ocarina
+type: shield
+url: https://github.com/turnisaa-sgtworms/ocarina
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio

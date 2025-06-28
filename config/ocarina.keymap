@@ -239,15 +239,15 @@
 // game 
 		combo_b_game {
 			timeout-ms = <90>;
-			key-positions = <14 15>;
+			key-positions = <20 21>;
 			bindings = <&kp B>;
-			layers = <20 20>;
+			layers = <8>;
 		};
 		combo_k_game {
 			timeout-ms = <90>;
-			key-positions = <6 19>;
+			key-positions = <10 27>;
 			bindings = <&kp K>;
-			layers = <10 27>;
+			layers = <8>;
 		};
 	};
 };

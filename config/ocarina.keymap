@@ -194,7 +194,7 @@
 		};
 		combo_default_layer {
 			timeout-ms = <50>;
-			key-positions = <13 14 15 16>;
+			key-positions = <12 13 16 17>;
 			bindings = <&to 0>;
 		};
 // mod keys

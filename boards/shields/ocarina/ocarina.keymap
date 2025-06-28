@@ -190,7 +190,7 @@
 //			key-positions = <13 18>;
 //			bindings = <&kp RIGHT>;
 //		};
-//	};
+	};
 };
 
 

@@ -79,7 +79,7 @@
 	};
 	keymap {
 		compatible = "zmk,keymap";
-		one {
+		zero {
 			display-name = "zero - base";
 			bindings = <
 				&none &kp U &kp O &hml LGUI G &kp K &kp F &hmr RGUI M &kp Y &kp C &qu

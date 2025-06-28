@@ -147,17 +147,17 @@
 		eight { display-name = "eight - fps";
 			bindings = <
 				&kp N1 &kp Q &kp N4 &kp E &kp N3 &none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &none
-				&kp LSHIFT &kp A &kp W &kp D &kp F &kp F2 &kp F3 &kp F5 &kp F6 
-				&kp S &kp C &kp X &kp C_PREV &kp C_NEXT 
+				&kp LSHIFT &kp A &kp W &kp D &kp F &kp F2 &kp F3 &kp F5 &kp F6 &none
+				&kp S &kp C &kp X &kp C_PREV &kp C_NEXT &none
 				&kp LCTRL &mt R SPACE &kp C_PP &none &hw_soft_off
 			>;
 		};
 		nine { display-name = "nine - qwer";
 			bindings = <
-				      &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp Q &kp W &kp E &kp R 			&kp F2 &kp F3 &kp F4 &kp F5 
-				            &kp D &kp F 			&kp C_PREV &kp C_NEXT 
-				             &none &mt LCTRL N4 		&kp C_PP &none &hw_soft_off
+				&none &kp N1 &kp N2 &kp N3 &none &none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp Q &kp W &kp E &kp R &none &none &kp F2 &kp F3 &kp F4 &kp F5 
+				&kp D &kp F &none &none &kp C_PREV &kp C_NEXT 
+				&none &mt LCTRL N4 &kp C_PP &none &hw_soft_off
 			>;
 		};
 	};

@@ -241,13 +241,13 @@
 			timeout-ms = <90>;
 			key-positions = <14 15>;
 			bindings = <&kp B>;
-			layers = <8 9>;
+			layers = <20 20>;
 		};
 		combo_k_game {
 			timeout-ms = <90>;
 			key-positions = <6 19>;
 			bindings = <&kp K>;
-			layers = <8 9>;
+			layers = <10 27>;
 		};
 	};
 };

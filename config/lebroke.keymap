@@ -123,10 +123,10 @@
 		zero {
 			display-name = "zero base";
 			bindings = <
-				&kp Z &kp U &kp O &hml LGUI G &kp J &kp P &hmr RGUI W &kp D &kp C &qu 
-				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL T &none &kp K &hmr RCTRL N &hmr LALT S &kp M &hmr RSHIFT H
-				&none &none &kp Y &kp B &kp V &kp X &kp L &kp F &none &none
-				&none &lt 2 R &none &none &lt 1 SPACE &none 				&hw_soft_off
+				&none &kp U &kp O &hml LGUI G &kp K &kp F &hmr RGUI M &kp Y &kp C &qu 
+				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL T &kp V &kp P &hmr RCTRL N &hmr LALT S &kp D &hmr RSHIFT H
+				&none &none &kp X &kp B &none &none &kp L &kp W &none &none
+				&lt 3 J &lt 2 R &none &none &lt 1 SPACE &lt 4 Z 				&hw_soft_off
 			>;
 		};
 		one { display-name = "one numbers icons";

@@ -195,7 +195,7 @@
 		};
 		nine { display-name = "nine - fps";
 			bindings = <
-				&kp N1 &kp Q &kp N4 &kp E &kp N3 		&none &kp C_PREV &kp C_PP &kk C_NEXT &none
+				&kp N1 &kp Q &kp N4 &kp E &kp N3 		&none &kp C_PREV &kp C_PP &kp C_NEXT &none
 				&kp LSHIFT &kp A &kp W &kp D &kp F 		&none &kp F2 &kp F3 &kp F5 &kp F6
 				&kp LCTRL &kp C &kp S &kp R &kp G		&none &none &none &none &none
 				&kp LALT &kp SPACE &kp X 			&none &none &none &hw_soft_off

@@ -151,20 +151,20 @@
 						&none &none 
 			>;
 		};
-		five { display-name = "five - placeholder";
+		five { display-name = "five - voipslop";
+			bindings = <
+				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
+				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
+				                &lt 6 SPACE 			&kp C_PP
+			>;
+		};
+		six { display-name = "six - voipslop2";
 			bindings = <
 				     &kp Q &none &kp E &none &none &none 
 				&none &none &none &none &none &none &none &none 
 					&none &none &none &none 
 						&none &none 
-			>;
-		};
-		six { display-name = "six - voipslop";
-			bindings = <
-				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
-				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
-				                &lt 5 SPACE 			&kp C_PP
 			>;
 		};
 		seven { display-name = "seven - fps more binds";
@@ -215,7 +215,7 @@
 			timeout-ms = <90>;
 			key-positions = <7 9>;
 			bindings = <&kp N4>;
-			layers = <6 7>;
+			layers = <5 6 7>;
 		};
 		combo_b_game {
 			timeout-ms = <90>;
@@ -227,7 +227,7 @@
 			timeout-ms = <90>;
 			key-positions = <14 15>;
 			bindings = <&kp E>;
-			layers = <6>;
+			layers = <5 6>;
 		};
 		combo_k_game {
 			timeout-ms = <90>;
@@ -281,7 +281,7 @@
 		combo_voipslop_layer {
 			timeout-ms = <50>;
 			key-positions = <0 1 2 3 4 5>;
-			bindings = <&to 6>;
+			bindings = <&to 5>;
 			layers = <0>;
 		};
 		combo_default_layer {

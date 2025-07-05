@@ -159,12 +159,12 @@
 						&none &none 
 			>;
 		};
-		six { display-name = "six - placeholder";
+		six { display-name = "six - voipslop";
 			bindings = <
-				     &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none 
-					&none &none &none &none 
-						&none &none 
+				     &kp Q &kp N4 &kp E 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
+				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
+				                &kp SPACE 			&kp C_PP
 			>;
 		};
 		seven { display-name = "seven - fps more binds";
@@ -270,6 +270,12 @@
 			timeout-ms = <50>;
 			key-positions = <1 7 9>;
 			bindings = <&to 9>;
+			layers = <0>;
+		};
+		combo_voipslop_layer {
+			timeout-ms = <50>;
+			key-positions = <0 1 2 3 4 5>;
+			bindings = <&to 6>;
 			layers = <0>;
 		};
 		combo_default_layer {

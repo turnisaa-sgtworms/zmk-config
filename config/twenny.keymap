@@ -161,7 +161,7 @@
 		};
 		six { display-name = "six - voipslop";
 			bindings = <
-				     &kp Q &kp N4 &kp E 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
 				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
 				                &kp SPACE 			&kp C_PP

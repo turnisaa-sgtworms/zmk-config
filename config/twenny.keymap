@@ -215,7 +215,7 @@
 			timeout-ms = <90>;
 			key-positions = <7 9>;
 			bindings = <&kp N4>;
-			layers = <7>;
+			layers = <6 7>;
 		};
 		combo_b_game {
 			timeout-ms = <90>;

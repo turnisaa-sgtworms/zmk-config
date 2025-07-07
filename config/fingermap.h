@@ -124,7 +124,7 @@
 			#define LUP &none
 			#define LUR &kp U
 			#define LUM &kp O
-			#define LUI &kp G
+			#define LUI &hml LGUI G
 			#define LUN &kp J
 		// home row
 			#define LHO &kp DEL
@@ -147,7 +147,7 @@
 			#define RUP &qu
 			#define RUR &kp C
 			#define RUM &kp Y
-			#define RUI &kp M
+			#define RUI &hmr RGUI M
 			#define RUN &kp F
 		// home row
 			#define RHO &kp BSPC

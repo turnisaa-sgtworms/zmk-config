@@ -6,7 +6,8 @@
 #include "fingermap.h"
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
-/{
+
+/ {
 	behaviors {
 		hml: home_row_mod_left {
             		hold-trigger-key-positions = <3 4 5 10 11 12 13 16 17 19>; // List of keys on the right

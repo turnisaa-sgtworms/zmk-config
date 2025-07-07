@@ -107,7 +107,7 @@
             		tapping-term-ms = <200>;
         	};
 	};
-
+};
 
 // layer 0 - base
 	// left hand

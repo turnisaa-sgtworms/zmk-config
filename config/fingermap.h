@@ -109,7 +109,7 @@
 	};
 
 
-// layer 0
+// layer 0 - base
 	// left hand
 		// top row
 			#define LUO &kp TAB
@@ -167,61 +167,119 @@
 			#define	RH &lt 1 SPACE
 			#define RN &lt 4 Z
 
-// layer 1
+// layer 1 - numbers and icons
 	// left hand
 		// top row
-			#define LUO1
-			#define LUP1
-			#define LUR1
-			#define LUM1
-			#define LUI1
-			#define LUN1
+			#define LUO1 &none
+			#define LUP1 AS(GRAVE)
+			#define LUR1 AS(N1)
+			#define LUM1 AS(N2)
+			#define LUI1 AS(N3)
+			#define LUN1 &none
 		// home row
-			#define LHO1
-			#define LHP1
-			#define LHR1
-			#define LHM1
-			#define LHI1
-			#define LHN1
+			#define LHO1 &none
+			#define LHP1 AS(N0)
+			#define LHR1 AS(N4)
+			#define LHM1 AS(N5)
+			#define LHI1 AS(N6)
+			#define LHN1 &none
 		// bottom row
-			#define LBO1
-			#define LBP1
-			#define LBR1
-			#define LBM1
-			#define LBI1
-			#define LBN1
+			#define LBO1 &none
+			#define LBP1 &none
+			#define LBR1 &none
+			#define LBM1 AS(N7)
+			#define LBI1 AS(N8)
+			#define LBN1 &none
 	
 	// right hand
 		// top row
-			#define RUO1
-			#define RUP1
-			#define RUR1
-			#define RUM1
-			#define RUI1
-			#define RUN1
+			#define RUO1 &none
+			#define RUP1 AS(GRAVE)
+			#define RUR1 &td2
+			#define RUM1 &td1
+			#define RUI1 &td0
+			#define RUN1 AS(GRAVE)
 		// home row
-			#define RHO1
-			#define RHP1
-			#define RHR1
-			#define RHM1
-			#define RHI1
-			#define RHN1
+			#define RHO1 &none
+			#define RHP1 AS(SLSH)
+			#define RHR1 AS(DOT)
+			#define RHM1 AS(COMMA)
+			#define RHI1 AS(SEMI)
+			#define RHN1 AS(EQUAL)
 		// bottom row
-			#define RBO1
-			#define RBP1
-			#define RBR1
-			#define RBM1
-			#define RBI1
-			#define RBN1
+			#define RBO1 &none
+			#define RBP1 AS(BSLSH)
+			#define RBR1 AS(EQUAL)
+			#define RBM1 AS(MINUS)
+			#define RBI1 AS(APOSTROPHE)
+			#define RBN1 AS(BSLSH)
 
 	// thumbfan
 		// 2 keys
-			#define L1
-			#define R1
+			#define L1 AS(N9)
+			#define R1 &none
 		// 4 keys
-			#define LN1
-			#define LH1
+			#define LN1 &none
+			#define LH1 AS(N9)
 
-			#define	RH1
-			#define RN1
+			#define	RH1 &none
+			#define RN1 &none
+
+// layer 2 - nav/kb functions
+	// left hand
+		// top row
+			#define LUO2 &none
+			#define LUP2 &none
+			#define LUR2 &studio_unlock
+			#define LUM2 &bt BT_CLR_ALL
+			#define LUI2 &hw_soft_off
+			#define LUN2 &none
+		// home row
+			#define LHO2 &none
+			#define LHP2 &none 
+			#define LHR2 &kp HOME
+			#define LHM2 &kp PGUP 
+			#define LHI2 &kp END
+			#define LHN2 &none
+		// bottom row
+			#define LBO2 &none
+			#define LBP2 &none
+			#define LBR2 &none
+			#define LBM2 &kp PGDN
+			#define LBI2 &none
+			#define LBN2 &none
+	
+	// right hand
+		// top row
+			#define RUO2 &none
+			#define RUP2 &none
+			#define RUR2 &kp C_NEXT
+			#define RUM2 &kp C_PP
+			#define RUI2 &kp C_PREV
+			#define RUN2 &none
+		// home row
+			#define RHO2 &none
+			#define RHP2 &none
+			#define RHR2 &kp RIGHT
+			#define RHM2 &kp UP
+			#define RHI2 &kp LEFT
+			#define RHN2 &none
+		// bottom row
+			#define RBO2 &none
+			#define RBP2 &none
+			#define RBR2 &none
+			#define RBM2&kp DOWN
+			#define RBI2 &none
+			#define RBN2 &none
+
+	// thumbfan
+		// 2 keys
+			#define L2 &none
+			#define R2 &none
+		// 4 keys
+			#define LN2 &none
+			#define LH2 &none
+
+			#define	RH2 &none
+			#define RN2 &none
 

@@ -28,7 +28,8 @@
 					    L0  R0		
 			>;
 		};
-		one { display-name = "one - numbers and icons";
+		one { 
+			display-name = "one - numbers and icons";
 			bindings = <
 				     LUR1 LUM1 LUI1 RUI1 RUM1 RUR1
 				LHP1 LHR1 LHM1 LHI1 RHI1 RHM1 RHR1 RHP1
@@ -36,7 +37,8 @@
 					       L1   R1
 			>;
 		};
-		two { display-name = "two - navigation and kb functions";
+		two { 
+			display-name = "two - navigation and kb functions";
 			bindings = <
 				     LUR2 LUM2 LUI2 RUI2 RUM2 RUR2
 				LHP2 LHR2 LHM2 LHI2 RHI2 RHM2 RHR2 RHP2
@@ -44,7 +46,8 @@
 					       L2   R2
 			>;
 		};
-		three { display-name = "three - mouse";
+		three { 
+			display-name = "three - mouse";
 			bindings = <
 				      &none &none &none 				&mkp MB1 &mkp MB3 &mkp MB2
 				&none &msc SCRL_LEFT &msc SCRL_UP &msc SCRL_RIGHT 	&mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT &none 
@@ -52,7 +55,8 @@
 				                                    &none 		&none 
 			>;
 		};
-		four { display-name = "four - placeholder";
+		four { 
+			display-name = "four - placeholder";
 			bindings = <
 				     &none &none &none &none &none &none 
 				&none &none &none &none &none &none &none &none 
@@ -60,7 +64,8 @@
 						&none &none 
 			>;
 		};
-		five { display-name = "five - voipslop";
+		five { 
+			display-name = "five - voipslop";
 			bindings = <
 				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
@@ -68,7 +73,8 @@
 				                &lt 6 SPACE 			&kp C_PP
 			>;
 		};
-		six { display-name = "six - voipslop2";
+		six { 
+			display-name = "six - voipslop2";
 			bindings = <
 				     &kp Q &none &kp E &none &none &none 
 				&none &none &none &none &none &none &none &none 
@@ -76,7 +82,8 @@
 						&none &none 
 			>;
 		};
-		seven { display-name = "seven - fps more binds";
+		seven { 
+			display-name = "seven - fps more binds";
 			bindings = <
 				     &kp Q &td4 &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&mt LCTRL LSHIFT &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
@@ -84,7 +91,8 @@
 				                &mt R SPACE 			&kp C_PP
 			>;
 		};
-		eight { display-name = "eight - qwer";
+		eight { 
+			display-name = "eight - qwer";
 			bindings = <
 				      &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp Q &kp W &kp E &kp R 			&kp F2 &kp F3 &kp F4 &kp F5 
@@ -92,7 +100,8 @@
 				                  &mt LCTRL N4 			&kp C_PP
 			>;
 		};
-		nine { display-name = "nine - fps fast binds";
+		nine { 
+			display-name = "nine - fps fast binds";
 			bindings = <
 				     &kp Q &kp N4 &kp E 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LCTRL &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 

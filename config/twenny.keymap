@@ -282,7 +282,7 @@
 			bindings = <RUN1>;
 			layers = <1>;
 		};
-		combo_rhi_rhm {
+		combo_rhi_rhm_1 {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
 			bindings = <RHN1>;

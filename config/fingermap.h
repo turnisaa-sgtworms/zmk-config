@@ -69,7 +69,6 @@
             		tapping-term-ms = <250>;
             		quick-tap-ms = <175>;
             		bindings = <&kp>, <&kp>;
-            		hold-trigger-key-positions = <3 4 5 10 11 12 13 16 17 19>; // List of keys on the right
             		hold-trigger-on-release;
         	};
         	hmr: home_row_mod_right {
@@ -80,7 +79,6 @@
             		tapping-term-ms = <250>;
             		quick-tap-ms = <175>;
             		bindings = <&kp>, <&kp>;
-            		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
             		hold-trigger-on-release;
         	};
 		as: auto_shift {

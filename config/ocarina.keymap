@@ -1,107 +1,40 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
-
-#include <dt-bindings/zmk/pointing.h>
-
-#define AS(keycode) &as LS(keycode) keycode   
+#include "fingermap.h"
 
 / {
-	macros {
-        	qu: qu {
-            		compatible = "zmk,behavior-macro";
-            		#binding-cells = <0>;
-            		bindings
-                	= <&macro_tap &kp Q &kp U>
-                	;
-        	};
-	};
-	behaviors {
-		td0: tap_dance_0 {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <225>;
-			bindings = <&kp LPAR>, <&kp RPAR>;
-		};
-		td1: tap_dance_1 {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <225>;
-			bindings = <&kp LBRC>,<&kp RBRC>;
-		};
-		td2: tap_dance_2 {
-			compatible = "zmk,behavior-tap-dance";
-			#binding-cells = <0>;
-			tapping-term-ms = <225>;
-			bindings = <&kp LBKT>,<&kp RBKT>;
-		};
 		hml: home_row_mod_left {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		flavor = "balanced";
-            		require-prior-idle-ms = <100>;
-            		tapping-term-ms = <250>;
-            		quick-tap-ms = <175>;
-            		bindings = <&kp>, <&kp>;
-            		hold-trigger-key-positions = <3 4 5 10 11 12 13 16 17 19>; // List of keys on the right
-            		hold-trigger-on-release;
+            		hold-trigger-key-positions = <>; // List of keys on the right
         	};
         	hmr: home_row_mod_right {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		flavor = "balanced";
-            		require-prior-idle-ms = <100>;
-            		tapping-term-ms = <250>;
-            		quick-tap-ms = <175>;
-            		bindings = <&kp>, <&kp>;
-            		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
-            		hold-trigger-on-release;
+            		hold-trigger-key-positions = <>; // List of keys on the left
         	};
-		as: auto_shift {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		tapping_term_ms = <175>;
-            		quick_tap_ms = <0>;
-            		flavor = "tap-preferred";
-            		bindings = <&kp>, <&kp>;
-        	};
-		hw_soft_off: hw_soft_off {
-            		compatible = "zmk,behavior-soft-off";
-            		#binding-cells = <0>;
-            		split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
-            		hold-time-ms = <1000>; // Only turn off if the key is held for 1 second or longer.
-        	};
-		mt: mod_tap {
-            		tapping-term-ms = <250>;
-        	};
-	};
 	keymap {
 		compatible = "zmk,keymap";
 		zero {
-			display-name = "zero - base";
+			display-name = "zero base";
 			bindings = <
-				&none &kp U &kp O &hml LGUI G &kp K &kp F &hmr RGUI M &kp Y &kp C &qu
-				&hml LSHIFT A &kp I &hml LALT E &hml LCTRL T &kp V &kp P &hmr RCTRL N &hmr LALT S &kp D &hmr RSHIFT H
-				&kp X &kp B &none &none &kp L &kp W
-				&lt 3 J &lt 2 R &lt 1 SPACE &lt 4 Z &hw_soft_off
+				LUP LUR LUM LUI LUN RUN RUI RUM RUR RUP
+				LHP LHR	LHM LHI LHN RHN RHI RHM RHR RHP
+					LBM LBI LBN RBN RBI RBM
+					LN LH &none &none RH RN	
+									&hw_soft_off
 			>;
 		};
-		one { display-name = "one - numbers and icons";
+		one { display-name = "one numbers icons";
 			bindings = <
-				AS(GRAVE) AS(N1) AS(N2) AS(N3) &none AS(EQUAL) &td0 &td1 &td2 &none      
-				AS(N0) AS(N4) AS(N5) AS(N6) &none AS(BSLH) AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH)     
-				AS(N7) AS(N8) &none &none AS(APOS) AS(MINUS)     
-				&none  AS(N9) &none &none &hw_soft_off
+				LUP1 LUR1 LUM1 LUI1 LUN1 RUN1 RUI1 RUM1 RUR1 RUP1
+				LHP1 LHR1 LHM1 LHI1 LHN1 RHN1 RHI1 RHM1 RHR1 RHP1
+					  LBM1 LBI1 LBN1 RBN1 RBI1 RBM1
+					   LN1 LH1 &none &none RH1 RN1	
+									&hw_soft_off
 			>;
 		};
-		two { display-name = "two - navigation and kb functions";
+		two { display-name = "two navigation and kb functions";
 			bindings = <
-				&none &studio_unlock &bt BT_CLR_ALL &hw_soft_off &none &none &kp C_PREV &kp C_PP &kp C_NEXT &none
-				&none &kp HOME &kp PGUP &kp END &none &none &kp LEFT &kp UP &kp RIGHT &none
-				&kp PGDN &none &none &none &kp C_VOL_UP &kp DOWN
-				&none &none &kp C_VOL_DN &none &hw_soft_off
+				LUP2 LUR2 LUM2 LUI2 LUN2 RUN2 RUI2 RUM2 RUR2 RUP2
+				LHP2 LHR2 LHM2 LHI2 LHN2 RHN2 RHI2 RHM2 RHR2 RHP2
+					  LBM2 LBI2 LBN2 RBN2 RBI2 RBM2
+					   LN2 LH2 &none &none RH2 RN2	
+									&hw_soft_off
 			>;
 		};
 		three { display-name = "three - mouse";

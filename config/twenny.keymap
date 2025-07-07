@@ -15,7 +15,7 @@
 				    LUR LUM LUI RUI RUM RUR
 				LHP LHR	LHM LHI RHI RHM RHR RHP
 				        LBM LBI RBI RBM
-					    L   R			
+					    L0  R0		
 			>;
 		};
 		one { display-name = "one - numbers and icons";

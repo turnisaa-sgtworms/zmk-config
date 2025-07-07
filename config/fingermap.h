@@ -201,17 +201,17 @@
 			#define RUN1 AS(GRAVE)
 		// home row
 			#define RHO1 &none
-			#define RHP1 AS(SLSH)
+			#define RHP1 AS(FSLH)
 			#define RHR1 AS(DOT)
 			#define RHM1 AS(COMMA)
 			#define RHI1 AS(SEMI)
 			#define RHN1 AS(EQUAL)
 		// bottom row
 			#define RBO1 &none
-			#define RBP1 AS(BSLSH)
+			#define RBP1 AS(BSLH)
 			#define RBR1 AS(EQUAL)
 			#define RBM1 AS(MINUS)
-			#define RBI1 AS(APOSTROPHE)
+			#define RBI1 AS(APOS)
 			#define RBN1 AS(BSLH)
 
 	// thumbfan

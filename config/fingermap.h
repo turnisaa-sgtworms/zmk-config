@@ -268,7 +268,7 @@
 			#define RBO2 &none
 			#define RBP2 &none
 			#define RBR2 &none
-			#define RBM2&kp DOWN
+			#define RBM2 &kp DOWN
 			#define RBI2 &none
 			#define RBN2 &none
 

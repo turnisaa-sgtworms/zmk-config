@@ -74,6 +74,7 @@
             		require-prior-idle-ms = <100>;
             		tapping-term-ms = <250>;
             		quick-tap-ms = <175>;
+			hold-trigger-key-positions = <>; // List of keys on the right
             		bindings = <&kp>, <&kp>;
             		hold-trigger-on-release;
         	};
@@ -84,6 +85,7 @@
             		require-prior-idle-ms = <100>;
             		tapping-term-ms = <250>;
             		quick-tap-ms = <175>;
+			hold-trigger-key-positions = <>; // List of keys on the left
             		bindings = <&kp>, <&kp>;
             		hold-trigger-on-release;
         	};

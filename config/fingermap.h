@@ -212,7 +212,7 @@
 			#define RBR1 AS(EQUAL)
 			#define RBM1 AS(MINUS)
 			#define RBI1 AS(APOSTROPHE)
-			#define RBN1 AS(BSLSH)
+			#define RBN1 AS(BSLH)
 
 	// thumbfan
 		// 2 keys

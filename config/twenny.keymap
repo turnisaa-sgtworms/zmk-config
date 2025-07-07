@@ -276,7 +276,7 @@
 			bindings = <RHO>;
 			layers = <0 1 2>;
 		};
-		combo_rui_rum {
+		combo_rui_rum_1 {
 			timeout-ms = <50>;
 			key-positions = <3 4>;
 			bindings = <RUN1>;
@@ -288,7 +288,7 @@
 			bindings = <RHN1>;
 			layers = <1>;
 		};
-		combo_rbi_rbm {
+		combo_rbi_rbm_1 {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
 			bindings = <RBN1>;

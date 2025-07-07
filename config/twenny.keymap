@@ -254,7 +254,89 @@
 
 
 //formulated
-
+		combo_lhp_lhr {
+			timeout-ms = <50>;
+			key-positions = <6 7>;
+			bindings = <LHO>;
+			layers = <0 1 2>;
+		};
+		combo_lur_lui {
+			timeout-ms = <50>;
+			key-positions = <0 2>;
+			bindings = <LUO>;
+		};
+		combo_rui_rur {
+			timeout-ms = <50>;
+			key-positions = <3 5>;
+			bindings = <RUO>;
+		};
+		combo_rhr_rhp {
+			timeout-ms = <50>;
+			key-positions = <12 13>;
+			bindings = <RHO>;
+			layers = <0 1 2>;
+		};
+		combo_rui_rum {
+			timeout-ms = <50>;
+			key-positions = <3 4>;
+			bindings = <RUN1>;
+			layers = <1>;
+		};
+		combo_rhi_rhm {
+			timeout-ms = <50>;
+			key-positions = <10 11>;
+			bindings = <RHN1>;
+			layers = <1>;
+		};
+		combo_rbi_rbm {
+			timeout-ms = <50>;
+			key-positions = <16 17>;
+			bindings = <RBN1>;
+			layers = <1>;
+		};
+		
+		combo_rum_rur {
+			timeout-ms = <50>;
+			key-positions = <4 5>;
+			bindings = <RUP>;
+			layers = <0>;
+		};
+		combo_rhm_rhr {
+			timeout-ms = <50>;
+			key-positions = <11 12>;
+			bindings = <LHN>;
+			layers = <0>;
+		};
+		combo_lum_lui {
+			timeout-ms = <50>;
+			key-positions = <1 2>;
+			bindings = <LUN>;
+			layers = <0>;
+		};
+		combo_lbm_lbi {
+			timeout-ms = <50>;
+			key-positions = <14 15>;
+			bindings = <LBN>;
+			layers = <0>;
+		};
+		combo_rhi_rhm {
+			timeout-ms = <50>;
+			key-positions = <10 11>;
+			bindings = <RHN>;
+			layers = <0>;
+		};
+		combo_rui_rum {
+			timeout-ms = <50>;
+			key-positions = <3 4>;
+			bindings = <RUN>;
+			layers = <0>;
+		};
+		combo_rbi_rbm {
+			timeout-ms = <50>;
+			key-positions = <16 17>;
+			bindings = <RBN>;
+			layers = <0>;
+		};
 	};
 };
 

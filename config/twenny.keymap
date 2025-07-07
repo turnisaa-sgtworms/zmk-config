@@ -375,7 +375,7 @@
 // alpha keys
 		combo_lol {
 			timeout-ms = <50>;
-			key-positions = <0 1o>;
+			key-positions = <0 1>;
 			bindings = <&lol>;
 			layers = <0>;
 		};

@@ -15,11 +15,18 @@
                 	= <&macro_tap &kp Q &kp U>
                 	;
         	};
-		ps: ps {
+		lol: lol {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
-                	= <&macro_tap &kp P &kp S>
+                	= <&macro_tap &kp L &kp O &kp L>
+                	;
+        	};
+		lmao: lmao {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp L &kp M &kp A &kp O>
                 	;
         	};
     	};
@@ -366,6 +373,18 @@
 			layers = <1>;
 		};
 // alpha keys
+		combo_lol {
+			timeout-ms = <50>;
+			key-positions = <0 1o>;
+			bindings = <&lol>;
+			layers = <0>;
+		};
+		combo_lmao {
+			timeout-ms = <50>;
+			key-positions = <7 8>;
+			bindings = <&lmao>;
+			layers = <0>;
+		};
 		combo_qu {
 			timeout-ms = <50>;
 			key-positions = <4 5>;

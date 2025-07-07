@@ -143,7 +143,7 @@
 	
 	// right hand
 		// top row
-			#define RUO &none
+			#define RUO &kp ESC
 			#define RUP &qu
 			#define RUR &kp C
 			#define RUM &kp Y

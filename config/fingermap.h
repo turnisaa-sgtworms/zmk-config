@@ -160,8 +160,8 @@
 
 	// thumbfan
 		// 2 keys
-			#define L &lt 2 R
-			#define R &lt 1 SPACE
+			#define L0 &lt 2 R
+			#define R0 &lt 1 SPACE
 		// 4 keys
 			#define LN &lt 3 J
 			#define LH &lt 2 R

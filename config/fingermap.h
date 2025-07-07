@@ -142,10 +142,10 @@
 			#define RUI &kp M
 			#define RUN &kp F
 		// home row
-			#define RHO &kp BACK
+			#define RHO &kp BSPC
 			#define RHP &hmr RSHIFT H
 			#define RHR &kp D
-			#define RHM &hmr LALT S
+			#define RHM &hmr RALT S
 			#define RHI &hmr RCTRL N
 			#define RHN &kp P
 		// bottom row

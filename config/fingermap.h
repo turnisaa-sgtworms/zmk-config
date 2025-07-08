@@ -34,14 +34,14 @@
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
-                	= <&bt BT_SEL 0, &out OUT_BLE>
+                	= <&macro_tap &out OUT_BLE &bt BT_SEL 0>
                 	;
         	};
 		bluetooth1: bluetooth1 {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
-                	= <&bt BT_SEL 1, &out OUT_BLE>
+                	= <&macro_tap &out OUT_BLE &bt BT_SEL 1>
                 	;
         	};
     	};

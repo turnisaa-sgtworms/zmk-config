@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define AS(keycode) &as LS(keycode) keycode

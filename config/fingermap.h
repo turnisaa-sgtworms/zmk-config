@@ -29,6 +29,20 @@
                 	= <&macro_tap &kp L &kp M &kp A &kp O>
                 	;
         	};
+		bluetooth0: bluetooth0 {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&bt BT_SEL 0, &out OUT_BLE>
+                	;
+        	};
+		bluetooth1: bluetooth1 {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&bt BT_SEL 1, &out OUT_BLE>
+                	;
+        	};
     	};
 	behaviors {
 		td0: tap_dance_parentheseseseses {

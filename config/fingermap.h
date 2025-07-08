@@ -124,7 +124,7 @@
 			#define LUP &none
 			#define LUR &kp U
 			#define LUM &kp O
-			#define LUI &hml LGUI G
+			#define LUI &hml LGUI P
 			#define LUN &kp J
 		// home row
 			#define LHO &kp DEL
@@ -132,7 +132,7 @@
 			#define LHR &kp I
 			#define LHM &hml LALT E
 			#define LHI &hml LCTRL T
-			#define LHN &kp K
+			#define LHN &kp G
 		// bottom row
 			#define LBO &none
 			#define LBP &none
@@ -155,7 +155,7 @@
 			#define RHR &kp D
 			#define RHM &hmr RALT S
 			#define RHI &hmr RCTRL N
-			#define RHN &kp P
+			#define RHN &kp K
 		// bottom row
 			#define RBO &none
 			#define RBP &none

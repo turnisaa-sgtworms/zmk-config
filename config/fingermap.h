@@ -148,14 +148,14 @@
 			#define RUR &kp C
 			#define RUM &kp Y
 			#define RUI &hmr RGUI M
-			#define RUN &kp F
+			#define RUN &kp K
 		// home row
 			#define RHO &kp BSPC
 			#define RHP &hmr RSHIFT H
 			#define RHR &kp D
 			#define RHM &hmr RALT S
 			#define RHI &hmr RCTRL N
-			#define RHN &kp K
+			#define RHN &kp F
 		// bottom row
 			#define RBO &none
 			#define RBP &none

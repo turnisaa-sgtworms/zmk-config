@@ -137,16 +137,22 @@
 			bindings = <&kp Y>;
 			layers = <8>;
 		};
-		combo_bt_one {
+		combo_bt_zero {
 			timeout-ms = <50>;
 			key-positions = <6 7 8 9>;
-			bindings = <&bt BT_SEL 0>;
+			bindings = <&bluetooth0>;
 			layers = <0>;
 		};
-		combo_bt_two {
+		combo_bt_one {
 			timeout-ms = <50>;
 			key-positions = <10 11 12 13>;
-			bindings = <&bt BT_SEL 1>;
+			bindings = <&bluetooth1>;
+			layers = <0>;
+		};
+		combo_usb {
+			timeout-ms = <50>;
+			key-positions = <14 15 16 17>;
+			bindings = <&out OUT_USB>;
 			layers = <0>;
 		};
 		combo_mouse_layer {

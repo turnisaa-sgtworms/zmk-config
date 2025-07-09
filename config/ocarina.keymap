@@ -103,18 +103,6 @@
 		compatible = "zmk,combos";
 
 // keyboard functions
-		combo_bt_one {
-			timeout-ms = <50>;
-			key-positions = <10 11 12 13>;
-			bindings = <&bt BT_SEL 0>;
-			layers = <0>;
-		};
-		combo_bt_two {
-			timeout-ms = <50>;
-			key-positions = <16 17 18 19>;
-			bindings = <&bt BT_SEL 1>;
-			layers = <0>;
-		};
 		combo_bt_zero {
 			timeout-ms = <50>;
 			key-positions = <10 11 12 13>;

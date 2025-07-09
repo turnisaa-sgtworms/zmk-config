@@ -17,7 +17,7 @@
 				LUP LUR LUM LUI LUN RUN RUI RUM RUR RUP
 				LHP LHR	LHM LHI LHN RHN RHI RHM RHR RHP
 				LBP LBR LBM LBI LBN RBN RBI RBM RBR RBP
-					LN LH &none &none RH RN	
+					&none LN LH RH RN &none 	
 									&hw_soft_off
 			>;
 		};
@@ -26,7 +26,7 @@
 				LUP1 LUR1 LUM1 LUI1 LUN1 RUN1 RUI1 RUM1 RUR1 RUP1
 				LHP1 LHR1 LHM1 LHI1 LHN1 RHN1 RHI1 RHM1 RHR1 RHP1
 				LBP1 LBR1 LBM1 LBI1 LBN1 RBN1 RBI1 RBM1 RBR1 RBP1
-					   LN1 LH1 &none &none RH1 RN1	
+					   &none LN1 LH1 RH1 RN1 &none 	
 									&hw_soft_off
 			>;
 		};
@@ -35,7 +35,7 @@
 				LUP2 LUR2 LUM2 LUI2 LUN2 RUN2 RUI2 RUM2 RUR2 RUP2
 				LHP2 LHR2 LHM2 LHI2 LHN2 RHN2 RHI2 RHM2 RHR2 RHP2
 				LBP2 LBR2 LBM2 LBI2 LBN2 RBN2 RBI2 RBM2 RBR2 RBP2
-					   LN2 LH2 &none &none RH2 RN2	
+					   &none LN2 LH2 RH2 RN2 &none 	
 									&hw_soft_off
 			>;
 		};

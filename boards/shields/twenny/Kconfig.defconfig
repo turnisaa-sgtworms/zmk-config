@@ -1,5 +1,3 @@
-CONFIG_ZMK_KEYBOARD_NAME="twenny"
-
 config ZMK_PM_SOFT_OFF
 	default y
 config ZMK_POINTING

@@ -1,5 +1,9 @@
 config ZMK_PM_SOFT_OFF
 	default y
 
+if SHIELD_OCARINA
+
 config ZMK_KEYBOARD_NAME
 	default "ocarina"
+
+endif

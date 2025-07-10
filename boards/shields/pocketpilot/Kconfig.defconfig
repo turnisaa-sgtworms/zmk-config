@@ -1,5 +1,9 @@
 config ZMK_PM_SOFT_OFF
 	default y
 
+if SHIELD_POCKETPILOT
+
 config ZMK_KEYBOARD_NAME
 	default "pocketpilot"
+
+endif

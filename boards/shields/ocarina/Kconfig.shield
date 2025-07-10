@@ -1,2 +1,2 @@
 config SHIELD_OCARINA
-	def_bool $(shields_list_contains,OCARINA)
+	def_bool $(shields_list_contains,ocarina)

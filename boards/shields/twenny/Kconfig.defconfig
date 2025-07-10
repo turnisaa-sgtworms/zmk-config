@@ -2,6 +2,8 @@ config ZMK_PM_SOFT_OFF
 	default y
 config ZMK_POINTING
 	default y
+config CONFIG_ZMK_HID_REPORT_TYPE_NKRO
+	default y
 
 if SHIELD_TWENNY_LEFT
 

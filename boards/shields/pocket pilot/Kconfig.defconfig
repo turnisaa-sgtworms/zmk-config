@@ -1,8 +1,5 @@
 config ZMK_PM_SOFT_OFF
 	default y
 
-config CONFIG_ZMK_HID_REPORT_TYPE_NKRO
-	default y
-
 config ZMK_KEYBOARD_NAME
 	default "pocketpilot"

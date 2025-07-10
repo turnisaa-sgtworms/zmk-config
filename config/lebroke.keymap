@@ -206,6 +206,12 @@
 			bindings = <&kp K>;
 			layers = <9>;
 		};
+		combo_rum_rur {
+			timeout-ms = <50>;
+			key-positions = <7 8>;
+			bindings = <RUP>;
+			layers = <0>;
+		};
 	};
 };
 

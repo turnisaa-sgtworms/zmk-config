@@ -8,6 +8,12 @@
         	hmr: home_row_mod_right {
             		hold-trigger-key-positions = <>; // List of keys on the left
         	};
+		fhml: fast_home_row_mod_left {
+            		hold-trigger-key-positions = <>; // List of keys on the right
+        	};
+        	fhmr: fast_home_row_mod_right {
+            		hold-trigger-key-positions = <>; // List of keys on the left
+        	};
 	};
 	keymap {
 		compatible = "zmk,keymap";

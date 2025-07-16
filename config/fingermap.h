@@ -86,28 +86,6 @@
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "balanced";
-            		require-prior-idle-ms = <100>;
-            		tapping-term-ms = <250>;
-            		quick-tap-ms = <175>;
-			hold-trigger-key-positions = <>; // List of keys on the right
-            		bindings = <&kp>, <&kp>;
-            		hold-trigger-on-release;
-        	};
-        	hmr: home_row_mod_right {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		flavor = "balanced";
-            		require-prior-idle-ms = <100>;
-            		tapping-term-ms = <250>;
-            		quick-tap-ms = <175>;
-			hold-trigger-key-positions = <>; // List of keys on the left
-            		bindings = <&kp>, <&kp>;
-            		hold-trigger-on-release;
-        	};
-		fhml: fast_home_row_mod_left {
-            		compatible = "zmk,behavior-hold-tap";
-            		#binding-cells = <2>;
-            		flavor = "balanced";
             		require-prior-idle-ms = <25>;
             		tapping-term-ms = <200>;
             		quick-tap-ms = <175>;
@@ -115,7 +93,7 @@
             		bindings = <&kp>, <&kp>;
             		hold-trigger-on-release;
         	};
-        	fhmr: fast_home_row_mod_right {
+        	hmr: home_row_mod_right {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "balanced";
@@ -165,7 +143,7 @@
 			#define LUN &kp J
 		// home row
 			#define LHO &kp DEL
-			#define LHP &fhml LSHIFT A
+			#define LHP &hml LSHIFT A
 			#define LHR &kp I
 			#define LHM &hml LALT E
 			#define LHI &hml LCTRL T
@@ -188,7 +166,7 @@
 			#define RUN &kp K
 		// home row
 			#define RHO &kp BSPC
-			#define RHP &fhmr RSHIFT H
+			#define RHP &hmr RSHIFT H
 			#define RHR &kp D
 			#define RHM &hmr RALT S
 			#define RHI &hmr RCTRL N

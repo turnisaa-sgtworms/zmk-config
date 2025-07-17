@@ -40,25 +40,25 @@
 			tapping-term-ms = <300>;
 			bindings = <AS(N1)>,<AS(N6)>;
 		};
-		td27: tap_dance_1_6 {
+		td27: tap_dance_2_7 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <300>;
 			bindings = <AS(N2)>,<AS(N7)>;
 		};
-		td38: tap_dance_1_6 {
+		td38: tap_dance_3_8 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <300>;
 			bindings = <AS(N3)>,<AS(N8)>;
 		};
-		td49: tap_dance_1_6 {
+		td49: tap_dance_4_9 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <300>;
 			bindings = <AS(N4)>,<AS(N9)>;
 		};
-		td50: tap_dance_1_6 {
+		td50: tap_dance_5_0 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
 			tapping-term-ms = <300>;

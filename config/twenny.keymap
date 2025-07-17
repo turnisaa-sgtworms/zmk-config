@@ -396,14 +396,14 @@
 			layers = <0>;
 		};
 		combo_right_m {
-			timeout-ms = <3 4>;
-			key-positions = <1 2>;
+			timeout-ms = <50>;
+			key-positions = <3 4>;
 			bindings = <&kp M>;
 			layers = <0>;
 		};
 		combo_right_h {
-			timeout-ms = <5 13>;
-			key-positions = <0 6>;
+			timeout-ms = <50>;
+			key-positions = <5 13>;
 			bindings = <&kp H>;
 			layers = <0>;
 		};

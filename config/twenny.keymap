@@ -17,7 +17,7 @@
 			bindings = <
 				&hml LGUI U &hml LALT O &hml LCTRL N &hmr RCTRL N &hmr RALT O &hmr RGUI U 
 				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T &hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
-				&kp W &kp C &kp C &kp W 
+				&kp D &kp C &kp C &kp D 
 				&lt 2 R &lt 1 SPACE 		
 			>;
 		};
@@ -236,15 +236,6 @@
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
 		};
-		combo_lmao {
-			timeout-ms = <50>;
-			key-positions = <7 8>;
-			bindings = <&lmao>;
-			layers = <0>;
-		};
-
-
-
 
 //formulated
 		combo_lhp_lhr { //del
@@ -338,10 +329,10 @@
 			bindings = <&kp J>;
 			layers = <0>;
 		};
-		combo_left_d {
+		combo_left_w {
 			timeout-ms = <50>;
 			key-positions = <7 8>;
-			bindings = <&kp D>;
+			bindings = <&kp W>;
 			layers = <0>;
 		};
 		combo_left_s {
@@ -437,10 +428,10 @@
 			bindings = <&kp J>;
 			layers = <0>;
 		};
-		combo_right_d {
+		combo_right_w {
 			timeout-ms = <50>;
 			key-positions = <11 12>;
-			bindings = <&kp D>;
+			bindings = <&kp W>;
 			layers = <0>;
 		};
 		combo_right_s {

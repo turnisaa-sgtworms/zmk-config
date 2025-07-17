@@ -8,6 +8,12 @@
         	hmr: home_row_mod_right {
             		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         	};
+		td16: tap_dance_1_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <200>;
+			bindings = <AS(N1)>,<AS(N6)>;
+		};
 	};
 
 	keymap {
@@ -24,7 +30,7 @@
 		one { 
 			display-name = "one - numbers and icons";
 			bindings = <
-				     LUR1 LUM1 LUI1 RUI1 RUM1 RUR1
+				     &td16 LUM1 LUI1 RUI1 RUM1 RUR1
 				LHP1 LHR1 LHM1 LHI1 RHI1 RHM1 RHR1 RHP1
 				          LBM1 LBI1 RBI1 RBM1
 					       L1   R1

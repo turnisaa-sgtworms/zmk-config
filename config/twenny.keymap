@@ -8,12 +8,63 @@
         	hmr: home_row_mod_right {
             		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         	};
+
+		tdsa: tap_dance_semicolon_apostrophe {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(SEMI)>,<AS(APOS)>;
+		};
+		tdcm: tap_dance_comma_minus {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(COMMA)>,<AS(MINUS)>;
+		};
+		tdpe: tap_dance_period_equal {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(DOT)>,<AS(EQUAL)>;
+		};
+		tdfb: tap_dance_fslash_bslash {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(FSLH)>,<AS(BSLH)>;
+		};
+		
 		td16: tap_dance_1_6 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <300>;
 			bindings = <AS(N1)>,<AS(N6)>;
 		};
+		td27: tap_dance_1_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(N2)>,<AS(N7)>;
+		};
+		td38: tap_dance_1_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(N3)>,<AS(N8)>;
+		};
+		td49: tap_dance_1_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(N4)>,<AS(N9)>;
+		};
+		td50: tap_dance_1_6 {
+			compatible = "zmk,behavior-tap-dance";
+			#binding-cells = <0>;
+			tapping-term-ms = <300>;
+			bindings = <AS(N5)>,<AS(N0)>;
+		};
+		
 	};
 
 	keymap {
@@ -24,16 +75,16 @@
 				&hml LGUI U &hml LALT O &hml LCTRL N &hmr RCTRL N &hmr RALT O &hmr RGUI U 
 				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T &hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
 				&kp H &kp S &kp S &kp H 
-				&lt 2 R &lt 1 SPACE 		
+				&lt 1 R &lt 1 SPACE 		
 			>;
 		};
 		one { 
 			display-name = "one - numbers and icons";
 			bindings = <
-				     &td16 LUM1 LUI1 RUI1 RUM1 RUR1
-				LHP1 LHR1 LHM1 LHI1 RHI1 RHM1 RHR1 RHP1
-				          LBM1 LBI1 RBI1 RBM1
-					       L1   R1
+				&td16 &td27 &td38 &td38 &td27 &td16
+				&tdfb &tdpe &tdcm &tdsa &tdsa &tdcm &tdpe &tdfb 
+				&td49 &td50 &td50 &td49
+				&none &none
 			>;
 		};
 		two { 
@@ -242,7 +293,24 @@
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
 		};
-
+		combo_par {
+			timeout-ms = <50>;
+			key-positions = <0 1>;
+			bindings = <&td0>;
+			layers = <1>;
+		};
+		combo_cbkt {
+			timeout-ms = <50>;
+			key-positions = <1 2>;
+			bindings = <&td1>;
+			layers = <1>;
+		};
+		combo_bkt {
+			timeout-ms = <50>;
+			key-positions = <14 15>;
+			bindings = <&td2>;
+			layers = <1>;
+		};
 //formulated
 		combo_lhp_lhr { //del
 			timeout-ms = <50>;

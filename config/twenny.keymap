@@ -17,7 +17,7 @@
 			bindings = <
 				&hml LGUI U &hml LALT O &hml LCTRL N &hmr RCTRL N &hmr RALT O &hmr RGUI U 
 				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T &hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
-				&kp D &kp C &kp C &kp D 
+				&kp H &kp S &kp S &kp H 
 				&lt 2 R &lt 1 SPACE 		
 			>;
 		};
@@ -293,10 +293,10 @@
 			bindings = <&kp M>;
 			layers = <0>;
 		};
-		combo_left_h {
+		combo_left_x {
 			timeout-ms = <50>;
 			key-positions = <0 6>;
-			bindings = <&kp H>;
+			bindings = <&kp X>;
 			layers = <0>;
 		};
 		combo_left_j {
@@ -335,16 +335,16 @@
 			bindings = <&kp G>;
 			layers = <0>;
 		};
-		combo_left_s {
+		combo_left_c {
 			timeout-ms = <50>;
 			key-positions = <8 9>;
-			bindings = <&kp S>;
+			bindings = <&kp C>;
 			layers = <0>;
 		};
-		combo_left_x {
+		combo_left_l {
 			timeout-ms = <50>;
 			key-positions = <7 14>;
-			bindings = <&kp X>;
+			bindings = <&kp L>;
 			layers = <0>;
 		};
 		combo_left_qu {
@@ -365,10 +365,10 @@
 			bindings = <&kp B>;
 			layers = <0>;
 		};
-		combo_left_l {
+		combo_left_d {
 			timeout-ms = <50>;
 			key-positions = <14 15>;
-			bindings = <&kp L>;
+			bindings = <&kp D>;
 			layers = <0>;
 		};
 		combo_left_z {
@@ -392,10 +392,10 @@
 			bindings = <&kp M>;
 			layers = <0>;
 		};
-		combo_right_h {
+		combo_right_x {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&kp H>;
+			bindings = <&kp X>;
 			layers = <0>;
 		};
 		combo_right_j {
@@ -407,7 +407,7 @@
 		combo_right_w {
 			timeout-ms = <50>;
 			key-positions = <5 11>;
-			bindings = <&kp w>;
+			bindings = <&kp W>;
 			layers = <0>;
 		};
 		combo_right_k {
@@ -434,16 +434,16 @@
 			bindings = <&kp G>;
 			layers = <0>;
 		};
-		combo_right_s {
+		combo_right_c {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
-			bindings = <&kp S>;
+			bindings = <&kp C>;
 			layers = <0>;
 		};
-		combo_right_x {
+		combo_right_l {
 			timeout-ms = <50>;
 			key-positions = <12 17>;
-			bindings = <&kp X>;
+			bindings = <&kp L>;
 			layers = <0>;
 		};
 		combo_right_qu {
@@ -464,10 +464,10 @@
 			bindings = <&kp B>;
 			layers = <0>;
 		};
-		combo_right_l {
+		combo_right_d {
 			timeout-ms = <50>;
 			key-positions = <16 17>;
-			bindings = <&kp L>;
+			bindings = <&kp D>;
 			layers = <0>;
 		};
 		combo_right_z {

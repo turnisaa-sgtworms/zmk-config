@@ -300,9 +300,9 @@
 			bindings = <RUP>;
 			layers = <0>;
 		};
-		combo_rhm_rhr {
+		combo_lhm_lhr {
 			timeout-ms = <50>;
-			key-positions = <11 12>;
+			key-positions = <8 9>;
 			bindings = <LHN>;
 			layers = <0>;
 		};

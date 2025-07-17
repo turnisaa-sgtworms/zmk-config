@@ -236,12 +236,6 @@
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
 		};
-		combo_lol {
-			timeout-ms = <50>;
-			key-positions = <0 1>;
-			bindings = <&lol>;
-			layers = <0>;
-		};
 		combo_lmao {
 			timeout-ms = <50>;
 			key-positions = <7 8>;

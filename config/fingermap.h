@@ -259,7 +259,7 @@
 			#define LUN2 &none
 		// home row
 			#define LHO2 &none
-			#define LHP2 &bootloader 
+			#define LHP2 &none
 			#define LHR2 &kp HOME
 			#define LHM2 &kp PGUP 
 			#define LHI2 &kp END
@@ -269,7 +269,7 @@
 			#define LBP2 &none
 			#define LBR2 &none
 			#define LBM2 &kp PGDN
-			#define LBI2 &none
+			#define LBI2 &bootloader
 			#define LBN2 &none
 	
 	// right hand

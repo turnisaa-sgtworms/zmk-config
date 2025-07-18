@@ -226,12 +226,6 @@
 			bindings = <&out OUT_USB>;
 			layers = <0>;
 		};
-		combo_mouse_layer {
-			timeout-ms = <50>;
-			key-positions = <18 19>;
-			bindings = <&mo 2>;
-			layers = <0>;
-		};
 		combo_val_layer {
 			timeout-ms = <50>;
 			key-positions = <7 8 9>;
@@ -367,7 +361,7 @@
 		combo_left_back {
 			timeout-ms = <50>;
 			key-positions = <6 8>;
-			bindings = <&kp BACK>;
+			bindings = <&kp BSPC>;
 			layers = <0>;
 		};
 		combo_left_space {
@@ -494,7 +488,7 @@
 		combo_left_z {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
-			bindings = <&kp Z>;
+			bindings = <&lt 2 Z>;
 			layers = <0>;
 		};
 
@@ -593,7 +587,7 @@
 		combo_right_z {
 			timeout-ms = <50>;
 			key-positions = <13 19>;
-			bindings = <&kp Z>;
+			bindings = <&lt 2 Z>;
 			layers = <0>;
 		};
 	};

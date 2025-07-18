@@ -72,7 +72,7 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&hml LGUI U &hml LALT O &hml LCTRL N &hmr RCTRL N &hmr RALT O &hmr RGUI U 
+				&hml LCTRL U &hml LALT O &hml LGUI N &hmr RGUI N &hmr RALT O &hmr RCTRL U 
 				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T &hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
 				&kp H &kp S &kp S &kp H 
 				&lt 1 R &lt 1 SPACE 		
@@ -364,9 +364,42 @@
 			bindings = <RHO>;
 			layers = <0 1 2>;
 		};
-		
-		
-
+		combo_left_back {
+			timeout-ms = <50>;
+			key-positions = <6 8>;
+			bindings = <&kp BACK>;
+			layers = <0>;
+		};
+		combo_left_space {
+			timeout-ms = <50>;
+			key-positions = <2 18>;
+			bindings = <&kp SPACE>;
+			layers = <0>;
+		};
+		combo_left_enter {
+			timeout-ms = <50>;
+			key-positions = <6 9>;
+			bindings = <&kp ENTER>;
+			layers = <0>;
+		};
+		combo_right_del {
+			timeout-ms = <50>;
+			key-positions = <11 13>;
+			bindings = <&kp DEL>;
+			layers = <0>;
+		};
+		combo_right_r {
+			timeout-ms = <50>;
+			key-positions = <3 19>;
+			bindings = <&kp R>;
+			layers = <0>;
+		};
+		combo_right_enter {
+			timeout-ms = <50>;
+			key-positions = <10 13>;
+			bindings = <&kp ENTER>;
+			layers = <0>;
+		};
 		
 		combo_left_y {
 			timeout-ms = <50>;

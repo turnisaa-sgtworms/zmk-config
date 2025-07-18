@@ -376,6 +376,12 @@
 			bindings = <&kp ENTER>;
 			layers = <0>;
 		};
+		combo_left_esc {
+			timeout-ms = <50>;
+			key-positions = <0 9>;
+			bindings = <&kp ESC>;
+			layers = <0>;
+		};
 		combo_right_del {
 			timeout-ms = <50>;
 			key-positions = <11 13>;
@@ -394,7 +400,13 @@
 			bindings = <&kp ENTER>;
 			layers = <0>;
 		};
-		
+		combo_right_tab {
+			timeout-ms = <50>;
+			key-positions = <5 10>;
+			bindings = <&kp TAB>;
+			layers = <0>;
+		};
+
 		combo_left_y {
 			timeout-ms = <50>;
 			key-positions = <0 1>;

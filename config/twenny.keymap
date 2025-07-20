@@ -1,5 +1,5 @@
 #include "fingermap.h"
-
+#include <behaviors/rgbled_widget.dtsi>
 / {
 	behaviors {
 		hml: home_row_mod_left {

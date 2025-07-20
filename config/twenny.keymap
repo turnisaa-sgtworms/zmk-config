@@ -12,44 +12,44 @@
 		tdsa: tap_dance_semicolon_apostrophe {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(SEMI)>,<AS(APOS)>;
 		};
 		tdcm: tap_dance_comma_minus {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(COMMA)>,<AS(MINUS)>;
 		};
 		tdpe: tap_dance_period_equal {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(DOT)>,<AS(EQUAL)>;
 		};
 		tdfb: tap_dance_fslash_bslash {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(FSLH)>,<AS(BSLH)>;
 		};
 		
 		td16: tap_dance_1_6 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(N1)>,<AS(N6)>;
 		};
 		td27: tap_dance_2_7 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(N2)>,<AS(N7)>;
 		};
 		td38: tap_dance_3_8 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(N3)>,<AS(N8)>;
 		};
 		td49: tap_dance_4_9 {
@@ -61,7 +61,7 @@
 		td50: tap_dance_5_0 {
 			compatible = "zmk,behavior-tap-dance";
 			#binding-cells = <0>;
-			tapping-term-ms = <200>;
+			tapping-term-ms = <225>;
 			bindings = <AS(N5)>,<AS(N0)>;
 		};
 		

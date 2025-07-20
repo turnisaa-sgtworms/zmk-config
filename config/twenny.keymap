@@ -90,7 +90,7 @@
 		two { 
 			display-name = "two - navigation and kb functions";
 			bindings = <
-				     LUR2 LUM2 LUI2 RUI2 RUM2 RUR2
+				     &ind_bat LUM2 LUI2 RUI2 RUM2 RUR2
 				LHP2 LHR2 LHM2 LHI2 RHI2 RHM2 RHR2 RHP2
 				          LBM2 LBI2 RBI2 RBM2
 					       L2   R2

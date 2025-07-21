@@ -1,13 +1,9 @@
-CONFIG_ZMK_HID_REPORT_TYPE_NKRO = y
-CONFIG_RGBLED_WIDGET_BATTERY_SHOW_PERIPHERALS = y
-
 config ZMK_PM_SOFT_OFF
 	default y
 config ZMK_POINTING
 	default y
 
 if SHIELD_TWENNY_LEFT
-
 config ZMK_KEYBOARD_NAME
 	default "twenny"
 

@@ -272,20 +272,20 @@
 			key-positions = <8 11>;
 			bindings = <&kp UP>;
 		};
-		combo_left {
+		combo_home {
 			timeout-ms = <50>;
 			key-positions = <7 10>;
-			bindings = <&kp LEFT>;
+			bindings = <&kp HOME>;
 		};
 		combo_down {
 			timeout-ms = <50>;
 			key-positions = <14 17>;
 			bindings = <&kp DOWN>;
 		};
-		combo_right {
+		combo_end {
 			timeout-ms = <50>;
 			key-positions = <9 12>;
-			bindings = <&kp RIGHT>;
+			bindings = <&kp END>;
 		};
 		combo_left_par {
 			timeout-ms = <50>;

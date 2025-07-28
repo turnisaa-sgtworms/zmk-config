@@ -16,7 +16,7 @@
 			bindings = <
 				&none &hml LCTRL U &hml LALT O &hml LGUI N &kp W &kp W &hmr RGUI N &hmr RALT O &hmr RCTRL U &none
 				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T &kp P &kp P &hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
-				&kp H &kp S & kp L &kp L &kp S &kp H 
+				&kp H &kp S &kp L &kp L &kp S &kp H 
 				&lt 2 SPACE &lt 1 R &lt 1 SPACE &lt 2 R
 									&hw_soft_off
 			>;

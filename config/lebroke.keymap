@@ -206,13 +206,7 @@
 			bindings = <&kp K>;
 			layers = <9>;
 		};
-		combo_rum_rur {
-			timeout-ms = <50>;
-			key-positions = <7 8>;
-			bindings = <RUP>;
-			layers = <0>;
-		};
-  combo_left_y {
+  		combo_left_y {
 			timeout-ms = <35>;
 			key-positions = <1 2>;
 			bindings = <&kp Y>;
@@ -280,7 +274,7 @@
 		};
 		combo_left_d {
 			timeout-ms = <50>;
-			key-positions = <23 24>;
+			key-positions = <22 23>;
 			bindings = <&kp D>;
 			layers = <0>;
 		};

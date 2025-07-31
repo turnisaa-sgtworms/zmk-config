@@ -35,7 +35,7 @@
 				&hml LCTRL U &hml LA O &hml LGUI N 			&hmr RGUI N &hmr RA O &hmr RCTRL U 
 				&hml LSHIFT A &hml LGUI I &hml LA E &hml LCTRL T 	&hmr RCTRL T &hmr RA E &hmr RGUI I &hmr RSHIFT A
 				&kp H &kp S 						&kp S &kp H 
-				& 2 R 						& 1 SPACE 		
+				&lt 2 R 						&lt 1 SPACE 		
 			>;
 		};
 		one { 
@@ -44,7 +44,7 @@
 				AS(N1) AS(N2) AS(N3) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
 				AS(N0) AS(N4) AS(N5) AS(N6) 	AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH) 
 				AS(N7) AS(N8) 			AS(APOS) AS(MINUS) 
-				& 2 N9 			&none 
+				&lt 2 N9 			&none 
 			>;
 		};
 		two { 
@@ -53,7 +53,7 @@
 				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N3) AS(N2) AS(N1) 
 				AS(FSLH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N6) AS(N5) AS(N4) AS(N0) 
 				AS(MINUS) AS(APOS) 				AS(N8) AS(N7) 
-				&none 						& 1 N9
+				&none 						&lt 1 N9
 			>;
 		};
 		three { 
@@ -80,7 +80,7 @@
 				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
 				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
-				                & 6 SPACE 			&kp C_PP
+				                &lt 6 SPACE 			&kp C_PP
 			>;
 		};
 		six { 
@@ -459,7 +459,7 @@
 		combo_left_z {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
-			bindings = <& 3 Z>;
+			bindings = <&lt 3 Z>;
 			layers = <0>;
 		};
 
@@ -558,7 +558,7 @@
 		combo_right_z {
 			timeout-ms = <50>;
 			key-positions = <13 19>;
-			bindings = <& 3 Z>;
+			bindings = <&lt 3 Z>;
 			layers = <0>;
 		};
 	};

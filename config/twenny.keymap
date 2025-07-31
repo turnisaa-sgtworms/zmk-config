@@ -10,7 +10,7 @@
         	hmr: home_row_mod_right {
             		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         	};		
-		num_word: num_word {
+		numword: numword {
         		#binding-cells = <0>;
         		compatible = "zmk,behavior-num-word";
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;

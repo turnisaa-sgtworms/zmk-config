@@ -10,9 +10,10 @@
         	hmr: home_row_mod_right {
             		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         	};		
-		numword: numword {
+		l_num_word: left_num_word {
         		#binding-cells = <0>;
-        		compatible = "zmk,behavior-num-word";
+		        compatible = "zmk,behavior-num-word";
+        		layers = <0>;
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
@@ -119,13 +120,13 @@
 		combo_left_numword {
 			timeout-ms = <90>;
 			key-positions = <0 18>;
-			bindings = <&numword 1>;
+			bindings = <&l_num_word 1>;
 			layers = <0>;
 		};
 		combo_right_numword {
 			timeout-ms = <90>;
 			key-positions = <5 19>;
-			bindings = <&numword 3>;
+			bindings = <&l_num_word 3>;
 			layers = <0>;
 		};
 		combo_right_grave {

@@ -32,8 +32,8 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&hml LCTRL U &hml LA O &hml LGUI N 			&hmr RGUI N &hmr RA O &hmr RCTRL U 
-				&hml LSHIFT A &hml LGUI I &hml LA E &hml LCTRL T 	&hmr RCTRL T &hmr RA E &hmr RGUI I &hmr RSHIFT A
+				&hml LCTRL U &hml LALT O &hml LGUI N 			&hmr RGUI N &hmr RALT O &hmr RCTRL U 
+				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T 	&hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
 				&kp H &kp S 						&kp S &kp H 
 				&lt 2 R 						&lt 1 SPACE 		
 			>;

@@ -32,7 +32,7 @@
 		one { 
 			display-name = "one - numico";
 			bindings = <
-				AS(N1) AS(N2) AS(N3) 		&mt lpar rpar &mt lbrc rbrc &mt lbkt rbkt
+				AS(N1) AS(N2) AS(N3) 		&mt LPAR RPAR &mt LBRC RBRC &mt LBKT RBKT
 				AS(N0) AS(N4) AS(N5) AS(N6) 	AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH) 
 				AS(N7) AS(N8) 			AS(APOS) AS(MINUS) 
 				&lt 3 N9 			&none 
@@ -50,7 +50,7 @@
 		three { 
 			display-name = "three - numico mirror";
 			bindings = <
-				&mt lbkt rbkt &mt lbrc rbrc &mt lpar rpar 	AS(N3) AS(N2) AS(N1) 
+				&mt LBKT RBKT &mt LBRC RBRC &mt LPAR RPAR 	AS(N3) AS(N2) AS(N1) 
 				AS(FLSH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N6) AS(N5) AS(N4) AS(N0) 
 				AS(MINUS) AS(APOS) 				AS(N8) AS(N7) 
 				&none 						&lt 1 N9

@@ -141,37 +141,37 @@
 			timeout-ms = <90>;
 			key-positions = <1 2>;
 			bindings = <AS(GRAVE)>;
-			layers = <1>;
+			layers = <3>;
 		};
 		combo_right_equal {
 			timeout-ms = <90>;
 			key-positions = <8 9>;
 			bindings = <AS(EQUAL)>;
-			layers = <1>;
+			layers = <3>;
 		};
 		combo_right_bslh {
 			timeout-ms = <90>;
 			key-positions = <14 15>;
 			bindings = <AS(BSLH)>;
-			layers = <1>;
+			layers = <3>;
 		};
 		combo_left_grave {
 			timeout-ms = <90>;
 			key-positions = <3 4>;
 			bindings = <AS(GRAVE)>;
-			layers = <3>;
+			layers = <1>;
 		};
 		combo_left_equal {
 			timeout-ms = <90>;
 			key-positions = <10 11>;
 			bindings = <AS(EQUAL)>;
-			layers = <3>;
+			layers = <1>;
 		};
 		combo_left_bslh {
 			timeout-ms = <90>;
 			key-positions = <16 17>;
 			bindings = <AS(BSLH)>;
-			layers = <3>;
+			layers = <1>;
 		};
 		combo_1_game {
 			timeout-ms = <90>;
@@ -321,49 +321,49 @@
 			timeout-ms = <50>;
 			key-positions = <6 8>;
 			bindings = <&kp BSPC>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_left_space {
 			timeout-ms = <50>;
 			key-positions = <2 18>;
 			bindings = <&kp SPACE>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_left_enter {
 			timeout-ms = <50>;
 			key-positions = <6 9>;
 			bindings = <&kp ENTER>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_left_esc {
 			timeout-ms = <50>;
 			key-positions = <0 9>;
 			bindings = <&kp ESC>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_right_del {
 			timeout-ms = <50>;
 			key-positions = <11 13>;
 			bindings = <&kp DEL>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_right_r {
 			timeout-ms = <50>;
 			key-positions = <3 19>;
 			bindings = <&kp R>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_right_enter {
 			timeout-ms = <50>;
 			key-positions = <10 13>;
 			bindings = <&kp ENTER>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_right_tab {
 			timeout-ms = <50>;
 			key-positions = <5 10>;
 			bindings = <&kp TAB>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 
 		combo_left_y {

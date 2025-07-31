@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/urob
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: zmk
@@ -16,6 +18,9 @@ manifest:
       revision: main # set to same version as zmk above
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
+      revision: main
+    - name: zmk-num-word
+      remote: dhruvinsh
       revision: main
   self:
     path: config

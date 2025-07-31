@@ -120,13 +120,13 @@
 		combo_left_numword {
 			timeout-ms = <90>;
 			key-positions = <0 18>;
-			bindings = <&l_num_word 1>;
+			bindings = <&l_num_word>;
 			layers = <0>;
 		};
 		combo_right_numword {
 			timeout-ms = <90>;
 			key-positions = <5 19>;
-			bindings = <&l_num_word 3>;
+			bindings = <&l_num_word>;
 			layers = <0>;
 		};
 		combo_right_grave {

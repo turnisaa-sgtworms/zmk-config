@@ -20,7 +20,7 @@
 		r_num_word: right_num_word {
         		#binding-cells = <0>;
 		        compatible = "zmk,behavior-num-word";
-        		layers = <3>;
+        		layers = <2>;
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
@@ -32,10 +32,10 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&hml LCTRL U &hml LALT O &hml LGUI N 			&hmr RGUI N &hmr RALT O &hmr RCTRL U 
-				&hml LSHIFT A &hml LGUI I &hml LALT E &hml LCTRL T 	&hmr RCTRL T &hmr RALT E &hmr RGUI I &hmr RSHIFT A
+				&hml LCTRL U &hml LA O &hml LGUI N 			&hmr RGUI N &hmr RA O &hmr RCTRL U 
+				&hml LSHIFT A &hml LGUI I &hml LA E &hml LCTRL T 	&hmr RCTRL T &hmr RA E &hmr RGUI I &hmr RSHIFT A
 				&kp H &kp S 						&kp S &kp H 
-				&lt 3 R 						&lt 1 SPACE 		
+				& 2 R 						& 1 SPACE 		
 			>;
 		};
 		one { 
@@ -44,25 +44,25 @@
 				AS(N1) AS(N2) AS(N3) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
 				AS(N0) AS(N4) AS(N5) AS(N6) 	AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH) 
 				AS(N7) AS(N8) 			AS(APOS) AS(MINUS) 
-				&lt 3 N9 			&none 
+				& 2 N9 			&none 
 			>;
 		};
 		two { 
-			display-name = "two - navigation and kb functions";
+			display-name = "two - numico mirror";
+			bindings = <
+				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N3) AS(N2) AS(N1) 
+				AS(FSLH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N6) AS(N5) AS(N4) AS(N0) 
+				AS(MINUS) AS(APOS) 				AS(N8) AS(N7) 
+				&none 						& 1 N9
+			>;
+		};
+		three { 
+			display-name = "three - navigation and kb functions";
 			bindings = <
 				&ind_bat LUM2 LUI2 	RUI2 RUM2 RUR2
 				LHP2 LHR2 LHM2 LHI2 	RHI2 RHM2 RHR2 RHP2
 				LBM2 LBI2 		RBI2 RBM2
 				L2 			R2
-			>;
-		};
-		three { 
-			display-name = "three - numico mirror";
-			bindings = <
-				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N3) AS(N2) AS(N1) 
-				AS(FSLH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N6) AS(N5) AS(N4) AS(N0) 
-				AS(MINUS) AS(APOS) 				AS(N8) AS(N7) 
-				&none 						&lt 1 N9
 			>;
 		};
 		four { 
@@ -80,7 +80,7 @@
 				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
 				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
-				                &lt 6 SPACE 			&kp C_PP
+				                & 6 SPACE 			&kp C_PP
 			>;
 		};
 		six { 
@@ -141,19 +141,19 @@
 			timeout-ms = <90>;
 			key-positions = <1 2>;
 			bindings = <AS(GRAVE)>;
-			layers = <3>;
+			layers = <2>;
 		};
 		combo_right_equal {
 			timeout-ms = <90>;
 			key-positions = <8 9>;
 			bindings = <AS(EQUAL)>;
-			layers = <3>;
+			layers = <2>;
 		};
 		combo_right_bslh {
 			timeout-ms = <90>;
 			key-positions = <14 15>;
 			bindings = <AS(BSLH)>;
-			layers = <3>;
+			layers = <2>;
 		};
 		combo_left_grave {
 			timeout-ms = <90>;
@@ -257,7 +257,7 @@
 			bindings = <&to 5>;
 			layers = <0>;
 		};
-		combo_default_layer {
+		combo_defau_layer {
 			timeout-ms = <50>;
 			key-positions = <8 9 10 11>;
 			bindings = <&to 0>;
@@ -266,7 +266,7 @@
 			timeout-ms = <50>;
 			key-positions = <9 10>;
 			bindings = <&kp ENTER>;
-			layers = <0 1 2>;
+			layers = <0 1 2 3>;
 		};
 		combo_capsword {
 			timeout-ms = <50>;
@@ -299,7 +299,7 @@
 			timeout-ms = <50>;
 			key-positions = <6 7>;
 			bindings = <LHO>;
-			layers = <0 1 2>;
+			layers = <0 1 2 3>;
 		};
 		combo_lur_lui { //tab
 			timeout-ms = <50>;
@@ -315,7 +315,7 @@
 			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <RHO>;
-			layers = <0 1 2>;
+			layers = <0 1 2 3>;
 		};
 		combo_left_back {
 			timeout-ms = <50>;
@@ -459,7 +459,7 @@
 		combo_left_z {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
-			bindings = <&lt 2 Z>;
+			bindings = <& 3 Z>;
 			layers = <0>;
 		};
 
@@ -558,7 +558,7 @@
 		combo_right_z {
 			timeout-ms = <50>;
 			key-positions = <13 19>;
-			bindings = <&lt 2 Z>;
+			bindings = <& 3 Z>;
 			layers = <0>;
 		};
 	};

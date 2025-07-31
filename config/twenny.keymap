@@ -13,10 +13,18 @@
 		l_num_word: left_num_word {
         		#binding-cells = <0>;
 		        compatible = "zmk,behavior-num-word";
-        		layers = <0>;
+        		layers = <1>;
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
+		r_num_word: right_num_word {
+        		#binding-cells = <0>;
+		        compatible = "zmk,behavior-num-word";
+        		layers = <3>;
+        		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+        		ignore-numbers;
+    		};
+		
 	};
 
 	keymap {
@@ -126,7 +134,7 @@
 		combo_right_numword {
 			timeout-ms = <90>;
 			key-positions = <5 19>;
-			bindings = <&l_num_word>;
+			bindings = <&r_num_word>;
 			layers = <0>;
 		};
 		combo_right_grave {

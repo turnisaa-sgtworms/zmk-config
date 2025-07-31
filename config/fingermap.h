@@ -107,7 +107,7 @@
 		as: auto_shift {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
-            		tapping_term_ms = <100>;
+            		tapping_term_ms = <200>;
             		quick_tap_ms = <0>;
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;

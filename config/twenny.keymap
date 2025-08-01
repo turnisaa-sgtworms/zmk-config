@@ -11,6 +11,7 @@
             		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         	};		
 		l_num_word: left_num_word {
+			require-prior-idle-ms = <25>;
         		#binding-cells = <0>;
 		        compatible = "zmk,behavior-num-word";
         		layers = <1>;
@@ -18,6 +19,7 @@
         		ignore-numbers;
     		};
 		r_num_word: right_num_word {
+			require-prior-idle-ms = <25>;
         		#binding-cells = <0>;
 		        compatible = "zmk,behavior-num-word";
         		layers = <2>;

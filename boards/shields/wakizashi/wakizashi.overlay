@@ -63,10 +63,10 @@
         columns = <9>; // Length of the "col-gpios" array
         rows = <4>; // Length of the "row-gpios" array
         map = <
-            RC(0,1) RC(1,0) RC(0,3) RC(3,0) 	  	RC(5,0) RC(0,5) RC(7,0) RC(0,7)
-	    RC(2,1) RC(1,2) RC(2,3) RC(3,2) 	  	RC(5,2) RC(2,5) RC(7,2) RC(2,7)
-	    RC(6,1) RC(1,6) RC(6,3) RC(3,6)  RC(15,15) 	RC(5,6) RC(6,5) RC(7,6) RC(6,7)
-	    RC(7,1) 	    RC(4,3) RC(3,4) 	 	RC(5,4) RC(4,5) 	RC(4,7)
+            RC(1,0) RC(0,1) RC(3,0) RC(0,3) 	  	RC(0,5) RC(5,0) RC(0,7) RC(7,0)
+	    RC(1,2) RC(2,1) RC(3,2) RC(2,3) 	  	RC(2,5) RC(5,2) RC(2,7) RC(7,2)
+	    RC(1,6) RC(6,1) RC(3,6) RC(6,3)  RC(15,15) 	RC(6,5) RC(5,6) RC(6,7) RC(7,6)
+	    RC(1,7) 	    RC(3,4) RC(4,3) 	 	RC(5,5) RC(5,4) 	RC(7,4)
         >;
     };
 };

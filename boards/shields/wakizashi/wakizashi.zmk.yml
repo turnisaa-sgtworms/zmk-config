@@ -1,0 +1,10 @@
+file_format: "1"
+id: wakizashi
+name: wakizashi
+type: shield
+url: https://github.com/turnisaa/wakizashi
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio

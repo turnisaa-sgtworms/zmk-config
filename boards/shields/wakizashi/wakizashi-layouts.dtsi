@@ -1,0 +1,57 @@
+#include <physical_layouts.dtsi>
+/ {
+    wakizashi_physical_layout: wakizashi_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "wakizashi";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 150 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  150    0       0     0     0>
+            , <&key_physical_attrs 100 100  250    0       0     0     0>
+            , <&key_physical_attrs 100 100  350    0       0     0     0>
+            , <&key_physical_attrs 100 100  450    0       0     0     0>
+            , <&key_physical_attrs 100 100  550    0       0     0     0>
+            , <&key_physical_attrs 100 100  650    0       0     0     0>
+            , <&key_physical_attrs 150 100  750    0       0     0     0>
+            , <&key_physical_attrs 125 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  125  100       0     0     0>
+            , <&key_physical_attrs 100 100  225  100       0     0     0>
+            , <&key_physical_attrs 125 100  325  100       0     0     0>
+            , <&key_physical_attrs 125 100  450  100       0     0     0>
+            , <&key_physical_attrs 100 100  575  100       0     0     0>
+            , <&key_physical_attrs 100 100  675  100       0     0     0>
+            , <&key_physical_attrs 125 100  775  100       0     0     0>
+            , <&key_physical_attrs 100 100    0  200       0     0     0>
+            , <&key_physical_attrs 100 100  100  200       0     0     0>
+            , <&key_physical_attrs 100 100  200  200       0     0     0>
+            , <&key_physical_attrs 100 100  300  200       0     0     0>
+            , <&key_physical_attrs 100 100  400  200       0     0     0>
+            , <&key_physical_attrs 100 100  500  200       0     0     0>
+            , <&key_physical_attrs 100 100  600  200       0     0     0>
+            , <&key_physical_attrs 100 100  700  200       0     0     0>
+            , <&key_physical_attrs 100 100  800  200       0     0     0>
+            , <&key_physical_attrs 100 100    0  300       0     0     0>
+            , <&key_physical_attrs 100 100  175  300       0     0     0>
+            , <&key_physical_attrs 175 100  275  300       0     0     0>
+            , <&key_physical_attrs 175 100  450  300       0     0     0>
+            , <&key_physical_attrs 100 100  625  300       0     0     0>
+            , <&key_physical_attrs 100 100  800  300       0     0     0>
+            ;
+    };
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        complete;
+
+        wakizashi_physical_layout {
+            physical-layout = <&wakizashi_physical_layout>;
+            positions = < 0  1  2  3     4  5  6  7  >
+		      , < 8  9  10 11    12 13 14 15 >
+		      , < 16 17 18 19 20 21 22 23 24 >
+		      , < 25    26 27    28 29    30 >;
+        };
+    };
+};

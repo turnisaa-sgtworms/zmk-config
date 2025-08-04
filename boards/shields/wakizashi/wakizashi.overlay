@@ -1,0 +1,72 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "wakizashi-layouts.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &wakizashi_physical_layout;
+    };
+};
+
+/ {
+
+    kscan0: kscan_composite {
+        compatible = "zmk,kscan-composite";
+        rows = <4>;
+        columns = <9>;
+
+        // Include the charlieplex driver
+        charlieplex {
+            kscan = <&kscan1>;
+        };
+
+        // Include the matrix driver...
+        matrix {
+            kscan = <&kscan2>;
+            row-offset = <15>; // ...and shift it to not overlap
+    	    col-offset = <15>;
+        };
+    };
+
+    kscan1: kscan_charlieplex {
+        compatible = "zmk,kscan-gpio-charlieplex";
+
+        gpios
+	    = <&pro_micro 2 GPIO_ACTIVE_HIGH>  // 0
+            , <&pro_micro 3 GPIO_ACTIVE_HIGH>  // 1
+            , <&pro_micro 6 GPIO_ACTIVE_HIGH>  // 2
+            , <&pro_micro 8 GPIO_ACTIVE_HIGH>  // 3
+            , <&pro_micro 9 GPIO_ACTIVE_HIGH>  // 4
+            , <&pro_micro 10 GPIO_ACTIVE_HIGH>  // 5
+            , <&pro_micro 20 GPIO_ACTIVE_HIGH>  // 6
+            , <&pro_micro 21 GPIO_ACTIVE_HIGH>  // 7
+            ;
+    };
+    
+    kscan2: kscan_matrix {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+	diode-direction = "col2row";
+        col-gpios
+            = <&pro_micro 14 GPIO_ACTIVE_HIGH> // 0+15
+            ;
+        row-gpios
+            = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // 0+15
+            ;
+    };
+};
+
+
+
+/ {
+    default_transform: keymap_transform0 {
+        compatible = "zmk,matrix-transform";
+        columns = <9>; // Length of the "col-gpios" array
+        rows = <4>; // Length of the "row-gpios" array
+        map = <
+            RC(7,0) RC(0,7) RC(5,0) RC(0,5) 	  	RC(3,0) RC(0,3) RC(1,0) RC(0,1)
+	    RC(7,2) RC(2,7) RC(5,2) RC(2,5) 	  	RC(3,2) RC(2,3) RC(1,2) RC(2,1)
+	    RC(7,6) RC(6,7) RC(5,6) RC(6,5)  RC(15,15) 	RC(3,6) RC(6,3) RC(1,6) RC(6,1)
+	    RC(7,4) 	    RC(5,4) RC(4,5) 	 	RC(3,4) RC(4,3) 	RC(4,1)
+        >;
+    };
+};

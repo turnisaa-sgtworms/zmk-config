@@ -36,7 +36,7 @@
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
 ---
 include:
- - board: nice_nano_v2
-   shield: wakizashi
+ - board: seeeduino_xiao_ble
+   shield: twenny_left
    snippet: studio-rpc-usb-uart
    cmake-args: -DCONFIG_ZMK_STUDIO=y

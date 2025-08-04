@@ -97,7 +97,7 @@
 				&none &kp Q &td4 &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &none 
 				&mt LCTRL LSHIFT &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
 				&none &none &kp S &td5 	&none 			&kp C_PREV &kp C_NEXT &none &none 
-				&none &none  &mt R SPACE 			&kp C_PP &none 
+				&none &none  &mt R SPACE 			&kp C_PP &none &none
 			>;
 		};
 		eight { 

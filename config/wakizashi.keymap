@@ -58,10 +58,10 @@
 		three { 
 			display-name = "three - navigation and kb functions";
 			bindings = <
-				&none &none LUM2 LUI2 	RUI2 RUM2 RUR2 &none 
-				LHP2 LHR2 LHM2 LHI2 	RHI2 RHM2 RHR2 RHP2
-				&none &none LBM2 LBI2 	&none 	RBI2 RBM2 &none &none 
-				&none &none L2 			R2 &none &none 
+				&none &none LUM2 &none RUI2 RUM2 RUR2 &none 
+				&none &kp HOME &kp PGUP &kp END RHI2 RHM2 RHR2 RHP2
+				&none &none &kp PGDN LBI2 &hw_soft_off RBI2 RBM2 &none &none 
+				&none &none L2 R2 &none &none 
 			>;
 		};
 		four { 

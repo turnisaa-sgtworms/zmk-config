@@ -67,7 +67,7 @@
 		four { 
 			display-name = "four - macros";
 			bindings = <
-				&none LC(Z) LC(Y) &none &none &none &none &none 
+				&none LC(&kp Z) LC(Y) &none &none &none &none &none 
 				&none LC(C) LC(V) LC(X) &none &none &none &none
 				&none &none &none &none &to 4 &none &none &none &none 
 				&none &none &none &none &none &none 

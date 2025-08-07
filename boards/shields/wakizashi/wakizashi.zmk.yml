@@ -4,7 +4,7 @@ name: wakizashi
 type: shield
 url: https://github.com/turnisaa/wakizashi
 requires:
-  - pro_micro
+  - seeed_xiao_ble
 features:
   - keys
   - studio

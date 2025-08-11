@@ -247,6 +247,18 @@
 
 
 //formulated
+		combo_lhr_lbm {
+			timeout-ms = <50>;
+			key-positions = <7 14>;
+			bindings = <LBP>;
+			layers = <0>;
+		};
+		combo_rhr_rbm {
+			timeout-ms = <50>;
+			key-positions = <12 17>;
+			bindings = <RBP>;
+			layers = <0>;
+		};
 		combo_lhp_lhr {
 			timeout-ms = <50>;
 			key-positions = <6 7>;
@@ -287,7 +299,12 @@
 			bindings = <RBN1>;
 			layers = <1>;
 		};
-		
+		combo_lum_lur {
+			timeout-ms = <50>;
+			key-positions = <0 1>;
+			bindings = <LUP>;
+			layers = <0>;
+		};
 		combo_rum_rur {
 			timeout-ms = <50>;
 			key-positions = <4 5>;

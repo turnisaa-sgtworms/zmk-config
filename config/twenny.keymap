@@ -24,7 +24,14 @@
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
-		
+		mat: macro_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <75>;
+            bindings = <&ze>, <&kp>;
+            display-name = "Mod-Tap";
+        };
 	};
 
 	keymap {
@@ -380,7 +387,7 @@
 		combo_z {
 			timeout-ms = <65>;
 			key-positions = <9 15>;
-			bindings = <&mt ze Z>;
+			bindings = <&mt 0 Z>;
 			layers = <0>;
 		};
 		combo_b {

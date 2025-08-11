@@ -33,7 +33,7 @@
 			bindings = <
 				&hml LCTRL U &hml LALT O &hml LGUI G &hmr RGUI D &hmr RALT F &hmr RCTRL L 
 				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT S &hmr RGUI M &hmr RSHIFT N
-				&qu &kp W &kp K &kp V 
+				&qu &kp W &kp K &kp H 
 				&lt 2 R &lt 1 SPACE 		
 			>;
 		};
@@ -406,10 +406,10 @@
 			bindings = <&kp J>;
 			layers = <0>;
 		};
-		combo_h {
+		combo_v {
 			timeout-ms = <65>;
 			key-positions = <10 16>;
-			bindings = <&kp H>;
+			bindings = <&kp V>;
 			layers = <0>;
 		};
 		combo_x {

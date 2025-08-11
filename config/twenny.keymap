@@ -364,6 +364,18 @@
 			bindings = <&kp TAB>;
 			layers = <0 1 2 3>;
 		};
+		combo_right_layer3 {
+			timeout-ms = <50>;
+			key-positions = <13 19>;
+			bindings = <&mo 3>;
+			layers = <0>;
+		};
+		combo_left_layer3 {
+			timeout-ms = <50>;
+			key-positions = <6 18>;
+			bindings = <&mo 3>;
+			layers = <0>;
+		};
 		combo_y {
 			timeout-ms = <50>;
 			key-positions = <0 6>;

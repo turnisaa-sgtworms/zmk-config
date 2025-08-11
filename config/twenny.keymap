@@ -380,7 +380,7 @@
 		combo_z {
 			timeout-ms = <65>;
 			key-positions = <9 15>;
-			bindings = <&kp Z>;
+			bindings = <&mt ze Z>;
 			layers = <0>;
 		};
 		combo_b {
@@ -405,6 +405,12 @@
 			timeout-ms = <65>;
 			key-positions = <11 17>;
 			bindings = <&kp X>;
+			layers = <0>;
+		};
+		combo_you {
+			timeout-ms = <65>;
+			key-positions = <1 2>;
+			bindings = <&you>;
 			layers = <0>;
 		};
 	};

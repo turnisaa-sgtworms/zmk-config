@@ -24,12 +24,12 @@
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
-		mat: macro_tap {
+		zemat: ze_macro_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             flavor = "hold-preferred";
             tapping-term-ms = <75>;
-            bindings = <&ze>, <&kp>;
+            bindings = <&ze>, <&kp Z>;
             display-name = "Mod-Tap";
         };
 	};
@@ -387,7 +387,7 @@
 		combo_z {
 			timeout-ms = <65>;
 			key-positions = <9 15>;
-			bindings = <&mat 0 Z>;
+			bindings = <&zemat>;
 			layers = <0>;
 		};
 		combo_b {

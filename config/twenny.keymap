@@ -29,7 +29,7 @@
             #binding-cells = <0>;
             flavor = "hold-preferred";
             tapping-term-ms = <75>;
-            bindings = <&ze>, <&kp Z>;
+            bindings = <&ze, &kp Z>;
             display-name = "Mod-Tap";
         };
 	};

@@ -34,7 +34,7 @@
 			bindings = <
 				&hml LCTRL U &hml LALT O &hml LGUI N 			&hmr RGUI N &hmr RALT O &hmr RCTRL U 
 				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL T 	&hmr RCTRL T &hmr RALT A &hmr RGUI E &hmr RSHIFT I
-				&kp H &kp S 						&kp S &kp H 
+				&kp H &kp S &kp S &kp H 
 				&lt 2 R 						&lt 1 SPACE 		
 			>;
 		};

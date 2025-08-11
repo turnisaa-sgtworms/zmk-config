@@ -387,7 +387,7 @@
 		combo_z {
 			timeout-ms = <65>;
 			key-positions = <9 15>;
-			bindings = <&mt 0 Z>;
+			bindings = <&mat 0 Z>;
 			layers = <0>;
 		};
 		combo_b {

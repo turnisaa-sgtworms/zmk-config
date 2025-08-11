@@ -136,48 +136,48 @@
 	// left hand
 		// top row
 			#define LUO &kp TAB
-			#define LUP &none
-			#define LUR &kp U
-			#define LUM &kp O
-			#define LUI &hml LGUI P
-			#define LUN &kp J
+			#define LUP &kp Y
+			#define LUR &hml LCTRL U
+			#define LUM &hml LALT O
+			#define LUI &hml LGUI G
+			#define LUN &none
 		// home row
 			#define LHO &kp DEL
-			#define LHP &hml LSHIFT A
-			#define LHR &kp I
-			#define LHM &hml LALT E
-			#define LHI &hml LCTRL T
-			#define LHN &kp G
+			#define LHP &hml LSHIFT I
+			#define LHR &hml LGUI E
+			#define LHM &hml LALT A
+			#define LHI &hml LCTRL C
+			#define LHN &kp P
 		// bottom row
 			#define LBO &none
-			#define LBP &none
-			#define LBR &none
-			#define LBM &kp X
-			#define LBI &kp B
-			#define LBN &kp Z
+			#define LBP &kp Q
+			#define LBR &qu
+			#define LBM &kp Z
+			#define LBI &kp W
+			#define LBN &kp P
 	
 	// right hand
 		// top row
 			#define RUO &kp ESC
-			#define RUP &qu
-			#define RUR &kp C
-			#define RUM &kp Y
+			#define RUP &kp B
+			#define RUR &hmr LCTRL F
+			#define RUM &hmr LALT J
 			#define RUI &hmr RGUI M
-			#define RUN &kp K
+			#define RUN &none
 		// home row
 			#define RHO &kp BSPC
-			#define RHP &hmr RSHIFT H
-			#define RHR &kp D
-			#define RHM &hmr RALT S
-			#define RHI &hmr RCTRL N
-			#define RHN &kp F
+			#define RHP &hmr RSHIFT N
+			#define RHR &hmr RGUI S
+			#define RHM &hmr RALT H
+			#define RHI &hmr RCTRL T
+			#define RHN &kp K
 		// bottom row
 			#define RBO &none
-			#define RBP &none
-			#define RBR &none
-			#define RBM &kp W
-			#define RBI &kp L
-			#define RBN &kp V
+			#define RBP &kp X
+			#define RBR &kp V
+			#define RBM &kp L
+			#define RBI &kp D
+			#define RBN &none
 
 	// thumbfan
 		// 2 keys

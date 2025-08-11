@@ -16,6 +16,20 @@
                 	= <&macro_tap &kp Q &kp U>
                 	;
         	};
+			ze: ze {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp z &kp e>
+                	;
+        	};
+			you: you {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp Y &kp O &kp U>
+                	;
+        	};
 		lol: lol {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;

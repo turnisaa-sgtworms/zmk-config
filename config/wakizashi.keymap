@@ -31,9 +31,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&kp Y &hml LCTRL U &hml LALT O &hml LGUI G &hmr RGUI M &hmr RALT J &hmr RCTRL F &kp B
-				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT H &hmr RGUI S &hmr RSHIFT N
-				&kp Q &qu &kp Z &kp W &kp P &kp D &kp L &kp V &kp X
+				&kp Y &hml LCTRL U &hml LALT O &hml LGUI G &hmr RGUI D &hmr RALT F &hmr RCTRL L &kp B
+				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT S &hmr RGUI M &hmr RSHIFT N
+				&kp Q &kp Z &qu &kp W &kp P &kp K &kp V &kp H &kp X
 				&mo 4 &mo 3 &lt 2 R &lt 1 SPACE &mo 3 &mo 4 	
 			>;
 		};
@@ -364,10 +364,10 @@
 			bindings = <&kp TAB>;
 			layers = <0 1 2 3>;
 		};
-		combo_k {
+		combo_j {
 			timeout-ms = <50>;
 			key-positions = <21 22>;
-			bindings = <&kp K>;
+			bindings = <&kp J>;
 			layers = <0>;
 		};
 	};

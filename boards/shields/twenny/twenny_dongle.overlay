@@ -5,10 +5,10 @@
 
 / {
     chosen {
-	zmk,kscan = &kscan0;
-	zmk,physical-layout = &twenny_physical_layout;
+	zmk,kscan = &mock_kscan;
+	zmk,physical-layout = &physical_layout0;
     };
-    kscan0: kscan_0 {
+    mock_kscan: mock_kscan {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
@@ -24,5 +24,13 @@
 			RC(0,8) RC(0,9) RC(0,15) RC(0,16)
 				RC(0,7) RC(0,17)
 	>;
+    };
+};
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
     };
 };

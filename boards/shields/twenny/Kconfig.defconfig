@@ -3,7 +3,7 @@ config ZMK_PM_SOFT_OFF
 config ZMK_POINTING
 	default y
 
-if SHIELD_MY_KEYBOARD_DONGLE
+if SHIELD_TWENNY_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "twenny"

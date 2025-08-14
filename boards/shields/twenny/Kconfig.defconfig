@@ -3,12 +3,25 @@ config ZMK_PM_SOFT_OFF
 config ZMK_POINTING
 	default y
 
-if SHIELD_TWENNY_LEFT
+if SHIELD_MY_KEYBOARD_DONGLE
+
 config ZMK_KEYBOARD_NAME
-	default "twenny"
+    default "twenny"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-	default y
+    default y
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN
+    default 2
+
+config BT_MAX_PAIRED
+    default 2
 
 endif
 

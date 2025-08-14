@@ -1,4 +1,5 @@
-#include "twenny.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
+#include "twenny-layouts.dtsi"
 
 / {
     chosen {

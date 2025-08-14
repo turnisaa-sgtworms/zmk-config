@@ -23,6 +23,12 @@
 		, <&xiao_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 		;
 	};
+	mock_kscan: mock_kscan {
+        	compatible = "zmk,kscan-mock";
+        	columns = <0>;
+        	rows = <0>;
+       		events = <0>;
+	};
 	default_transform: keymap_transform_twenny {
 		compatible = "zmk,matrix-transform";
 		columns = <4>;

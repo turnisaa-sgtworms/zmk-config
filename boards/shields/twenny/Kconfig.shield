@@ -1,5 +1,5 @@
 config SHIELD_TWENNY_DONGLE
-    def_bool $(shields_list_contains,twenny_dongle)
+	def_bool $(shields_list_contains,twenny_dongle)
 config SHIELD_TWENNY_LEFT
 	def_bool $(shields_list_contains,twenny_left)
 config SHIELD_TWENNY_RIGHT

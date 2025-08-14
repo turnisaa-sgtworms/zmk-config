@@ -3,7 +3,6 @@
     twenny_physical_layout: twenny_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "twenny";
-        kscan = <&kscan0>;
         transform = <&default_transform>;
 
         keys  //                     w   h    x    y     rot    rx    ry

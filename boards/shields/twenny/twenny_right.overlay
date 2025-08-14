@@ -3,3 +3,9 @@
 &default_transform {
 	col-offset = <11>;
 };
+
+/ {
+	chosen {
+		zmk,kscan = &kscan0;
+   	};
+};

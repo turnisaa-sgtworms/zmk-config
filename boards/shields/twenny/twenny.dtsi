@@ -3,7 +3,6 @@
 / {
 	chosen {
         	zmk,physical-layout = &twenny_physical_layout;
-		zmk,kscan = &kscan0;
    	};
 	kscan0: kscan0 {
 		compatible = "zmk,kscan-gpio-direct";

@@ -1,9 +1,8 @@
-#include "twenny-layouts.dtsi"
+#include "twenny.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
 	zmk,kscan = &mock_kscan;
-	zmk,physical-layout = &physical_layout0;
     };
 };

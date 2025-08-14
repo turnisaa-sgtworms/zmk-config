@@ -5,7 +5,7 @@
 
 / {
     chosen {
-	zmk,kscan = &mock_kscan;
+	zmk,kscan = &kscan0;
 	zmk,physical-layout = &twenny_physical_layout;
     };
     kscan0: kscan_0 {

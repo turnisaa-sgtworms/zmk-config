@@ -18,10 +18,10 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 2
 
 config BT_MAX_CONN
-    default 2
+    default 5
 
 config BT_MAX_PAIRED
-    default 2
+    default 5
 
 endif
 

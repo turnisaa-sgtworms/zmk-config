@@ -1,3 +1,4 @@
+#include "twenny-layouts.dtsi"
 #include "twenny.dtsi"
 
 &default_transform {

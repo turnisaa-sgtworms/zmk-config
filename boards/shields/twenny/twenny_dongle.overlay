@@ -1,4 +1,5 @@
 #include "twenny-layouts.dtsi"
+#include "twenny.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {

@@ -3,6 +3,7 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+	zmk,physical-layout = &twenny_physical_layout;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -23,4 +24,13 @@
 				RC(0,7) RC(0,17)
 	>;
     };
+    
+    twenny_physical_layout: twenny_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "twenny";
+        kscan = <&kscan0>;
+        transform = <&default_transform>;
+    };
+
+
 };

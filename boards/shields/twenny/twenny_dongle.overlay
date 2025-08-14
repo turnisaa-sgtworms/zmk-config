@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
 	chosen {
-        	zmk,physical-layout = &twenny_physical_layout;
 		zmk,kscan = &mock_kscan;
    	};
     mock_kscan: mock_kscan_0 {

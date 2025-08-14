@@ -8,7 +8,7 @@
 / {
     chosen {
 	zmk,kscan = &mock_kscan;
-	zmk,physical-layout = &physical_layout0;
+	zmk,physical-layout = &twenny_physical_layout;
     };
     mock_kscan: mock_kscan_0 {
         compatible = "zmk,kscan-mock";

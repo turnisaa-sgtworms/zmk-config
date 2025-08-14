@@ -3,14 +3,8 @@
 
 / {
     chosen {
-	zmk,kscan = &mock_kscan;
+	zmk,kscan = &kscan0;
 	zmk,physical-layout = &physical_layout0;
-    };
-    mock_kscan: mock_kscan {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
     };
     kscan0: kscan0 {
 	compatible = "zmk,kscan-gpio-direct";

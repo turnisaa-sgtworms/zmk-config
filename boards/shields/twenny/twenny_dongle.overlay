@@ -28,7 +28,7 @@
     twenny_physical_layout: twenny_physical_layout {
         compatible = "zmk,physical-layout";
         display-name = "twenny";
-        kscan = <&kscan0>;
+        kscan = <&mock_kscan>;
         transform = <&default_transform>;
     };
 

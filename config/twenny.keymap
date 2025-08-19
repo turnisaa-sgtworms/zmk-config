@@ -24,6 +24,14 @@
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
+		mmt: macro_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&>, <&kp>;
+            display-name = "Macro Mod-Tap";
+        };
 	};
 
 	keymap {
@@ -31,16 +39,16 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&hml LCTRL U &hml LALT O &hml LGUI G &hmr RGUI D &hmr RALT F &hmr RCTRL L 
-				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT S &hmr RGUI M &hmr RSHIFT N
-				&qu &kp W &kp K &kp H 
-				&lt 2 R &lt 1 SPACE 		
+				&hml LCTRL U &hml LALT O &hml LGUI D &hmr RGUI G &hmr RALT F &hmr RCTRL L 
+				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL T &hmr RCTRL C &hmr RALT S &hmr RGUI M &hmr RSHIFT N
+				&mmt qu Q &kp K &kp W &kp H 
+				&lt 2 R &lt 1 SPACE
 			>;
 		};
 		one { 
 			display-name = "one - numico";
 			bindings = <
-				AS(N5) AS(N6) AS(N7) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
+				AS(N5) AS(N7) AS(N6) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
 				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(COMMA) AS(DOT) AS(FSLH) 
 				AS(N9) AS(N8) 			AS(APOS) AS(MINUS) 
 				&lt 2 N0 			&none 
@@ -49,7 +57,7 @@
 		two { 
 			display-name = "two - numico mirror";
 			bindings = <
-				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N7) AS(N6) AS(N5) 
+				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N6) AS(N7) AS(N5) 
 				AS(FSLH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N1) AS(N2) AS(N3) AS(N4) 
 				AS(MINUS) AS(APOS) 				AS(N8) AS(N9) 
 				&none 						&lt 1 N0
@@ -58,8 +66,8 @@
 		three { 
 			display-name = "three - navigation and kb functions";
 			bindings = <
-				&ind_bat LUM2 LUI2 	RUI2 RUM2 RUR2
-				LHP2 LHR2 LHM2 LHI2 	RHI2 RHM2 RHR2 RHP2
+				&ind_bat LUM2 LUI2 RUI2 RUM2 RUR2
+				LHP2 LHR2 LHM2 LHI2 RHI2 RHM2 RHR2 RHP2
 				LBM2 LBI2 		RBI2 RBM2
 				L2 			R2
 			>;

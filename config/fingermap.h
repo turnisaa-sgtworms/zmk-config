@@ -23,6 +23,27 @@
                 	= <&macro_tap &kp Z &kp E>
                 	;
         	};
+			ju: ju {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp J &kp U>
+                	;
+        	};
+			oa: oa {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp O &kp A>
+                	;
+        	};
+			ue: ue {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp U &kp E>
+                	;
+        	};
 			you: you {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;

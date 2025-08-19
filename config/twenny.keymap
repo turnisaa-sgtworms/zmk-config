@@ -29,7 +29,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&>, <&kp>;
+            bindings = <&kp>, <&qu>;
             display-name = "Macro Mod-Tap";
         };
 	};
@@ -41,7 +41,7 @@
 			bindings = <
 				&hml LCTRL U &hml LALT O &hml LGUI D &hmr RGUI G &hmr RALT F &hmr RCTRL L 
 				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL T &hmr RCTRL C &hmr RALT S &hmr RGUI M &hmr RSHIFT N
-				&mmt qu Q &kp K &kp W &kp H 
+				&mmt 0 Q &kp K &kp W &kp H 
 				&lt 2 R &lt 1 SPACE
 			>;
 		};

@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <125>;
             bindings = <&kp>, <&qu>;
             display-name = "qu Mod-Tap";
         };
@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&ze>;
             display-name = "ze Mod-Tap";
         };
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&ju>;
             display-name = "ju Mod-Tap";
         };
@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <125>;
             bindings = <&oa>, <&kp>;
             display-name = "oa Mod-Tap";
         };
@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <125>;
             bindings = <&ue>, <&kp>;
             display-name = "ue Mod-Tap";
         };

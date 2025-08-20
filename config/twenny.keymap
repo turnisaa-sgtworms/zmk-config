@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <125>;
+            tapping-term-ms = <175>;
             bindings = <&kp>, <&qu>;
             display-name = "qu Mod-Tap";
         };
@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
             bindings = <&kp>, <&ze>;
             display-name = "ze Mod-Tap";
         };
@@ -44,7 +44,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <175>;
             bindings = <&kp>, <&ju>;
             display-name = "ju Mod-Tap";
         };
@@ -52,7 +52,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <125>;
+            tapping-term-ms = <150>;
             bindings = <&oa>, <&kp>;
             display-name = "oa Mod-Tap";
         };
@@ -60,7 +60,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <125>;
+            tapping-term-ms = <150>;
             bindings = <&ue>, <&kp>;
             display-name = "ue Mod-Tap";
         };
@@ -73,7 +73,7 @@
 			bindings = <
 				&uemt 0 U &oamt 0 O &kp D &kp G &kp F &kp L 
 				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL T &hmr RCTRL C &hmr RALT S &hmr RGUI M &hmr RSHIFT N
-				&qumt Q 0 &kp K &kp W &kp H 
+				&kp Y &kp K &kp W &kp H 
 				&lt 2 R &lt 1 SPACE
 			>;
 		};
@@ -416,16 +416,16 @@
 			bindings = <&mo 3>;
 			layers = <0>;
 		};
-		combo_y {
+		combo_qu {
 			timeout-ms = <50>;
 			key-positions = <0 6>;
-			bindings = <&kp Y>;
+			bindings = <&qumt Q 0>;
 			layers = <0>;
 		};
-		combo_p {
+		combo_ju {
 			timeout-ms = <65>;
 			key-positions = <2 9>;
-			bindings = <&kp P>;
+			bindings = <&jumt J 0>;
 			layers = <0>;
 		};
 		combo_z {
@@ -434,16 +434,16 @@
 			bindings = <&zemt Z 0>;
 			layers = <0>;
 		};
-		combo_b {
+		combo_x {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&kp B>;
+			bindings = <&kp X>;
 			layers = <0>;
 		};
-		combo_j {
+		combo_p {
 			timeout-ms = <65>;
 			key-positions = <3 10>;
-			bindings = <&jumt J 0>;
+			bindings = <&kp P>;
 			layers = <0>;
 		};
 		combo_v {
@@ -452,10 +452,10 @@
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_x {
+		combo_b {
 			timeout-ms = <65>;
 			key-positions = <11 17>;
-			bindings = <&kp X>;
+			bindings = <&kp B>;
 			layers = <0>;
 		};
 		combo_you {

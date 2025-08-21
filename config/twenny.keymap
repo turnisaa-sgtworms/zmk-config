@@ -35,7 +35,7 @@
 		zemt: ze_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <175>;
             bindings = <&kp>, <&ze>;
             display-name = "ze Mod-Tap";
@@ -43,7 +43,7 @@
 		jumt: ju_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <175>;
             bindings = <&kp>, <&ju>;
             display-name = "ju Mod-Tap";
@@ -51,7 +51,7 @@
 		oamt: oa_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <175>;
             bindings = <&oa>, <&kp>;
             display-name = "oa Mod-Tap";
@@ -59,7 +59,7 @@
 		uemt: ue_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <175>;
             bindings = <&ue>, <&kp>;
             display-name = "ue Mod-Tap";

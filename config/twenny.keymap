@@ -257,7 +257,7 @@
 		combo_k_game {
 			timeout-ms = <90>;
 			key-positions = <6 18>;
-			bindings = <&mt LSHIFT K>;
+			bindings = <&mt K LSHIFT>;
 			layers = <7 8 9>;
 		};
 		combo_y_game {

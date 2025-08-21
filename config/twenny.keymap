@@ -135,9 +135,9 @@
 			display-name = "seven - fps more binds";
 			bindings = <
 				     &kp Q &td4 &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&mt LCTRL LSHIFT &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
+				&kp LCTRL &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
 				           &kp S &td5 				&kp C_PREV &kp C_NEXT 
-				                &mt R SPACE 			&kp C_PP
+				                &kp SPACE 			&kp C_PP
 			>;
 		};
 		eight { 
@@ -218,6 +218,12 @@
 			bindings = <&kp N1>;
 			layers = <7 9>;
 		};
+		combo_2_game {
+			timeout-ms = <90>;
+			key-positions = <1 18>;
+			bindings = <&kp N2>;
+			layers = <7 9>;
+		};
 		combo_3_game {
 			timeout-ms = <90>;
 			key-positions = <2 18>;
@@ -226,8 +232,14 @@
 		};
 		combo_4_game {
 			timeout-ms = <90>;
-			key-positions = <7 9>;
+			key-positions = <8 14>;
 			bindings = <&kp N4>;
+			layers = <5 6 7>;
+		};
+		combo_r_game {
+			timeout-ms = <90>;
+			key-positions = <1 8>;
+			bindings = <&kp R>;
 			layers = <5 6 7>;
 		};
 		combo_b_game {
@@ -245,7 +257,7 @@
 		combo_k_game {
 			timeout-ms = <90>;
 			key-positions = <6 18>;
-			bindings = <&kp K>;
+			bindings = <&mt LSHIFT K>;
 			layers = <7 8 9>;
 		};
 		combo_y_game {

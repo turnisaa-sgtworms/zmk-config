@@ -134,9 +134,9 @@
 		seven { 
 			display-name = "seven - fps more binds";
 			bindings = <
-				     &kp Q &td4 &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				     &kp Q &kp C &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LCTRL &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
-				           &kp S &td5 				&kp C_PREV &kp C_NEXT 
+				           &kp S &kp F 				&kp C_PREV &kp C_NEXT 
 				                &kp SPACE 			&kp C_PP
 			>;
 		};
@@ -258,6 +258,18 @@
 			timeout-ms = <90>;
 			key-positions = <6 18>;
 			bindings = <&mt K LSHIFT>;
+			layers = <7 8 9>;
+		};
+		combo_x_game {
+			timeout-ms = <90>;
+			key-positions = <1 2>;
+			bindings = <&kp X>;
+			layers = <7 8 9>;
+		};
+		combo_g_game {
+			timeout-ms = <90>;
+			key-positions = <0 1>;
+			bindings = <&kp G>;
 			layers = <7 8 9>;
 		};
 		combo_y_game {

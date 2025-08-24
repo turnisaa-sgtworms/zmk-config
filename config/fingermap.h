@@ -44,6 +44,13 @@
                 	= <&macro_tap &kp U &kp E>
                 	;
         	};
+			xp: xp {
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp X &kp P>
+                	;
+        	};
 			you: you {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;

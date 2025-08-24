@@ -64,13 +64,13 @@
             bindings = <&ue>, <&kp>;
             display-name = "ue Mod-Tap";
         };
-		xpmt: ue_mod_tap {
+		xpmt: xp_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <175>;
             bindings = <&xp>, <&kp>;
-            display-name = "ue Mod-Tap";
+            display-name = "xp Mod-Tap";
         };
 	};
 

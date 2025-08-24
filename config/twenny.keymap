@@ -64,6 +64,14 @@
             bindings = <&ue>, <&kp>;
             display-name = "ue Mod-Tap";
         };
+		xpmt: ue_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <175>;
+            bindings = <&xp>, <&kp>;
+            display-name = "ue Mod-Tap";
+        };
 	};
 
 	keymap {
@@ -236,10 +244,10 @@
 			bindings = <&kp N4>;
 			layers = <5 6 7>;
 		};
-		combo_r_game {
+		combo_g_game {
 			timeout-ms = <90>;
 			key-positions = <1 8>;
-			bindings = <&kp R>;
+			bindings = <&kp G>;
 			layers = <5 6 7>;
 		};
 		combo_b_game {
@@ -258,18 +266,18 @@
 			timeout-ms = <90>;
 			key-positions = <6 18>;
 			bindings = <&mt K LSHIFT>;
+			layers = <7 9>;
+		};
+		combo_r_game {
+			timeout-ms = <90>;
+			key-positions = <1 2>;
+			bindings = <&kp R>;
 			layers = <7 8 9>;
 		};
 		combo_x_game {
 			timeout-ms = <90>;
-			key-positions = <1 2>;
-			bindings = <&kp X>;
-			layers = <7 8 9>;
-		};
-		combo_g_game {
-			timeout-ms = <90>;
 			key-positions = <0 1>;
-			bindings = <&kp G>;
+			bindings = <&kp X>;
 			layers = <7 8 9>;
 		};
 		combo_y_game {
@@ -461,7 +469,7 @@
 		combo_x {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&kp X>;
+			bindings = <&xpmt X>;
 			layers = <0>;
 		};
 		combo_p {

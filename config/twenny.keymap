@@ -469,7 +469,7 @@
 		combo_x {
 			timeout-ms = <50>;
 			key-positions = <5 13>;
-			bindings = <&xpmt X>;
+			bindings = <&xpmt 0 X>;
 			layers = <0>;
 		};
 		combo_p {

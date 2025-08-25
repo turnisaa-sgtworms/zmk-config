@@ -23,7 +23,54 @@
         		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         		ignore-numbers;
     		};
-		
+		qumt: qu_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&qu>;
+            display-name = "qu Mod-Tap";
+        };
+		zemt: ze_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&ze>;
+            display-name = "ze Mod-Tap";
+        };
+		jumt: ju_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&ju>;
+            display-name = "ju Mod-Tap";
+        };
+		oamt: oa_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&oa>, <&kp>;
+            display-name = "oa Mod-Tap";
+        };
+		uemt: ue_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&ue>, <&kp>;
+            display-name = "ue Mod-Tap";
+        };
+		xpmt: xp_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&xp>, <&kp>;
+            display-name = "xp Mod-Tap";
+        };
 	};
 
 	keymap {
@@ -31,9 +78,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&kp Y &hml LCTRL U &hml LALT O &hml LGUI G &hmr RGUI D &hmr RALT F &hmr RCTRL L &kp B
-				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT S &hmr RGUI M &hmr RSHIFT N
-				&kp Q &kp Z &qu &kp W &kp P &kp K &kp V &kp H &kp X
+				&kp Y &hml LCTRL U &hml LALT O &hml LGUI D &hmr RGUI G &hmr RALT F &hmr RCTRL L &kp B
+				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL T &hmr RCTRL C &hmr RALT S &hmr RGUI H &hmr RSHIFT N
+				&jumt 0 J &zemt 0 Z &qumt 0 Q &kp K &kp P &kp W &kp V &kp M &kp X
 				&mo 4 &mo 3 &lt 2 R &lt 1 SPACE &mo 3 &mo 4 	
 			>;
 		};

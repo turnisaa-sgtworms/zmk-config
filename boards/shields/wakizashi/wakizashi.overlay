@@ -8,26 +8,7 @@
 };
 
 / {
-
-    kscan0: kscan_composite {
-        compatible = "zmk,kscan-composite";
-        rows = <4>;
-        columns = <9>;
-
-        // Include the charlieplex driver
-        charlieplex {
-            kscan = <&kscan1>;
-        };
-
-        // Include the matrix driver...
-        matrix {
-            kscan = <&kscan2>;
-            row-offset = <15>; // ...and shift it to not overlap
-    	    col-offset = <15>;
-        };
-    };
-
-    kscan1: kscan_charlieplex {
+    kscan0: kscan_charlieplex {
         compatible = "zmk,kscan-gpio-charlieplex";
 
         gpios
@@ -41,14 +22,6 @@
             , <&xiao_d 3 GPIO_ACTIVE_HIGH>  // 7
 			, <&xiao_d 0 GPIO_ACTIVE_HIGH>  // 8
 			, <&xiao_d 1 GPIO_ACTIVE_HIGH>  // 9
-            ;
-    };
-    
-    kscan2: kscan_matrix {
-        compatible = "zmk,kscan-gpio-direct";
-        wakeup-source;
-        input-gpios
-            = <&xiao_d 11 GPIO_ACTIVE_HIGH> // 0+15
             ;
     };
 };

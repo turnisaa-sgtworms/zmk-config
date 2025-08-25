@@ -221,67 +221,67 @@
 			layers = <1>;
 		};
 		combo_1_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <0 18>;
 			bindings = <&kp N1>;
 			layers = <7 9>;
 		};
 		combo_2_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <1 18>;
 			bindings = <&kp N2>;
 			layers = <7 9>;
 		};
 		combo_3_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <2 18>;
 			bindings = <&kp N3>;
 			layers = <7 9>;
 		};
 		combo_4_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <8 14>;
 			bindings = <&kp N4>;
 			layers = <5 6 7>;
 		};
 		combo_g_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <1 8>;
 			bindings = <&kp G>;
 			layers = <5 6 7>;
 		};
 		combo_b_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <14 15>;
 			bindings = <&kp B>;
 			layers = <7 8 9>;
 		};
 		combo_e_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <14 15>;
 			bindings = <&kp E>;
 			layers = <5 6>;
 		};
 		combo_k_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&mt K LSHIFT>;
 			layers = <7 9>;
 		};
 		combo_r_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <1 2>;
 			bindings = <&kp R>;
 			layers = <7 8 9>;
 		};
 		combo_x_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <0 1>;
 			bindings = <&kp X>;
 			layers = <7 8 9>;
 		};
 		combo_y_game {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&kp Y>;
 			layers = <8>;

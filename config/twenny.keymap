@@ -488,7 +488,7 @@
 			timeout-ms = <30>;
 			key-positions = <11 17>;
 			bindings = <&kp B>;
-			layers = <0>;my
+			layers = <0>;
 		};
 		combo_you {
 			timeout-ms = <30>;

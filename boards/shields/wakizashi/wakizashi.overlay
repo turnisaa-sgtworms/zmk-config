@@ -1,4 +1,4 @@
-w#include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/matrix_transform.h>
 #include "wakizashi-layouts.dtsi"
 
 / {

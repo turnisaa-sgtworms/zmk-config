@@ -173,7 +173,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <150>;
-            bindings = <&kp CAPS>, <&caps_word>;
+            bindings = <&kp>, <&caps_word>;
             display-name = "Caps-Tap";
         };
 		mt: mod_tap {

@@ -90,7 +90,7 @@
 			bindings = <
 				AS(N5) AS(N7) AS(N6) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
 				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(COMMA) AS(DOT) RAS(FSLH) 
-				AS(N9) AS(N8) 			AS(MINUS) RAS(EQUAL) 
+				AS(N9) AS(N8) 			RAS(MINUS) AS(EQUAL) 
 				&lt 2 N0 			&none 
 			>;
 		};
@@ -99,7 +99,7 @@
 			bindings = <
 				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N6) AS(N7) AS(N5) 
 				RAS(FSLH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N1) AS(N2) AS(N3) AS(N4) 
-				RAS(EQUAL) AS(MINUS) 				AS(N8) AS(N9) 
+				AS(EQUAL) RAS(MINUS) 				AS(N8) AS(N9) 
 				&none 						&lt 1 N0
 			>;
 		};

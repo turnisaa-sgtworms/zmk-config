@@ -168,6 +168,14 @@
             		bindings = <&kp>, <&kp>;
             		display-name = "Fast Mod-Tap";
         	};
+		cmt: caps_taps {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&kp CAPS>, <&caps_word>;
+            display-name = "Caps-Tap";
+        };
 		mt: mod_tap {
             		tapping-term-ms = <200>;
         	};

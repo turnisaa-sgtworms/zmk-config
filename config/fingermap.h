@@ -6,6 +6,7 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define AS(keycode) &as LS(keycode) keycode
+#define RAS(keycode) &as keycode LS(keycode)
 
 / {
 	macros {

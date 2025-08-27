@@ -172,7 +172,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <225>;
             bindings = <&kp>, <&caps_word>;
             display-name = "Caps-Tap";
         };

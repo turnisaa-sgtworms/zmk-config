@@ -342,7 +342,7 @@
 		combo_capsword {
 			timeout-ms = <30>;
 			key-positions = <6 13>;
-			bindings = <&cmt 0 0>;
+			bindings = <&cmt CAPS 0>;
 			layers = <0>;
 		};
 		combo_up {

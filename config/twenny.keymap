@@ -450,7 +450,7 @@
 		};
 		combo_qu {
 			timeout-ms = <30>;
-			key-positions = <0 6>;
+			key-positions = <4 11>;
 			bindings = <&qumt Q 0>;
 			layers = <0>;
 		};

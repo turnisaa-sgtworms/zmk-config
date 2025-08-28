@@ -80,7 +80,7 @@
 			bindings = <
 				&kp Y 			&uemt 0 U 	&oamt 0 O 	&kp D 				&kp G 			&kp F 		&kp L 		&kp B
 				&hml LSHIFT I 	&hml LGUI E &hml LALT A &hml LCTRL T 		&hmr RCTRL C 	&hmr RALT S &hmr RGUI H &hmr RSHIFT N
-				&jumt 0 J 		&zemt 0 Z 	&qumt 0 Q 	&kp K 		&kp P 	&kp W du		&kp V 		&kp M 		&kp X
+				&jumt 0 J 		&zemt 0 Z 	&qumt 0 Q 	&kp K 		&kp P 	&kp W			&kp V 		&kp M 		&kp X
 				&mo 4 						&lt 3 J 	&lt 2 R 			&lt 1 SPACE 	&lt 3 Z 				&mo 4 	
 			>;
 		};

@@ -8,7 +8,22 @@
 };
 
 / {
-    kscan0: kscan_charlieplex {
+    kscan0: kscan_composite {
+        compatible = "zmk,kscan-composite";
+        rows = <4>;
+        columns = <9>;
+
+        charlieplex {
+            kscan = <&kscan1>;
+        };
+
+        matrix {
+            kscan = <&kscan2>;
+            row-offset = <8>; // ...and shift it to not overlap
+        };
+    };
+
+	kscan1: kscan_charlieplex {
         compatible = "zmk,kscan-gpio-charlieplex";
 
         gpios
@@ -24,6 +39,18 @@
 			, <&xiao_d 1 GPIO_ACTIVE_HIGH>  // 9
             ;
     };
+
+	kscan2: kscan_matrix {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "col2row";
+        col-gpios
+            = <&pro_micro 0 GPIO_ACTIVE_HIGH>
+            ;
+        row-gpios
+            = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
+    };
 };
 
 
@@ -36,7 +63,7 @@
         map = <
         	RC(0,1) RC(1,0) RC(0,3) RC(3,0) 	  		RC(5,0) RC(0,5) RC(7,0) RC(0,7)
 	    	RC(2,1) RC(1,2) RC(2,3) RC(3,2) 	  		RC(5,2) RC(2,5) RC(7,2) RC(2,7)
-	    	RC(6,1) RC(1,6) RC(6,3) RC(3,6)  RC(8,9) 	RC(5,6) RC(6,5) RC(7,6) RC(6,7)
+	    	RC(6,1) RC(1,6) RC(6,3) RC(3,6)  RC(8,8) 	RC(5,6) RC(6,5) RC(7,6) RC(6,7)
 	    	RC(4,1) 	    RC(4,3) RC(3,4) 	 		RC(5,4) RC(4,5) 		RC(4,7)
         >;
     };

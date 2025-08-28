@@ -28,8 +28,8 @@
         compatible = "zmk,kscan-gpio-charlieplex";
 
         gpios
-	    	= <&xiao_d 7 GPIO_ACTIVE_HIGH>  // 0 - col0
-            , <&xiao_d 3 GPIO_ACTIVE_HIGH>  // 1 - row0
+	    	= <&xiao_d 3 GPIO_ACTIVE_HIGH>  // 0 - row0
+            , <&xiao_d 7 GPIO_ACTIVE_HIGH>  // 1 - col0
             , <&xiao_d 4 GPIO_ACTIVE_HIGH>  // 2 - row1
             , <&xiao_d 8 GPIO_ACTIVE_HIGH>  // 3 - col1
             , <&xiao_d 6 GPIO_ACTIVE_HIGH>  // 4 - row3

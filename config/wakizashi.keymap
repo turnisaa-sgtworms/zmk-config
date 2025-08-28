@@ -234,12 +234,6 @@
 			bindings = <&to 8>;
 			layers = <0>;
 		};
-		combo_apex_layer {
-			timeout-ms = <50>;
-			key-positions = <2 9 11>;
-			bindings = <&to 9>;
-			layers = <0>;
-		};
 		combo_voipslop_layer {
 			timeout-ms = <50>;
 			key-positions = <1 2 3 4 5 6>;

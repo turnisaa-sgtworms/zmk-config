@@ -30,8 +30,8 @@
         gpios
 	    	= <&xiao_d 7 GPIO_ACTIVE_HIGH>  // 0
             , <&xiao_d 3 GPIO_ACTIVE_HIGH>  // 1
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH>  // 2
-            , <&xiao_d 4 GPIO_ACTIVE_HIGH>  // 3
+            , <&xiao_d 4 GPIO_ACTIVE_HIGH>  // 2
+            , <&xiao_d 8 GPIO_ACTIVE_HIGH>  // 3
             , <&xiao_d 9 GPIO_ACTIVE_HIGH>  // 4
             , <&xiao_d 6 GPIO_ACTIVE_HIGH>  // 5
             , <&xiao_d 10 GPIO_ACTIVE_HIGH> // 6

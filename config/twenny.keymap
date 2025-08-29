@@ -79,9 +79,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&uemt 0 U &oamt 0 O &kp D &kp G &kp F &kp L 
-				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL T &hmr RCTRL C &hmr RALT S &hmr RGUI H &hmr RSHIFT N
-				&kp Y &kp K &kp W &kp M 
+				&uemt 0 U &oamt 0 O &kp G &kp D &kp F &kp L 
+				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
+				&kp Y &kp W &kp K &kp M 
 				&lt 2 R &lt 1 SPACE
 			>;
 		};

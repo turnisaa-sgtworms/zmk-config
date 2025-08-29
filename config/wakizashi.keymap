@@ -89,7 +89,7 @@
 			bindings = <
 				&l_num_word AS(N5) AS(N7) AS(N6) &mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT &mt LS(DOT) LS(COMMA)
 				AS(N4) AS(N3) AS(N2) AS(N1) AS(SEMI) AS(APOS) &mt DOT COMMA &mt LS(BSLH) LS(FSLH)
-				&kp HOME &kp END AS(N9) AS(N8) &none RAS(MINUS) AS(EQUAL) AS(GRAVE) &mt BSLH FSLH
+				&kp HOME &kp END AS(N9) AS(N8) &none &mt BSLH FSLH RAS(MINUS) AS(EQUAL) AS(GRAVE) 
 				&none &kp SPACE &lt 2 N0 &none &none &none 
 			>;
 		};
@@ -98,7 +98,7 @@
 			bindings = <
 				&mt LS(DOT) LS(COMMA) &mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR AS(N7) AS(N6) AS(N5) &r_num_word 
 				&mt LS(BSLH) LS(FSLH) &mt DOT COMMA AS(APOS) AS(SEMI) AS(N1) AS(N2) AS(N3) AS(N4) 
-				&mt BSLH FSLH AS(GRAVE) AS(EQUAL) RAS(MINUS) &none AS(N8) AS(N9) &kp HOME &kp END 
+				AS(GRAVE) AS(EQUAL) RAS(MINUS) &mt BSLH FSLH &none AS(N8) AS(N9) &kp HOME &kp END 
 				&none &none &none &lt 1 N0 &kp SPACE &none 
 			>;
 		};

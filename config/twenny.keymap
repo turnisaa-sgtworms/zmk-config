@@ -98,8 +98,8 @@
 			display-name = "two - numico mirror";
 			bindings = <
 				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N6) AS(N7) AS(N5) 
-				RAS(FSLH) AS(DOT) AS(COMMA) AS(SEMI)		AS(N1) AS(N2) AS(N3) AS(N4) 
-				AS(EQUAL) RAS(MINUS) 				AS(N8) AS(N9) 
+				&mt LS(BSLH) LS(FSLH) &mt DOT COMMA AS(APOS) AS(SEMI) 		AS(N1) AS(N2) AS(N3) AS(N4) 
+				RAS(MINUS) &mt BSLH FSLH 				AS(N8) AS(N9) 
 				&none 						&lt 1 N0
 			>;
 		};

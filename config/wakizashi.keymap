@@ -87,9 +87,9 @@
 		one { 
 			display-name = "one - numico";
 			bindings = <
-				&l_num_word AS(N5) AS(N7) AS(N6) &mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT AS(GRAVE) 
-				AS(N4) AS(N3) AS(N2) AS(N1) AS(SEMI) AS(COMMA) AS(DOT) RAS(FSLH) 
-				&kp HOME &kp END AS(N9) AS(N8) AS(APOS) RAS(MINUS) AS(EQUAL) AS(BSLH) &none
+				&l_num_word AS(N5) AS(N7) AS(N6) &mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT &mt LS(DOT) LS(COMMA)
+				AS(N4) AS(N3) AS(N2) AS(N1) AS(SEMI) AS(APOS) &mt DOT COMMA &mt LS(BSLH) LS(FLSH)
+				&kp HOME &kp END AS(N9) AS(N8) &none RAS(MINUS) AS(EQUAL) AS(GRAVE) &mt BSLH FSLH
 				&none &kp SPACE &lt 2 N0 &none &none &none 
 			>;
 		};

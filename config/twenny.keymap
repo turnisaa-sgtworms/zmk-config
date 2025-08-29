@@ -89,8 +89,8 @@
 			display-name = "one - numico";
 			bindings = <
 				AS(N5) AS(N7) AS(N6) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
-				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(COMMA) AS(DOT) RAS(FSLH) 
-				AS(N9) AS(N8) 			RAS(MINUS) AS(EQUAL) 
+				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(APOS) &mt DOT COMMA &mt LS(BSLH) LS(FSLH)
+				AS(N9) AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
 				&lt 2 N0 			&none 
 			>;
 		};
@@ -184,40 +184,40 @@
 			bindings = <&r_num_word>;
 			layers = <0>;
 		};
-		combo_right_grave {
+		combo_right_abrack {
 			timeout-ms = <30>;
 			key-positions = <1 2>;
+			bindings = <&mt LS(DOT) LS(COMMA)>;
+			layers = <2>;
+		};
+		combo_right_equal {
+			timeout-ms = <30>;
+			key-positions = <8 9>;
+			bindings = <AS(EQUAL)>;
+			layers = <2>;
+		};
+		combo_right_grave {
+			timeout-ms = <30>;
+			key-positions = <14 15>;
 			bindings = <AS(GRAVE)>;
 			layers = <2>;
 		};
-		combo_right_apos {
+		combo_left_abrack {
 			timeout-ms = <30>;
-			key-positions = <8 9>;
-			bindings = <AS(APOS)>;
-			layers = <2>;
+			key-positions = <3 4>;
+			bindings = <&mt LS(DOT) LS(COMMA)>;
+			layers = <1>;
 		};
-		combo_right_bslh {
+		combo_left_equal {
 			timeout-ms = <30>;
-			key-positions = <14 15>;
-			bindings = <AS(BSLH)>;
-			layers = <2>;
+			key-positions = <10 11>;
+			bindings = <AS(EQUAL)>;
+			layers = <1>;
 		};
 		combo_left_grave {
 			timeout-ms = <30>;
-			key-positions = <3 4>;
-			bindings = <AS(GRAVE)>;
-			layers = <1>;
-		};
-		combo_left_apos {
-			timeout-ms = <30>;
-			key-positions = <10 11>;
-			bindings = <AS(APOS)>;
-			layers = <1>;
-		};
-		combo_left_bslh {
-			timeout-ms = <30>;
 			key-positions = <16 17>;
-			bindings = <AS(BSLH)>;
+			bindings = <AS(GRAVE)>;
 			layers = <1>;
 		};
 		combo_1_game {

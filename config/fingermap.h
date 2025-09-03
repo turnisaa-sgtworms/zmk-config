@@ -177,6 +177,12 @@
             bindings = <&kp>, <&caps_word>;
             display-name = "Caps-Tap";
         };
+		&sk {
+    		release-after-ms = <750>;
+    		quick-release;
+			lazy;
+    		/delete-property/ ignore-modifiers;
+		};
 		mt: mod_tap {
             		tapping-term-ms = <200>;
         	};

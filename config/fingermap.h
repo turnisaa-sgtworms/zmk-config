@@ -178,7 +178,7 @@
             bindings = <&kp>, <&caps_word>;
             display-name = "Caps-Tap";
         };
-		sk: sticky_keys {
+		sk: sticky_key {
     		release-after-ms = <750>;
     		quick-release;
 			lazy;

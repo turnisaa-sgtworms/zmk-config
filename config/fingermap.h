@@ -189,7 +189,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT>, <&mo>;
+            bindings = <&mo>, <&sk>;
             display-name = "Sticky-Tap";
 		};
 		mt: mod_tap {

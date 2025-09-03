@@ -59,28 +59,28 @@
                 	= <&macro_tap &kp Y &kp O &kp U>
                 	;
         	};
-		lol: lol {
+			lol: lol {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp L &kp O &kp L>
                 	;
         	};
-		lmao: lmao {
+			lmao: lmao {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp L &kp M &kp A &kp O>
                 	;
         	};
-		bluetooth0: bluetooth0 {
+			bluetooth0: bluetooth0 {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &out OUT_BLE &bt BT_SEL 0>
                 	;
         	};
-		bluetooth1: bluetooth1 {
+			bluetooth1: bluetooth1 {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -88,6 +88,7 @@
                 	;
         	};
     	};
+
 	behaviors {
 		td0: tap_dance_parentheseseseses {
 			compatible = "zmk,behavior-tap-dance";
@@ -132,21 +133,21 @@
             		require-prior-idle-ms = <25>;
             		tapping-term-ms = <200>;
             		quick-tap-ms = <175>;
-			hold-trigger-key-positions = <>; // List of keys on the right
+					hold-trigger-key-positions = <>; // List of keys on the right
             		bindings = <&kp>, <&kp>;
             		hold-trigger-on-release;
-        	};
-        	hmr: home_row_mod_right {
+		};
+        hmr: home_row_mod_right {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "balanced";
             		require-prior-idle-ms = <25>;
             		tapping-term-ms = <200>;
             		quick-tap-ms = <175>;
-			hold-trigger-key-positions = <>; // List of keys on the left
+					hold-trigger-key-positions = <>; // List of keys on the left
             		bindings = <&kp>, <&kp>;
             		hold-trigger-on-release;
-        	};
+        };
 		as: auto_shift {
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -154,13 +155,13 @@
             		quick_tap_ms = <0>;
             		flavor = "tap-preferred";
             		bindings = <&kp>, <&kp>;
-        	};
+        };
 		hw_soft_off: hw_soft_off {
             		compatible = "zmk,behavior-soft-off";
             		#binding-cells = <0>;
             		// split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
             		// hold-time-ms = <1500>; // Only turn off if the key is held for 1.5 seconds or longer.
-        	};
+        };
 		fmt: fast_mod_tap {
         		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
@@ -168,24 +169,32 @@
             		tapping-term-ms = <125>;
             		bindings = <&kp>, <&kp>;
             		display-name = "Fast Mod-Tap";
-        	};
-		cmt: caps_taps {
+        };
+		cmt: caps_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <225>;
+            tapping-term-ms = <200>;
             bindings = <&kp>, <&caps_word>;
             display-name = "Caps-Tap";
         };
-		&sk {
+		sk {
     		release-after-ms = <750>;
     		quick-release;
 			lazy;
     		/delete-property/ ignore-modifiers;
 		};
+		skmt {
+			compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&sk LSHIFT>, <&mo>;
+            display-name = "Sticky-Tap";
+		};
 		mt: mod_tap {
             		tapping-term-ms = <200>;
-        	};
+        };
 	};
 };
 

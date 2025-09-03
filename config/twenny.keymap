@@ -89,7 +89,7 @@
 			display-name = "one - numico";
 			bindings = <
 				AS(N5) AS(N7) AS(N6) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
-				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(APOS) &mt DOT COMMA &mt LS(BSLH) LS(FSLH)
+				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(APOS) &mt COMMA DOT &mt LS(BSLH) LS(FSLH)
 				AS(N9) AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
 				&lt 2 N0 			&none 
 			>;
@@ -98,7 +98,7 @@
 			display-name = "two - numico mirror";
 			bindings = <
 				&mt RBKT LBKT &mt RBRC LBRC &mt RPAR LPAR 	AS(N6) AS(N7) AS(N5) 
-				&mt LS(BSLH) LS(FSLH) &mt DOT COMMA AS(APOS) AS(SEMI) 		AS(N1) AS(N2) AS(N3) AS(N4) 
+				&mt LS(BSLH) LS(FSLH) &mt COMMA DOT AS(APOS) AS(SEMI) 		AS(N1) AS(N2) AS(N3) AS(N4) 
 				RAS(MINUS) &mt BSLH FSLH 				AS(N8) AS(N9) 
 				&none 						&lt 1 N0
 			>;
@@ -439,13 +439,13 @@
 		combo_right_layer3 {
 			timeout-ms = <30>;
 			key-positions = <13 19>;
-			bindings = <&mo 3>;
+			bindings = <&skmt 0 3>;
 			layers = <0>;
 		};
 		combo_left_layer3 {
 			timeout-ms = <30>;
 			key-positions = <6 18>;
-			bindings = <&mo 3>;
+			bindings = <&skmt 0 3>;
 			layers = <0>;
 		};
 		combo_qu {

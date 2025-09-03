@@ -439,13 +439,13 @@
 		combo_right_layer3 {
 			timeout-ms = <30>;
 			key-positions = <13 19>;
-			bindings = <&skmt 0 3>;
+			bindings = <&skmt 3 LSHIFT>;
 			layers = <0>;
 		};
 		combo_left_layer3 {
 			timeout-ms = <30>;
 			key-positions = <6 18>;
-			bindings = <&skmt 0 3>;
+			bindings = <&skmt 3 LSHIFT>;
 			layers = <0>;
 		};
 		combo_qu {

@@ -178,13 +178,13 @@
             bindings = <&kp>, <&caps_word>;
             display-name = "Caps-Tap";
         };
-		sk {
+		sk: sticky_keys {
     		release-after-ms = <750>;
     		quick-release;
 			lazy;
     		/delete-property/ ignore-modifiers;
 		};
-		skmt {
+		skmt: sticky_tap {
 			compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";

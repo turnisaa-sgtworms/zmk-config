@@ -456,13 +456,13 @@
 		};
 		combo_ju {
 			timeout-ms = <30>;
-			key-positions = <2 9>;
+			key-positions = <5 12>;
 			bindings = <&jumt J 0>;
 			layers = <0>;
 		};
-		combo_z {
+		combo_ze {
 			timeout-ms = <30>;
-			key-positions = <9 15>;
+			key-positions = <2 9>;
 			bindings = <&zemt Z 0>;
 			layers = <0>;
 		};

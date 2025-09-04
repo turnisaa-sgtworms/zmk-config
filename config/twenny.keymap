@@ -72,64 +72,64 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-				&uemt 0 U &oamt 0 O &kp G &kp D &kp F &kp L 
-				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C &hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
-				&kp Y &kp W &kp V &kp M 
-				&lt 2 R &lt 1 SPACE
+							  &uemt 0 U   &oamt 0 O   &kp G 			&kp D 		 &kp F 		 &kp L 
+				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C 		&hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
+										  &kp Y 	  &kp W 			&kp V 		 &kp M 
+													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
 		one { 
-			display-name = "one - numico";
+			display-name = "one - num/ico";
 			bindings = <
-				AS(N5) AS(N7) AS(N6) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
-				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(APOS) &mt COMMA DOT &mt LS(BSLH) LS(FSLH)
-				&mt LS(GRAVE) N9 AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
-				&mt GRAVE N0 			&none 
+					   AS(N5) AS(N7) 		   AS(N6) 			&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
+				AS(N4) AS(N3) AS(N2) 		   AS(N1) 			AS(SEMI) 	  AS(APOS) 		&mt COMMA DOT &mt LS(BSLH) LS(FSLH)
+					   		  &mt LS(GRAVE) N9 AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
+											   &mt GRAVE N0 	&none 
 			>;
 		};
 		two { 
-			display-name = "two - navigation and kb functions";
+			display-name = "two - nav/fn";
 			bindings = <
-				&ind_bat LUM2 LUI2 RUI2 RUM2 RUR2
-				LHP2 LHR2 LHM2 LHI2 RHI2 RHM2 RHR2 RHP2
-				LBM2 LBI2 RBI2 RBM2
-				L2 			R2
+					 &ind_bat LUM2 LUI2 	RUI2 RUM2 RUR2
+				LHP2 LHR2	  LHM2 LHI2 	RHI2 RHM2 RHR2 RHP2
+						 	  LBM2 LBI2 	RBI2 RBM2
+							  	   L2 		R2
 			>;
 		};
 		three { 
 			display-name = "three - fps";
 			bindings = <
-				     &kp Q &kp F &kp E 				&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LCTRL &kp A &kp W &kp D 		&kp F2 &kp F3 &kp F5 &kp F6 
-				           &kp S &kp C 				&kp C_PREV &kp C_NEXT 
-				                &kp SPACE 			&kp C_PP
+				    	  &kp Q &kp F &kp E 		&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LCTRL &kp A &kp W &kp D 		&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				         	    &kp S &kp C 		&kp C_PREV 	 &kp C_NEXT 
+				                	  &kp SPACE 	&kp C_PP
 			>;
 		};
 		four { 
 			display-name = "four - qwer";
 			bindings = <
 				      &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp Q &kp W &kp E &kp R 			&kp F2 &kp F3 &kp F4 &kp F5 
-				            &kp D &kp F 			&kp C_PREV &kp C_NEXT 
-				                  &mt LCTRL N4 			&kp C_PP
+				&kp Q &kp W  &kp E  &kp R 			&kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
+				             &kp D  &kp F 			&kp C_PREV   &kp C_NEXT 
+				                    &mt LCTRL N4 	&kp C_PP
 			>;
 		};
 		five { 
 			display-name = "five - voipslop";
 			bindings = <
-				     &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LSHIFT &kp A &kp W &kp D 			&kp F2 &kp F3 &kp F5 &kp F6 
-				           &kp S &kp LCTRL 			&kp C_PREV &kp C_NEXT 
-				                &lt 6 SPACE 			&kp C_PP
+				     	   &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LSHIFT &kp A  &kp W  &kp D 				&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				           		  &kp S  &kp LCTRL 			&kp C_PREV 	 &kp C_NEXT 
+				                  		 &lt 6 SPACE 		&kp C_PP
 			>;
 		};
 		six { 
 			display-name = "six - voipslop 2";
 			bindings = <
-				     &kp Q &none &kp E &none &none &none 
+					  &kp Q &none &kp E &none &none &none 
 				&none &none &none &none &none &none &none &none 
-					&none &none &none &none 
-						&none &none 
+					 	    &none &none &none &none 
+								  &none &none 
 			>;
 		};
 	};

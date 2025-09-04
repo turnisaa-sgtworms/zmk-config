@@ -5,25 +5,18 @@
 / {
 	behaviors {
 		hml: home_row_mod_left {
-            		hold-trigger-key-positions = <3 4 5 10 11 12 13 16 17 19>; // List of keys on the right
-        	};
-        	hmr: home_row_mod_right {
-            		hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
-        	};		
-		l_num_word: left_num_word {
-        		#binding-cells = <0>;
-		        compatible = "zmk,behavior-num-word";
-        		layers = <1>;
-        		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-        		ignore-numbers;
-    		};
-		r_num_word: right_num_word {
-        		#binding-cells = <0>;
-		        compatible = "zmk,behavior-num-word";
-        		layers = <2>;
-        		continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-        		ignore-numbers;
-    		};
+            hold-trigger-key-positions = <3 4 5 10 11 12 13 16 17 19>; // List of keys on the right
+        };
+        hmr: home_row_mod_right {
+            hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
+        };		
+		num_word: num_word {
+        	#binding-cells = <0>;
+		    compatible = "zmk,behavior-num-word";
+        	layers = <1>;
+        	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+        	ignore-numbers;
+    	};
 		qumt: qu_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -330,16 +323,10 @@
 		};
 
 // special --------------------------------------- 
-		combo_left_numword {
+		combo_numword {
 			timeout-ms = <50>;
 			key-positions = <0 18>;
-			bindings = <&l_num_word>;
-			layers = <0>;
-		};
-		combo_right_numword {
-			timeout-ms = <50>;
-			key-positions = <5 19>;
-			bindings = <&r_num_word>;
+			bindings = <&num_word>;
 			layers = <0>;
 		};
 		combo_capsword {

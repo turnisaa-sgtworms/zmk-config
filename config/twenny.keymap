@@ -90,8 +90,8 @@
 			bindings = <
 				AS(N5) AS(N7) AS(N6) 		&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
 				AS(N4) AS(N3) AS(N2) AS(N1) 	AS(SEMI) AS(APOS) &mt COMMA DOT &mt LS(BSLH) LS(FSLH)
-				AS(N9) AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
-				AS(N0) 			&none 
+				&mt LS(GRAVE) N9 AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
+				&mt GRAVE N0 			&none 
 			>;
 		};
 		two { 

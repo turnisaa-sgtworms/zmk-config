@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LC(BSPC)>, <&kp BSPC>;
-            mods = <(MOD_RCTL|MOD_LCTL)>;
+            mods = <(MOD_LSFT|MOD_RCTL|MOD_LCTL)>;
         };
 	};
 
@@ -90,7 +90,7 @@
 					   AS(N5) AS(N7) 		   AS(N6) 			&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
 				AS(N4) AS(N3) AS(N2) 		   AS(N1) 			AS(SEMI) 	  AS(APOS) 		&mt COMMA DOT &mt LS(BSLH) LS(FSLH)
 					   		  &mt LS(GRAVE) N9 AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
-											   &mt GRAVE N0 	&none 
+											   &mt GRAVE N0		&kp SPACE 
 			>;
 		};
 		two { 
@@ -427,6 +427,12 @@
 			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&kp Y>;
+			layers = <4>;
+		};
+		combo_esc_game {
+			timeout-ms = <50>;
+			key-positions = <0 1 2>;
+			bindings = <&kp ESC>;
 			layers = <4>;
 		};
 	};

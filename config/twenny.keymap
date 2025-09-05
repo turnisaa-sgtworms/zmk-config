@@ -65,6 +65,12 @@
             bindings = <&xp>, <&kp>;
             display-name = "xp Mod-Tap";
         };
+		cbspc: ctrl_back {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LC(BSPC)>, <&kp BSPC>;
+            mods = <(MOD_RCTRL|MOD_LCTRL)>;
+        };
 	};
 
 	keymap {
@@ -229,13 +235,13 @@
 		combo_backspace { //back
 			timeout-ms = <50>;
 			key-positions = <12 13>;
-			bindings = <RHO>;
+			bindings = <&cbspc>;
 			layers = <0 1 2 3>;
 		};
 		combo_left_back {
 			timeout-ms = <50>;
 			key-positions = <6 8>;
-			bindings = <&kp BSPC>;
+			bindings = <&cbspc>;
 			layers = <0 1 2 3>;
 		};
 		combo_left_enter {

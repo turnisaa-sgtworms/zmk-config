@@ -160,7 +160,7 @@
 		};
 		combo_ze {
 			timeout-ms = <30>;
-			key-positions = <2 9>;
+			key-positions = <11 17>;
 			bindings = <&zemt Z 0>;
 			layers = <0>;
 		};
@@ -184,7 +184,7 @@
 		};
 		combo_b {
 			timeout-ms = <30>;
-			key-positions = <11 17>;
+			key-positions = <2 9>;
 			bindings = <&kp B>;
 			layers = <0>;
 		};

@@ -130,7 +130,7 @@
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "balanced";
-            		require-prior-idle-ms = <25>;
+            		require-prior-idle-ms = <50>;
             		tapping-term-ms = <200>;
             		quick-tap-ms = <175>;
 					hold-trigger-key-positions = <>; // List of keys on the right
@@ -141,7 +141,7 @@
             		compatible = "zmk,behavior-hold-tap";
             		#binding-cells = <2>;
             		flavor = "balanced";
-            		require-prior-idle-ms = <25>;
+            		require-prior-idle-ms = <50>;
             		tapping-term-ms = <200>;
             		quick-tap-ms = <175>;
 					hold-trigger-key-positions = <>; // List of keys on the left

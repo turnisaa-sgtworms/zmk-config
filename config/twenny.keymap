@@ -182,6 +182,12 @@
 			bindings = <&kp B>;
 			layers = <0>;
 		};
+		combo_w {
+			timeout-ms = <30>;
+			key-positions = <4 11>;
+			bindings = <&kp W>;
+			layers = <0>;
+		};
 
 // symbols ---------------------------------------
 		combo_abrack {

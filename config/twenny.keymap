@@ -78,9 +78,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &uemt 0 U   &oamt 0 O   &kp G 			&kp D 		 &kp F 		 &kp L 
-				&hml LSHIFT I &hml LGUI E &hml LALT A &hml LCTRL C 		&hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
-										  &kp Y 	  &kp W 			&kp V 		 &kp M 
+							  &uemt 0 Y   &oamt 0 O   &kp U 			&kp D 		 &kp L 		 &kp F 
+				&hml LSHIFT C &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
+										  &kp X 	  &zemt 			&kp P 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
@@ -148,32 +148,26 @@
 // alphas ----------------------------------------
 		combo_qu {
 			timeout-ms = <30>;
-			key-positions = <4 11>;
+			key-positions = <2 9>;
 			bindings = <&qumt Q 0>;
 			layers = <0>;
 		};
 		combo_ju {
 			timeout-ms = <30>;
-			key-positions = <5 12>;
+			key-positions = <9 15>;
 			bindings = <&jumt J 0>;
 			layers = <0>;
 		};
-		combo_ze {
+		combo_g {
 			timeout-ms = <30>;
 			key-positions = <11 17>;
-			bindings = <&zemt Z 0>;
+			bindings = <&kp G>;
 			layers = <0>;
 		};
-		combo_x {
-			timeout-ms = <50>;
-			key-positions = <5 13>;
-			bindings = <&xpmt 0 X>;
-			layers = <0>;
-		};
-		combo_p {
+		combo_v {
 			timeout-ms = <30>;
 			key-positions = <3 10>;
-			bindings = <&kp P>;
+			bindings = <&kp V>;
 			layers = <0>;
 		};
 		combo_k {
@@ -184,14 +178,8 @@
 		};
 		combo_b {
 			timeout-ms = <30>;
-			key-positions = <2 9>;
+			key-positions = <5 12>;
 			bindings = <&kp B>;
-			layers = <0>;
-		};
-		combo_you {
-			timeout-ms = <30>;
-			key-positions = <1 2>;
-			bindings = <&you>;
 			layers = <0>;
 		};
 

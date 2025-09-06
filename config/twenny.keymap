@@ -214,13 +214,13 @@
 			timeout-ms = <50>;
 			key-positions = <9 10>;
 			bindings = <&kp ENTER>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_del { //del
 			timeout-ms = <50>;
 			key-positions = <6 7>;
 			bindings = <LHO>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_tab { //tab
 			timeout-ms = <50>;
@@ -236,43 +236,43 @@
 			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&cbspc>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_left_back {
 			timeout-ms = <50>;
 			key-positions = <6 8>;
 			bindings = <&cbspc>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_left_enter {
 			timeout-ms = <50>;
 			key-positions = <6 9>;
 			bindings = <&kp ENTER>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_left_esc {
 			timeout-ms = <50>;
 			key-positions = <0 9>;
 			bindings = <&kp ESC>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_right_del {
 			timeout-ms = <50>;
 			key-positions = <11 13>;
 			bindings = <&kp DEL>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_right_enter {
 			timeout-ms = <50>;
 			key-positions = <10 13>;
 			bindings = <&kp ENTER>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 		combo_right_tab {
 			timeout-ms = <50>;
 			key-positions = <5 10>;
 			bindings = <&kp TAB>;
-			layers = <0 1 2 3>;
+			layers = <0 1 2>;
 		};
 
 // arrows ----------------------------------------
@@ -433,7 +433,7 @@
 			timeout-ms = <50>;
 			key-positions = <0 1 2>;
 			bindings = <&kp ESC>;
-			layers = <4>;
+			layers = <3>;
 		};
 	};
 };

@@ -330,6 +330,20 @@
 			bindings = <&mo 3>;
 		};
 
+// shortcut -------------------------------------- 
+		combo_ctrl_shft_t {
+			timeout-ms = <50>;
+			key-positions = <2 9>;
+			bindings = <&kp LC(LS(T))>;
+			layers = <3>;
+		};
+		combo_ctrl_x {
+			timeout-ms = <50>;
+			key-positions = <9 15>;
+			bindings = <&kp LC(X)>;
+			layers = <3>;
+		};
+
 // special --------------------------------------- 
 		combo_numword {
 			timeout-ms = <50>;

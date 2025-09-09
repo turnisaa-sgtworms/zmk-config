@@ -110,6 +110,7 @@
 							    LC(V) LC(C) 		&sk RCTRL &sk RALT
 				                	  &none 	    &kp SPACE
 			>;
+		};
 		four { 
 			display-name = "four - fps";
 			bindings = <

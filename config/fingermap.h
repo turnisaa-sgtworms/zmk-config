@@ -289,7 +289,7 @@
 		tdzz: tap_dance_zz {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <250>;
             bindings = <&zemt Z 0>, <&zz>;
         };
 	};

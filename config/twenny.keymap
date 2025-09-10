@@ -189,13 +189,13 @@
 		};
 		combo_v {
 			timeout-ms = <30>;
-			key-positions = <3 10>;
+			key-positions = <10 16>;
 			bindings = <&kp V>;
 			layers = <0>;
 		};
 		combo_p {
 			timeout-ms = <30>;
-			key-positions = <10 16>;
+			key-positions = <3 10>;
 			bindings = <&kp P>;
 			layers = <0>;
 		};

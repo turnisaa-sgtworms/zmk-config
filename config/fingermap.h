@@ -216,12 +216,6 @@
 		mt: mod_tap {
             		tapping-term-ms = <200>;
         };
-		num_word: num_word {
-        	#binding-cells = <0>;
-		    compatible = "zmk,behavior-num-word";
-        	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-        	ignore-numbers;
-    	};
 		qumt: qu_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

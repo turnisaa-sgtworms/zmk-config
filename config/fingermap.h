@@ -284,7 +284,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <150>;
-            bindings = <&bl>, <&kp>;
+            bindings = <&bl_macro>, <&kp>;
             display-name = "bl Mod-Tap";
         };	
 		cbspc: ctrl_back {

@@ -184,7 +184,7 @@
 		combo_k {
 			timeout-ms = <30>;
 			key-positions = <11 17>;
-			bindings = <&kp K>;
+			bindings = <&ksmt 0 K>;
 			layers = <0>;
 		};
 		combo_v {

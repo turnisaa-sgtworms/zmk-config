@@ -10,9 +10,6 @@
         hmr: home_row_mod_right {
             hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         };
-		num_word: num_word {
-        	layers = <1>;
-    	};
 	};
 
 	keymap {

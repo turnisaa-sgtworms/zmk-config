@@ -9,7 +9,7 @@
         };
         hmr: home_row_mod_right {
             hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
-        };		
+        };
 		num_word: num_word {
         	#binding-cells = <0>;
 		    compatible = "zmk,behavior-num-word";
@@ -24,6 +24,14 @@
             tapping-term-ms = <150>;
             bindings = <&kp>, <&qu>;
             display-name = "qu Mod-Tap";
+        };
+		ksmt: ks_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&ks>, <&kp>;
+            display-name = "ks Mod-Tap";
         };
 		zemt: ze_mod_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -71,6 +79,12 @@
             bindings = <&kp LC(BSPC)>, <&kp BSPC>;
             mods = <(MOD_RCTL|MOD_LCTL)>;
         };
+		tdzz: tap_dance_zz {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&zemt Z 0>, <&zz>;
+        };
 	};
 
 	keymap {
@@ -80,7 +94,7 @@
 			bindings = <
 							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &kp F 		 &kp L 
 				&lt 3 C &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
-										  &kp X 	  &zemt Z 0 			&kp P 		 &kp M 
+										  &kp X 	  &tdzz 			&kp P 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
@@ -167,10 +181,10 @@
 			bindings = <&jumt J 0>;
 			layers = <0>;
 		};
-		combo_g {
+		combo_k {
 			timeout-ms = <30>;
 			key-positions = <11 17>;
-			bindings = <&kp G>;
+			bindings = <&kp K>;
 			layers = <0>;
 		};
 		combo_v {
@@ -179,10 +193,10 @@
 			bindings = <&kp V>;
 			layers = <0>;
 		};
-		combo_k {
+		combo_g {
 			timeout-ms = <30>;
 			key-positions = <10 16>;
-			bindings = <&kp K>;
+			bindings = <&kp G>;
 			layers = <0>;
 		};
 		combo_b {

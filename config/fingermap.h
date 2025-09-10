@@ -219,7 +219,6 @@
 		num_word: num_word {
         	#binding-cells = <0>;
 		    compatible = "zmk,behavior-num-word";
-        	layers = <1>;
         	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         	ignore-numbers;
     	};

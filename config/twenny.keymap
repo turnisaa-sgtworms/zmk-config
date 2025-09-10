@@ -105,7 +105,7 @@
 		three { 
 			display-name = "three - shortcuts";
 			bindings = <
-				    	  &kp LA(TAB) &kp LC(Z) &kp LC(Y) 		&mt F7 F1 &mt F8 F2 &mt F9 F3  
+				    	  &kp LSHIFT &kp LC(Z) &kp LC(Y) 		&mt F7 F1 &mt F8 F2 &mt F9 F3  
 				    &none &kp LC(W) &kp LC(A) &kp LC(T) 		&mt F10 F4 &mt F11 F5 &mt F12 F6 &kp BSPC
 							    &kp LC(X) &kp LC(C) 		&sk RCTRL &sk RALT
 				                	  &kp LC(V)	    &kp SPACE

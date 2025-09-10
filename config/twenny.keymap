@@ -127,7 +127,7 @@
 		combo_b {
 			timeout-ms = <30>;
 			key-positions = <5 12>;
-			bindings = <&blmt 0 >;
+			bindings = <&blmt 0 B>;
 			layers = <0>;
 		};
 		combo_w {

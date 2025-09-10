@@ -11,7 +11,8 @@
 / {
 	macros {
         	qu: qu {
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -19,7 +20,8 @@
                 	;
         	};
 			ze: ze {
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -27,7 +29,8 @@
                 	;
         	};
 			zz: zz {
-				<&macro_tap_time 20>
+				wait-ms = <10>;
+				tap-ms = <15>;
 				compatible = "zmk,behavior-macro";
 				#binding-cells = <0>;
 				bindings
@@ -35,7 +38,8 @@
 				;
        	 	};
 			ks: ks {
-				<&macro_tap_time 20>
+				wait-ms = <10>;
+				tap-ms = <15>;
 				compatible = "zmk,behavior-macro";
 				#binding-cells = <0>;
 				bindings
@@ -43,7 +47,8 @@
 				;
         	};
 			ju: ju {
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -51,7 +56,8 @@
                 	;
         	};
 			oa: oa {	
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -59,7 +65,8 @@
                 	;
         	};
 			ue: ue {	
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -67,7 +74,8 @@
                 	;
         	};
 			xp: xp {
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -75,7 +83,8 @@
                 	;
         	};
 			bl_macro: bl {	
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -83,7 +92,8 @@
                 	;
         	};
 			you: you {	
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -91,7 +101,8 @@
                 	;
         	};
 			lol: lol {	
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -99,7 +110,8 @@
                 	;
         	};
 			lmao: lmao {	
-					<&macro_tap_time 20>
+					wait-ms = <10>;
+					tap-ms = <15>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings

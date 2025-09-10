@@ -236,7 +236,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <75>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&ze>;
             display-name = "ze Mod-Tap";
         };
@@ -289,7 +289,7 @@
 		tdzz: tap_dance_zz {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <125>;
+            tapping-term-ms = <150>;
             bindings = <&zemt Z 0>, <&zz>;
         };
 	};

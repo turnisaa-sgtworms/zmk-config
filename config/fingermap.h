@@ -11,6 +11,7 @@
 / {
 	macros {
         	qu: qu {
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -18,6 +19,7 @@
                 	;
         	};
 			ze: ze {
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -25,6 +27,7 @@
                 	;
         	};
 			zz: zz {
+				<&macro_tap_time 20>
 				compatible = "zmk,behavior-macro";
 				#binding-cells = <0>;
 				bindings
@@ -32,6 +35,7 @@
 				;
        	 	};
 			ks: ks {
+				<&macro_tap_time 20>
 				compatible = "zmk,behavior-macro";
 				#binding-cells = <0>;
 				bindings
@@ -39,20 +43,23 @@
 				;
         	};
 			ju: ju {
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp J &kp U>
                 	;
         	};
-			oa: oa {
+			oa: oa {	
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp O &kp A>
                 	;
         	};
-			ue: ue {
+			ue: ue {	
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -60,34 +67,39 @@
                 	;
         	};
 			xp: xp {
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp X &kp P>
                 	;
         	};
-			bl_macro: bl {
+			bl_macro: bl {	
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp B &kp L>
                 	;
         	};
-			you: you {
+			you: you {	
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp Y &kp O &kp U>
                 	;
         	};
-			lol: lol {
+			lol: lol {	
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp L &kp O &kp L>
                 	;
         	};
-			lmao: lmao {
+			lmao: lmao {	
+					<&macro_tap_time 20>
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings

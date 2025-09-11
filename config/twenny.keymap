@@ -198,7 +198,7 @@
 		};
 		combo_left_enter {
 			timeout-ms = <50>;
-			key-positions = <6 9>;
+			key-positions = <7 8>;
 			bindings = <&kp ENTER>;
 			layers = <0 1 2>;
 		};
@@ -216,7 +216,7 @@
 		};
 		combo_right_enter {
 			timeout-ms = <50>;
-			key-positions = <10 13>;
+			key-positions = <11 12>;
 			bindings = <&kp ENTER>;
 			layers = <0 1 2>;
 		};
@@ -251,14 +251,14 @@
 
 // layers ----------------------------------------
 		combo_left_shortcut_layer {
-			timeout-ms = <50>;
-			key-positions = <0 6>;
+			timeout-ms = <25>;
+			key-positions = <6 9>;
 			bindings = <&sl 3>;
 			layers = <0>;
 		};
 		combo_right_shortcut_layer {
-			timeout-ms = <50>;
-			key-positions = <5 13>;
+			timeout-ms = <25>;
+			key-positions = <10 13>;
 			bindings = <&sl 3>;
 			layers = <0>;
 		};

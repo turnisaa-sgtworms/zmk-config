@@ -17,6 +17,9 @@
         	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         	ignore-numbers;
     	};
+		&sl {
+    		release-after-ms = <1500>;
+		};
 	};
 
 	keymap {
@@ -25,7 +28,7 @@
 			display-name = "zero - base";
 			bindings = <
 							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &kp F 		 &kp L 
-				&lt 3 C &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
+				&hml LSHIFT C &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT S &hmr RGUI H &hmr RSHIFT N
 										  &kp X 	  &tdzz 			&kp G 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
@@ -51,10 +54,10 @@
 		three { 
 			display-name = "three - shortcuts";
 			bindings = <
-				    	  &kp LSHIFT &kp LC(Z) &kp LC(Y) 		&mt F7 F1 &mt F8 F2 &mt F9 F3  
-				    &none &kp LC(W) &kp LC(A) &kp LC(T) 		&mt F10 F4 &mt F11 F5 &mt F12 F6 &kp BSPC
-							    &kp LC(X) &kp LC(C) 		&sk RCTRL &sk RALT
-				                	  &kp LC(V)	    &kp SPACE
+							  &kp LC(X) &kp LC(C) &kp LC(V) 		&mt F7 F1 &mt F8 F2 &mt F9 F3  
+				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) 		&mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
+							  			&kp LC(Y) &kp LC(Z) 		&sk RCTRL &sk RALT
+				                				  &none  	    	&kp SPACE
 			>;
 		};
 		four { 
@@ -247,6 +250,18 @@
 		};
 
 // layers ----------------------------------------
+		combo_left_shortcut_layer {
+			timeout-ms = <50>;
+			key-positions = <0 6>;
+			bindings = <&sl 3>;
+			layers = <0>;
+		};
+		combo_right_shortcut_layer {
+			timeout-ms = <50>;
+			key-positions = <5 13>;
+			bindings = <&sl 3>;
+			layers = <0>;
+		};
 		combo_default_layer {
 			timeout-ms = <50>;
 			key-positions = <8 9 10 11>;

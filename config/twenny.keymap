@@ -17,7 +17,7 @@
         	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         	ignore-numbers;
     	};
-		&sl {
+		sl {
     		release-after-ms = <1500>;
 		};
 	};

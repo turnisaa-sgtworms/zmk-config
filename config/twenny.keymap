@@ -45,10 +45,10 @@
 		two { 
 			display-name = "two - nav/fn";
 			bindings = <
-					 &ind_bat LUM2 LUI2 	RUI2 RUM2 RUR2
-				LHP2 LHR2	  LHM2 LHI2 	RHI2 RHM2 RHR2 RHP2
-						 	  LBM2 LBI2 	RBI2 RBM2
-							  	   L2 		R2
+					 	 &ind_bat &none &none 				d&kp C_PREV &kp C_NEXT &none
+				&kp C_PP &kp LEFT &kp UP &kp RIGHT 			&kp HOME &kp PGUP &kp END &kp C_PP
+						 	  	  &kp DOWN &none 			&none &kp PGDN
+							  	   		   &none			&none
 			>;
 		};
 		three { 
@@ -327,22 +327,16 @@
 		};
 
 // keyboard --------------------------------------
-		combo_bt_zero {
-			timeout-ms = <50>;
+		combo_softoff_left {
+			timeout-ms = <25>;
 			key-positions = <6 7 8 9>;
-			bindings = <&bluetooth0>;
+			bindings = <&hw_soft_off>;
 			layers = <0>;
 		};
-		combo_bt_one {
-			timeout-ms = <50>;
+		combo_softoff_right {
+			timeout-ms = <25>;
 			key-positions = <10 11 12 13>;
-			bindings = <&bluetooth1>;
-			layers = <0>;
-		};
-		combo_usb {
-			timeout-ms = <50>;
-			key-positions = <14 15 16 17>;
-			bindings = <&out OUT_USB>;
+			bindings = <&hw_soft_off>;
 			layers = <0>;
 		};
 

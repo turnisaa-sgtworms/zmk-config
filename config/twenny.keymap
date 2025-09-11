@@ -45,7 +45,7 @@
 		two { 
 			display-name = "two - nav/fn";
 			bindings = <
-					 	 &ind_bat &none &none 				d&kp C_PREV &kp C_NEXT &none
+					 	 &ind_bat &none &none 				&kp C_PREV &kp C_NEXT &none
 				&kp C_PP &kp LEFT &kp UP &kp RIGHT 			&kp HOME &kp PGUP &kp END &kp C_PP
 						 	  	  &kp DOWN &none 			&none &kp PGDN
 							  	   		   &none			&none

@@ -205,7 +205,7 @@
             		compatible = "zmk,behavior-soft-off";
             		#binding-cells = <0>;
             		split-peripheral-off-on-press; // Turn peripheral off immediately for reliability
-            		hold-time-ms = <0>; // Only turn off if the key is held for 1.5 seconds or longer.
+            		hold-time-ms = <1500>; // Only turn off if the key is held for 1.5 seconds or longer.
         };
 		fmt: fast_mod_tap {
         		compatible = "zmk,behavior-hold-tap";

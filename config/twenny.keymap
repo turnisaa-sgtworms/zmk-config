@@ -156,7 +156,7 @@
 		};
 		combo_equal {
 			timeout-ms = <50>;
-			key-positions = <3 1O>;
+			key-positions = <3 10>;
 			bindings = <AS(EQUAL)>;
 			layers = <1>;
 		};

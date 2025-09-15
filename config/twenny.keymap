@@ -27,9 +27,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &kp M 		 &kp W 
+							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &lkmt 0 L 		 &kp W 
 				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT H &hmr RGUI C &hmr RSHIFT N
-										  &kp X 	  &tdzz 			&kp G 		 &kp L 
+										  &kp X 	  &tdzz 			&kp G 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
@@ -143,20 +143,20 @@
 		combo_f {
 			timeout-ms = <30>;
 			key-positions = <4 11>;
-			bindings = <&kp F>;
+			bindings = <&flmt 0 F>;
 			layers = <0>;
 		};
 
 // symbols ---------------------------------------
 		combo_abrack {
 			timeout-ms = <50>;
-			key-positions = <3 10>;
+			key-positions = <10 16>;
 			bindings = <&mt LS(DOT) LS(COMMA)>;
 			layers = <1>;
 		};
 		combo_equal {
 			timeout-ms = <50>;
-			key-positions = <10 16>;
+			key-positions = <3 1O>;
 			bindings = <AS(EQUAL)>;
 			layers = <1>;
 		};

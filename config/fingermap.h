@@ -37,13 +37,22 @@
 				= <&macro_tap &kp Z &kp Z>
 				;
        	 	};
-			ks: ks {
+			lk: lk {
 				wait-ms = <10>;
 				tap-ms = <15>;
 				compatible = "zmk,behavior-macro";
 				#binding-cells = <0>;
 				bindings
-				= <&macro_tap &kp K &kp S>
+				= <&macro_tap &kp L &kp K>
+				;
+        	};
+            fl: fl {
+				wait-ms = <10>;
+				tap-ms = <15>;
+				compatible = "zmk,behavior-macro";
+				#binding-cells = <0>;
+				bindings
+				= <&macro_tap &kp F &kp L>
 				;
         	};
 			ju: ju {
@@ -248,12 +257,20 @@
             bindings = <&kp>, <&qu>;
             display-name = "qu Mod-Tap";
         };
-		ksmt: ks_mod_tap {
+		flmt: fl_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
-            bindings = <&ks>, <&kp>;
+            bindings = <&fl>, <&kp>;
+            display-name = "ks Mod-Tap";
+        };
+        lkmt: lk_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&lk>, <&kp>;
             display-name = "ks Mod-Tap";
         };
 		zemt: ze_mod_tap {

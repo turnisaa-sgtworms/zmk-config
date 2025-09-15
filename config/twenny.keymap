@@ -27,9 +27,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &kp F 		 &kp L 
-				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT C &hmr RGUI H &hmr RSHIFT N
-										  &kp X 	  &tdzz 			&kp G 		 &kp M 
+							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &kp M 		 &kp W 
+				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT H &hmr RGUI C &hmr RSHIFT N
+										  &kp X 	  &tdzz 			&kp G 		 &kp L 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
@@ -140,10 +140,10 @@
 			bindings = <&blmt 0 B>;
 			layers = <0>;
 		};
-		combo_w {
+		combo_f {
 			timeout-ms = <30>;
 			key-positions = <4 11>;
-			bindings = <&kp W>;
+			bindings = <&kp F>;
 			layers = <0>;
 		};
 

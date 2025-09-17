@@ -37,24 +37,6 @@
 				= <&macro_tap &kp Z &kp Z>
 				;
        	 	};
-			lk: lk {
-				wait-ms = <10>;
-				tap-ms = <15>;
-				compatible = "zmk,behavior-macro";
-				#binding-cells = <0>;
-				bindings
-				= <&macro_tap &kp L &kp K>
-				;
-        	};
-            fl: fl {
-				wait-ms = <10>;
-				tap-ms = <15>;
-				compatible = "zmk,behavior-macro";
-				#binding-cells = <0>;
-				bindings
-				= <&macro_tap &kp F &kp L>
-				;
-        	};
 			ju: ju {
 					wait-ms = <10>;
 					tap-ms = <15>;
@@ -62,6 +44,15 @@
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp J &kp U>
+                	;
+        	};
+			ke: ke {	
+					wait-ms = <10>;
+					tap-ms = <15>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp K &kp E>
                 	;
         	};
 			oa: oa {	
@@ -257,22 +248,6 @@
             bindings = <&kp>, <&qu>;
             display-name = "qu Mod-Tap";
         };
-		flmt: fl_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&fl>, <&kp>;
-            display-name = "ks Mod-Tap";
-        };
-        lkmt: lk_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&lk>, <&kp>;
-            display-name = "ks Mod-Tap";
-        };
 		zemt: ze_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -296,6 +271,14 @@
             tapping-term-ms = <150>;
             bindings = <&oa>, <&kp>;
             display-name = "oa Mod-Tap";
+        };
+		kemt: ke_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <&ke>, <&kp>;
+            display-name = "ke Mod-Tap";
         };
 		uemt: ue_mod_tap {
             compatible = "zmk,behavior-hold-tap";

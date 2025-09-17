@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: grassfedreeve
+      url-base: https://github.com/grassfedreeve
   projects:
     - name: zmk
       remote: zmk
@@ -21,6 +23,9 @@ manifest:
       revision: main
     - name: zmk-num-word
       remote: dhruvinsh
+      revision: main
+    - name: zmk-keyboards-pueo
+      remote: grassfedreeve
       revision: main
   self:
     path: config

@@ -43,9 +43,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp L 		 &kp W 
-				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E &kemt 0 K 	   &kp F &hmr RCTRL T   &hmr RALT H     &hmr RGUI C &hmr RSHIFT N
-							  &jumt J 0   &kp X 	  &zemt Z 0			                 &kp G 		 &kp M           &kp B
+							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp L 		 &kp F 
+				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E &kemt 0 K 	   &kp B &hmr RCTRL T   &hmr RALT H     &hmr RGUI C &hmr RSHIFT N
+							  &jumt J 0   &kp X 	  &zemt Z 0			                 &kp G 		 &kp M           &kp W
 													  &lt 2 R 			                 &lt 1 SPACE
 			>;
 		};

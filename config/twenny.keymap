@@ -20,6 +20,17 @@
 		sl {
     		release-after-ms = <1500>;
 		};
+		ak_rep: ak_rep {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
+            akt_dg { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp G>; };
+            akt_qua { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
+			akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
+        };
+
 	};
 
 	keymap {
@@ -27,9 +38,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y   &oamt 0 O   &uemt 0 U 			&kp D 		 &kp L 		 &kp W 
+							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp F 
 				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT H &hmr RGUI C &hmr RSHIFT N
-										  &kp X 	  &zemt Z 0			&kp G 		 &kp M 
+										  &kp X 	  &ak_rep			&kp G 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
@@ -106,14 +117,20 @@
 // alphas ----------------------------------------
 		combo_qu {
 			timeout-ms = <30>;
-			key-positions = <2 9>;
+			key-positions = <1 8>;
 			bindings = <&qumt Q 0>;
 			layers = <0>;
 		};
 		combo_ju {
 			timeout-ms = <30>;
-			key-positions = <9 15>;
+			key-positions = <2 9>;
 			bindings = <&jumt J 0>;
+			layers = <0>;
+		};
+		combo_ze {
+			timeout-ms = <30>;
+			key-positions = <9 15>;
+			bindings = <&zemt Z 0>;
 			layers = <0>;
 		};
 		combo_k {
@@ -124,7 +141,7 @@
 		};
 		combo_v {
 			timeout-ms = <30>;
-			key-positions = <10 16>;
+			key-positions = <5 12>;
 			bindings = <&kp V>;
 			layers = <0>;
 		};
@@ -136,14 +153,14 @@
 		};
 		combo_b {
 			timeout-ms = <30>;
-			key-positions = <5 12>;
+			key-positions = <10 16>;
 			bindings = <&blmt 0 B>;
 			layers = <0>;
 		};
-		combo_f {
+		combo_w {
 			timeout-ms = <30>;
 			key-positions = <4 11>;
-			bindings = <&flmt 0 F>;
+			bindings = <kp W>;
 			layers = <0>;
 		};
 

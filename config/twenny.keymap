@@ -155,7 +155,7 @@
 		combo_b {
 			timeout-ms = <30>;
 			key-positions = <10 16>;
-			bindings = <&blmt 0 B>;
+			bindings = <&kp B>;
 			layers = <0>;
 		};
 		combo_w {

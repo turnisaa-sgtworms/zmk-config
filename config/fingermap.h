@@ -19,6 +19,15 @@
                 	= <&macro_tap &kp Q &kp U>
                 	;
         	};
+        	ge: ge {
+					wait-ms = <10>;
+					tap-ms = <15>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp G &kp E>
+                	;
+        	};
 			ze: ze {
 					wait-ms = <10>;
 					tap-ms = <15>;

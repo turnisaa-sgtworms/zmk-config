@@ -160,7 +160,7 @@
 		combo_w {
 			timeout-ms = <30>;
 			key-positions = <4 11>;
-			bindings = <kp W>;
+			bindings = <&kp W>;
 			layers = <0>;
 		};
 

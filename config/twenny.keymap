@@ -26,7 +26,7 @@
             bindings = <&key_repeat>;
 
             akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
-            akt_dg { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp G>; };
+            akt_dg { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
             akt_qua { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
 			akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
         };

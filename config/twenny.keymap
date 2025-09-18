@@ -29,7 +29,6 @@
             akt_dg { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp G>; };
             akt_qua { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
 			akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
-			akt_wh { trigger-keys = <W>; max-prior-idle-ms = <300>; bindings = <&kp H>; };
         };
 
 	};
@@ -39,7 +38,7 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp F 
+							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp W 
 				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT H &hmr RGUI C &hmr RSHIFT N
 										  &kp X 	  &ak_rep			&kp G 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
@@ -158,10 +157,10 @@
 			bindings = <&kp B>;
 			layers = <0>;
 		};
-		combo_w {
+		combo_f {
 			timeout-ms = <30>;
 			key-positions = <4 11>;
-			bindings = <&kp W>;
+			bindings = <&kp F>;
 			layers = <0>;
 		};
 

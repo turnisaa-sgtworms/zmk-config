@@ -49,7 +49,7 @@
 include:
  - board: seeduino_xiao_ble
    shield: twenny_dongle
-   cmake-args: -DCONFIG_ZMK_STUDIO=y# - board: seeeduino_xiao_ble
+   cmake-args: -DCONFIG_ZMK_STUDIO=y
  - board: seeeduino_xiao_ble
    shield: twenny_left
    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n

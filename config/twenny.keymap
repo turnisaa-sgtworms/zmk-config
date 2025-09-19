@@ -27,7 +27,6 @@
 
             akt_dge { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
             akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
-            akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
 			akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
         };
 		mage_g: mage_g {

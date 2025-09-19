@@ -25,8 +25,8 @@
             #binding-cells = <0>;
             bindings = <&key_repeat>;
 
-            akt_pt { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
-            akt_pt { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+            akt_dge { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
+            akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
             akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
         };
 		mage_g: mage_g {
@@ -34,8 +34,8 @@
             #binding-cells = <0>;
             bindings = <&kp G>;
 
-            akt_pt { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
-            akt_pt { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
+            akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
+            akt_mp { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
         };
 	};
 

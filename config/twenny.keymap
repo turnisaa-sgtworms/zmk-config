@@ -20,18 +20,23 @@
 		sl {
     		release-after-ms = <1500>;
 		};
-		ak_rep: ak_rep {
+		mage_rep: mage_rep {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
 
+            akt_pt { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
+            akt_pt { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
             akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
-            akt_dg { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
-            akt_qua { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
-			akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
-			akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
         };
+		mage_g: mage_g {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp G>;
 
+            akt_pt { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
+            akt_pt { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
+        };
 	};
 
 	keymap {
@@ -39,9 +44,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp W 
-				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT H &hmr RGUI C &hmr RSHIFT N
-										  &kp X 	  &ak_rep			&kp G 		 &kp M 
+							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp F 
+				&hml LSHIFT H &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT C &hmr RGUI S &hmr RSHIFT N
+										  &kp X 	  &mage_rep			&mage_g 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};
@@ -117,14 +122,14 @@
 
 // alphas ----------------------------------------
 		combo_qu {
-			timeout-ms = <30>;
-			key-positions = <1 8>;
+			timeout-ms = <17>;
+			key-positions = <16 17>;
 			bindings = <&qumt Q 0>;
 			layers = <0>;
 		};
 		combo_ju {
 			timeout-ms = <30>;
-			key-positions = <2 9>;
+			key-positions = <1 8>;
 			bindings = <&jumt J 0>;
 			layers = <0>;
 		};
@@ -158,10 +163,10 @@
 			bindings = <&kp B>;
 			layers = <0>;
 		};
-		combo_f {
+		combo_w {
 			timeout-ms = <30>;
 			key-positions = <4 11>;
-			bindings = <&kp F>;
+			bindings = <&kp W>;
 			layers = <0>;
 		};
 

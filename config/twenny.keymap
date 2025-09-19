@@ -29,6 +29,7 @@
             akt_dg { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
             akt_qua { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
 			akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
+			akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
         };
 
 	};

@@ -129,7 +129,7 @@
 		};
 		combo_ju {
 			timeout-ms = <30>;
-			key-positions = <1 8>;
+			key-positions = <2 9>;
 			bindings = <&jumt J 0>;
 			layers = <0>;
 		};

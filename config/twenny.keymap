@@ -36,6 +36,8 @@
 
             akt_ck { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
             akt_mp { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
+			akt_xp { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
+            akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
         };
 	};
 

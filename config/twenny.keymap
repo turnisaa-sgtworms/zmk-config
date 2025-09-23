@@ -28,7 +28,6 @@
             akt_dge { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
             akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
 			akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
-			akt_lk { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
         };
 		mage_g: mage_g {
             compatible = "zmk,behavior-adaptive-key";
@@ -39,6 +38,7 @@
             akt_mp { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
 			akt_xp { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp P>; };
             akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
+			akt_lk { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
         };
 	};
 

@@ -329,6 +329,14 @@
             bindings = <&quo>, <&kp>;
             display-name = "quo Mod-Tap";
         };
+		gramt: gra_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&gra>, <&kp>;
+            display-name = "gra Mod-Tap";
+        };
 		qumt: qu_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

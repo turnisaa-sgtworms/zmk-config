@@ -173,20 +173,6 @@
 			layers = <0>;
 		};
 
-// symbols ---------------------------------------
-		combo_abrack {
-			timeout-ms = <50>;
-			key-positions = <10 16>;
-			bindings = <&mt LS(DOT) LS(COMMA)>;
-			layers = <1>;
-		};
-		combo_equal {
-			timeout-ms = <50>;
-			key-positions = <3 10>;
-			bindings = <AS(EQUAL)>;
-			layers = <1>;
-		};
-
 // mods ------------------------------------------
 		combo_enter {
 			timeout-ms = <50>;

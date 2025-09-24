@@ -56,6 +56,24 @@
                 	= <&macro_tap &kp GRAVE &kp GRAVE &kp LEFT>
                 	;
         	};
+			abt: abt {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp LS(COMMA) &kp LS(DOT) &kp LEFT>
+                	;
+        	};
+			bar: bar {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp LS(FSLH) &kp LS(FSLH) &kp LEFT>
+                	;
+        	};
 		//alphas
         	qu: qu {
 					wait-ms = <10>;
@@ -336,6 +354,22 @@
             tapping-term-ms = <150>;
             bindings = <&gra>, <&kp>;
             display-name = "gra Mod-Tap";
+        };
+		abtmt: abt_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&abt>, <&kp>;
+            display-name = "abt Mod-Tap";
+        };
+		barmt: bar_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&bar>, <&kp>;
+            display-name = "bar Mod-Tap";
         };
 		qumt: qu_mod_tap {
             compatible = "zmk,behavior-hold-tap";

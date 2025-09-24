@@ -1,6 +1,7 @@
 #include "fingermap.h"
 #include <behaviors/rgbled_widget.dtsi>
 #include <behaviors/num_word.dtsi>
+#include <behaviors/unicode.dtsi>
 
 / {
 	behaviors {
@@ -10,6 +11,9 @@
         hmr: home_row_mod_right {
             hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         };
+		&uc {
+  			default-mode = <UC_MODE_WIN_COMPOSE>;
+		};
 		num_word: num_word {
         	#binding-cells = <0>;
 		    compatible = "zmk,behavior-num-word";
@@ -239,26 +243,58 @@
 			layers = <0 1 2>;
 		};
 
+
+// symbols ----------------------------------------
+// reg add "HKCU\Control Panel\Input Method" -v EnableHexNumpad -t REG_SZ -d 1 
+		combo_uni_up {
+			timeout-ms = <50>;
+			key-positions = <8 11>;
+			bindings = <&uc 0x2191 0x2191>;
+			layers = <0>;
+		};
+		combo_uni_left {
+			timeout-ms = <50>;
+			key-positions = <7 10>;
+			bindings = <&uc 0x2190 0x2190>;
+			layers = <0>;
+		};
+		combo_uni_down {
+			timeout-ms = <50>;
+			key-positions = <14 17>;
+			bindings = <&uc 0x2192 0x2192>;
+			layers = <0>;
+		};
+		combo_uni_right {
+			timeout-ms = <50>;
+			key-positions = <9 12>;
+			bindings = <&uc 0x2193 0x2193>;
+			layers = <0>;
+		};
+
 // arrows ----------------------------------------
 		combo_up {
 			timeout-ms = <50>;
 			key-positions = <8 11>;
 			bindings = <&kp UP>;
+			layers = <0>;
 		};
 		combo_left {
 			timeout-ms = <50>;
 			key-positions = <7 10>;
 			bindings = <&kp LEFT>;
+			layers = <0>;
 		};
 		combo_down {
 			timeout-ms = <50>;
 			key-positions = <14 17>;
 			bindings = <&kp DOWN>;
+			layers = <0>;
 		};
 		combo_right {
 			timeout-ms = <50>;
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
+			layers = <0>;
 		};
 
 // layers ----------------------------------------

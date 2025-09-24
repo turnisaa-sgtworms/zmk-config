@@ -11,7 +11,7 @@
         hmr: home_row_mod_right {
             hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
         };
-		uc: uc {
+		uc: unicode {
   			default-mode = <UC_MODE_WIN_COMPOSE>;
 		};
 		num_word: num_word {

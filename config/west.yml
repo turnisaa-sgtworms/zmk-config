@@ -25,5 +25,8 @@ manifest:
     - name: zmk-adaptive-key
       remote: urob
       revision: main # set to same as ZMK version above
+    - name: zmk-unicode
+      remote: urob
+      revision: main
   self:
     path: config

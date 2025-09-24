@@ -56,7 +56,7 @@
 		one { 
 			display-name = "one - num/ico";
 			bindings = <
-					   		   &mt LS(N3) LS(N5) &mt LS(N6) LS(N2) &mt MINUS LS(EQUALS) 			&parmt 0 0 &brcmt 0 0 &bktmt 0 0
+					   		   &mt LS(N3) LS(N5) &mt LS(N6) LS(N2) &mt MINUS LS(EQUALS) 			&parmt &brcmt &bktmt
 						&mt LS(MINUS) N7 &mt LS(N7) N5 &mt EQUALS N3 &mt LS(APOS) N1				&mt APOS N2 &mt COMMA N4 &mt LS(N1) N6 &mt LS(FLSH) N8
 					   		  &mt LS(N4) N9 &mt LS(N8) DOT											&mt LS(SEMI) SEMI &mt FSLH BSLH
 											   &mt LS(GRAVE) N0										&kp SPACE 

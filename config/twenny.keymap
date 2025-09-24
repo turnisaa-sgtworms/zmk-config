@@ -261,13 +261,13 @@
 		combo_uni_down {
 			timeout-ms = <50>;
 			key-positions = <14 17>;
-			bindings = <&uc 0x2192 0x2192>;
+			bindings = <&uc 0x2193 0x2193>;
 			layers = <1>;
 		};
 		combo_uni_right {
 			timeout-ms = <50>;
 			key-positions = <9 12>;
-			bindings = <&uc 0x2193 0x2193>;
+			bindings = <&uc 0x2192 0x2192>;
 			layers = <1>;
 		};
 

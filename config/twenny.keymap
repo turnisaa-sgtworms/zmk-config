@@ -48,7 +48,7 @@
 			display-name = "zero - base";
 			bindings = <
 							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp F 
-				&hml LSHIFT H &hml LGUI I &hml LALT A &hml LCTRL E 		&hmr RCTRL T &hmr RALT C &hmr RGUI S &hmr RSHIFT N
+				&hml LSHIFT H &hml LALT I &hml LGUI A &hml LCTRL E 		&hmr RCTRL T &hmr RGUI C &hmr RALT S &hmr RSHIFT N
 										  &kp X 	  &mage_rep			&mage_g 		 &kp M 
 													  &lt 2 R 			&lt 1 SPACE
 			>;
@@ -56,10 +56,10 @@
 		one { 
 			display-name = "one - num/ico";
 			bindings = <
-					   AS(N5) AS(N7) 		   AS(N6) 			&mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
-				AS(N4) AS(N3) AS(N2) 		   AS(N1) 			AS(SEMI) 	  AS(APOS) 		&mt COMMA DOT &mt LS(BSLH) LS(FSLH)
-					   		  &mt LS(GRAVE) N9 AS(N8) 			&mt BSLH FSLH RAS(MINUS) 
-											   &mt GRAVE N0		&kp SPACE 
+					   		   &mt LS(N3) LS(N5) &mt LS(N6) LS(N2) &mt MINUS LS(EQUALS) 			&parmt 0 0 &brcmt 0 0 &bktmt 0 0
+						&mt LS(MINUS) N7 &mt LS(N7) N5 &mt EQUALS N3 &mt LS(APOS) N1				&mt APOS N2 &mt COMMA N4 &mt LS(N1) N6 &mt LS(FLSH) N8
+					   		  &mt LS(N4) N9 &mt LS(N8) DOT											&mt LS(SEMI) SEMI &mt FSLH BSLH
+											   &mt LS(GRAVE) N0										&kp SPACE 
 			>;
 		};
 		two { 

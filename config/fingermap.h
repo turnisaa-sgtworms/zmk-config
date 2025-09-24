@@ -317,7 +317,7 @@
         };
 		parmt: par_mod_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
             bindings = <&gra>, <&par>;
@@ -325,7 +325,7 @@
         };
 		brcmt: brc_mod_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
             bindings = <&abt>, <&brc>;
@@ -333,7 +333,7 @@
         };
 		bktmt: bkt_mod_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
             bindings = <&bar>, <&bkt>;

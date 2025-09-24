@@ -71,7 +71,7 @@
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
-                	= <&macro_tap &kp LS(FSLH) &kp LS(FSLH) &kp LEFT>
+                	= <&macro_tap &kp LS(BSLH) &kp LS(BSLH) &kp LEFT>
                 	;
         	};
 		//alphas

@@ -373,6 +373,14 @@
             tapping-term-ms = <250>;
             bindings = <&zemt Z 0>, <&zz>;
         };
+		mmt: macro_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            bindings = <>, <>;
+            display-name = "bl Mod-Tap";
+        };	
 	};
 };
 

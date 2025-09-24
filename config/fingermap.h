@@ -320,7 +320,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
-            bindings = <&kp>, <&par>;
+            bindings = <&gra>, <&par>;
             display-name = "par Mod-Tap";
         };
 		brcmt: brc_mod_tap {
@@ -328,7 +328,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
-            bindings = <&kp>, <&brc>;
+            bindings = <&abt>, <&brc>;
             display-name = "brc Mod-Tap";
         };
 		bktmt: bkt_mod_tap {
@@ -336,7 +336,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <150>;
-            bindings = <&kp>, <&bkt>;
+            bindings = <&bar>, <&bkt>;
             display-name = "bkt Mod-Tap";
         };
 		quomt: quo_mod_tap {

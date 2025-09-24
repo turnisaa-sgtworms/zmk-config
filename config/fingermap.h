@@ -297,6 +297,38 @@
 		mt: mod_tap {
             		tapping-term-ms = <200>;
         };
+		parmt: par_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&par>;
+            display-name = "par Mod-Tap";
+        };
+		brcmt: brc_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&brc>;
+            display-name = "brc Mod-Tap";
+        };
+		bktmt: bkt_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp>, <&bkt>;
+            display-name = "bkt Mod-Tap";
+        };
+		quomt: quo_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&quo>, <&kp>;
+            display-name = "quo Mod-Tap";
+        };
 		qumt: qu_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -373,14 +405,6 @@
             tapping-term-ms = <250>;
             bindings = <&zemt Z 0>, <&zz>;
         };
-		mmt: macro_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <150>;
-            bindings = <>, <>;
-            display-name = "bl Mod-Tap";
-        };	
 	};
 };
 

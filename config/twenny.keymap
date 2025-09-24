@@ -250,25 +250,25 @@
 			timeout-ms = <50>;
 			key-positions = <8 11>;
 			bindings = <&uc 0x2191 0x2191>;
-			layers = <0>;
+			layers = <1>;
 		};
 		combo_uni_left {
 			timeout-ms = <50>;
 			key-positions = <7 10>;
 			bindings = <&uc 0x2190 0x2190>;
-			layers = <0>;
+			layers = <1>;
 		};
 		combo_uni_down {
 			timeout-ms = <50>;
 			key-positions = <14 17>;
 			bindings = <&uc 0x2192 0x2192>;
-			layers = <0>;
+			layers = <1>;
 		};
 		combo_uni_right {
 			timeout-ms = <50>;
 			key-positions = <9 12>;
 			bindings = <&uc 0x2193 0x2193>;
-			layers = <0>;
+			layers = <1>;
 		};
 
 // arrows ----------------------------------------

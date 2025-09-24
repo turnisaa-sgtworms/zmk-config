@@ -10,9 +10,56 @@
 
 / {
 	macros {
+		//symbols
+			par: par {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp LPAR &kp RPAR &kp LEFT>
+                	;
+        	};
+			brc: brc {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp LBRC &kp RBRC &kp LEFT>
+                	;
+        	};
+			bkt: bkt {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp LBKT &kp RBKT &kp LEFT>
+                	;
+        	};
+			quo: quo {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp LS(APOS) &kp LS(APOS) &kp LEFT>
+                	;
+        	};
+			gra: gra {
+					wait-ms = <10>;
+					tap-ms = <10>;
+            		compatible = "zmk,behavior-macro";
+            		#binding-cells = <0>;
+            		bindings
+                	= <&macro_tap &kp GRAVE &kp GRAVE &kp LEFT>
+                	;
+        	};
+		//alphas
         	qu: qu {
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -21,7 +68,7 @@
         	};
         	ge: ge {
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -30,7 +77,7 @@
         	};
 			ze: ze {
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -39,7 +86,7 @@
         	};
 			zz: zz {
 				wait-ms = <10>;
-				tap-ms = <15>;
+				tap-ms = <10>;
 				compatible = "zmk,behavior-macro";
 				#binding-cells = <0>;
 				bindings
@@ -48,7 +95,7 @@
        	 	};
 			ju: ju {
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -57,7 +104,7 @@
         	};
 			ke: ke {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -66,7 +113,7 @@
         	};
 			oa: oa {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -75,7 +122,7 @@
         	};
 			ue: ue {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -84,7 +131,7 @@
         	};
 			xp: xp {
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -93,7 +140,7 @@
         	};
 			bl_macro: bl {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -102,7 +149,7 @@
         	};
 			you: you {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -111,7 +158,7 @@
         	};
 			lol: lol {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
@@ -120,13 +167,14 @@
         	};
 			lmao: lmao {	
 					wait-ms = <10>;
-					tap-ms = <15>;
+					tap-ms = <10>;
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;
             		bindings
                 	= <&macro_tap &kp L &kp M &kp A &kp O>
                 	;
         	};
+		//functions
 			bluetooth0: bluetooth0 {
             		compatible = "zmk,behavior-macro";
             		#binding-cells = <0>;

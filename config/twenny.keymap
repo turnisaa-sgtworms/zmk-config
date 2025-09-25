@@ -61,8 +61,8 @@
 			display-name = "one - num/ico";
 			bindings = <
 					   		   &mt LS(N3) LS(N5) &mt LS(N6) LS(N2) &mt MINUS LS(EQUAL) 			&parmt 0 0 &brcmt 0 0 &bktmt 0 0
-						&mt LS(MINUS) N7 &mt LS(N7) N5 &mt EQUAL N3 &quomt 0 N1					&mt APOS N2 &mt COMMA N4 &mt LS(N1) N6 &mt LS(FSLH) N8
-					   		  &mt LS(N4) N9 &mt LS(N8) DOT											&mt LS(SEMI) SEMI &mt BSLH FSLH
+						&mt LS(MINUS) N7 &mt LS(N7) N5 &mt EQUAL N3 &quomt 0 N1					&mt APOS N2 &mt DOT N4 &mt LS(N1) N6 &mt LS(FSLH) N8
+					   		  &mt LS(N4) N9 &mt LS(N8) COMMA									&mt LS(SEMI) SEMI &mt BSLH FSLH
 											   &mt LS(GRAVE) N0										&kp SPACE 
 			>;
 		};

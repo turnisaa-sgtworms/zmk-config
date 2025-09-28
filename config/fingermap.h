@@ -318,7 +318,7 @@
 		parmt: par_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&gra>, <&par>;
             display-name = "par Mod-Tap";
@@ -326,7 +326,7 @@
 		brcmt: brc_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&abt>, <&brc>;
             display-name = "brc Mod-Tap";
@@ -334,7 +334,7 @@
 		bktmt: bkt_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&bar>, <&bkt>;
             display-name = "bkt Mod-Tap";
@@ -342,7 +342,7 @@
 		quomt: quo_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&quo>, <&kp>;
             display-name = "quo Mod-Tap";
@@ -350,7 +350,7 @@
 		gramt: gra_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&gra>, <&kp>;
             display-name = "gra Mod-Tap";
@@ -358,7 +358,7 @@
 		abtmt: abt_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&abt>, <&kp>;
             display-name = "abt Mod-Tap";
@@ -366,7 +366,7 @@
 		barmt: bar_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&bar>, <&kp>;
             display-name = "bar Mod-Tap";
@@ -374,7 +374,7 @@
 		qumt: qu_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&kp>, <&qu>;
             display-name = "qu Mod-Tap";
@@ -382,7 +382,7 @@
 		zemt: ze_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&kp>, <&ze>;
             display-name = "ze Mod-Tap";
@@ -390,7 +390,7 @@
 		jumt: ju_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&kp>, <&ju>;
             display-name = "ju Mod-Tap";
@@ -398,7 +398,7 @@
 		oamt: oa_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&oa>, <&kp>;
             display-name = "oa Mod-Tap";
@@ -406,7 +406,7 @@
 		kemt: ke_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&ke>, <&kp>;
             display-name = "ke Mod-Tap";
@@ -414,7 +414,7 @@
 		uemt: ue_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&ue>, <&kp>;
             display-name = "ue Mod-Tap";
@@ -422,7 +422,7 @@
 		xpmt: xp_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&xp>, <&kp>;
             display-name = "xp Mod-Tap";
@@ -430,7 +430,7 @@
 		blmt: bl_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&bl_macro>, <&kp>;
             display-name = "bl Mod-Tap";

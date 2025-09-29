@@ -362,7 +362,7 @@
 			bindings = <&num_word>;
 			layers = <0>;
 		};
-		combo_capsword {
+		combo_caps_word_lock {
 			timeout-ms = <50>;
 			key-positions = <5 19>;
 			bindings = <&cmt CAPS 0>;
@@ -370,13 +370,13 @@
 		};
 		combo_right_stickyshift {
 			timeout-ms = <30>;
-			key-positions = <10 11>;
+			key-positions = <13 19>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
 		};
 		combo_left_stickyshift {
 			timeout-ms = <30>;
-			key-positions = <8 9>;
+			key-positions = <6 18>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
 		};

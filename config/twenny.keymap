@@ -53,7 +53,7 @@
             akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
 			akt_lk { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
         };
-        mage_c: mage_m {
+        mage_m: mage_m {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp M>;

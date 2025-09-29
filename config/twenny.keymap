@@ -448,7 +448,7 @@
 			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&kp Y>;
-			layers = <5 6>;
+			layers = <5>;
 		};
 		combo_esc_game {
 			timeout-ms = <50>;

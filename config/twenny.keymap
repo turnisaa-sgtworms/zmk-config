@@ -40,6 +40,7 @@
             akt_dge { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&ge>; };
             akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
 			akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
+            akt_ax { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
         };
 		mage_g: mage_g {
             compatible = "zmk,behavior-adaptive-key";

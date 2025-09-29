@@ -124,7 +124,7 @@
 				     	   &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LSHIFT &kp A  &kp W  &kp D 				&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
 				           		  &kp S  &kp E 				&kp C_PREV 	 &kp C_NEXT 
-				                  		 &lt 6 SPACE 		&kp C_PP
+				                  		 &kp SPACE 		&kp C_PP
 			>;
 		};
 	};
@@ -330,13 +330,13 @@
 		};
 		combo_qwer_layer {
 			timeout-ms = <50>;
-			key-positions = <6 7 9>;
+			key-positions = <6 7 9 14>;
 			bindings = <&to 5>;
 			layers = <0>;
 		};
-		combo_voipslop_layer {
+		combo_minecraft_layer {
 			timeout-ms = <50>;
-			key-positions = <0 1 2 3 4 5>;
+			key-positions = <1 6 7 9>;
 			bindings = <&to 6>;
 			layers = <0>;
 		};

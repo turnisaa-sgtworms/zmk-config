@@ -53,10 +53,10 @@
             akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
 			akt_lk { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp K>; };
         };
-        mage_l: mage_l {
+        mage_m: mage_m {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp L>;
+            bindings = <&kp M>;
 
             akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
             };
@@ -67,9 +67,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &mage_l 		 &kp F 
+							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp F 
 				&hml LSHIFT H &hml LALT I &hml LGUI A &hml LCTRL E 		&hmr RCTRL T &hmr RGUI C &hmr RALT S &hmr RSHIFT N
-										  &kp X 	  &mage_rep			&mage_g 		 &kp M
+										  &kp X 	  &mage_rep			&mage_g 		 &mage_m
 													  &lt 2 R 			&lt 1 SPACE
 			>;
 		};

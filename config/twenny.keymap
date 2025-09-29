@@ -119,21 +119,12 @@
 			>;
 		};
 		six { 
-			display-name = "six - voipslop";
+			display-name = "six - minecraft";
 			bindings = <
 				     	   &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LSHIFT &kp A  &kp W  &kp D 				&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				           		  &kp S  &kp LCTRL 			&kp C_PREV 	 &kp C_NEXT 
+				           		  &kp S  &kp E 				&kp C_PREV 	 &kp C_NEXT 
 				                  		 &lt 6 SPACE 		&kp C_PP
-			>;
-		};
-		seven { 
-			display-name = "seven - voipslop 2";
-			bindings = <
-					  &kp Q &none &kp E &none &none &none 
-				&none &none &none &none &none &none &none &none 
-					 	    &none &none &none &none 
-								  &none &none 
 			>;
 		};
 	};
@@ -409,39 +400,33 @@
 			timeout-ms = <50>;
 			key-positions = <0 18>;
 			bindings = <&kp N1>;
-			layers = <4 5>;
+			layers = <4>;
 		};
 		combo_2_game {
 			timeout-ms = <50>;
 			key-positions = <1 18>;
 			bindings = <&kp N2>;
-			layers = <4 5>;
+			layers = <4>;
 		};
 		combo_3_game {
 			timeout-ms = <50>;
 			key-positions = <2 18>;
 			bindings = <&kp N3>;
-			layers = <4 5>;
+			layers = <4>;
 		};
 		combo_4_fps {
 			timeout-ms = <50>;
 			key-positions = <7 8 9>;
 			bindings = <&kp N4>;
-			layers = <4 6>;
+			layers = <4>;
 		};
 		combo_b_g_game {
 			timeout-ms = <50>;
 			key-positions = <14 15>;
 			bindings = <&mt B G>;
-			layers = <4 5>;
+			layers = <4>;
 		};
-		combo_e_game {
-			timeout-ms = <50>;
-			key-positions = <14 15>;
-			bindings = <&kp E>;
-			layers = <6 7>;
-		};
-		combo_k_game {
+		combo_k_shift_game {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&mt K LSHIFT>;
@@ -451,25 +436,25 @@
 			timeout-ms = <50>;
 			key-positions = <1 2>;
 			bindings = <&kp R>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 		combo_x_game {
 			timeout-ms = <50>;
 			key-positions = <0 1>;
 			bindings = <&kp X>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 		combo_y_game {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&kp Y>;
-			layers = <5>;
+			layers = <5 6>;
 		};
 		combo_esc_game {
 			timeout-ms = <50>;
 			key-positions = <0 1 2>;
 			bindings = <&kp ESC>;
-			layers = <4>;
+			layers = <4 6>;
 		};
 	};
 };

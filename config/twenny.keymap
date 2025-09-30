@@ -342,18 +342,18 @@
 			timeout-ms = <25>;
 			key-positions = <6 9>;
 			bindings = <&sl 5>;
-			layers = <0>;
+			layers = <0 3>;
 		};
 		combo_right_shortcut_layer {
 			timeout-ms = <25>;
 			key-positions = <10 13>;
 			bindings = <&sl 5>;
-			layers = <0>;
+			layers = <0 3>;
 		};
 		combo_cad_layer {
 			timeout-ms = <50>;
 			key-positions = <6 7 8 15>;
-			bindings = <&to 4>;
+			bindings = <&to 3>;
 			layers = <0>;
 		};
 		combo_fps_layer {

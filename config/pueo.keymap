@@ -99,64 +99,76 @@
 		one { 
 			display-name = "one - num/ico";
 			bindings = <
-					   AS(N5)    AS(N7)           AS(N6) &none       AS(EQUAL)             &mt RPAR LPAR &mt RBRC LBRC &mt RBKT LBKT
-				AS(N4) AS(N3)    AS(N2) 		  AS(N1) &none       &mt LS(DOT) LS(COMMA) AS(SEMI) 	   AS(APOS) 	 &mt COMMA DOT &mt LS(BSLH) LS(FSLH)
-					   &kp SPACE &mt LS(GRAVE) N9 AS(N8) 			                       &mt BSLH FSLH RAS(MINUS)    &none
-											   &mt GRAVE N0		                           &kp SPACE 
+					   		   &amt LS(N3) LS(N5) &amt LS(N6) LS(N2) &amt MINUS LS(EQUAL) &none			&none &parmt 0 0 &brcmt 0 0 &bktmt 0 0
+						&amt LS(MINUS) N4 &amt LS(N7) N3 &amt EQUAL N2 &quomt 0 N1 &none				&none &amt APOS N5 &amt LS(N8) N6 &amt LS(N1) N7 &amt LS(FSLH) N8
+					   		  &none &amt LS(N4) N9 &amt SEMI COMMA											&amt LS(SEMI) DOT &amt BSLH FSLH &none
+											   &amt LS(GRAVE) N0										&kp SPACE 
 			>;
 		};
 		two { 
 			display-name = "two - nav/fn";
 			bindings = <
-					 	 &none    &none    &none     &none       &none &kp C_PREV &kp C_NEXT &none
-				&kp C_PP &kp LEFT &kp UP   &kp RIGHT &none       &none &kp HOME   &kp PGUP   &kp END &kp C_PP
-						 &none    &kp DOWN &none 		         &none      &kp PGDN   &none
-							  	   		   &none			     &none
+					 	 &ind_bat &none &none &none			&none &kp C_PREV &kp C_NEXT &none
+				&kp C_PP &kp LEFT &kp UP &kp RIGHT &none	&none &kp HOME &kp PGUP &kp END &kp C_PP
+						 &none	  &kp DOWN &none 			&none &kp PGDN &none
+							  	   		   &none			&none
 			>;
 		};
 		three { 
-			display-name = "three - shortcuts";
+			display-name = "three - cad 1";
 			bindings = <
-							  &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(LS(T))       &none &mt F7 F1 &mt F8 F2 &mt F9 F3  
-				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) &none		        &none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
-							  &none	    &kp LC(Y) &kp LC(Z) 		                  &sk RCTRL &sk RALT &sk RGUI
-				                				  &kp SPACE  	                      &kp SPACE
+				      &kp K &kp O &kp E &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp C &kp T &kp R &kp L &none	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				      &none &kp F &kp M 		&kp C_PREV 	 &kp C_NEXT &none
+				                  &kp SPACE 	&kp C_PP
 			>;
 		};
 		four { 
-			display-name = "four - fps";
+			display-name = "four - cad 2";
 			bindings = <
-				    	  &kp Q &kp F &kp E &kp R		&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LCTRL &kp A &kp W &kp D &kp G		&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				     &kp LSHIFT &kp S &kp C 		    &kp C_PREV 	 &kp C_NEXT &none
-				                	  &kp SPACE 	    &kp C_PP
+				    	  &kp N5 &kp N7 &kp N6 &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp N4 &kp N3 &kp N2 &amt DOT N1 &none	&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				         	    &none &kp N9 &kp N8 	&kp C_PREV 	 &kp C_NEXT &none
+				                	  &amt SPACE N0 	&kp C_PP
 			>;
 		};
 		five { 
-			display-name = "five - qwer";
+			display-name = "five - shortcuts";
 			bindings = <
-				      &kp N1 &kp N2 &kp N3 &kp N4			&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp Q &kp W  &kp E  &kp R &kp Y			    &none &kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
-				      &none  &kp D  &kp F 			        &kp C_PREV   &kp C_NEXT &none
-				                    &kp LCTRL	            &kp C_PP
+							  &kp LC(X) &kp LC(C) &kp LC(V) &none	&none &mt F7 F1 &mt F8 F2 &mt F9 F3  
+				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) &none	&none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
+							  			&none &kp LC(Y) &kp LC(Z) 	&sk RCTRL &sk RALT &none
+				                				  &none  	    	&kp SPACE
 			>;
 		};
+
+// game layers
+
 		six { 
-			display-name = "six - voipslop";
+			display-name = "six - fps";
 			bindings = <
-				     	   &kp N1 &kp N2 &kp N3 &none 			&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LSHIFT &kp A  &kp W  &kp D &none			&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				           &none &kp S  &kp LCTRL 			    &kp C_PREV 	 &kp C_NEXT &none
-				                  		 &lt 6 SPACE 		    &kp C_PP
+				    	  &kp Q &kp F &kp E &kp R	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LCTRL &kp A &kp W &kp D &kp G	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				          &kp X &kp S &kp C 			  &kp C_PREV 	 &kp C_NEXT   &none
+				                	  &kp SPACE 		  &kp C_PP
 			>;
 		};
 		seven { 
-			display-name = "seven - voipslop 2";
+			display-name = "seven - qwer";
 			bindings = <
-					  &kp Q &none &kp E &none &none &none &none &none 
-				&none &none &none &none &none &none &none &none &none &none 
-					  &none &none &none             &none &none &none
-								  &none             &none 
+				      &kp N1 &kp N2 &kp N3 &none		  &none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp Q &kp W  &kp E  &kp R  &none		  &none &kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
+				      &none  &kp D  &kp F 						&kp C_PREV   &kp C_NEXT   &none
+				                    &mt LCTRL N4 				&kp C_PP
+			>;
+		};
+		eight { 
+			display-name = "eight - minecraft";
+			bindings = <
+				     	   &kp N1 &kp N2 &kp N3 &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp LSHIFT &kp A  &kp W  &kp D 	&none	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				           &none  &kp S  &kp E 				  &kp C_PREV 	 &kp C_NEXT   &none
+				                  		 &kp SPACE 		      &kp C_PP
 			>;
 		};
     };
@@ -286,19 +298,19 @@
 		combo_fps_layer {
 			timeout-ms = <50>;
 			key-positions = <9 10 11>;
-			bindings = <&to 4>;
+			bindings = <&to 6>;
 			layers = <0>;
 		};
 		combo_qwer_layer {
 			timeout-ms = <50>;
-			key-positions = <8 9 11>;
-			bindings = <&to 5>;
+			key-positions = <8 9 11 19>;
+			bindings = <&to 7>;
 			layers = <0>;
 		};
-		combo_voipslop_layer {
+		combo_minecraft_layer {
 			timeout-ms = <50>;
-			key-positions = <9 10 12>;
-			bindings = <&to 6>;
+			key-positions = <1 8 9 11>;
+			bindings = <&to 8>;
 			layers = <0>;
 		};
 
@@ -317,15 +329,53 @@
 		};
 		combo_right_stickyshift {
 			timeout-ms = <50>;
-			key-positions = <14 15>;
+			key-positions = <8 24>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
 		};
 		combo_left_stickyshift {
 			timeout-ms = <50>;
-			key-positions = <10 11>;
+			key-positions = <17 25>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
+		};
+
+// cad -------------------------------------------
+		combo_cad_numword {
+			timeout-ms = <50>;
+			key-positions = <0 24>;
+			bindings = <&cad_num_word>;
+			layers = <3>;
+		};
+		combo_p_cad {
+			timeout-ms = <50>;
+			key-positions = <0 9>;
+			bindings = <&kp P>;
+			layers = <3>;
+		};
+		combo_h_cad {
+			timeout-ms = <50>;
+			key-positions = <1 10>;
+			bindings = <&kp H>;
+			layers = <3>;
+		};
+		combo_i_cad {
+			timeout-ms = <50>;
+			key-positions = <2 11>;
+			bindings = <&kp I>;
+			layers = <3>;
+		};
+		combo_z_cad {
+			timeout-ms = <50>;
+			key-positions = <11 20>;
+			bindings = <&kp Z>;
+			layers = <3>;
+		};
+		combo_y_cad {
+			timeout-ms = <50>;
+			key-positions = <10 19>;
+			bindings = <&kp Y>;
+			layers = <3>;
 		};
 
 // game ------------------------------------------
@@ -333,55 +383,49 @@
 			timeout-ms = <50>;
 			key-positions = <0 24>;
 			bindings = <&kp N1>;
-			layers = <4 5>;
+			layers = <6>;
 		};
 		combo_2_game {
 			timeout-ms = <50>;
 			key-positions = <1 24>;
 			bindings = <&kp N2>;
-			layers = <4 5>;
+			layers = <6>;
 		};
 		combo_3_game {
 			timeout-ms = <50>;
 			key-positions = <2 24>;
 			bindings = <&kp N3>;
-			layers = <4 5>;
+			layers = <6>;
 		};
 		combo_4_fps {
 			timeout-ms = <50>;
 			key-positions = <9 10 11>;
 			bindings = <&kp N4>;
-			layers = <4 6>;
+			layers = <6>;
 		};
 		combo_b_game {
 			timeout-ms = <50>;
 			key-positions = <19 20>;
 			bindings = <&kp B>;
-			layers = <4 5>;
+			layers = <6>;
 		};
-		combo_e_game {
-			timeout-ms = <50>;
-			key-positions = <19 20>;
-			bindings = <&kp E>;
-			layers = <6 7>;
-		};
-		combo_k_game {
+		combo_k_shift_game {
 			timeout-ms = <50>;
 			key-positions = <8 24>;
-			bindings = <&kp K>;
-			layers = <4>;
+			bindings = <&mt K LSHIFT>;
+			layers = <6>;
 		};
-		combo_x_game {
+		combo_y_game {
 			timeout-ms = <50>;
-			key-positions = <0 1>;
-			bindings = <&kp X>;
-			layers = <4>;
+			key-positions = <6 18>;
+			bindings = <&kp Y>;
+			layers = <7>;
 		};
 		combo_esc_game {
 			timeout-ms = <50>;
 			key-positions = <0 1 2>;
 			bindings = <&kp ESC>;
-			layers = <4>;
+			layers = <6 8>;
 		};
     };
 };

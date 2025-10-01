@@ -56,6 +56,9 @@
             #binding-cells = <0>;
             bindings = <&kp X>;
 
+			akt_fs { trigger-keys = <F>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+			akt_dw { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
+			akt_sf { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp F>; };
 			akt_lm { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp M>; };
             akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
         };
@@ -64,7 +67,8 @@
             #binding-cells = <0>;
             bindings = <&key_repeat>;
 
-            akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <X>; };
+			akt_xa { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
+            akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
         };
 		mage_k: mage_k {
             compatible = "zmk,behavior-adaptive-key";
@@ -77,10 +81,12 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp G>;
-			
+
+			akt_mc { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
 			akt_tw { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
 			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
             akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+			akt_lc { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
 			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
         };
     };

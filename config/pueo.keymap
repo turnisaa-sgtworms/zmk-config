@@ -127,7 +127,7 @@
 			display-name = "four - cad 2";
 			bindings = <
 				    	  &kp N5 &kp N7 &kp N6 &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp N4 &kp N3 &kp N2 &amt DOT N1 &none	&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
+				&kp N4 &kp N3 &kp N2 &amt DOT N1 &none	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
 				         	    &none &kp N9 &kp N8 	&kp C_PREV 	 &kp C_NEXT &none
 				                	  &amt SPACE N0 	&kp C_PP
 			>;

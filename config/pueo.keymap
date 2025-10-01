@@ -137,7 +137,7 @@
 			bindings = <
 							  &kp LC(X) &kp LC(C) &kp LC(V) &none	&none &mt F7 F1 &mt F8 F2 &mt F9 F3  
 				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) &none	&none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
-							  			&none &kp LC(Y) &kp LC(Z) 	&sk RCTRL &sk RALT &none
+							  			&none &kp LC(Y) &kp LC(Z) 	&sk RCTRL &sk RGUI &sk RALT
 				                				  &none  	    	&kp SPACE
 			>;
 		};
@@ -294,6 +294,12 @@
 			timeout-ms = <50>;
 			key-positions = <10 11 14 15>;
 			bindings = <&to 0>;
+		};
+		combo_cad_layer {
+			timeout-ms = <50>;
+			key-positions = <8 9 10 20>;
+			bindings = <&to 3>;
+			layers = <0>;
 		};
 		combo_fps_layer {
 			timeout-ms = <50>;

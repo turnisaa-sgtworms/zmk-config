@@ -26,6 +26,9 @@
         hmr: home_row_mod_right {
             hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 18 19 20 24>; // List of keys on the left
         };
+		sl {
+    		release-after-ms = <1500>;
+		};
         num_word: num_word {
         	#binding-cells = <0>;
 		    compatible = "zmk,behavior-num-word";
@@ -33,9 +36,53 @@
         	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         	ignore-numbers;
     	};
-		sl {
-    		release-after-ms = <1500>;
-		};
+		cad_num_word: cad_num_word {
+        	#binding-cells = <0>;
+		    compatible = "zmk,behavior-num-word";
+			layers = <5>;
+        	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+        	ignore-numbers;
+    	};
+		amt: a_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            display-name = "a-Mod-Tap";
+        };
+		mage_x: mage_x {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp X>;
+
+			akt_lm { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp M>; };
+            akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+        };
+		mage_rep: mage_rep {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <X>; };
+        };
+		mage_k: mage_k {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp K>;
+
+            akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+        };
+        mage_g: mage_g {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp G>;
+			
+			akt_tw { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
+			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
+            akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
+			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
+        };
     };
 
     keymap {
@@ -43,9 +90,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp L 		 &kp F 
-				&hml LSHIFT S &hml LGUI I &hml LALT A &hml LCTRL E &kemt 0 K 	   &kp B &hmr RCTRL T   &hmr RALT H     &hmr RGUI C &hmr RSHIFT N
-							  &jumt J 0   &kp X 	  &zemt Z 0			                 &kp G 		 &kp M           &kp W
+							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp F 		 &kp L 
+				&hml LSHIFT H &hml LGUI I &hml LALT A &hml LCTRL E &zemt 0 Z 	   &kp W &hmr RCTRL T   &hmr RALT S     &hmr RGUI C &hmr RSHIFT N
+							  &jumt J 0   &mage_x 	  &mage_rep			                 &mage_k 		 &mage_g           &kp M
 													  &lt 2 R 			                 &lt 1 SPACE
 			>;
 		};
@@ -119,8 +166,14 @@
         // alphas ----------------------------------------
 		combo_v {
 			timeout-ms = <30>;
-			key-positions = <14 21>;
+			key-positions = <6 15>;
 			bindings = <&kp V>;
+			layers = <0>;
+		};
+		combo_b {
+			timeout-ms = <30>;
+			key-positions = <5 14>;
+			bindings = <&kp B>;
 			layers = <0>;
 		};
 

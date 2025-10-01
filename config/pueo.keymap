@@ -281,13 +281,13 @@
 		combo_left_shortcut_layer {
 			timeout-ms = <25>;
 			key-positions = <8 11>;
-			bindings = <&sl 3>;
+			bindings = <&sl 5>;
 			layers = <0>;
 		};
 		combo_right_shortcut_layer {
 			timeout-ms = <25>;
 			key-positions = <14 17>;
-			bindings = <&sl 3>;
+			bindings = <&sl 5>;
 			layers = <0>;
 		};
 		combo_default_layer {

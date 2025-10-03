@@ -312,28 +312,28 @@
 			key-positions = <8 11>;
 			bindings = <&kp UP>;
 			layers = <0>;
-			require-prior-idle-ms = <50>;
+			require-prior-idle-ms = <250>;
 		};
 		combo_left {
 			timeout-ms = <50>;
 			key-positions = <7 10>;
 			bindings = <&kp LEFT>;
 			layers = <0>;
-			require-prior-idle-ms = <50>;
+			require-prior-idle-ms = <250>;
 		};
 		combo_down {
 			timeout-ms = <50>;
 			key-positions = <14 17>;
 			bindings = <&kp DOWN>;
 			layers = <0>;
-			require-prior-idle-ms = <50>;
+			require-prior-idle-ms = <250>;
 		};
 		combo_right {
 			timeout-ms = <50>;
 			key-positions = <9 12>;
 			bindings = <&kp RIGHT>;
 			layers = <0>;
-			require-prior-idle-ms = <50>;
+			require-prior-idle-ms = <250>;
 		};
 
 // layers ----------------------------------------
@@ -347,14 +347,14 @@
 			key-positions = <6 9>;
 			bindings = <&sl 5>;
 			layers = <0 3>;
-			require-prior-idle-ms = <150>;
+			require-prior-idle-ms = <250>;
 		};
 		combo_right_shortcut_layer {
 			timeout-ms = <25>;
 			key-positions = <10 13>;
 			bindings = <&sl 5>;
 			layers = <0 3>;
-			require-prior-idle-ms = <150>;
+			require-prior-idle-ms = <250>;
 		};
 		combo_cad_layer {
 			timeout-ms = <50>;

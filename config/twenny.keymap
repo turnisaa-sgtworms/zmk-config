@@ -525,7 +525,7 @@
 			layers = <6>;
 		};
 		combo_k_shift_game {
-			timeout-ms = <50>;
+			timeout-ms = <75>;
 			key-positions = <6 18>;
 			bindings = <&mt K LSHIFT>;
 			layers = <6>;

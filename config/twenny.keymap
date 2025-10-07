@@ -52,7 +52,7 @@
 		mage_k: mage_k {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp G>;
+            bindings = <&kp K>;
 
             akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
 			akt_xp { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp P>; };

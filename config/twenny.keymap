@@ -502,9 +502,9 @@
 			timeout-ms = <50>;
 			key-positions = <14 15>;
 			bindings = <&mt B G>;
-			layers = <6>;
+			layers = <6 7>;
 		};
-		combo_k_shift_game {
+		combo_k_shift_fps {
 			timeout-ms = <75>;
 			key-positions = <6 18>;
 			bindings = <&mt K LSHIFT>;
@@ -514,15 +514,15 @@
 			timeout-ms = <50>;
 			key-positions = <1 2>;
 			bindings = <&kp R>;
-			layers = <6 8>;
+			layers = <6 7 8>;
 		};
 		combo_x_game {
 			timeout-ms = <50>;
 			key-positions = <0 1>;
 			bindings = <&kp X>;
-			layers = <6 8>;
+			layers = <6 7 8>;
 		};
-		combo_y_game {
+		combo_y_qwer {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
 			bindings = <&kp Y>;

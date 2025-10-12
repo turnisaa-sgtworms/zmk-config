@@ -531,7 +531,7 @@
 		combo_y_alt_qwer {
 			timeout-ms = <50>;
 			key-positions = <6 18>;
-			bindings = <&mt ALT Y>;
+			bindings = <&mt LALT Y>;
 			layers = <7>;
 		};
 		combo_esc_game {

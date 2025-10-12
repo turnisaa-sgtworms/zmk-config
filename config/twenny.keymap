@@ -497,6 +497,12 @@
 			key-positions = <7 8 9>;
 			bindings = <&kp N4>;
 			layers = <6>;
+		}; 
+		combo_4_qwer {
+			timeout-ms = <50>;
+			key-positions = <1 2>;
+			bindings = <&kp 4>;
+			layers = <7>;
 		};
 		combo_b_g_game {
 			timeout-ms = <50>;
@@ -514,7 +520,7 @@
 			timeout-ms = <50>;
 			key-positions = <1 2>;
 			bindings = <&kp R>;
-			layers = <6 7 8>;
+			layers = <6 8>;
 		};
 		combo_x_game {
 			timeout-ms = <50>;

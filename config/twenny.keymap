@@ -501,7 +501,7 @@
 		combo_4_qwer {
 			timeout-ms = <50>;
 			key-positions = <1 2>;
-			bindings = <&kp 4>;
+			bindings = <&kp N4>;
 			layers = <7>;
 		};
 		combo_b_g_game {

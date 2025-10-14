@@ -408,13 +408,13 @@
 		};
 		combo_right_stickyshift {
 			timeout-ms = <30>;
-			key-positions = <13 19>;
+			key-positions = <11 12>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
 		};
 		combo_left_stickyshift {
 			timeout-ms = <30>;
-			key-positions = <6 18>;
+			key-positions = <7 8>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
 		};

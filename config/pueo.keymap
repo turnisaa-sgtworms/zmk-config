@@ -326,16 +326,16 @@
 			bindings = <&cmt CAPS 0>;
 			layers = <0>;
 		};
-		combo_right_stickyshift {
-			timeout-ms = <50>;
-			key-positions = <10 11>;
-			bindings = <&sk RSHIFT>;
-			layers = <0>;
-		};
 		combo_left_stickyshift {
 			timeout-ms = <50>;
-			key-positions = <14 15>;
+			key-positions = <10 11>;
 			bindings = <&sk LSHIFT>;
+			layers = <0>;
+		};
+		combo_right_stickyshift {
+			timeout-ms = <50>;
+			key-positions = <14 15>;
+			bindings = <&sk RSHIFT>;
 			layers = <0>;
 		};
 
@@ -416,7 +416,7 @@
 		};
 		combo_y_game {
 			timeout-ms = <50>;
-			key-positions = <6 18>;
+			key-positions = <8 24>;
 			bindings = <&kp Y>;
 			layers = <7>;
 		};

@@ -51,17 +51,6 @@
             bindings = <&kp>, <&kp>;
             display-name = "a-Mod-Tap";
         };
-		mage_x: mage_x {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp X>;
-
-			akt_fs { trigger-keys = <F>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
-			akt_dw { trigger-keys = <D>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
-			akt_sf { trigger-keys = <S>; max-prior-idle-ms = <300>; bindings = <&kp F>; };
-			akt_lm { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp M>; };
-            akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
-        };
 		mage_rep: mage_rep {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -69,25 +58,23 @@
 
 			akt_xa { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
             akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
+			akt_lm { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp M>; };
+			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
+			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
         };
 		mage_k: mage_k {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp K>;
 
-            akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
+            akt_tw { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
         };
-        mage_g: mage_g {
+        mage_m: mage_m {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp G>;
+            bindings = <&kp M>;
 
-			akt_mc { trigger-keys = <M>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
-			akt_tw { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
-			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
-            akt_cl { trigger-keys = <C>; max-prior-idle-ms = <300>; bindings = <&kp L>; };
-			akt_lc { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp C>; };
-			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
+			akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
         };
     };
 
@@ -96,9 +83,9 @@
 		zero {
 			display-name = "zero - base";
 			bindings = <
-							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp F 		 &kp L 
-				&hml LSHIFT H &hml LGUI I &hml LALT A &hml LCTRL E &zemt 0 Z 	   &kp W &hmr RCTRL T   &hmr RALT S     &hmr RGUI C &hmr RSHIFT N
-							  &jumt J 0   &mage_x 	  &mage_rep			                 &mage_k 		 &mage_g           &kp M
+							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp L 		 &kp F 
+				&hml LSHIFT C &hml LGUI I &hml LALT A &hml LCTRL E &zemt Z 0 	   &kp W &hmr RCTRL T   &hmr RALT H     &hmr RGUI S &hmr RSHIFT N
+							  &jumt J 0   &kp X 	  &mage_rep			                 &mage_k 		 &mage_m           &kp G
 													  &lt 2 R 			                 &lt 1 SPACE
 			>;
 		};
@@ -114,10 +101,10 @@
 		two { 
 			display-name = "two - nav/fn";
 			bindings = <
-					 	 &ind_bat &none &none &none			&none &kp C_PREV &kp C_NEXT &none
-				&kp C_PP &kp LEFT &kp UP &kp RIGHT &none	&none &kp HOME &kp PGUP &kp END &kp C_PP
-						 &none	  &kp DOWN &none 			&none &kp PGDN &none
-							  	   		   &none			&none
+					 	 &none &none &none &kp C_NEXT			&kp C_VOL_UP &none &none &none
+				&kp C_PP &kp LEFT &kp UP &kp RIGHT &kp C_PREV	&kp C_VOL_DN &kp HOME &kp PGUP &kp END &kp C_MUTE
+						 &none	  &kp DOWN &none 				&none &kp PGDN &none
+							  	   		   &none				&none
 			>;
 		};
 		three { 
@@ -141,10 +128,10 @@
 		five { 
 			display-name = "five - shortcuts";
 			bindings = <
-							  &kp LC(X) &kp LC(C) &kp LC(V) &none	&none &mt F7 F1 &mt F8 F2 &mt F9 F3  
-				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) &none	&none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
-							  			&none &kp LC(Y) &kp LC(Z) 	&sk RCTRL &sk RGUI &sk RALT
-				                				  &none  	    	&kp SPACE
+							  &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(LS(T))	&none &mt F7 F1 &mt F8 F2 &mt F9 F3  
+				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) &none			&none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
+							  			&none &kp LC(Y) &kp LC(Z) 			&sk RCTRL &sk RGUI &sk RALT
+				                				  &none  	    			&kp SPACE
 			>;
 		};
 
@@ -162,10 +149,10 @@
 		seven { 
 			display-name = "seven - qwer";
 			bindings = <
-				      &kp N1 &kp N2 &kp N3 &none		  &none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp Q &kp W  &kp E  &kp R  &none		  &none &kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
-				      &none  &kp D  &kp F 						&kp C_PREV   &kp C_NEXT   &none
-				                    &mt LCTRL N4 				&kp C_PP
+				      &kp N1 &kp N2 &kp N3 &kp N4		  	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp Q &kp W  &kp E  &kp R  &mt B G		  	&none &kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
+				      &kp X  &kp D  &kp F 					&kp C_PREV   &kp C_NEXT   &none
+				                    &mt LCTRL SPACE 		&kp C_PP
 			>;
 		};
 		eight { 
@@ -184,7 +171,7 @@
         // alphas ----------------------------------------
 		combo_v {
 			timeout-ms = <30>;
-			key-positions = <6 15>;
+			key-positions = <14 21>;
 			bindings = <&kp V>;
 			layers = <0>;
 		};
@@ -232,7 +219,7 @@
 		};
 		combo_left_enter {
 			timeout-ms = <50>;
-			key-positions = <10 11>;
+			key-positions = <9 10>;
 			bindings = <&kp ENTER>;
 			layers = <0 1 2>;
 		};

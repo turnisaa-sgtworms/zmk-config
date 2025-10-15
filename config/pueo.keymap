@@ -329,7 +329,7 @@
 		combo_right_stickyshift {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
-			bindings = <&sk LSHIFT>;
+			bindings = <&sk RSHIFT>;
 			layers = <0>;
 		};
 		combo_left_stickyshift {
@@ -379,19 +379,19 @@
 
 // game ------------------------------------------
 		combo_1_game {
-			timeout-ms = <50>;
+			timeout-ms = <75>;
 			key-positions = <0 24>;
 			bindings = <&kp N1>;
 			layers = <6>;
 		};
 		combo_2_game {
-			timeout-ms = <50>;
+			timeout-ms = <75>;
 			key-positions = <1 24>;
 			bindings = <&kp N2>;
 			layers = <6>;
 		};
 		combo_3_game {
-			timeout-ms = <50>;
+			timeout-ms = <75>;
 			key-positions = <2 24>;
 			bindings = <&kp N3>;
 			layers = <6>;
@@ -409,7 +409,7 @@
 			layers = <6>;
 		};
 		combo_k_shift_game {
-			timeout-ms = <50>;
+			timeout-ms = <75>;
 			key-positions = <8 24>;
 			bindings = <&mt K LSHIFT>;
 			layers = <6>;

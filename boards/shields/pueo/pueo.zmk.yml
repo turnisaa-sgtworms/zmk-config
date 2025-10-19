@@ -3,9 +3,8 @@ id: "pueo"
 name: "pueo"
 type: shield
 url: https://github.com/grassfedreeve/zmk-keyboards-pueo
-requires: [nice_nano_v2]
+requires: 
+  - nice_nano_v2
 features:
   - keys
-siblings:
-  - pueo_left
-  - pueo_right
+  - studio

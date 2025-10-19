@@ -9,25 +9,30 @@
 # shield: [ "twenny_left", "twenny_right", "twenny_dongle", "lebroke", "ocarina", "pocketpilot", "wakizashi", "pueo_left", "pueo_right" ]
 #
 #  - board: seeeduino_xiao_ble
+#    shield: settings_reset
+#  - board: nice_nano_v2
+#    shield: settings_reset
+#
+#  - board: seeeduino_xiao_ble
 #    shield: pocketpilot
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#
 #  - board: nice_nano_v2
 #    shield: lebroke
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#
 #  - board: nice_nano_v2
 #    shield: ocarina
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
-#  - board: seeeduino_xiao_ble
-#    shield: settings_reset
-#  - board: nice_nano_v2
-#    shield: settings_reset
+#
 #  - board: nice_nano_v2
 #    shield: wakizashi
 #    snippet: studio-rpc-usb-uart
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#
 # - board: seeeduino_xiao_ble
 #   shield: twenny_dongle
 #   cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -37,24 +42,21 @@
 # - board: seeeduino_xiao_ble
 #   shield: twenny_right
 #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+#
+# - board: nice_nano_v2
+#   shield: pueo_dongle
+#   cmake-args: -DCONFIG_ZMK_STUDIO=y
 # - board: nice_nano_v2
 #   shield: pueo_left
 #   snippet: studio-rpc-usb-uart
-#   cmake-args: -DCONFIG_ZMK_STUDIO=y
+#   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 # - board: nice_nano_v2
 #   shield: pueo_right
 #   snippet: studio-rpc-usb-uart
-#   cmake-args: -DCONFIG_ZMK_STUDIO=y
+#   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 ---
 include:
  - board: nice_nano_v2
    shield: pueo_dongle
    cmake-args: -DCONFIG_ZMK_STUDIO=y
- - board: nice_nano_v2
-   shield: pueo_left
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
- - board: nice_nano_v2
-   shield: pueo_right
-   snippet: studio-rpc-usb-uart
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+

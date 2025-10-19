@@ -8,7 +8,7 @@
 	chosen {
 		zmk,kscan = &kscan_facedown;
     };
-	&kscan_facedown: kscan_facedown {
+	kscan_facedown: kscan_facedown {
 		compatible = "zmk,kscan-gpio-direct";
 		wakeup-source;
 

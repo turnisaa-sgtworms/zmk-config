@@ -56,7 +56,11 @@
 #   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 ---
 include:
- - board: nice_nano_v2
-   shield: pueo_dongle
-   cmake-args: -DCONFIG_ZMK_STUDIO=y
-
+ - board: seeeduino_xiao_ble
+   shield: twenny_left
+   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+ - board: seeeduino_xiao_ble
+   shield: twenny_right
+   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+ - board: seeeduino_xiao_ble
+   shield: settings_reset

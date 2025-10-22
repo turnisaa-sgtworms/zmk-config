@@ -8,11 +8,11 @@
 / {
     behaviors {
         hml: home_row_mod_left {
-            hold-trigger-key-positions = <4 5 6 7 13 14 15 16 21 22 23 25>; // List of keys on the right
+            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 18 19 20 24>; // List of keys on the left
         };
 
         hmr: home_row_mod_right {
-            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 18 19 20 24>; // List of keys on the left
+            hold-trigger-key-positions = <4 5 6 7 13 14 15 16 21 22 23 25>; // List of keys on the right
         };
 		sl {
     		release-after-ms = <1500>;

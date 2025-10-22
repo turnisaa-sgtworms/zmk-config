@@ -196,13 +196,13 @@
 		combo_backspace { //back
 			timeout-ms = <30>;
 			key-positions = <16 17>;
-			bindings = <&cbspc>;
+			bindings = <&kp BSPC>;
 			layers = <0 1 2>;
 		};
 		combo_left_back {
 			timeout-ms = <30>;
 			key-positions = <8 10>;
-			bindings = <&cbspc>;
+			bindings = <&kp BSPC>;
 			layers = <0 1 2>;
 		};
 		combo_left_enter {

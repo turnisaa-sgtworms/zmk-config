@@ -251,7 +251,7 @@
             		#binding-cells = <2>;
             		flavor = "balanced";
             		require-prior-idle-ms = <200>;
-            		tapping-term-ms = <200>;
+            		tapping-term-ms = <275>;
             		quick-tap-ms = <175>;
 					hold-trigger-key-positions = <>; // List of keys on the right
             		bindings = <&kp>, <&kp>;

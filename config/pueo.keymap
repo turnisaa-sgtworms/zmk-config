@@ -139,7 +139,7 @@
 			bindings = <
 				      &kp N1 &kp N2 &kp N3 &kp N4		  	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp Q &kp W  &kp E  &kp R  &mt B G		  	&none &kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
-				      &kp X  &kp D  &kp F 					&kp C_PREV   &kp C_NEXT   &none
+				      &mt LALT X &kp D  &kp F 				&kp C_PREV   &kp C_NEXT   &none
 				                    &mt LCTRL SPACE 		&kp C_PP
 			>;
 		};

@@ -39,6 +39,13 @@
             bindings = <&kp>, <&kp>;
             display-name = "a-Mod-Tap";
         };
+		mage_x: mage_x {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp X>;
+
+            akt_que { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+        };
 		mage_rep: mage_rep {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -46,7 +53,6 @@
 
 			akt_xa { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
             akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
-			akt_lm { trigger-keys = <L>; max-prior-idle-ms = <300>; bindings = <&kp M>; };
 			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
 			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
         };

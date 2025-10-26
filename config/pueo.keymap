@@ -55,6 +55,8 @@
             akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
 			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
 			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
+            akt_ji { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
+
         };
 		mage_k: mage_k {
             compatible = "zmk,behavior-adaptive-key";
@@ -79,7 +81,7 @@
 			bindings = <
 							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp L 		 &kp F 
 				&hml LSHIFT C &hml LALT I &hml LGUI A &hml LCTRL E &zemt Z 0 	   &kp W &hmr RCTRL T   &hmr RGUI H     &hmr RALT S &hmr RSHIFT N
-							  &jumt J 0   &mage_x	  &mage_rep			                 &mage_k 		 &mage_m           &kp G
+							  &kp J       &mage_x	  &mage_rep			                 &mage_k 		 &mage_m           &kp G
 													  &lt 2 R 			                 &lt 1 SPACE
 			>;
 		};

@@ -166,7 +166,7 @@
         // alphas ----------------------------------------
 		combo_v {
 			timeout-ms = <30>;
-			key-positions = <14 21>;
+			key-positions = <7 16>;
 			bindings = <&kp V>;
 			layers = <0>;
 		};

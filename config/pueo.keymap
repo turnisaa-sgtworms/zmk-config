@@ -54,7 +54,6 @@
 			akt_xa { trigger-keys = <X>; max-prior-idle-ms = <300>; bindings = <&kp A>; };
             akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
 			akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
-			akt_pt { trigger-keys = <P>; max-prior-idle-ms = <300>; bindings = <&kp T>; };
             akt_ji { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
 
         };
@@ -324,13 +323,13 @@
 		};
 		combo_left_stickyshift {
 			timeout-ms = <30>;
-			key-positions = <8 9>;
+			key-positions = <19 20>;
 			bindings = <&sk LSHIFT>;
 			layers = <0>;
 		};
 		combo_right_stickyshift {
 			timeout-ms = <30>;
-			key-positions = <16 17>;
+			key-positions = <21 22>;
 			bindings = <&sk RSHIFT>;
 			layers = <0>;
 		};

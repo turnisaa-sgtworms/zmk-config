@@ -126,7 +126,7 @@
 							  &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y) 					&none &mt F7 F1 &mt F8 F2 &mt F9 F3  
 				    &amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z) 			&none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
 							  			&amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F)  							&sk RCTRL &sk RGUI &sk RALT
-				                				  &none  	    															&kp SPACE
+				                				  &kp PSCRN   	    															&kp SPACE
 			>;
 		};
 

@@ -9,10 +9,12 @@
     behaviors {
         hml: home_row_mod_left {
             hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 18 19 20 24>; // List of keys on the left
+			hold-while-undecided;
         };
 
         hmr: home_row_mod_right {
             hold-trigger-key-positions = <4 5 6 7 13 14 15 16 21 22 23 25>; // List of keys on the right
+			hold-while-undecided;
         };
 		sl {
     		release-after-ms = <1500>;
@@ -123,10 +125,10 @@
 		five { 
 			display-name = "five - shortcuts";
 			bindings = <
-							  &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y) 					&none &mt F7 F1 &mt F8 F2 &mt F9 F3  
-				    &amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z) 			&none &mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
-							  			&amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F)  							&sk RCTRL &sk RGUI &sk RALT
-				                				  &kp PSCRN   	    															&kp SPACE
+							  &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y) 					&amt RC(LS(TAB)) RC(TAB) &amt F7 F1 &amt F8 F2 &amt F9 F3  
+				    &amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z) 		&amt RA(LS(TAB)) RA(TAB) &sk RCTRL &sk RGUI &sk RALT&sk LSHIFT
+							  			&amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F)  								&mt F10 F4 &mt F11 F5 &mt F12 F6 
+				                				  &kp PSCRN   	    																	&kp SPACE
 			>;
 		};
 

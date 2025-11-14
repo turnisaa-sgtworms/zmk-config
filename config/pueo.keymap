@@ -187,7 +187,7 @@
 		combo_del { //del
 			timeout-ms = <30>;
 			key-positions = <10 11>;
-			bindings = <LHO>;
+			bindings = <&amt LC(DEL) DEL>;
 			layers = <0 1 2>;
 		};
 		combo_tab { //tab
@@ -203,13 +203,13 @@
 		combo_backspace { //back
 			timeout-ms = <30>;
 			key-positions = <14 15>;
-			bindings = <&kp BSPC>;
+			bindings = <&amt RC(BSPC) BSPC>;
 			layers = <0 1 2>;
 		};
 		combo_left_back {
 			timeout-ms = <30>;
 			key-positions = <9 11>;
-			bindings = <&kp BSPC>;
+			bindings = <&amt LC(BSPC) BSPC>;
 			layers = <0 1 2>;
 		};
 		combo_left_enter {
@@ -227,7 +227,7 @@
 		combo_right_del {
 			timeout-ms = <30>;
 			key-positions = <14 16>;
-			bindings = <&kp DEL>;
+			bindings = <&amt RC(DEL) DEL>;
 			layers = <0 1 2>;
 		};
 		combo_right_enter {

@@ -94,12 +94,12 @@
 			>;
 		};
 		two { 
-			display-name = "two - nav/media";
+			display-name = "two - nav/shortcuts";
 			bindings = <
-					 	 &kp C_PREV &kp C_PP &kp C_NEXT &kp C_MUTE		&kp C_MUTE &kp C_PREV &kp C_PP &kp C_NEXT
-				&kp HOME &kp LEFT &kp UP &kp RIGHT &kp END		&kp HOME &kp LEFT &kp UP &kp RIGHT &kp END
-						 &kp PGUP  &kp DOWN &kp PGDN 				&kp PGUP  &kp DOWN &kp PGDN
-							  	   		   &none					&none
+					 	 &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y)				&kp C_MUTE &kp C_PREV &kp C_PP &kp C_NEXT
+				&amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z)	&kp HOME &kp LEFT &kp UP &kp RIGHT &kp END
+						 &amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F) 										&kp PGUP  &kp DOWN &kp PGDN
+							  	   		   &kp PSCRN																			&none
 			>;
 		};
 		three { 
@@ -121,12 +121,12 @@
 			>;
 		};
 		five { 
-			display-name = "five - shortcuts";
+			display-name = "five - f keys";
 			bindings = <
-							  &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y) 					&amt RC(LS(TAB)) RC(TAB) &amt F7 F1 &amt F8 F2 &amt F9 F3  
-				    &amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z) 		&amt RA(LS(TAB)) RA(TAB) &sk RCTRL &sk RGUI &sk RALT&sk LSHIFT
-							  			&amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F)  								&mt F10 F4 &mt F11 F5 &mt F12 F6 
-				                				  &kp PSCRN   	    																	&kp SPACE
+						  &none &none &none &none  		&amt RC(LS(TAB)) RC(TAB) &amt F7 F1 &amt F8 F2 &amt F9 F3  
+				    &none &none &none &none &none  		&amt RA(LS(TAB)) RA(TAB) &sk RCTRL &sk RGUI &sk RALT&sk LSHIFT
+						  &none &none &none   				&mt F10 F4 &mt F11 F5 &mt F12 F6 
+				                	  &none    				&kp SPACE
 			>;
 		};
 

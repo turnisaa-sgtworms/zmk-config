@@ -11,22 +11,22 @@ manifest:
   projects:
     - name: zmk
       remote: zmk
-      revision: main
+      revision: v0.3
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
-      revision: main # set to same version as zmk above
+      revision: v0.3 # set to same version as zmk above
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
-      revision: main
+      revision: v0.3
     - name: zmk-num-word
       remote: dhruvinsh
-      revision: main
+      revision: v0.3
     - name: zmk-adaptive-key
       remote: urob
-      revision: main # set to same as ZMK version above
+      revision: v0.3 # set to same as ZMK version above
     - name: zmk-unicode
       remote: urob
-      revision: main
+      revision: v0.3
   self:
     path: config

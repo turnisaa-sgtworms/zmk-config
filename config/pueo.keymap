@@ -18,16 +18,14 @@
     		release-after-ms = <1500>;
 		};
         num_word: num_word {
-        	#binding-cells = <0>;
+        	#binding-cells = <1>;
 		    compatible = "zmk,behavior-auto-layer";
-			layers = <1>;
         	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         	ignore-numbers;
     	};
 		cad_num_word: cad_num_word {
-        	#binding-cells = <0>;
+        	#binding-cells = <1>;
 		    compatible = "zmk,behavior-auto-layer";
-			layers = <5>;
         	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
         	ignore-numbers;
     	};
@@ -312,7 +310,7 @@
 		combo_numword {
 			timeout-ms = <30>;
 			key-positions = <0 24>;
-			bindings = <&num_word>;
+			bindings = <&num_word 1>;
 			layers = <0>;
 		};
 		combo_capsword {
@@ -338,7 +336,7 @@
 		combo_cad_numword {
 			timeout-ms = <50>;
 			key-positions = <0 24>;
-			bindings = <&cad_num_word>;
+			bindings = <&cad_num_word 5>;
 			layers = <3>;
 		};
 		combo_p_cad {

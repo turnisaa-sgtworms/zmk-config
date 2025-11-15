@@ -71,6 +71,13 @@
 
 			akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; };
         };
+		mage_j: mage_j {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp J>;
+
+			akt_que { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+        };
     };
 
     keymap {
@@ -80,7 +87,7 @@
 			bindings = <
 							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		 &kp L 		 &kp F 
 				&hml LSHIFT C &hml LALT I &hml LGUI A &hml LCTRL E &zemt Z 0 	   &kp W &hmr RCTRL T   &hmr RGUI H     &hmr LALT S &hmr RSHIFT N
-							  &kp J       &mage_x	  &mage_rep			                 &mage_k 		 &mage_m           &kp G
+							  &mage_j     &mage_x	  &mage_rep			                 &mage_k 		 &mage_m           &kp G
 													  &lt 1 R 			                 &lt 2 SPACE
 			>;
 		};

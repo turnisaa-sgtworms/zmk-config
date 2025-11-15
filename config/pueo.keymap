@@ -76,7 +76,7 @@
             #binding-cells = <0>;
             bindings = <&kp J>;
 
-			akt_que { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
+			akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; };
         };
     };
 

@@ -19,9 +19,6 @@ manifest:
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
       revision: v0.3
-    - name: zmk-num-word
-      remote: dhruvinsh
-      revision: v0.3
     - name: zmk-adaptive-key
       remote: urob
       revision: v0.3 # set to same as ZMK version above

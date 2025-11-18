@@ -315,6 +315,14 @@
 		mt: mod_tap {
             		tapping-term-ms = <200>;
         };
+		quomt: quo_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&quo>, <&kp DQT>;
+            display-name = "quo Mod-Tap";
+        };
 		parmt: par_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

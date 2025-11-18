@@ -320,7 +320,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&quo>, <&kp DQT>;
+            bindings = <&quo>, <&kp>;
             display-name = "quo Mod-Tap";
         };
 		parmt: par_mod_tap {

@@ -143,7 +143,7 @@
 				    	  &kp Q &kp F &kp E &kp R	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LCTRL &kp A &kp W &kp D &kp G	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
 				          &kp X &kp S &kp C 			  &kp C_PREV 	 &kp C_NEXT   &none
-				                	  &kp SPACE 		  &kp C_PP
+				                	  &kp LSHIFT 		  &kp C_PP
 			>;
 		};
 		seven { 
@@ -378,22 +378,22 @@
 		};
 
 // game ------------------------------------------
-		combo_1_game {
-			timeout-ms = <75>;
-			key-positions = <0 24>;
-			bindings = <&kp N1>;
-			layers = <6>;
-		};
 		combo_2_game {
 			timeout-ms = <75>;
-			key-positions = <1 24>;
+			key-positions = <0 6>;
 			bindings = <&kp N2>;
 			layers = <6>;
 		};
 		combo_3_game {
 			timeout-ms = <75>;
-			key-positions = <2 24>;
+			key-positions = <1 6>;
 			bindings = <&kp N3>;
+			layers = <6>;
+		};
+		combo_1_game {
+			timeout-ms = <75>;
+			key-positions = <2 6>;
+			bindings = <&kp N1>;
 			layers = <6>;
 		};
 		combo_4_fps {
@@ -408,10 +408,10 @@
 			bindings = <&kp B>;
 			layers = <6>;
 		};
-		combo_k_shift_game {
+		combo_k_game {
 			timeout-ms = <75>;
 			key-positions = <8 24>;
-			bindings = <&mt K LSHIFT>;
+			bindings = <&kp K>;
 			layers = <6>;
 		};
 		combo_y_game {

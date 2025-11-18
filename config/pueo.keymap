@@ -386,13 +386,13 @@
 		};
 		combo_2_game {
 			timeout-ms = <75>;
-			key-positions = <0 8>;
+			key-positions = <1 8>;
 			bindings = <&kp N2>;
 			layers = <6>;
 		};
 		combo_3_game {
 			timeout-ms = <75>;
-			key-positions = <1 8>;
+			key-positions = <0 8>;
 			bindings = <&kp N3>;
 			layers = <6>;
 		};

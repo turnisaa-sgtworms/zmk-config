@@ -347,14 +347,6 @@
             bindings = <&bar>, <&bkt>;
             display-name = "bkt Mod-Tap";
         };
-		quomt: quo_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&quo>, <&kp>;
-            display-name = "quo Mod-Tap";
-        };
 		gramt: gra_mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;

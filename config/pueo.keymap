@@ -88,7 +88,7 @@
 			bindings = <
 					   		   &amt LS(N3) LS(N5) &amt LS(N6) LS(N2) &amt LS(EQUAL) MINUS &amt PIPE GRAVE			&amt BSLH FSLH &parmt 0 0 &brcmt 0 0 &bktmt 0 0
 						&amt LS(MINUS) N3 &amt LS(N7) N2 &amt EQUAL N1 &amt SEMI N0 &amt LS(GRAVE) N4	&amt LS(N4) N9 &amt COLON N5 &amt LS(N8) N6 &amt LS(N1) N7 &amt LS(FSLH) N8
-					   		  &amt LS(COMMA) LBKT &amt LS(LBKT) DQT &amt RPAR COMMA											&amt LPAR DOT &amt LS(LBKT) APOS &amt RBKT LS(DOT)
+					   		  &amt LS(COMMA) LBKT &amt LS(LBKT) DQT &amt RPAR COMMA											&amt RPAR DOT &amt LS(RBKT) APOS &amt RBKT LS(DOT)
 											   &none										&kp SPACE 
 			>;
 		};

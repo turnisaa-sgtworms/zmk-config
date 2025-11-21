@@ -122,10 +122,10 @@
 		five { 
 			display-name = "five - f keys";
 			bindings = <
-						  &none &none &none &none  		&amt RC(LS(TAB)) RC(TAB) &amt F7 F1 &amt F8 F2 &amt F9 F3  
-				    &none &none &none &none &none  		&amt RA(LS(TAB)) RA(TAB) &sk RCTRL &sk RGUI &sk RALT&sk LSHIFT
-						  &none &none &none   				&mt F10 F4 &mt F11 F5 &mt F12 F6 
-				                	  &none    				&kp SPACE
+						  &kp F1 &kp F2 &kp F3 &amt LC(LS(TAB)) LC(TAB) 					&amt LC(LS(TAB)) LC(TAB) &kp F7 &kp F8 &kp F9
+				    &sk LSHIFT &sk RALT &sk RGUI &sk RCTRL &amt LA(LS(TAB)) LA(TAB) 		&amt LA(LS(TAB)) LA(TAB) &sk RCTRL &sk RGUI &sk RALT &sk LSHIFT
+						  &kp F4 &kp F5 &kp F6    												&kp F10 &kp F11 &kp F12 
+				                	  &none    													&kp SPACE
 			>;
 		};
 
@@ -134,28 +134,28 @@
 		six { 
 			display-name = "six - fps";
 			bindings = <
-				    	  &kp Q &kp F &kp E &kp R	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LCTRL &kp A &kp W &kp D &kp G	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				        &mt Z X &kp S &mt V C  			  &kp C_PREV 	 &kp C_NEXT   &none
-				                	  &kp SPACE 		  &kp C_PP
+				    	  &kp Q &kp F &kp E &kp R	&kp C_PP &kp C_PREV &kp C_NEXT &kp F7
+				&kp LCTRL &kp A &kp W &kp D &kp G	&kp C_MUTE &kp F2 		&kp F3 	  &kp F5 	 &kp F6 
+				        &mt Z X &kp S &mt V C  			&kp C_VOL_DN 	 &kp C_VOL_UP   &kp F8
+				                	  &kp SPACE 		  &none
 			>;
 		};
 		seven { 
 			display-name = "seven - qwer";
 			bindings = <
-				      &kp N1 &kp N2 &kp N3 &kp N4		  	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp Q &kp W  &kp E  &kp R  &mt B G		  	&none &kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
-				      &mt LALT X &kp D  &kp F 				&kp C_PREV   &kp C_NEXT   &none
-				                    &mt LCTRL SPACE 		&kp C_PP
+				      &kp N1 &kp N2 &kp N3 &kp N4		  	&kp C_PP &kp C_PREV &kp C_NEXT &kp F7
+				&kp Q &kp W  &kp E  &kp R  &mt B G		  	&kp C_MUTE &kp F2 		&kp F3 	  &kp F5 	 &kp F6 
+				      &mt LALT X &kp D  &kp F 				&kp C_VOL_DN 	 &kp C_VOL_UP   &kp F8
+				                    &mt LCTRL SPACE 		&none
 			>;
 		};
 		eight { 
 			display-name = "eight - minecraft";
 			bindings = <
-				     	   &kp N1 &kp N2 &kp N3 &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LSHIFT &kp A  &kp W  &kp D 	&none	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				           &kp Q  &kp S  &kp E 				  &kp C_PREV 	 &kp C_NEXT   &none
-				                  		 &kp SPACE 		      &kp C_PP
+				     	   &kp N1 &kp N2 &kp N3 &none	&kp C_PP &kp C_PREV &kp C_NEXT &kp F7
+				&kp LSHIFT &kp A  &kp W  &kp D 	&none	&kp C_MUTE &kp F2 		&kp F3 	  &kp F5 	 &kp F6 
+				           &kp Q  &kp S  &kp E 				  &kp C_VOL_DN 	 &kp C_VOL_UP   &kp F8
+				                  		 &kp SPACE 		      &none
 			>;
 		};
     };

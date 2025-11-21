@@ -245,7 +245,7 @@
 // arrows ----------------------------------------
 		combo_up {
 			timeout-ms = <30>;
-			key-positions = <9 15>;
+			key-positions = <10 15>;
 			bindings = <&kp UP>;
 		};
 		combo_left {
@@ -255,7 +255,7 @@
 		};
 		combo_down {
 			timeout-ms = <30>;
-			key-positions = <10 16>;
+			key-positions = <9 16>;
 			bindings = <&kp DOWN>;
 		};
 		combo_right {

@@ -245,22 +245,22 @@
 // arrows ----------------------------------------
 		combo_up {
 			timeout-ms = <30>;
-			key-positions = <10 15>;
+			key-positions = <9 15>;
 			bindings = <&kp UP>;
 		};
 		combo_left {
 			timeout-ms = <30>;
-			key-positions = <9 14>;
+			key-positions = <8 14>;
 			bindings = <&kp LEFT>;
 		};
 		combo_down {
 			timeout-ms = <30>;
-			key-positions = <19 22>;
+			key-positions = <10 16>;
 			bindings = <&kp DOWN>;
 		};
 		combo_right {
 			timeout-ms = <30>;
-			key-positions = <11 16>;
+			key-positions = <11 17>;
 			bindings = <&kp RIGHT>;
 		};
 

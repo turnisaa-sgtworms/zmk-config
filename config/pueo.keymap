@@ -96,7 +96,7 @@
 			display-name = "two - nav/shortcuts";
 			bindings = <
 					 	 &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y)				&kp C_PP &kp C_PREV &kp C_NEXT &kp PGUP
-				&amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z)	&kp MUTE &kp LEFT &kp UP &kp DOWN &kp RIGHT
+				&amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z)	&kp C_MUTE &kp LEFT &kp UP &kp DOWN &kp RIGHT
 						 &amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F) 										&kp HOME  &kp END &kp PGDN
 							  	   		   &kp PSCRN																			&none
 			>;

@@ -136,8 +136,8 @@
 			bindings = <
 				    	  &kp Q &kp F &kp E &kp R	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
 				&kp LCTRL &kp A &kp W &kp D &kp G	&none &kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				          &kp X &kp S &kp C 			  &kp C_PREV 	 &kp C_NEXT   &none
-				                	  &kp LSHIFT 		  &kp C_PP
+				        &mt Z X &kp S &mt V C  			  &kp C_PREV 	 &kp C_NEXT   &none
+				                	  &kp SPACE 		  &kp C_PP
 			>;
 		};
 		seven { 

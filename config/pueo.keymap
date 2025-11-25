@@ -77,13 +77,13 @@ combos { compatible = "zmk,combos";
 		// mods ------------------------------------------
 		cmbo_back_l			{ timeout-ms = <30>; 	key-positions = <9 11>; 		bindings = <&amt LC(BSPC) BSPC>; 	layers = <0 1 2>; 	};
 		cmbo_del_l			{ timeout-ms = <30>; 	key-positions = <10 11>; 		bindings = <&amt LC(DEL) DEL>; 		layers = <0 1 2>; 	};
-		cmbo_tab_l			{ timeout-ms = <30>; 	key-positions = <0 2>; 			bindings = <&kp TAB>; 										};
+		cmbo_tab_l			{ timeout-ms = <30>; 	key-positions = <0 2>; 			bindings = <&kp TAB>; 									};
 		cmbo_esc_l			{ timeout-ms = <30>; 	key-positions = <0 11>; 		bindings = <&kp ESC>;	 			layers = <0 1 2>; 	};
 		cmbo_enter_l		{ timeout-ms = <30>; 	key-positions = <9 10>; 		bindings = <&kp ENTER>; 			layers = <0 1 2>; 	};
 		cmbo_back_r			{ timeout-ms = <30>; 	key-positions = <14 15>; 		bindings = <&amt RC(BSPC) BSPC>; 	layers = <0 1 2>; 	};
 		cmbo_del_r			{ timeout-ms = <30>; 	key-positions = <14 16>; 		bindings = <&amt RC(DEL) DEL>; 		layers = <0 1 2>; 	};
 		cmbo_tab_r			{ timeout-ms = <30>; 	key-positions = <7 14>;			bindings = <&kp TAB>; 				layers = <0 1 2>; 	};
-		cmbo_esc_r			{ timeout-ms = <30>; 	key-positions = <5 7>; 			bindings = <&kp ESC>; 										};
+		cmbo_esc_r			{ timeout-ms = <30>; 	key-positions = <5 7>; 			bindings = <&kp ESC>; 									};
 		cmbo_enter_r		{ timeout-ms = <30>; 	key-positions = <15 16>; 		bindings = <&kp ENTER>; 			layers = <0 1 2>; 	};
 		// arrows ----------------------------------------
 		cmbo_up 			{ timeout-ms = <30>; 	key-positions = <10 15>;		bindings = <&kp UP>; 									};
@@ -104,7 +104,7 @@ combos { compatible = "zmk,combos";
 		cmbo_stickyshift_l  { timeout-ms = <50>; 	key-positions = <2 11>; 		bindings = <&sk LSHIFT>; 			layers = <0>; 		};
 		cmbo_stickyshift_r	{ timeout-ms = <50>; 	key-positions = <5 14>; 		bindings = <&sk RSHIFT>; 			layers = <0>; 		};
 		// cad -------------------------------------------
-		c_cmbo_numword 		{ timeout-ms = <50>; 	key-positions = <0 24>; 		bindings = <&num_word 5>; 		layers = <3>; 		};
+		c_cmbo_numword 		{ timeout-ms = <50>; 	key-positions = <0 24>; 		bindings = <&num_word 5>; 			layers = <3>; 		};
 		c_cmbo_p 			{ timeout-ms = <50>; 	key-positions = <0 9>; 			bindings = <&kp P>; 				layers = <3>; 		};
 		c_cmbo_h 			{ timeout-ms = <50>; 	key-positions = <1 10>; 		bindings = <&kp H>; 				layers = <3>; 		};
 		c_cmbo_i 			{ timeout-ms = <50>; 	key-positions = <2 11>; 		bindings = <&kp I>; 				layers = <3>; 		};

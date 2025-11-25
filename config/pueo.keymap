@@ -8,20 +8,7 @@
 / { 
 behaviors {
         hml: home_row_mod_left { 		hold-trigger-key-positions = < 0 1 2 3 8 9 10 11 12 18 19 20 24 >; 							}; 
-		hmr: home_row_mod_right { 		hold-trigger-key-positions = < 4 5 6 7 13 14 15 16 21 22 23 25 >; 							};
-		sl { 							release-after-ms = < 1500 >; 																};
-        num_word: num_word { 			#binding-cells = <1>; compatible = "zmk,behavior-auto-layer"; 
-										continue-list = < BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL >; ignore-numbers;			};
-		amt: a_mod_tap { 				compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
-										tapping-term-ms = <200>; bindings = <&kp>, <&kp>; display-name = "a-Mod-Tap"; 				};
-		mage_rep: mage_rep { 			compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;
-											akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
-            								akt_ji { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp I>; }; 			};
-		mage_k: mage_k { 				compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp K>;
-											akt_tw { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
-											akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; 			};
-		mage_j: mage_j { 				compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp J>;
-											akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }; 			}; };
+		hmr: home_row_mod_right { 		hold-trigger-key-positions = < 4 5 6 7 13 14 15 16 21 22 23 25 >; 							}; };
 
 keymap { compatible = "zmk,keymap";
 		zero { display-name = "zero - default"; bindings = <

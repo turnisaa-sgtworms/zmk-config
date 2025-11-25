@@ -25,8 +25,8 @@ behaviors {
 
 keymap { compatible = "zmk,keymap";
 		zero { display-name = "zero - default"; bindings = <
-							  &kp Y       &oamt 0 O   &uemt 0 U    &qumt Q 0       &kp P &kp D 		  &kp L 	  &kp F 
-				&hml LSHIFT C &hml LALT I &hml LGUI A &hml LCTRL E &zemt Z 0 	   &kp W &hmr RCTRL T &hmr RGUI H &hmr LALT S &hmr RSHIFT N
+							  &kp Y       &oamt 0 O   &uemt 0 U    &zemt Z 0       &kp P &kp D 		  &kp L 	  &kp F 
+				&hml LSHIFT C &hml LALT I &hml LGUI A &hml LCTRL E &qumt Q 0 	   &kp W &hmr RCTRL T &hmr RGUI H &hmr LALT S &hmr RSHIFT N
 							  &mage_j     &kp X 	  &mage_rep			                 &mage_k 	  &kp M       &kp G
 													  &lt 1 R 			                 &lt 2 SPACE 		>; };
 		one { display-name = "one - symbols"; bindings = <

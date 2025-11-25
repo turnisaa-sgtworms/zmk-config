@@ -71,7 +71,7 @@
 // t0  t1  t2  t3  t4  t5  t6  t7  t8  t9  t10  t11
 // h0 *h1**h2**h3**h4* h5  h6 *h7**h8**h9**h10* h11
 // b0  b1  b2  b3  b4  b5  b6  b7  b8  b9  b10  b11
-//             t0 *t1* t2  t3 *t4* t5
+//             th0 *th1* th2  th3 *th4* th5
 //
 
 // layer 0 - base
@@ -123,13 +123,13 @@
 
 	// thumbfan
 		// 
-			#define t0 		&none
-			#define t1 		&lt 1 R
-			#define t2		&none
+			#define th0 		&none
+			#define th1 		&lt 1 R
+			#define th2		&none
 			
-			#define t3 		&none
-			#define	t4		&lt 2 SPACE
-			#define t5		&none
+			#define th3 		&none
+			#define	th4		&lt 2 SPACE
+			#define th5		&none
 
 // layer 1 - numbers and icons
 	// left hand

@@ -100,12 +100,12 @@
 	
 	// right hand
 		// top row
-			#define u6 		&kp P
-			#define u7 		&kp D
-			#define u8 		&kp L
-			#define u9 		&kp F
-			#define u10 	&kp B
-			#define u11 	&kp ESC
+			#define t6 		&kp P
+			#define t7 		&kp D
+			#define t8 		&kp L
+			#define t9 		&kp F
+			#define t10 	&kp B
+			#define t11 	&kp ESC
 		// home row
 			#define h6 		&kp W
 			#define h7 		&hmr RCTRL T

@@ -1,9 +1,11 @@
 #include <behaviors.dtsi>
+#include <behaviors/num_word.dtsi>
+
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+
 #include "fingermap.h"
-#include <behaviors/num_word.dtsi>
 
 / { 
 behaviors {
@@ -12,50 +14,50 @@ behaviors {
 
 keymap { compatible = "zmk,keymap";
 		zero { display-name = "zero - default"; bindings = <
-							  &kp Y       &oamt 0 O   &uemt 0 U    &zemt Z 0       &kp P &kp D 		  &kp L 	  &kp F 
-				&hml LSHIFT C &hml LALT I &hml LGUI A &hml LCTRL E &qumt Q 0 	   &kp W &hmr RCTRL T &hmr RGUI H &hmr LALT S &hmr RSHIFT N
-							  &mage_j     &kp X 	  &mage_rep			                 &mage_k 	  &kp M       &kp G
-													  &lt 1 R 			                 &lt 2 SPACE 		>; };
+							  			&kp Y       			&oamt 0 O   			&uemt 0 U    &zemt Z 0       &kp P &kp D 		  &kp L 	  &kp F 
+				&hml LSHIFT C 			&hml LALT I 			&hml LGUI A 			&hml LCTRL E &qumt Q 0 	   &kp W &hmr RCTRL T &hmr RGUI H &hmr LALT S &hmr RSHIFT N
+							  			&mage_j     			&kp X 	  				&mage_rep			                 &mage_k 	  &kp M       &kp G
+													  									&lt 1 R 			                 &lt 2 SPACE 		>; };
 		one { display-name = "one - symbols"; bindings = <
-					   		      &amt LS(N3) LS(N5)  &amt LS(N6) LS(N2) &amt LS(EQUAL) MINUS &amt PIPE GRAVE		&amt BSLH FSLH &parmt 0 0 	 &brcmt 0 0 		&bktmt 0 0
-				&amt LS(MINUS) N3 &amt LS(N7) N2 	  &amt EQUAL N1 	 &amt SEMI N0 		  &amt LS(GRAVE) N4		&amt LS(N4) N9 &amt COLON N5 &amt LS(N8) N6 	&amt LS(N1) N7    &amt LS(FSLH) N8
-					   		      &amt LBKT LS(COMMA) &amt LS(LBKT) DQT  &amt LPAR COMMA										   &amt RPAR DOT &amt LS(RBKT) APOS &amt RBKT LS(DOT)
+					   		      		&amt LS(N3) LS(N5)  	&amt LS(N6) LS(N2) 		&amt LS(EQUAL) MINUS &amt PIPE GRAVE		&amt BSLH FSLH &parmt 0 0 	 &brcmt 0 0 		&bktmt 0 0
+				&amt LS(MINUS) N3 		&amt LS(N7) N2 	  		&amt EQUAL N1 	 		&amt SEMI N0 		  &amt LS(GRAVE) N4		&amt LS(N4) N9 &amt COLON N5 &amt LS(N8) N6 	&amt LS(N1) N7    &amt LS(FSLH) N8
+					   		      		&amt LBKT LS(COMMA) 	&amt LS(LBKT) DQT  		&amt LPAR COMMA										   &amt RPAR DOT &amt LS(RBKT) APOS &amt RBKT LS(DOT)
 											   							 &none													   &kp SPACE 		>; };
 		two { display-name = "two - shortcuts"; bindings = <
-					 	 			 &amt LC(LS(W)) LC(W) &amt LC(LS(R)) LC(R) &amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y) 		&kp C_PP   &kp C_PREV &kp C_NEXT &kp PGUP
-				&amt LC(LS(A)) LC(A) &amt LC(LS(X)) LC(X) &amt LC(LS(C)) LC(C) &amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z)		&kp C_MUTE &kp LEFT   &kp UP	 &kp DOWN &kp RIGHT
-						 			 &amt LC(LS(S)) LC(S) &amt LC(LS(D)) LC(D) &amt LC(LS(F)) LC(F) 									   &kp HOME   &kp END 	 &kp PGDN
-							  	   		   									   &kp PSCRN												   &none 		>; };
+					 	 			 	&amt LC(LS(W)) LC(W) 	&amt LC(LS(R)) LC(R) 	&amt LC(LS(T)) LC(T) &amt LC(LS(Y)) LC(Y) 		&kp C_PP   &kp C_PREV &kp C_NEXT &kp PGUP
+				&amt LC(LS(A)) LC(A) 	&amt LC(LS(X)) LC(X) 	&amt LC(LS(C)) LC(C) 	&amt LC(LS(V)) LC(V) &amt LC(LS(Z)) LC(Z)		&kp C_MUTE &kp LEFT   &kp UP	 &kp DOWN &kp RIGHT
+						 			 	&amt LC(LS(S)) LC(S) 	&amt LC(LS(D)) LC(D) 	&amt LC(LS(F)) LC(F) 									   &kp HOME   &kp END 	 &kp PGDN
+							  	   		   									   			&kp PSCRN												   &none 		>; };
 		three { display-name = "three - cad 1"; bindings = <
-				      &kp K &kp O &kp E &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp C &kp T &kp R &kp L &none	&none &kp F2 	   &kp F3 	    &kp F5 	   &kp F6 
-				      &none &kp F &kp M 			  &kp C_PREV   &kp C_NEXT   &none
-				                  &kp SPACE 		  &kp C_PP 		>; };
+				      					&kp K 					&kp O 					&kp E &none	&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp C 					&kp T 					&kp R 					&kp L &none	&none &kp F2 	   &kp F3 	    &kp F5 	   &kp F6 
+				      					&none 					&kp F 					&kp M 			  &kp C_PREV   &kp C_NEXT   &none
+				                  														&kp SPACE 		  &kp C_PP 		>; };
 		four { display-name = "four - cad 2"; bindings = <
-				       &kp N5 &kp N7 &kp N6 	 &none		&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp N4 &kp N3 &kp N2 &amt DOT N1 &none		&none &kp F2 	   &kp F3 	    &kp F5 	   &kp F6 
-				       &none  &kp N9 &kp N8 					  &kp C_PREV   &kp C_NEXT   &none
-				                	  &amt SPACE N0 			  &kp C_PP 		>; };
+				       					&kp N5 					&kp N7 					&kp N6 	 &none		&none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+				&kp N4 					&kp N3 					&kp N2 					&amt DOT N1 &none		&none &kp F2 	   &kp F3 	    &kp F5 	   &kp F6 
+				       					&none  					&kp N9 					&kp N8 					  &kp C_PREV   &kp C_NEXT   &none
+				                	  													&amt SPACE N0 			  &kp C_PP 		>; };
 		five { display-name = "five - f keys"; bindings = <
-						  	   &kp F1 	&kp F2 	 &kp F3    &amt LC(LS(TAB)) LC(TAB) 		&amt LC(LS(TAB)) LC(TAB) &kp F7    &kp F8   &kp F9
-				    &sk LSHIFT &sk RALT &sk RGUI &sk RCTRL &amt LA(LS(TAB)) LA(TAB) 		&amt LA(LS(TAB)) LA(TAB) &sk RCTRL &sk RGUI &sk RALT &sk LSHIFT
-						  	   &kp F4 	&kp F5 	 &kp F6    												    		 &kp F10   &kp F11  &kp F12 
-				                	  			 &none    															 &kp SPACE 		>; };
+						  	   			&kp F1 					&kp F2 	 				&kp F3    &amt LC(LS(TAB)) LC(TAB) 		&amt LC(LS(TAB)) LC(TAB) &kp F7    &kp F8   &kp F9
+				    &sk LSHIFT 			&sk RALT 				&sk RGUI 				&sk RCTRL &amt LA(LS(TAB)) LA(TAB) 		&amt LA(LS(TAB)) LA(TAB) &sk RCTRL &sk RGUI &sk RALT &sk LSHIFT
+						  	   			&kp F4 					&kp F5 	 				&kp F6    												    		 &kp F10   &kp F11  &kp F12 
+				                	  			 										&none    															 &kp SPACE 		>; };
 		six { display-name = "six - fps"; bindings = <
-				    	  &kp Q   &kp F &kp E &kp R		&kp C_PP   &kp C_PREV 	&kp C_NEXT   &kp F7
-				&kp LCTRL &kp A   &kp W &kp D &kp G		&kp C_MUTE &kp F2 		&kp F3 	     &kp F5 &kp F6 
-				          &mt Z X &kp S &mt V C  				   &kp C_VOL_DN &kp C_VOL_UP &kp F8
+				    	  				&kp Q   				&kp F 					&kp E &kp R		&kp C_PP   &kp C_PREV 	&kp C_NEXT   &kp F7
+				&kp LCTRL 				&kp A  	 				&kp W 					&kp D &kp G		&kp C_MUTE &kp F2 		&kp F3 	     &kp F5 &kp F6 
+				          				&mt Z X 				&kp S 					&mt V C  				   &kp C_VOL_DN &kp C_VOL_UP &kp F8
 				                	  &kp SPACE 		  		   &none 		>; };
 		seven { display-name = "seven - qwer"; bindings = <
-				      &kp N1 	 &kp N2 &kp N3 &kp N4		  	&kp C_PP   &kp C_PREV 	&kp C_NEXT   &kp F7
-				&kp Q &kp W  	 &kp E  &kp R  &mt B G		  	&kp C_MUTE &kp F2 		&kp F3 	     &kp F5 &kp F6 
-				      &mt LALT X &kp D  &kp F 							   &kp C_VOL_DN &kp C_VOL_UP &kp F8
-				                    	&mt LCTRL SPACE 				   &none 		>; };
+				      					&kp N1 	 				&kp N2 &kp N3 &kp N4		  	&kp C_PP   &kp C_PREV 	&kp C_NEXT   &kp F7
+				&kp Q 					&kp W  	 				&kp E  &kp R  &mt B G		  	&kp C_MUTE &kp F2 		&kp F3 	     &kp F5 &kp F6 
+				      					&mt LALT X 				&kp D  &kp F 							   &kp C_VOL_DN &kp C_VOL_UP &kp F8
+				                    								&mt LCTRL SPACE 				   &none 		>; };
 		eight { display-name = "eight - minecraft"; bindings = <
-				     	   &kp N1 &kp N2 &kp N3 &none		&kp C_PP   &kp C_PREV   &kp C_NEXT   &kp F7
-				&kp LSHIFT &kp A  &kp W  &kp D 	&none		&kp C_MUTE &kp F2 		&kp F3 	     &kp F5 &kp F6 
-				           &kp Q  &kp S  &kp E 				  		   &kp C_VOL_DN &kp C_VOL_UP &kp F8
-				                  		 &kp SPACE 		      		   &none 		>; }; };
+				     	   				&kp N1 					&kp N2 &kp N3 &none		&kp C_PP   &kp C_PREV   &kp C_NEXT   &kp F7
+				&kp LSHIFT 				&kp A  					&kp W  &kp D 	&none		&kp C_MUTE &kp F2 		&kp F3 	     &kp F5 &kp F6 
+				           				&kp Q  					&kp S  &kp E 				  		   &kp C_VOL_DN &kp C_VOL_UP &kp F8
+				                  		 			&kp SPACE 		      		   &none 		>; }; };
 
 combos { compatible = "zmk,combos";
         // alphas ----------------------------------------

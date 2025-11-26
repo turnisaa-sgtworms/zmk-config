@@ -13,14 +13,10 @@ behaviors { // -----------------------------------------------------------------
 
 keymap { compatible = "zmk,keymap";
 		zero { display-name = "zero - default"; bindings = < // ----------------------------------------------------------------------------------------------------------------------------------------------------
-							  			&kp Y       			&oamt 0 O   			&uemt 0 U    			&zemt Z 0       			
-																															&kp P 			&kp D 		  	&kp L 	  			&kp F 
-				&hml LSHIFT C 			&hml LALT I 			&hml LGUI A 			&hml LCTRL E 			&qumt Q 0 	   				
-																															&kp W 			&hmr RCTRL T 	&hmr RGUI H 		&hmr LALT S 		&hmr RSHIFT N
-							  			&mage_j     			&kp X 	  				&mage_rep			                 											
-																																			&mage_k 	  	&kp M       		&kp G
-													  									&lt 1 R 			                 											
-																																			&lt 2 SPACE 	>; };
+				   	t2 	t3 	t4 	t5   	t6 	t7 	t8 	t9
+				h1 	h2 	h3 	h4 	h5   	h6 	h7 	h8 	h9 	h10
+				   	b2 	b3 	b4         		b7 	b8 	b9
+				         	thlH	    	thrH 			>; };
 		one { display-name = "one - symbols"; bindings = < // ------------------------------------------------------------------------------------------------------------------------------------------------------
 					   		      		&amt LS(N3) LS(N5)  	&amt LS(N6) LS(N2) 		&amt LS(EQUAL) MINUS 	&amt PIPE GRAVE				
 																															&amt BSLH FSLH 	&parmt 0 0 	 	&brcmt 0 0 			&bktmt 0 0

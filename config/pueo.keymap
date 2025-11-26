@@ -27,43 +27,26 @@ keymap { compatible = "zmk,keymap";
 				_2h1 _2h2 _2h3 _2h4 _2h5 		_2h6 _2h7 _2h8 _2h9 _2h10
 				   	 _2b2 _2b3 _2b4           		 _2b7 _2b8 _2b9
 				         	   _2thlH	      		 _2thrH 		 >; };
-		three 	{ display-name = "three - f keys"; bindings = < // -----------------------------------------------------------------------------------------------------------------------------------------------------
-						  	   			&kp F1 					&kp F2 	 				&kp F3    			&amt LC(LS(TAB)) LC(TAB) 	
-																												&amt LC(LS(TAB)) LC(TAB) 	&kp F7    		&kp F8   			&kp F9
-				    &sk LSHIFT 			&sk RALT 				&sk RGUI 				&sk RCTRL 			&amt LA(LS(TAB)) LA(TAB) 	
-																												&amt LA(LS(TAB)) LA(TAB) 	&sk RCTRL 		&sk RGUI 			&sk RALT 			&sk LSHIFT
-						  	   			&kp F4 					&kp F5 	 				&kp F6    												    		 			
-																																			&kp F10   		&kp F11  			&kp F12 
-				                	  			 										&none    															 			
-																																			&kp SPACE 		>; };
-		four 	{ display-name = "four - qwer"; bindings = < // -----------------------------------------------------------------------------------------------------------------------------------------------------
-				      					&kp N1 	 				&kp N2 					&kp N3 					&kp N4		  				
-																															&kp C_PP   		&kp C_PREV 		&kp C_NEXT   		&kp F7
-				&kp Q 					&kp W  	 				&kp E  					&kp R  					&mt B G		  				
-																															&kp C_MUTE 		&kp F2 			&kp F3 	     		&kp F5 				&kp F6 
-				      					&mt LALT X 				&kp D  					&kp F 							   												
-																																			&kp C_VOL_DN 	&kp C_VOL_UP 		&kp F8
-				                    													&mt LCTRL SPACE 				   												
-																																			&none 			>; };
-		five 	{ display-name = "five - minecraft"; bindings = < // -------------------------------------------------------------------------------------------------------------------------------------------------
-				     	   				&kp N1 					&kp N2 					&kp N3 					&none						
-																															&kp C_PP   		&kp C_PREV 		&kp C_NEXT   		&kp F7
-				&kp LSHIFT 				&kp A  					&kp W  					&kp D 					&none						
-																															&kp C_MUTE 		&kp F2 			&kp F3 	     		&kp F5 				&kp F6 
-				           				&kp Q  					&kp S  					&kp E 				  		   													
-																																			&kp C_VOL_DN 	&kp C_VOL_UP 		&kp F8
-				                  		 												&kp SPACE 		      		   													
-																																			&none 			>; };
-		six 	{ display-name = "six - fps"; bindings = < // ----------------------------------------------------------------------------------------------------------------------------------------------------------
-				    	  				&kp Q   				&kp F 					&kp E 					&kp R						
-																															&kp C_PP   		&kp C_PREV 		&kp C_NEXT   		&kp F7
-				&kp LCTRL 				&kp A  	 				&kp W 					&kp D 					&kp G						
-																															&kp C_MUTE 		&kp F2 			&kp F3 	     		&kp F5 				&kp F6 
-				          				&mt Z X 				&kp S 					&mt V C  				   														
-																																			&kp C_VOL_DN 	&kp C_VOL_UP 		&kp F8
-				                	  													&kp SPACE 		  		   														
-																																			&none 			>; }; };
-		// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		three 	{ display-name = "three - f keys"; bindings
+				 = < _3t2 _3t3 _3t4 _3t5 		_3t6 _3t7 _3t8 _3t9
+				_3h1 _3h2 _3h3 _3h4 _3h5 		_3h6 _3h7 _3h8 _3h9 _3h10
+				   	 _3b2 _3b3 _3b4           		 _3b7 _3b8 _3b9
+				         	   _3thlH	      		 _3thrH 		 >; };
+		four 	{ display-name = "four - qwer"; bindings
+				 = < _4t2 _4t3 _4t4 _4t5 		_4t6 _4t7 _4t8 _4t9
+				_4h1 _4h2 _4h3 _4h4 _4h5 		_4h6 _4h7 _4h8 _4h9 _4h10
+				   	 _4b2 _4b3 _4b4           		 _4b7 _4b8 _4b9
+				         	   _4thlH	      		 _4thrH 		 >; };
+		five 	{ display-name = "five - minecraft"; bindings
+				 = < _5t2 _5t3 _5t4 _5t5 		_5t6 _5t7 _5t8 _5t9
+				_5h1 _5h2 _5h3 _5h4 _5h5 		_5h6 _5h7 _5h8 _5h9 _5h10
+				   	 _5b2 _5b3 _5b4           		 _5b7 _5b8 _5b9
+				         	   _5thlH	      		 _5thrH 		 >; };
+		six 	{ display-name = "six - fps"; bindings
+				 = < _6t2 _6t3 _6t4 _6t5 		_6t6 _6t7 _6t8 _6t9
+				_6h1 _6h2 _6h3 _6h4 _6h5 		_6h6 _6h7 _6h8 _6h9 _6h10
+				   	 _6b2 _6b3 _6b4           		 _6b7 _6b8 _6b9
+				         	   _6thlH	      		 _6thrH 		 >; };
 
 combos { compatible = "zmk,combos";
         // alphas ----------------------------------------------------------------------------------------------------------------------------------------

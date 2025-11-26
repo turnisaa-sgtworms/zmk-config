@@ -16,7 +16,7 @@ keymap { compatible = "zmk,keymap";
 				   	0t2 0t3 0t4 0t5 0t6 0t7 0t8 0t9
 				0h1 0h2 0h3 0h4 0h5 0h6 0h7 0h8 0h9 0h10
 				   	0b2 0b3 0b4         0b7 0b8 0b9
-				         	thlH	    thrH 		>; };
+				         	0thlH	    0thrH 		>; };
 		one { display-name = "one - symbols"; bindings = < // ------------------------------------------------------------------------------------------------------------------------------------------------------
 					   		      		&amt LS(N3) LS(N5)  	&amt LS(N6) LS(N2) 		&amt LS(EQUAL) MINUS 	&amt PIPE GRAVE				
 																															&amt BSLH FSLH 	&parmt 0 0 	 	&brcmt 0 0 			&bktmt 0 0

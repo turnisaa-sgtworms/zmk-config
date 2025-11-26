@@ -74,176 +74,116 @@
 //       thlN *thlH* thlF  thrF *thrH* thrL
 //
 
-// layer 0 - base
+// layer 0 - default
 	// left hand
 		// top row
-			#define t0 		&kp TAB
-			#define t1 		&kp V
-			#define t2 		&kp Y
-			#define t3 		&oamt 0 O
-			#define t4 		&uemt 0 U
-			#define t5 		&zemt Z 0
+			#define 0t0 	&kp TAB
+			#define 0t1 	&kp V
+			#define 0t2 	&kp Y
+			#define 0t3 	&oamt 0 O
+			#define 0t4 	&uemt 0 U
+			#define 0t5 	&zemt Z 0
 		// home row
-			#define h0 		&amt LC(DEL) DEL
-			#define h1 		&hml LSHIFT C
-			#define h2 		&hml LALT I
-			#define h3 		&hml LGUI A
-			#define h4 		&hml LCTRL E
-			#define h5 		&qumt Q 0
+			#define 0h0 	&amt LC(DEL) DEL
+			#define 0h1 	&hml LSHIFT C
+			#define 0h2 	&hml LALT I
+			#define 0h3 	&hml LGUI A
+			#define 0h4 	&hml LCTRL E
+			#define 0h5 	&qumt Q 0
 		// bottom row
-			#define b0 		&amt LC(BSPC) BSPC
-			#define b1 		&kp LSHIFT
-			#define b2 		&mage_j
-			#define b3 		&kp X
-			#define b4 		&mage_rep
-			#define b5 		&none
+			#define 0b0 	&amt LC(BSPC) BSPC
+			#define 0b1 	&kp LSHIFT
+			#define 0b2 	&mage_j
+			#define 0b3 	&kp X
+			#define 0b4 	&mage_rep
+			#define 0b5 	&none
 	
 	// right hand
 		// top row
-			#define t6 		&kp P
-			#define t7 		&kp D
-			#define t8 		&kp L
-			#define t9 		&kp F
-			#define t10 	&kp B
-			#define t11 	&kp ESC
+			#define 0t6 	&kp P
+			#define 0t7 	&kp D
+			#define 0t8 	&kp L
+			#define 0t9 	&kp F
+			#define 0t10 	&kp B
+			#define 0t11 	&kp ESC
 		// home row
-			#define h6 		&kp W
-			#define h7 		&hmr RCTRL T
-			#define h8 		&hmr RGUI H
-			#define h9 		&hmr RALT S
-			#define h10		&hmr RSHIFT N
-			#define h11		&amt RC(BSPC) BSPC
+			#define 0h6 	&kp W
+			#define 0h7 	&hmr RCTRL T
+			#define 0h8 	&hmr RGUI H
+			#define 0h9 	&hmr RALT S
+			#define 0h10	&hmr RSHIFT N
+			#define 0h11	&amt RC(BSPC) BSPC
 		// bottom row
-			#define b6 		&none
-			#define b7 		&mage_k
-			#define b8 		&kp M
-			#define b9 		&kp G
-			#define b10		&kp RSHIFT
-			#define b11		&amt RC(DEL) DEL
+			#define 0b6 	&none
+			#define 0b7 	&mage_k
+			#define 0b8 	&kp M
+			#define 0b9 	&kp G
+			#define 0b10	&kp RSHIFT
+			#define 0b11	&amt RC(DEL) DEL
 
 	// thumbfan
 		// 
-			#define thlN 	&none
-			#define thlH 	&lt 1 R
-			#define thlF	&none
+			#define 0thlN 	&none
+			#define 0thlH 	&lt 1 R
+			#define 0thlF	&none
 			
-			#define thrF 	&none
-			#define	thrH	&lt 2 SPACE
-			#define thrN	&none
+			#define 0thrF 	&none
+			#define	0thrH	&lt 2 SPACE
+			#define 0thrN	&none
 
-// layer 1 - numbers and icons
+// layer 1 - symbols
 	// left hand
 		// top row
-			#define LUO1 &none
-			#define LUP1 AS(GRAVE)
-			#define LUR1 AS(N1)
-			#define LUM1 AS(N2)
-			#define LUI1 AS(N3)
-			#define LUN1 &none
+			#define 1t0 	&kp TAB
+			#define 1t1 	&kp V
+			#define 1t2 	&kp Y
+			#define 1t3 	&oamt 0 O
+			#define 1t4 	&uemt 0 U
+			#define 1t5 	&zemt Z 0
 		// home row
-			#define LHO1 &none
-			#define LHP1 AS(N0)
-			#define LHR1 AS(N4)
-			#define LHM1 AS(N5)
-			#define LHI1 AS(N6)
-			#define LHN1 &none
+			#define 1h0 	&amt LC(DEL) DEL
+			#define 1h1 	&hml LSHIFT C
+			#define 1h2 	&hml LALT I
+			#define 1h3 	&hml LGUI A
+			#define 1h4 	&hml LCTRL E
+			#define 1h5 	&qumt Q 0
 		// bottom row
-			#define LBO1 &none
-			#define LBP1 &none
-			#define LBR1 &none
-			#define LBM1 AS(N7)
-			#define LBI1 AS(N8)
-			#define LBN1 &none
+			#define 1b0 	&amt LC(BSPC) BSPC
+			#define 1b1 	&kp LSHIFT
+			#define 1b2 	&mage_j
+			#define 1b3 	&kp X
+			#define 1b4 	&mage_rep
+			#define 1b5 	&none
 	
 	// right hand
 		// top row
-			#define RUO1 &none
-			#define RUP1 AS(GRAVE)
-			#define RUR1 &td2
-			#define RUM1 &td1
-			#define RUI1 &td0
-			#define RUN1 AS(GRAVE)
+			#define 1t6 	&kp P
+			#define 1t7 	&kp D
+			#define 1t8 	&kp L
+			#define 1t9 	&kp F
+			#define 1t10 	&kp B
+			#define 1t11 	&kp ESC
 		// home row
-			#define RHO1 &none
-			#define RHP1 AS(FSLH)
-			#define RHR1 AS(DOT)
-			#define RHM1 AS(COMMA)
-			#define RHI1 AS(SEMI)
-			#define RHN1 AS(EQUAL)
+			#define 1h6 	&kp W
+			#define 1h7 	&hmr RCTRL T
+			#define 1h8 	&hmr RGUI H
+			#define 1h9 	&hmr RALT S
+			#define 1h10	&hmr RSHIFT N
+			#define 1h11	&amt RC(BSPC) BSPC
 		// bottom row
-			#define RBO1 &none
-			#define RBP1 AS(BSLH)
-			#define RBR1 AS(EQUAL)
-			#define RBM1 AS(MINUS)
-			#define RBI1 AS(APOS)
-			#define RBN1 AS(BSLH)
+			#define 1b6 	&none
+			#define 1b7 	&mage_k
+			#define 1b8 	&kp M
+			#define 1b9 	&kp G
+			#define 1b10	&kp RSHIFT
+			#define 1b11	&amt RC(DEL) DEL
 
 	// thumbfan
-		// 2 keys
-			#define L1 AS(N9)
-			#define R1 &none
-		// 4 keys
-			#define LN1 &none
-			#define LH1 AS(N9)
-
-			#define	RH1 &none
-			#define RN1 &none
-
-// layer 2 - nav/kb functions
-	// left hand
-		// top row
-			#define LUO2 &none
-			#define LUP2 &none
-			#define LUR2 &studio_unlock
-			#define LUM2 &bt BT_CLR_ALL
-			#define LUI2 &hw_soft_off
-			#define LUN2 &none
-		// home row
-			#define LHO2 &none
-			#define LHP2 &none
-			#define LHR2 &kp HOME
-			#define LHM2 &kp PGUP 
-			#define LHI2 &kp END
-			#define LHN2 &none
-		// bottom row
-			#define LBO2 &none
-			#define LBP2 &none
-			#define LBR2 &none
-			#define LBM2 &kp PGDN
-			#define LBI2 &bootloader
-			#define LBN2 &none
-	
-	// right hand
-		// top row
-			#define RUO2 &none
-			#define RUP2 &none
-			#define RUR2 &kp C_NEXT
-			#define RUM2 &kp C_PP
-			#define RUI2 &kp C_PREV
-			#define RUN2 &none
-		// home row
-			#define RHO2 &none
-			#define RHP2 &none
-			#define RHR2 &kp RIGHT
-			#define RHM2 &kp UP
-			#define RHI2 &kp LEFT
-			#define RHN2 &none
-		// bottom row
-			#define RBO2 &none
-			#define RBP2 &none
-			#define RBR2 &none
-			#define RBM2 &kp DOWN
-			#define RBI2 &none
-			#define RBN2 &none
-
-	// thumbfan
-		// 2 keys
-			#define L2 &none
-			#define R2 &none
-		// 4 keys
-			#define LN2 &none
-			#define LH2 &none
-
-			#define	RH2 &none
-			#define RN2 &none
-
+		// 
+			#define 1thlN 	&none
+			#define 1thlH 	&lt 1 R
+			#define 1thlF	&none
+			
+			#define 1thrF 	&none
+			#define	1thrH	&lt 2 SPACE
+			#define 1thrN	&none

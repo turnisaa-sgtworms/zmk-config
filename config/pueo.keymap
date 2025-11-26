@@ -6,47 +6,47 @@
 #include "fingermap.h"
 
 / { 
-behaviors { // --------------------------------------------------------------------------------------------------
+behaviors { // -----------------------------------------------------------------------------------------------
         hml: home_row_mod_l { 		hold-trigger-key-positions = < 0 1 2 3 8 9 10 11 12 18 19 20 24 >; 		};
-		hmr: home_row_mod_r { 		hold-trigger-key-positions = < 4 5 6 7 13 14 15 16 21 22 23 25 >; 		}; };
-// --------------------------------------------------------------------------------------------------------------
+		hmr: home_row_mod_r { 		hold-trigger-key-positions = < 4 5 6 7 13 14 15 16 21 22 23 25 >; 	 }; };
+// -----------------------------------------------------------------------------------------------------------
 
 keymap { compatible = "zmk,keymap";
-		zero 	{ display-name = "zero - default"; bindings
-				 = < _0t2 _0t3 _0t4 _0t5 		_0t6 _0t7 _0t8 _0t9
+		zero 	{ display-name = "zero - default"; 
+		bindings = < _0t2 _0t3 _0t4 _0t5 		_0t6 _0t7 _0t8 _0t9
 				_0h1 _0h2 _0h3 _0h4 _0h5 		_0h6 _0h7 _0h8 _0h9 _0h10
 				   	 _0b2 _0b3 _0b4       		     _0b7 _0b8 _0b9
 				         	   _0thlH	 		     _0thrH 		 >; };
-		one 	{ display-name = "one - symbols"; bindings
-				 = < _1t2 _1t3 _1t4 _1t5 		_1t6 _1t7 _1t8 _1t9
+		one 	{ display-name = "one - symbols"; 
+		bindings = < _1t2 _1t3 _1t4 _1t5 		_1t6 _1t7 _1t8 _1t9
 				_1h1 _1h2 _1h3 _1h4 _1h5 		_1h6 _1h7 _1h8 _1h9 _1h10
 				   	 _1b2 _1b3 _1b4       		     _1b7 _1b8 _1b9
 				         	   _1thlH	 		     _1thrH 		 >; };
-		two 	{ display-name = "two - shortcuts"; bindings
-				 = < _2t2 _2t3 _2t4 _2t5 		_2t6 _2t7 _2t8 _2t9
+		two 	{ display-name = "two - shortcuts"; 
+		bindings = < _2t2 _2t3 _2t4 _2t5 		_2t6 _2t7 _2t8 _2t9
 				_2h1 _2h2 _2h3 _2h4 _2h5 		_2h6 _2h7 _2h8 _2h9 _2h10
 				   	 _2b2 _2b3 _2b4           		 _2b7 _2b8 _2b9
 				         	   _2thlH	      		 _2thrH 		 >; };
-		three 	{ display-name = "three - f keys"; bindings
-				 = < _3t2 _3t3 _3t4 _3t5 		_3t6 _3t7 _3t8 _3t9
+		three 	{ display-name = "three - f keys"; 
+		bindings = < _3t2 _3t3 _3t4 _3t5 		_3t6 _3t7 _3t8 _3t9
 				_3h1 _3h2 _3h3 _3h4 _3h5 		_3h6 _3h7 _3h8 _3h9 _3h10
 				   	 _3b2 _3b3 _3b4           		 _3b7 _3b8 _3b9
 				         	   _3thlH	      		 _3thrH 		 >; };
-		four 	{ display-name = "four - qwer"; bindings
-				 = < _4t2 _4t3 _4t4 _4t5 		_4t6 _4t7 _4t8 _4t9
+		four 	{ display-name = "four - qwer"; 
+		bindings = < _4t2 _4t3 _4t4 _4t5 		_4t6 _4t7 _4t8 _4t9
 				_4h1 _4h2 _4h3 _4h4 _4h5 		_4h6 _4h7 _4h8 _4h9 _4h10
 				   	 _4b2 _4b3 _4b4           		 _4b7 _4b8 _4b9
 				         	   _4thlH	      		 _4thrH 		 >; };
-		five 	{ display-name = "five - minecraft"; bindings
-				 = < _5t2 _5t3 _5t4 _5t5 		_5t6 _5t7 _5t8 _5t9
+		five 	{ display-name = "five - minecraft"; 
+		bindings = < _5t2 _5t3 _5t4 _5t5 		_5t6 _5t7 _5t8 _5t9
 				_5h1 _5h2 _5h3 _5h4 _5h5 		_5h6 _5h7 _5h8 _5h9 _5h10
 				   	 _5b2 _5b3 _5b4           		 _5b7 _5b8 _5b9
 				         	   _5thlH	      		 _5thrH 		 >; };
-		six 	{ display-name = "six - fps"; bindings
-				 = < _6t2 _6t3 _6t4 _6t5 		_6t6 _6t7 _6t8 _6t9
+		six 	{ display-name = "six - fps"; 
+		bindings = < _6t2 _6t3 _6t4 _6t5 		_6t6 _6t7 _6t8 _6t9
 				_6h1 _6h2 _6h3 _6h4 _6h5 		_6h6 _6h7 _6h8 _6h9 _6h10
 				   	 _6b2 _6b3 _6b4           		 _6b7 _6b8 _6b9
-				         	   _6thlH	      		 _6thrH 		 >; }; };
+				         	   _6thlH	      		 _6thrH 	  >; }; };
 
 combos { compatible = "zmk,combos";
         // alphas ----------------------------------------------------------------------------------------------------------------------------------------
@@ -88,4 +88,4 @@ combos { compatible = "zmk,combos";
 		g_cbo_3 			{ timeout-ms = <75>; 	key-positions = < 	0 8			>; 	bindings = <	&kp N3				>; 	layers = <	6		>; 	};
 		g_cbo_4 			{ timeout-ms = <50>; 	key-positions = < 	9 10 11		>; 	bindings = <	&kp N4				>; 	layers = <	6		>; 	};
 		g_cbo_b				{ timeout-ms = <50>; 	key-positions = < 	19 20		>; 	bindings = <	&kp B				>; 	layers = <	6		>; 	};
-		g_cbo_k 			{ timeout-ms = <50>; 	key-positions = < 	8 24		>; 	bindings = <	&kp K				>; 	layers = <	6		>; 	}; }; };
+		g_cbo_k 			{ timeout-ms = <50>; 	key-positions = < 	8 24		>; 	bindings = <	&kp K				>; 	layers = <	6  >; }; }; };

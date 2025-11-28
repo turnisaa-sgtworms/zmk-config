@@ -222,11 +222,11 @@
 			#define _2t11 	&kp ESC
 		// home row
 			#define _2h6 	&kp C_MUTE 		
-			#define _2h7 	&kp LEFT   		
-			#define _2h8 	&kp UP	 			
-			#define _2h9 	&kp DOWN 			
-			#define _2h10	&kp RIGHT
-			#define _2h11	&amt RC(BSPC) 	BSPC
+			#define _2h7 	&amt LC(LEFT) 	LEFT	
+			#define _2h8 	&amt LC(UP) 	UP 			
+			#define _2h9 	&amt LC(DOWN) 	DOWN		
+			#define _2h10	&amt LC(RIGHT) 	RIGHT
+			#define _2h11	&amt RC(BSPC) 	BSPC 
 		// bottom row
 			#define _2b6 	&none
 			#define _2b7 	&kp HOME   		

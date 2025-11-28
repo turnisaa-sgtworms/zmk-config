@@ -64,10 +64,10 @@ combos { compatible = "zmk,combos";
 		cbo_esc_r			{ timeout-ms = <30>; 	key-positions = < 	5 7			>; 	bindings = <	&kp ESC				>; 							};
 		cbo_enter_r			{ timeout-ms = <30>; 	key-positions = < 	15 16		>; 	bindings = <	&kp ENTER			>; 	layers = <	0 1 2	>; 	};
 		// arrows ----------------------------------------------------------------------------------------------------------------------------------------
-		cbo_up 				{ timeout-ms = <30>; 	key-positions = < 	10 15		>;	bindings = <	&kp UP				>; 	layers = <	0 1 2	>;	};
-		cbo_left 			{ timeout-ms = <30>; 	key-positions = < 	8 14		>; 	bindings = <	&kp LEFT			>; 	layers = <	0 1 2	>;	};
-		cbo_down 			{ timeout-ms = <30>; 	key-positions = < 	9 16		>; 	bindings = <	&kp DOWN			>; 	layers = <	0 1 2	>;	};
-		cbo_right 			{ timeout-ms = <30>; 	key-positions = < 	11 17		>; 	bindings = <	&kp RIGHT			>;	layers = <	0 1 2	>;	};
+		cbo_up 				{ timeout-ms = <30>; 	key-positions = < 	10 15		>;	bindings = <	&amt LC(UP)    UP	>; 	layers = <	0 1 2	>;	};
+		cbo_left 			{ timeout-ms = <30>; 	key-positions = < 	8 14		>; 	bindings = <	&amt LC(LEFT)  LEFT	>; 	layers = <	0 1 2	>;	};
+		cbo_down 			{ timeout-ms = <30>; 	key-positions = < 	9 16		>; 	bindings = <	&amt LC(DOWN)  DOWN	>; 	layers = <	0 1 2	>;	};
+		cbo_right 			{ timeout-ms = <30>; 	key-positions = < 	11 17		>; 	bindings = <	&amt LC(RIGHT) RIGHT>;	layers = <	0 1 2	>;	};
 		// layers ----------------------------------------------------------------------------------------------------------------------------------------
 		cbo_fkeys_l			{ timeout-ms = <30>; 	key-positions = < 	8 11		>; 	bindings = <	&sl 3				>; 	layers = <	0 1 2	>; 	};
 		cbo_fkeys_r 		{ timeout-ms = <30>; 	key-positions = < 	14 17		>; 	bindings = <	&sl 3				>; 	layers = <	0 1 2	>; 	};

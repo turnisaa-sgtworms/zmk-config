@@ -41,7 +41,7 @@
 											akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }; 								};
 		cmt: caps_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; 
 			bindings = <&kp>, <&caps_word>; display-name = "Caps-Tap"; 																					};
-		sk: sticky_key { release-after-ms = <750>; quick-release; lazy; /delete-property/ ignore-modifiers; 											};
+		sk: sticky_key { release-after-ms = <750>; quick-release; 																						};
 		mt: mod_tap { tapping-term-ms = <200>; 																											};
 		quomt: quo_mod_tap { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <150>; 
 			bindings = <&quo>, <&kp>; display-name = "quo Mod-Tap"; 																					};

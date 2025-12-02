@@ -85,10 +85,10 @@
 			#define _0t5 	&zemt Z 0
 		// home row
 			#define _0h0 	&amt LC(DEL) DEL
-			#define _0h1 	&hml LSHIFT C
-			#define _0h2 	&hml LALT I
-			#define _0h3 	&hml LGUI A
-			#define _0h4 	&hml LCTRL E
+			#define _0h1 	&hml LALT C
+			#define _0h2 	&kp I
+			#define _0h3 	&kp A
+			#define _0h4 	&kp E
 			#define _0h5 	&qumt Q 0
 		// bottom row
 			#define _0b0 	&amt LC(BSPC) BSPC
@@ -108,10 +108,10 @@
 			#define _0t11 	&kp ESC
 		// home row
 			#define _0h6 	&kp W
-			#define _0h7 	&hmr RCTRL T
-			#define _0h8 	&hmr RGUI H
-			#define _0h9 	&hmr RALT S
-			#define _0h10	&hmr RSHIFT N
+			#define _0h7 	&kp T
+			#define _0h8 	&kp H
+			#define _0h9 	&kp S
+			#define _0h10	&hmr RALT N
 			#define _0h11	&amt RC(BSPC) BSPC
 		// bottom row
 			#define _0b6 	&none

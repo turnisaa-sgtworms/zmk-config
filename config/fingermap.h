@@ -250,56 +250,56 @@
 		// top row
 			#define _3t0 	&kp TAB
 			#define _3t1 	&none
-			#define _3t2 	&kp F1
-			#define _3t3 	&kp F2
-			#define _3t4 	&kp F3
-			#define _3t5 	&amt LC(LS(TAB)) LC(TAB)
+			#define _3t2 	&none
+			#define _3t3 	&none
+			#define _3t4 	&none
+			#define _3t5 	&none
 		// home row
 			#define _3h0 	&amt LC(DEL) 	DEL
-			#define _3h1 	&sk LSHIFT
-			#define _3h2 	&sk RALT
-			#define _3h3 	&sk RGUI
-			#define _3h4 	&sk RCTRL
-			#define _3h5 	&amt LA(LS(TAB)) LA(TAB)
+			#define _3h1 	&kp F3
+			#define _3h2 	&kp F2
+			#define _3h3 	&kp F1
+			#define _3h4 	&kp F4
+			#define _3h5 	&kp F10
 		// bottom row
 			#define _3b0 	&amt LC(BSPC) 	BSPC
 			#define _3b1 	&kp LSHIFT
-			#define _3b2 	&kp F4
-			#define _3b3 	&kp F5
-			#define _3b4 	&kp F6
+			#define _3b2 	&none
+			#define _3b3 	&none
+			#define _3b4 	&none
 			#define _3b5 	&none
 	
 	// right hand
 		// top row
-			#define _3t6 	&amt LC(LS(TAB)) LC(TAB)
-			#define _3t7 	&kp F7
-			#define _3t8 	&kp F8
-			#define _3t9 	&kp F9
+			#define _3t6 	&none
+			#define _3t7 	&none
+			#define _3t8 	&none
+			#define _3t9 	&none
 			#define _3t10 	&none
 			#define _3t11 	&kp ESC
 		// home row
-			#define _3h6 	&amt LA(LS(TAB)) LA(TAB)
-			#define _3h7 	&sk RCTRL
-			#define _3h8 	&sk RGUI
-			#define _3h9 	&sk RALT
-			#define _3h10	&sk LSHIFT
+			#define _3h6 	&kp F9
+			#define _3h7 	&kp F5
+			#define _3h8 	&kp F6
+			#define _3h9 	&kp F7
+			#define _3h10	&kp F8
 			#define _3h11	&amt RC(BSPC) 	BSPC
 		// bottom row
 			#define _3b6 	&none
-			#define _3b7 	&kp F10
-			#define _3b8 	&kp F11
-			#define _3b9 	&kp F12
+			#define _3b7 	&none
+			#define _3b8 	&none
+			#define _3b9 	&none
 			#define _3b10	&kp RSHIFT
 			#define _3b11	&amt RC(DEL) 	DEL
 
 	// thumbfan
 		// 
 			#define _3thlN 	&none
-			#define _3thlH 	&none
+			#define _3thlH 	&kp F11
 			#define _3thlF	&none
 			
 			#define _3thrF 	&none
-			#define	_3thrH	&kp PSCRN
+			#define	_3thrH	&kp F12
 			#define _3thrN	&none
 
 // layer 4 - qwer

@@ -28,7 +28,7 @@
    			tapping-term-ms = <275>; quick-tap-ms = <175>; hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; hold-trigger-on-release; 			};
         hmr: home_row_mod_r { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; require-prior-idle-ms = <200>;
 			tapping-term-ms = <200>; quick-tap-ms = <175>; hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; hold-trigger-on-release; 			};
-		sl { 							release-after-ms = < 1500 >; 																					};
+		
         num_word: num_word { 			#binding-cells = <1>; compatible = "zmk,behavior-auto-layer"; 
 										continue-list = < BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL >; ignore-numbers;								};
 		amt: a_mod_tap { 				compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
@@ -43,6 +43,8 @@
 											akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }; 								};
 		cmt: caps_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; 
 			bindings = <&kp>, <&caps_word>; display-name = "Caps-Tap"; 																					};
+		uc: unicode { default-mode = <UC_MODE_WIN_COMPOSE>;																								};
+		sl: sticky_layer { release-after-ms = < 1500 >; 																								};
 		sk: sticky_key { release-after-ms = <750>; quick-release; 																						};
 		mt: mod_tap { tapping-term-ms = <200>; 																											};
 		quomt: quo_mod_tap { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <150>; 

@@ -3,6 +3,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <behaviors/num_word.dtsi>
+#include <behaviors/unicode.dtsi>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // default: 600
 #define AS(keycode) &as LS(keycode) keycode

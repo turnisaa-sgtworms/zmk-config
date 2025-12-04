@@ -49,8 +49,7 @@ behaviors { //------------------------------------------------------------------
 		mage_rep: mage_rep { 	compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;
 									akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
             						akt_ji { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp I>; }; 			};
-		mage_k: mage_k { 		compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp K>;
-									akt_tw { trigger-keys = <T>; max-prior-idle-ms = <300>; bindings = <&kp W>; };
+		mage_w: mage_w { 		compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp W>;
 									akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; 			};
 		mage_j: mage_j { 		compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp J>;
 									akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }; 			};
@@ -125,7 +124,7 @@ behaviors { //------------------------------------------------------------------
 			#define _0t10 	&kp B
 			#define _0t11 	&kp ESC
 		// home row
-			#define _0h6 	&kp W
+			#define _0h6 	&kp K
 			#define _0h7 	&hmr RSHIFT T
 			#define _0h8 	&hmr RGUI H
 			#define _0h9 	&hmr RCTRL S
@@ -133,7 +132,7 @@ behaviors { //------------------------------------------------------------------
 			#define _0h11	&amt RC(BSPC) BSPC
 		// bottom row
 			#define _0b6 	&none
-			#define _0b7 	&mage_k
+			#define _0b7 	&mage_w
 			#define _0b8 	&kp M
 			#define _0b9 	&kp G
 			#define _0b10	&kp RSHIFT

@@ -1,157 +1,56 @@
 #include "fingermap.h"
 #include <behaviors/rgbled_widget.dtsi>
-#include <behaviors/num_word.dtsi>
-#include <behaviors/unicode.dtsi>
 
 / {
-	behaviors {
-		hml: home_row_mod_left {
-            hold-trigger-key-positions = <3 4 5 10 11 12 13 16 17 19>; // List of keys on the right
-        };
-        hmr: home_row_mod_right {
-            hold-trigger-key-positions = <0 1 2 6 7 8 9 14 15 18>; // List of keys on the left
-        };
-		uc: unicode {
-  			default-mode = <UC_MODE_WIN_COMPOSE>;
-		};
-		num_word: num_word {
-        	#binding-cells = <0>;
-		    compatible = "zmk,behavior-num-word";
-			layers = <1>;
-        	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-        	ignore-numbers;
-    	};
-		cad_num_word: cad_num_word {
-        	#binding-cells = <0>;
-		    compatible = "zmk,behavior-num-word";
-			layers = <5>;
-        	continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
-        	ignore-numbers;
-    	};
-		amt: a_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-            display-name = "a-Mod-Tap";
-        };
-		sl {
-    		release-after-ms = <1500>;
-		};
-		mage_rep: mage_rep {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&key_repeat>;
+behaviors { // ---------------------------------------------------------------------------------
+		hml: home_row_mod_l { hold-trigger-key-positions = < 0 1 2 6 7 8 9 14 15 18 >; 		  };
+        hmr: home_row_mod_r { hold-trigger-key-positions = < 3 4 5 10 11 12 13 16 17 19 >; }; };
+// ---------------------------------------------------------------------------------------------
 
-			akt_ax { trigger-keys = <A>; max-prior-idle-ms = <300>; bindings = <&kp X>; };
-        };
-	};
+keymap { compatible = "zmk,keymap";
+		zero 	{ display-name = "zero - default"; // ----------
+		bindings = < _0t2 _0t3 _0t4 		_0t7 _0t8 _0t9
+				_0h1 _0h2 _0h3 _0h4 		_0h7 _0h8 _0h9 _0h10
+				   		  _0b3 _0b4       	_0b7 _0b8
+					         _0thlH			_0thrH 		   >; };
+		one 	{ display-name = "one - symbols"; // -----------
+		bindings = < _1t2 _1t3 _1t4 		_1t7 _1t8 _1t9
+				_1h1 _1h2 _1h3 _1h4			_1h7 _1h8 _1h9 _1h10
+					 	  _1b3 _1b4       	_1b7 _1b8
+				         	 _1thlH	 		_1thrH 		   >; };
+		two 	{ display-name = "two - shortcuts"; // ---------
+		bindings = < _2t2 _2t3 _2t4 		_2t7 _2t8 _2t9
+				_2h1 _2h2 _2h3 _2h4 		_2h7 _2h8 _2h9 _2h10
+				   	 	  _2b3 _2b4         _2b7 _2b8
+				         	 _2thlH	      	_2thrH 		   >; };
+		three 	{ display-name = "three - f keys"; // ----------
+		bindings = < _3t2 _3t3 _3t4 		_3t7 _3t8 _3t9
+				_3h1 _3h2 _3h3 _3h4 		_3h7 _3h8 _3h9 _3h10
+				   		  _3b3 _3b4         _3b7 _3b8
+				         	 _3thlH	      	_3thrH 		   >; };
+		four 	{ display-name = "four - qwer"; // -------------
+		bindings = < _4t2 _4t3 _4t4 		_4t7 _4t8 _4t9
+				_4h1 _4h2 _4h3 _4h4 		_4h7 _4h8 _4h9 _4h10
+				   	 _4b2 _4b3 _4b4         _4b7 _4b8 _4b9
+				         	 _4thlH	    	_4thrH 		   >; };
+		five 	{ display-name = "five - minecraft"; // --------
+		bindings = < _5t2 _5t3 _5t4 		_5t7 _5t8 _5t9
+				_5h1 _5h2 _5h3 _5h4 		_5h7 _5h8 _5h9 _5h10
+				   	 	  _5b3 _5b4         _5b7 _5b8
+				         	 _5thlH	     	_5thrH 		   >; };
+		six 	{ display-name = "six - fps"; // ---------------
+		bindings = < _6t2 _6t3 _6t4 		_6t7 _6t8 _6t9
+				_6h1 _6h2 _6h3 _6h4 		_6h7 _6h8 _6h9 _6h10
+				   	 	  _6b3 _6b4         _6b7 _6b8
+				         	 _6thlH			_6thrH 	 >; }; };
 
-	keymap {
-		compatible = "zmk,keymap";
-		zero {
-			display-name = "zero - base";
-			bindings = <
-							  &kp Y   	  &oamt 0 O   &uemt 0 U			&kp D 		 &kp L 		 &kp F 
-				&hml LSHIFT C &hml LALT I &hml LGUI A &hml LCTRL E 		&hmr RCTRL T &hmr RGUI H &hmr RALT S &hmr RSHIFT N
-										  &kp X 	  &mage_rep			&kp G		 &kp M
-													  &lt 2 R 			&lt 1 SPACE
-			>;
-		};
-		one { 
-			display-name = "one - num/ico";
-			bindings = <
-					   		   &amt LS(N3) LS(N5) &amt LS(N6) LS(N2) &amt MINUS LS(EQUAL) 			&parmt 0 0 &brcmt 0 0 &bktmt 0 0
-						&amt LS(MINUS) N4 &amt LS(N7) N3 &amt EQUAL N2 &quomt 0 N1					&amt APOS N5 &amt LS(N8) N6 &amt LS(N1) N7 &amt LS(FSLH) N8
-					   		  &amt LS(N4) N9 &amt SEMI COMMA									&amt LS(SEMI) DOT &amt BSLH FSLH
-											   &amt LS(GRAVE) N0										&kp SPACE 
-			>;
-		};
-		two { 
-			display-name = "two - nav/fn";
-			bindings = <
-					 	 &ind_bat &none &none 				&kp C_PREV &kp C_NEXT &none
-				&kp C_PP &kp LEFT &kp UP &kp RIGHT 			&kp HOME &kp PGUP &kp END &kp C_PP
-						 	  	  &kp DOWN &none 			&none &kp PGDN
-							  	   		   &none			&none
-			>;
-		};
-		three { 
-			display-name = "three - cad 1";
-			bindings = <
-				      &kp K &kp O &kp E 		&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp C &kp T &kp R &kp L 		&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				            &kp F &kp M 		&kp C_PREV 	 &kp C_NEXT 
-				                  &kp SPACE 	&kp C_PP
-			>;
-		};
-		four { 
-			display-name = "four - cad 2";
-			bindings = <
-				    	  &kp N5 &kp N7 &kp N6 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp N4 &kp N3 &kp N2 &amt DOT N1 		&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				         	    &kp N9 &kp N8 			&kp C_PREV 	 &kp C_NEXT 
-				                	  &amt SPACE N0 	&kp C_PP
-			>;
-		};
-		five { 
-			display-name = "five - shortcuts";
-			bindings = <
-							  &kp LC(X) &kp LC(C) &kp LC(V) 		&mt F7 F1 &mt F8 F2 &mt F9 F3  
-				    &kp PSCRN &kp LC(A) &kp LC(W) &kp LC(T) 		&mt F10 F4 &mt F11 F5 &mt F12 F6 &sk LSHIFT
-							  			&kp LC(Y) &kp LC(Z) 		&sk RCTRL &sk RALT
-				                				  &none  	    	&kp SPACE
-			>;
-		};
-
-// game layers
-
-		six { 
-			display-name = "six - fps";
-			bindings = <
-				    	  &kp Q &kp F &kp E 		&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LCTRL &kp A &kp W &kp D 		&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				         	    &kp S &kp C 		&kp C_PREV 	 &kp C_NEXT 
-				                	  &kp SPACE 	&kp C_PP
-			>;
-		};
-		seven { 
-			display-name = "seven - qwer";
-			bindings = <
-				      &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp Q &kp W  &kp E  &kp R 			&kp F2 		 &kp F3 	  &kp F4 	 &kp F5 
-				             &kp D  &kp F 			&kp C_PREV   &kp C_NEXT 
-				                    &mt LCTRL N4 	&kp C_PP
-			>;
-		};
-		eight { 
-			display-name = "eight - minecraft";
-			bindings = <
-				     	   &kp N1 &kp N2 &kp N3 			&kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-				&kp LSHIFT &kp A  &kp W  &kp D 				&kp F2 		 &kp F3 	  &kp F5 	 &kp F6 
-				           		  &kp S  &kp E 				&kp C_PREV 	 &kp C_NEXT 
-				                  		 &kp SPACE 		&kp C_PP
-			>;
-		};
-	};
-};
-
-/ {
-	combos {
-		compatible = "zmk,combos";
+combos { compatible = "zmk,combos";
 
 // alphas ----------------------------------------
 		combo_qu {
 			timeout-ms = <17>;
 			key-positions = <16 17>;
 			bindings = <&qumt Q 0>;
-			layers = <0>;
-		};
-		combo_ju {
-			timeout-ms = <30>;
-			key-positions = <2 9>;
-			bindings = <&jumt J 0>;
 			layers = <0>;
 		};
 		combo_ze {
@@ -178,7 +77,7 @@
 			bindings = <&kp P>;
 			layers = <0>;
 		};
-		combo_k {
+		combo_g {
 			timeout-ms = <30>;
 			key-positions = <10 16>;
 			bindings = <&kp K>;

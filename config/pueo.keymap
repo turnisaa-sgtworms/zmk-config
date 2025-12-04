@@ -52,7 +52,17 @@ combos { compatible = "zmk,combos";
 		u_cbo_up 			{ timeout-ms = <30>; 	key-positions = < 	10 15		>;	bindings = <	&uc 0x2191 0x2191	>; 	layers = <	1		>;	};
 		u_cbo_down 			{ timeout-ms = <30>; 	key-positions = < 	9 16		>; 	bindings = <	&uc 0x2193 0x2193	>; 	layers = <	1		>;	};
 		u_cbo_right 		{ timeout-ms = <30>; 	key-positions = < 	11 17		>; 	bindings = <	&uc 0x2192 0x2192	>;	layers = <	1		>;	};
+
+		u_cbo_up_down		{ timeout-ms = <30>; 	key-positions = < 	1 6			>; 	bindings = <	&uc 0x2195 0x2195	>; 	layers = <	1		>;	};
+		u_cbo_left_right	{ timeout-ms = <30>; 	key-positions = < 	8 17		>; 	bindings = <	&uc 0x2194 0x2194	>; 	layers = <	1		>;	};
+
+		u_cbo_ne 			{ timeout-ms = <30>; 	key-positions = < 	2 7			>; 	bindings = <	&uc 0x2197 0x2197	>; 	layers = <	1		>;	};
+		u_cbo_se 			{ timeout-ms = <30>; 	key-positions = < 	20 23		>; 	bindings = <	&uc 0x2198 0x2198	>; 	layers = <	1		>;	};
+		u_cbo_sw 			{ timeout-ms = <30>; 	key-positions = < 	18 21		>; 	bindings = <	&uc 0x2199 0x2199	>; 	layers = <	1		>;	};
+		u_cbo_nw 			{ timeout-ms = <30>; 	key-positions = < 	0 5			>; 	bindings = <	&uc 0x2196 0x2196	>; 	layers = <	1		>;	};
+
 		u_cbo_skull 		{ timeout-ms = <30>; 	key-positions = < 	3 4 		>; 	bindings = <	&uc 0x2620 0x2620	>;	layers = <	1		>;	};
+		u_cbo_frown 		{ timeout-ms = <30>; 	key-positions = < 	12 13 		>; 	bindings = <	&uc 0x2639 0x2639	>;	layers = <	1		>;	};
 		// mods ------------------------------------------------------------------------------------------------------------------------------------------
 		cbo_ctrl_l			{ timeout-ms = <50>; 	key-positions = < 	0 9			>; 	bindings = <	&sk LCTRL			>; 	layers = <	0 1 2 3	>; 	};
 		cbo_gui_l			{ timeout-ms = <50>; 	key-positions = < 	1 10		>; 	bindings = <	&sk LGUI			>; 	layers = <	0 1 2 3	>; 	};

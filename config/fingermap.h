@@ -238,7 +238,7 @@ behaviors { //------------------------------------------------------------------
 			#define _2t10 	&none
 			#define _2t11 	&kp ESC
 		// home row
-			#define _2h6 	&kp C_MUTE 		
+			#define _2h6 	&kp LA(LC(LG(LS(V)))) // earTrumpet flyout hotkey
 			#define _2h7 	&amt LC(LEFT) 	LEFT	
 			#define _2h8 	&amt LC(UP) 	UP 			
 			#define _2h9 	&amt LC(DOWN) 	DOWN		

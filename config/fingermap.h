@@ -216,7 +216,7 @@ behaviors { //------------------------------------------------------------------
 			#define _2t5 	&mkp MB4
 		// home row
 			#define _2h0 	&none
-			#define _2h1 	&none
+			#define _2h1 	&amt LC(T) LC(X)
 			#define _2h2 	&mmv MOVE_LEFT
 			#define _2h3 	&mmv MOVE_UP
 			#define _2h4 	&mmv MOVE_RIGHT
@@ -224,9 +224,9 @@ behaviors { //------------------------------------------------------------------
 		// bottom row
 			#define _2b0 	&amt LC(BSPC) 	BSPC
 			#define _2b1 	&kp LSHIFT
-			#define _2b2 	&none
+			#define _2b2 	&amt LC(Z) LC(C)
 			#define _2b3 	&mmv MOVE_DOWN
-			#define _2b4 	&none
+			#define _2b4 	&amt LC(Y) LC(V)
 			#define _2b5 	&none
 	
 	// right hand

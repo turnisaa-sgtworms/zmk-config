@@ -182,7 +182,7 @@ behaviors { //------------------------------------------------------------------
 		// bottom row
 			#define _1b0 	&amt LC(BSPC) 	BSPC
 			#define _1b1 	&kp LSHIFT
-			#define _1b2 	&amt GRAVE LS(COMMA)
+			#define _1b2 	&kp LS(COMMA)
 			#define _1b3 	&quomt 0 DQT
 			#define _1b4 	&mage_dot
 			#define _1b5 	&none
@@ -206,7 +206,7 @@ behaviors { //------------------------------------------------------------------
 			#define _1b6 	&none
 			#define _1b7 	&kp COMMA
 			#define _1b8 	&apomt 0 APOS
-			#define _1b9 	&amt LS(BSLH) LS(DOT)
+			#define _1b9 	&kp LS(DOT)
 			#define _1b10	&kp RSHIFT
 			#define _1b11	&amt RC(DEL) 	DEL
 

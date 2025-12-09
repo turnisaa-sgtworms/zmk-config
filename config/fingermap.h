@@ -7,7 +7,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
 
 / {
 macros { //--------------------------------------------------------------------------------------------------------

@@ -188,8 +188,8 @@ behaviors { //------------------------------------------------------------------
 	// right hand
 		// top row
 			#define _1t6 	&amt BSLH 		FSLH
-			#define _1t7 	&amt LPAR GRAVE
-			#define _1t8 	&amt LBRC LS(BSLH) 
+			#define _1t7 	&amt GRAVE LPAR
+			#define _1t8 	&amt LS(BSLH) LBRC 
 			#define _1t9 	&kp LBKT
 			#define _1t10 	&none
 			#define _1t11 	&kp ESC

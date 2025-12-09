@@ -37,10 +37,10 @@ macros { //---------------------------------------------------------------------
 
 behaviors { //----------------------------------------------------------------------------------------------------------------
 		hml: home_row_mod_l { 	compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; 
-									require-prior-idle-ms = <200>; tapping-term-ms = <275>; quick-tap-ms = <175>; 
+									require-prior-idle-ms = <300>; tapping-term-ms = <275>; quick-tap-ms = <175>; 
 									hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; hold-trigger-on-release; 		};
         hmr: home_row_mod_r { 	compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; 
-									require-prior-idle-ms = <200>; tapping-term-ms = <200>; quick-tap-ms = <175>; 
+									require-prior-idle-ms = <300>; tapping-term-ms = <200>; quick-tap-ms = <175>; 
 									hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; hold-trigger-on-release; 		};
         num_word: num_word { 	#binding-cells = <1>; compatible = "zmk,behavior-auto-layer"; 
 									continue-list = < BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL >; ignore-numbers;		};

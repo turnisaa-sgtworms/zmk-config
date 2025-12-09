@@ -103,9 +103,9 @@ behaviors { //------------------------------------------------------------------
 		// home row
 			#define _0h0 	&amt LC(DEL) DEL
 			#define _0h1 	&hml LALT C
-			#define _0h2 	&hml LCTRL I
-			#define _0h3 	&hml LGUI A
-			#define _0h4 	&hml LSHIFT E
+			#define _0h2 	&kp I
+			#define _0h3 	&kp A
+			#define _0h4 	&kp E
 			#define _0h5 	&qumt Q 0
 		// bottom row
 			#define _0b0 	&amt LC(BSPC) BSPC
@@ -125,9 +125,9 @@ behaviors { //------------------------------------------------------------------
 			#define _0t11 	&kp ESC
 		// home row
 			#define _0h6 	&kp K
-			#define _0h7 	&hmr RSHIFT T
-			#define _0h8 	&hmr RGUI H
-			#define _0h9 	&hmr RCTRL S
+			#define _0h7 	&kp T
+			#define _0h8 	&kp H
+			#define _0h9 	&kp S
 			#define _0h10	&hmr RALT N
 			#define _0h11	&amt RC(BSPC) BSPC
 		// bottom row
@@ -210,23 +210,23 @@ behaviors { //------------------------------------------------------------------
 		// top row
 			#define _2t0 	&kp TAB
 			#define _2t1 	&none
-			#define _2t2 	&amt LC(LS(W)) 	LC(W)
-			#define _2t3 	&amt LC(LS(R)) 	LC(R)
-			#define _2t4 	&amt LC(LS(T)) 	LC(T)
-			#define _2t5 	&amt LC(LS(Y)) 	LC(Y)
+			#define _2t2 	&mkp MB3
+			#define _2t3 	&mkp MB2
+			#define _2t4 	&mkp MB1
+			#define _2t5 	&mkp MB4
 		// home row
-			#define _2h0 	&amt LC(DEL) 	DEL
-			#define _2h1 	&amt LC(LS(A)) 	LC(A)
-			#define _2h2 	&amt LC(LS(X)) 	LC(X)
-			#define _2h3 	&amt LC(LS(C)) 	LC(C)
-			#define _2h4 	&amt LC(LS(V)) 	LC(V)
-			#define _2h5 	&amt LC(LS(Z)) 	LC(Z)
+			#define _2h0 	&none
+			#define _2h1 	&none
+			#define _2h2 	&mmv MOVE_LEFT
+			#define _2h3 	&mmv MOVE_UP
+			#define _2h4 	&mmv MOVE_RIGHT
+			#define _2h5 	&mkp MB5
 		// bottom row
 			#define _2b0 	&amt LC(BSPC) 	BSPC
 			#define _2b1 	&kp LSHIFT
-			#define _2b2 	&amt LC(LS(S)) 	LC(S)
-			#define _2b3 	&amt LC(LS(D)) 	LC(D)
-			#define _2b4 	&amt LC(LS(F)) 	LC(F)
+			#define _2b2 	&none
+			#define _2b3 	&mmv MOVE_DOWN
+			#define _2b4 	&none
 			#define _2b5 	&none
 	
 	// right hand
@@ -324,10 +324,10 @@ behaviors { //------------------------------------------------------------------
 		// top row
 			#define _4t0 	&kp TAB
 			#define _4t1 	&none
-			#define _4t2 	&kp N1
-			#define _4t3 	&kp N2
-			#define _4t4 	&kp N3
-			#define _4t5 	&kp N4
+			#define _4t2 	&amt F1 N1
+			#define _4t3 	&amt F2 N2
+			#define _4t4 	&amt F3 N3
+			#define _4t5 	&amt F4 N4
 		// home row
 			#define _4h0 	&amt LC(DEL) 	DEL
 			#define _4h1 	&kp Q

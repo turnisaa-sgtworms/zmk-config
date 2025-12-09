@@ -56,14 +56,16 @@ behaviors { //------------------------------------------------------------------
 		mage_j: mage_j { 		compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp J>;
 									akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }; 			};
 		mage_dot: mage_dot { 	compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp DOT>;
-									akt_left { trigger-keys = <LEFT>; max-prior-idle-ms = <300>; bindings = <&kp LEFT>; };
-									akt_semi { trigger-keys = <SEMI>; max-prior-idle-ms = <300>; bindings = <&kp LEFT>; };
-									akt_brc { trigger-keys = <LBRC>; max-prior-idle-ms = <300>; bindings = <&kp RBRC>; };
-									akt_bkt { trigger-keys = <LBKT>; max-prior-idle-ms = <300>; bindings = <&kp RBKT>; };
-            						akt_par { trigger-keys = <LPAR>; max-prior-idle-ms = <300>; bindings = <&kp RPAR>; }; 
-									akt_brc_s { trigger-keys = <RBRC>; max-prior-idle-ms = <300>; bindings = <&kp SEMI>; };
-									akt_bkt_s { trigger-keys = <RBKT>; max-prior-idle-ms = <300>; bindings = <&kp SEMI>; };
-            						akt_par_s { trigger-keys = <RPAR>; max-prior-idle-ms = <300>; bindings = <&kp SEMI>; }; };
+									akt_left { trigger-keys = <LEFT>; max-prior-idle-ms = <500>; bindings = <&kp LEFT>; };
+									akt_semi { trigger-keys = <SEMI>; max-prior-idle-ms = <500>; bindings = <&kp LEFT>; };
+									akt_brc { trigger-keys = <LBRC>; max-prior-idle-ms = <500>; bindings = <&kp RBRC>; };
+									akt_bkt { trigger-keys = <LBKT>; max-prior-idle-ms = <500>; bindings = <&kp RBKT>; };
+            						akt_par { trigger-keys = <LPAR>; max-prior-idle-ms = <500>; bindings = <&kp RPAR>; }; 
+									akt_abt { trigger-keys = <LS(COMMA)>; max-prior-idle-ms = <500>; bindings = <&kp LS(DOT)>;}; 
+									akt_brc_s { trigger-keys = <RBRC>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>; };
+									akt_bkt_s { trigger-keys = <RBKT>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>; };
+            						akt_par_s { trigger-keys = <RPAR>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>; };
+									akt_abt_s { trigger-keys = <LS(DOT)>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>;};};
 		cmt: caps_tap { 		compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; 
 									tapping-term-ms = <200>; bindings = <&kp>, 
 									<&caps_word>; display-name = "Caps-Tap"; 												};
@@ -180,7 +182,7 @@ behaviors { //------------------------------------------------------------------
 		// bottom row
 			#define _1b0 	&amt LC(BSPC) 	BSPC
 			#define _1b1 	&kp LSHIFT
-			#define _1b2 	&kp LS(COMMA)
+			#define _1b2 	&amt GRAVE LS(COMMA)
 			#define _1b3 	&quomt 0 DQT
 			#define _1b4 	&mage_dot
 			#define _1b5 	&none
@@ -188,9 +190,9 @@ behaviors { //------------------------------------------------------------------
 	// right hand
 		// top row
 			#define _1t6 	&amt BSLH 		FSLH
-			#define _1t7 	&amt GRAVE LPAR
-			#define _1t8 	&amt LS(BSLH) LBRC 
-			#define _1t9 	&kp LBKT
+			#define _1t7 	&amt RPAR LPAR
+			#define _1t8 	&amt RBRC LBRC 
+			#define _1t9 	&amt RBKT LBKT
 			#define _1t10 	&none
 			#define _1t11 	&kp ESC
 		// home row
@@ -204,7 +206,7 @@ behaviors { //------------------------------------------------------------------
 			#define _1b6 	&none
 			#define _1b7 	&kp COMMA
 			#define _1b8 	&apomt 0 APOS
-			#define _1b9 	&kp LS(DOT)
+			#define _1b9 	&amt LS(BSLH) LS(DOT)
 			#define _1b10	&kp RSHIFT
 			#define _1b11	&amt RC(DEL) 	DEL
 

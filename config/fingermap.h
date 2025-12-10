@@ -39,11 +39,11 @@ macros { //---------------------------------------------------------------------
 
 behaviors { //----------------------------------------------------------------------------------------------------------------
 		hml: home_row_mod_l { 	compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; 
-									require-prior-idle-ms = <300>; tapping-term-ms = <275>; quick-tap-ms = <175>; 
-									hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; hold-trigger-on-release; 		};
+									require-prior-idle-ms = <300>; tapping-term-ms = <300>; quick-tap-ms = <200>; 
+									hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; 								};
         hmr: home_row_mod_r { 	compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; 
-									require-prior-idle-ms = <300>; tapping-term-ms = <200>; quick-tap-ms = <175>; 
-									hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; hold-trigger-on-release; 		};
+									require-prior-idle-ms = <300>; tapping-term-ms = <300>; quick-tap-ms = <200>; 
+									hold-trigger-key-positions = <>; bindings = <&kp>, <&kp>; 								};
         num_word: num_word { 	#binding-cells = <1>; compatible = "zmk,behavior-auto-layer"; 
 									continue-list = < BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL >; ignore-numbers;		};
 		amt: a_mod_tap { 		compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
@@ -118,9 +118,9 @@ behaviors { //------------------------------------------------------------------
 		// home row
 			#define _0h0 	&amt LC(DEL) DEL
 			#define _0h1 	&hml LALT C
-			#define _0h2 	&kp I
-			#define _0h3 	&kp A
-			#define _0h4 	&kp E
+			#define _0h2 	&hml LCTRL I
+			#define _0h3 	&hml LGUI A
+			#define _0h4 	&hml LSHIFT E
 			#define _0h5 	&qumt Q 0
 		// bottom row
 			#define _0b0 	&amt LC(BSPC) BSPC
@@ -140,10 +140,10 @@ behaviors { //------------------------------------------------------------------
 			#define _0t11 	&kp ESC
 		// home row
 			#define _0h6 	&kp K
-			#define _0h7 	&kp T
-			#define _0h8 	&kp H
-			#define _0h9 	&kp S
-			#define _0h10	&hmr RALT N
+			#define _0h7 	&hmr RSHIFT T
+			#define _0h8 	&hmr RGUI H
+			#define _0h9 	&hmr RCTRL S
+			#define _0h10	&hmr LALT N
 			#define _0h11	&amt RC(BSPC) BSPC
 		// bottom row
 			#define _0b6 	&none

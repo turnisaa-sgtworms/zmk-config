@@ -11,6 +11,8 @@
 
 / {
 macros { //--------------------------------------------------------------------------------------------------------
+		dots: dots 	{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
+						bindings = < 	&macro_tap 		&kp DOT 		&kp DOT 		&kp DOT			   >;	 };
 		par: par 	{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
 						bindings = < 	&macro_tap 		&kp LPAR 		&kp RPAR 		&kp LEFT		   >;	 };
 		brc: brc 	{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
@@ -55,17 +57,6 @@ behaviors { //------------------------------------------------------------------
 									akt_gs { trigger-keys = <G>; max-prior-idle-ms = <300>; bindings = <&kp S>; }; 			};
 		mage_j: mage_j { 		compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp J>;
 									akt_ue { trigger-keys = <U>; max-prior-idle-ms = <300>; bindings = <&kp E>; }; 			};
-		mage_dot: mage_dot { 	compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&kp DOT>;
-									akt_left { trigger-keys = <LEFT>; max-prior-idle-ms = <500>; bindings = <&kp LEFT>; };
-									akt_semi { trigger-keys = <SEMI>; max-prior-idle-ms = <500>; bindings = <&kp LEFT>; };
-									akt_brc { trigger-keys = <LBRC>; max-prior-idle-ms = <500>; bindings = <&kp RBRC>; };
-									akt_bkt { trigger-keys = <LBKT>; max-prior-idle-ms = <500>; bindings = <&kp RBKT>; };
-            						akt_par { trigger-keys = <LPAR>; max-prior-idle-ms = <500>; bindings = <&kp RPAR>; }; 
-									akt_abt { trigger-keys = <LS(COMMA)>; max-prior-idle-ms = <500>; bindings = <&kp LS(DOT)>;}; 
-									akt_brc_s { trigger-keys = <RBRC>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>; };
-									akt_bkt_s { trigger-keys = <RBKT>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>; };
-            						akt_par_s { trigger-keys = <RPAR>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>; };
-									akt_abt_s { trigger-keys = <LS(DOT)>; max-prior-idle-ms = <500>; bindings = <&kp SEMI>;};};
 		cmt: caps_tap { 		compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "balanced"; 
 									tapping-term-ms = <200>; bindings = <&kp>, 
 									<&caps_word>; display-name = "Caps-Tap"; 												};
@@ -73,6 +64,8 @@ behaviors { //------------------------------------------------------------------
 		sl: sticky_layer { 		release-after-ms = < 1500 >; 																};
 		sk: sticky_key { 		release-after-ms = <750>; quick-release; 													};
 		mt: mod_tap { 			tapping-term-ms = <200>; 																	};
+		dotmt: dots_mod_tap { 	compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; 
+									tapping-term-ms = <150>; bindings = <&dots>, <&kp>; display-name = "dots Mod-Tap"; 		};
 		quomt: quo_mod_tap { 	compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; 
 									tapping-term-ms = <150>; bindings = <&quo>, <&kp>; display-name = "quo Mod-Tap"; 		};
 		apomt: apo_mod_tap { 	compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "tap-preferred"; 
@@ -184,7 +177,7 @@ behaviors { //------------------------------------------------------------------
 			#define _1b1 	&kp LSHIFT
 			#define _1b2 	&kp LS(COMMA)
 			#define _1b3 	&quomt 0 DQT
-			#define _1b4 	&mage_dot
+			#define _1b4 	&kp COMMA
 			#define _1b5 	&none
 	
 	// right hand
@@ -204,7 +197,7 @@ behaviors { //------------------------------------------------------------------
 			#define _1h11	&amt RC(BSPC) 	BSPC
 		// bottom row
 			#define _1b6 	&none
-			#define _1b7 	&kp COMMA
+			#define _1b7 	&dotmt 0 DOT
 			#define _1b8 	&apomt 0 APOS
 			#define _1b9 	&kp LS(DOT)
 			#define _1b10	&kp RSHIFT

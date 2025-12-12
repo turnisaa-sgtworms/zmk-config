@@ -1,15 +1,119 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
+#include "fingermap.h"
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
+/ { 
+behaviors { // ---------------------------------------------------------------------------------------
+        hml: home_row_mod_l { 		hold-trigger-key-positions = < 0 1 2 3 8 9 10 11 16 17 >; 		};
+		hmr: home_row_mod_r { 		hold-trigger-key-positions = < 4 5 6 7 12 13 14 15 18 19 >;  }; };
+// ---------------------------------------------------------------------------------------------------
 
-        default_layer {
-            display-name = "Base";
-            bindings = <
-                &kp A &kp B &kp C &kp D &kp E &kp F &kp G &kp H &kp I &kp J &kp K &kp L &kp M &kp N &kp O &kp P &kp Q &kp R &kp S &kp T
-            >;
-        };
-    };
-};
+keymap { compatible = "zmk,keymap";
+		zero 	{ display-name = "zero - default"; // -------------------
+		bindings = < &hml LALT C &hml LCTRL I &hml LGUI A &hml LSHIFT E &hmr RSHIFT T &hmr RGUI H &hmr LALT S &hmr RALT N 
+                     &kp W &kp Y &oamt 0 O &uemt 0 U &kp D &kp L &kp F &kp P 
+                     &sk LSHIFT &lt 1 R &lt 2 SPACE &sk RSHIFT >; };
+		one 	{ display-name = "one - symbols"; // --------------------
+		bindings = < &amt LS(MINUS)	N3 &amt LS(N7) N2 &amt EQUAL N1	&amt SEMI N0 &amt COLON N5 &amt LS(N8) N6 &amt LS(N1) N7 &amt LS(FSLH) N8
+                     &amt LS(GRAVE) N4 &amt PIPE GRAVE &quomt 0 DQT &kp COMMA &dotmt 0 DOT &apomt 0 APOS &amt BSLH FSLH &amt LS(N4) N9
+                     &none &none &none &none >; };
+		two 	{ display-name = "two - shortcuts"; // ------------------
+		bindings = < &kp C_PREV &kp C_MUTE &kp C_PP &kp C_NEXT &kp LEFT &kp UP &kp DOWN &kp RIGHT
+                     &kp LC(X) &kp LC(C) &kp LC(Y) &kp LC(Z) &kp LC(LEFT) &kp LC(UP) &kp LC(DOWN) &kp LC(RIGHT)
+                     &kp LC(V) &kp PSCRN &none &none >; };
+		three 	{ status = "reserved"; };
+		four 	{ display-name = "four - qwer"; // ----------------------
+		bindings = < &kp Q &kp W &kp E &kp R &kp C_NEXT &kp C_PLAY &kp C_MUTE &kp C_PREV
+                     &amt B G &kp X &kp D &kp F &none &none &none &none
+                     &kp LALT Y &kp LCTRL SPACE &none &none >; };
+		five 	{ display-name = "five - fps"; // ------------------------
+		bindings = < &kp LSHIFT &kp A &kp W &kp D &kp C_NEXT &kp C_PLAY &kp C_MUTE &kp C_PREV
+                     &kp C &amt X Q &kp S &amt F E &kp F2 &kp F3 &kp F5 &kp F6 
+                     &amt M R &amt K SPACE &none &none >; }; };
+
+combos { compatible = "zmk,combos";
+        // alphas ----------------------------------------------------------------------------------------------------------------------------------------
+		cbo_v 				{ timeout-ms = <50>; 	key-positions = < 	0 8  		>; 	bindings = <	&kp V				>; 	layers = <	0		>; 	};
+		cbo_j 				{ timeout-ms = <50>; 	key-positions = < 	1 9    		>; 	bindings = <	&kp J				>;	layers = <	0		>; 	};
+        cbo_x				{ timeout-ms = <50>; 	key-positions = < 	2 10		>; 	bindings = <	&kp X				>;	layers = <	0		>; 	};
+        cbo_repeat			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&mage_repeat		>;	layers = <	0		>; 	};
+        cbo_k 				{ timeout-ms = <50>; 	key-positions = < 	4 12		>; 	bindings = <	&kp K				>;	layers = <	0		>; 	};
+        cbo_m 				{ timeout-ms = <50>; 	key-positions = < 	5 13		>; 	bindings = <	&kp M				>;	layers = <	0		>; 	};
+        cbo_g 				{ timeout-ms = <50>; 	key-positions = < 	6 14		>; 	bindings = <	&kp G				>;	layers = <	0		>; 	};
+        cbo_b 				{ timeout-ms = <50>; 	key-positions = < 	7 15		>; 	bindings = <	&kp B				>;	layers = <	0		>; 	};
+        cbo_ze 				{ timeout-ms = <50>; 	key-positions = < 	10 11		>; 	bindings = <	&zemt Z 0			>;	layers = <	0		>; 	};
+        cbo_qu				{ timeout-ms = <50>; 	key-positions = < 	12 13		>; 	bindings = <	&qumt Q 0			>; 	layers = <	0		>; 	};
+        // symbols ---------------------------------------------------------------------------------------------------------------------------------------
+		cbo_none 			{ timeout-ms = <50>; 	key-positions = < 	0 8  		>; 	bindings = <	&none				>; 	layers = <	1		>; 	};
+		cbo_perc_hash 		{ timeout-ms = <50>; 	key-positions = < 	1 9    		>; 	bindings = <	&amt LS(N3) LS(N5)	>;	layers = <	1		>; 	};
+        cbo_at_caret        { timeout-ms = <50>; 	key-positions = < 	2 10		>; 	bindings = <	&amt LS(N6) LS(N2)	>;	layers = <	1		>; 	};
+        cbo_minus_plus		{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&amt LS(EQUAL) MINUS>;	layers = <	1		>; 	};
+        cbo_par 		    { timeout-ms = <50>; 	key-positions = < 	4 12		>; 	bindings = <	&amt RPAR LPAR		>;	layers = <	1		>; 	};
+        cbo_brc				{ timeout-ms = <50>; 	key-positions = < 	5 13		>; 	bindings = <	&amt RBRC LBRC		>;	layers = <	1		>; 	};
+        cbo_bkt				{ timeout-ms = <50>; 	key-positions = < 	6 14		>; 	bindings = <	&amt RBKT LBKT		>;	layers = <	1		>; 	};
+        cbo_abt				{ timeout-ms = <50>; 	key-positions = < 	7 15		>; 	bindings = <	&amt LS(DOT) LS(COMMA)>; layers = <	1		>; 	};
+		
+		u_cbo_left 			{ timeout-ms = <30>; 	key-positions = < 	0 4    		>; 	bindings = <	&uc 0x2190 0x2190	>; 	layers = <	1		>;	};
+		u_cbo_up 			{ timeout-ms = <30>; 	key-positions = < 	2 5		    >;	bindings = <	&uc 0x2191 0x2191	>; 	layers = <	1		>;	};
+		u_cbo_down 			{ timeout-ms = <30>; 	key-positions = < 	1 6		    >; 	bindings = <	&uc 0x2193 0x2193	>; 	layers = <	1		>;	};
+		u_cbo_right 		{ timeout-ms = <30>; 	key-positions = < 	3 7    		>; 	bindings = <	&uc 0x2192 0x2192	>;	layers = <	1		>;	};
+        // macros ----------------------------------------------------------------------------------------------------------------------------------------
+		cbo_cf 				{ timeout-ms = <50>; 	key-positions = < 	0 8  		>; 	bindings = <	&kp LC(F)	    	>; 	layers = <	2		>; 	};
+		cbo_cs				{ timeout-ms = <50>; 	key-positions = < 	1 9    		>; 	bindings = <	&kp LC(S)			>;	layers = <	2		>; 	};
+        cbo_cw				{ timeout-ms = <50>; 	key-positions = < 	2 10		>; 	bindings = <	&kp LC(W)			>;	layers = <	2		>; 	};
+        cbo_ct    			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&kp LC(T)    		>;	layers = <	2		>; 	};
+        // nav -------------------------------------------------------------------------------------------------------------------------------------------
+        cbo_home			{ timeout-ms = <50>; 	key-positions = < 	4 12		>; 	bindings = <	&kp HOME			>;	layers = <	2		>; 	};
+        cbo_pgup			{ timeout-ms = <50>; 	key-positions = < 	5 13		>; 	bindings = <	&kp PGUP			>;	layers = <	2		>; 	};
+        cbo_pgdn			{ timeout-ms = <50>; 	key-positions = < 	6 14		>; 	bindings = <	&kp PGDN			>;	layers = <	2		>; 	};
+        cbo_end    			{ timeout-ms = <50>; 	key-positions = < 	7 15		>; 	bindings = <	&kp END				>;	layers = <	2		>; 	};
+		// mods ------------------------------------------------------------------------------------------------------------------------------------------
+		//cbo_ctrl_l		{ timeout-ms = <50>; 	key-positions = < 	0 9			>; 	bindings = <	&sk LCTRL			>; 	layers = <	0 1 2 3	>; 	};
+		//cbo_gui_l			{ timeout-ms = <50>; 	key-positions = < 	1 10		>; 	bindings = <	&sk LGUI			>; 	layers = <	0 1 2 3	>; 	};
+		//cbo_shift_l  		{ timeout-ms = <50>; 	key-positions = < 	2 11		>; 	bindings = <	&sk LSHIFT			>;  layers = <	0 1 2 3	>; 	};
+		//cbo_alt_l			{ timeout-ms = <50>; 	key-positions = < 	3 12		>; 	bindings = <	&sk LALT			>; 	layers = <	0 1 2 3	>; 	};
+
+        //cbo_alt_r			{ timeout-ms = <50>; 	key-positions = < 	4 13		>; 	bindings = <	&sk RALT			>; 	layers = <	0 1 2 3	>; 	};
+		//cbo_shift_r		{ timeout-ms = <50>; 	key-positions = < 	5 14		>; 	bindings = <	&sk RSHIFT			>;  layers = <	0 1 2 3 >; 	};
+		//cbo_gui_r			{ timeout-ms = <50>; 	key-positions = < 	6 15		>; 	bindings = <	&sk RGUI			>; 	layers = <	0 1 2 3	>; 	};
+		//cbo_ctrl_r		{ timeout-ms = <50>; 	key-positions = < 	7 16		>; 	bindings = <	&sk RCTRL			>; 	layers = <	0 1 2 3	>; 	};
+
+		cbo_back_l			{ timeout-ms = <30>; 	key-positions = < 	1 3    		>; 	bindings = <	&amt LC(BSPC) BSPC	>; 	layers = <	0 1 2	>; 	};
+		cbo_del_l			{ timeout-ms = <30>; 	key-positions = <	2 3    		>; 	bindings = <	&amt LC(DEL) DEL	>; 	layers = <	0 1 2	>; 	};
+		cbo_tab_l			{ timeout-ms = <30>; 	key-positions = <	9 11		>; 	bindings = <	&amt LA(TAB) TAB	>;	layers = <	0 1 2	>; 	};
+		cbo_esc_l			{ timeout-ms = <30>; 	key-positions = < 	9 3    		>; 	bindings = <	&amt LC(ESC) ESC	>;	layers = <	0 1 2	>; 	};
+		cbo_enter_l			{ timeout-ms = <30>; 	key-positions = <	1 2    		>; 	bindings = <	&amt LS(RET) RET	>; 	layers = <	0 1 2	>; 	};
+
+		cbo_back_r			{ timeout-ms = <30>; 	key-positions = < 	4 5    		>; 	bindings = <	&amt RC(BSPC) BSPC	>; 	layers = <	0 1 2	>; 	};
+		cbo_del_r			{ timeout-ms = <30>; 	key-positions = < 	4 6    		>; 	bindings = <	&amt RC(DEL) DEL	>; 	layers = <	0 1 2	>; 	};
+		cbo_tab_r			{ timeout-ms = <30>; 	key-positions = < 	4 14    	>;	bindings = <	&amt RA(TAB) TAB	>; 	layers = <	0 1 2	>; 	};
+		cbo_esc_r			{ timeout-ms = <30>; 	key-positions = < 	12 14		>; 	bindings = <	&amt RC(ESC) ESC	>; 	layers = <	0 1 2	>; 	};
+		cbo_enter_r			{ timeout-ms = <30>; 	key-positions = < 	5 6    		>; 	bindings = <	&amt RS(RET) RET	>; 	layers = <	0 1 2	>; 	};
+		// arrows ----------------------------------------------------------------------------------------------------------------------------------------
+		cbo_left 			{ timeout-ms = <30>; 	key-positions = < 	0 4    		>; 	bindings = <	&amt LC(LEFT)  LEFT	>; 	layers = <	0		>;	};
+		cbo_up 				{ timeout-ms = <30>; 	key-positions = < 	2 5		    >;	bindings = <	&amt LC(UP)    UP	>; 	layers = <	0		>;	};
+		cbo_down 			{ timeout-ms = <30>; 	key-positions = < 	1 6		    >; 	bindings = <	&amt LC(DOWN)  DOWN	>; 	layers = <	0		>;	};
+		cbo_right 			{ timeout-ms = <30>; 	key-positions = < 	3 7    		>; 	bindings = <	&amt LC(RIGHT) RIGHT>;	layers = <	0		>;	};
+		// layers ----------------------------------------------------------------------------------------------------------------------------------------
+		cbo_default 		{ timeout-ms = <50>;	key-positions = < 	2 3 4 5     >;	bindings = <	&to 0				>; 							};
+		cbo_fps 			{ timeout-ms = <50>; 	key-positions = < 	1 2 3		>; 	bindings = <	&to 5				>; 							};
+		cbo_qwer			{ timeout-ms = <50>; 	key-positions = < 	0 1 2 3    	>; 	bindings = <	&to 4				>; 							};
+		
+		cbo_fkeys_l			{ timeout-ms = <30>; 	key-positions = < 	0 3    		>; 	bindings = <	&sl 3				>; 	layers = <	0 1 2	>; 	};
+		cbo_fkeys_r 		{ timeout-ms = <30>; 	key-positions = < 	4 7    		>; 	bindings = <	&sl 3				>; 	layers = <	0 1 2	>; 	};
+		// special ---------------------------------------------------------------------------------------------------------------------------------------
+		cbo_numword 		{ timeout-ms = <30>; 	key-positions = < 	1 17		>; 	bindings = <	&num_word 1			>;  layers = <	0 1 2	>; 	};
+		cbo_capsword 		{ timeout-ms = <30>; 	key-positions = < 	6 18		>; 	bindings = <	&cmt CAPS 0			>;  layers = <	0 1 2	>; 	};
+		// game ------------------------------------------------------------------------------------------------------------------------------------------
+		g_cbo_tab 			{ timeout-ms = <50>; 	key-positions = < 	9 11		>; 	bindings = <	&kp TAB				>; 	layers = <	4 5	    >; 	};
+		g_cbo_esc 			{ timeout-ms = <50>; 	key-positions = < 	9 10 11		>; 	bindings = <	&kp ESC				>; 	layers = <	4 5    	>; 	};
+
+		f_cbo_1 			{ timeout-ms = <75>; 	key-positions = < 	1 9			>; 	bindings = <	&kp N1				>; 	layers = <	5		>; 	};
+		f_cbo_2 			{ timeout-ms = <75>; 	key-positions = < 	0 8			>; 	bindings = <	&kp N2				>; 	layers = <	5		>; 	};
+		f_cbo_3 			{ timeout-ms = <75>; 	key-positions = < 	3 11		>; 	bindings = <	&kp N3				>; 	layers = <	5		>; 	};
+		f_cbo_4 			{ timeout-ms = <50>; 	key-positions = < 	2 10		>; 	bindings = <	&kp N4				>; 	layers = <	5		>; 	};
+
+        q_cbo_1 			{ timeout-ms = <75>; 	key-positions = < 	0 8			>; 	bindings = <	&amt F1 N1			>; 	layers = <	4		>; 	};
+		q_cbo_2 			{ timeout-ms = <75>; 	key-positions = < 	1 9			>; 	bindings = <	&amt F2 N2			>; 	layers = <	4		>; 	};
+		q_cbo_3 			{ timeout-ms = <75>; 	key-positions = < 	2 10		>; 	bindings = <	&amt F3 N3			>; 	layers = <	4		>; 	};
+		q_cbo_4 			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&amt F4 N4			>; 	layers = <	4		>; 	};
+		
+		g_cbo_b				{ timeout-ms = <50>; 	key-positions = < 	19 20		>; 	bindings = <	&amt b g			>; 	layers = <	5  >; }; }; };

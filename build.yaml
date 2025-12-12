@@ -6,7 +6,7 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 # board: [ "seeed_xiao_ble", "nice_nano_v2" ]
-# shield: [ "twenny_left", "twenny_right", "twenny_dongle", "lebroke", "ocarina", "pocketpilot", "wakizashi", "pueo_left", "pueo_right" ]
+# shield: [ "twenny_left", "twenny_right", "twenny_dongle", "lebroke", "ocarina", "pocketpilot", "wakizashi", "pueo_left", "pueo_right", "swagboard_left", "swagboard_right" ]
 #
 #  - board: seeeduino_xiao_ble
 #    shield: settings_reset

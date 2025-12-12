@@ -152,11 +152,11 @@ behaviors { //------------------------------------------------------------------
 	// thumbfan
 		// 
 			#define _0thlN 	&none
-			#define _0thlH 	&lt 1 R
+			#define _0thlH 	&lt 2 SPACE
 			#define _0thlF	&none
 			
 			#define _0thrF 	&none
-			#define	_0thrH	&lt 2 SPACE
+			#define	_0thrH	&lt 1 R
 			#define _0thrN	&none
 
 // layer 1 - symbols
@@ -209,11 +209,11 @@ behaviors { //------------------------------------------------------------------
 	// thumbfan
 		// 
 			#define _1thlN 	&none
-			#define _1thlH 	&none
+			#define _1thlH 	&kp SPACE
 			#define _1thlF	&none
 			
 			#define _1thrF 	&none
-			#define	_1thrH	&kp SPACE
+			#define	_1thrH	&none
 			#define _1thrN	&none
 
 // layer 2 - shortcuts
@@ -266,11 +266,11 @@ behaviors { //------------------------------------------------------------------
 	// thumbfan
 		// 
 			#define _2thlN 	&none
-			#define _2thlH 	&kp PSCRN
+			#define _2thlH 	&none
 			#define _2thlF	&none
 			
 			#define _2thrF 	&none
-			#define	_2thrH	&none
+			#define	_2thrH	&kp PSCRN
 			#define _2thrN	&none
 
 // layer 3 - f keys

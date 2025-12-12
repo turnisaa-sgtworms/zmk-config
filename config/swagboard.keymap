@@ -110,6 +110,4 @@ combos { compatible = "zmk,combos";
         q_cbo_1 			{ timeout-ms = <75>; 	key-positions = < 	0 8			>; 	bindings = <	&amt F1 N1			>; 	layers = <	3		>; 	};
 		q_cbo_2 			{ timeout-ms = <75>; 	key-positions = < 	1 9			>; 	bindings = <	&amt F2 N2			>; 	layers = <	3		>; 	};
 		q_cbo_3 			{ timeout-ms = <75>; 	key-positions = < 	2 10		>; 	bindings = <	&amt F3 N3			>; 	layers = <	3		>; 	};
-		q_cbo_4 			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&amt F4 N4			>; 	layers = <	3		>; 	};
-		
-		g_cbo_b				{ timeout-ms = <50>; 	key-positions = < 	19 20		>; 	bindings = <	&amt b g			>; 	layers = <	4  >; }; }; };
+		q_cbo_4 			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&amt F4 N4			>; 	layers = <	3		>; 	}; }; };

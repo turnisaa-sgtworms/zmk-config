@@ -53,7 +53,7 @@ behaviors { //------------------------------------------------------------------
 		amt: a_mod_tap { 		compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 									tapping-term-ms = <200>; bindings = <&kp>, <&kp>; display-name = "a-Mod-Tap"; 			};
 		mage_rep: mage_rep { 	compatible = "zmk,behavior-adaptive-key"; #binding-cells = <0>; bindings = <&key_repeat>;
-									akt_ctlv { trigger-keys = <LC(C)>; bindings = <&kp LC(V)>; };
+									akt_ctlv { trigger-keys = <LC(C), PSCRN>; bindings = <&kp LC(V)>; };
 									akt_mail { trigger-keys = <AT>; max-prior-idle-ms = <300>; bindings = <&mail>; };
 									akt_yi { trigger-keys = <Y>; max-prior-idle-ms = <300>; bindings = <&kp I>; };
             						akt_ji { trigger-keys = <J>; max-prior-idle-ms = <300>; bindings = <&kp I>; }; 			};

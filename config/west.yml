@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmk
@@ -17,6 +19,9 @@ manifest:
       revision: v0.3 # set to same as ZMK version above
     - name: zmk-unicode
       remote: urob
+      revision: v0.3
+    - name: zmk-nice-oled
+      remote: mctechnology17
       revision: v0.3
   self:
     path: config

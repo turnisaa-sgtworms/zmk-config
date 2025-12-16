@@ -18,11 +18,9 @@
 
 nice_view_spi: &spi0 {
     compatible = "nordic,nrf-spim";
-   
-    mosi-pin = <39>;
-    
-    sck-pin = <34>;
-    
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
 

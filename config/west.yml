@@ -9,17 +9,17 @@ manifest:
   projects:
     - name: zmk
       remote: zmk
-      revision: v0.3.2
+      revision: v0.3
       import: app/west.yml
     - name: zmk-auto-layer
       remote: urob
-      revision: v0.3.2 # set to same version as zmk above
+      revision: v0.3 # set to same version as zmk above
     - name: zmk-adaptive-key
       remote: urob
-      revision: v0.3.2 # set to same as ZMK version above
+      revision: v0.3 # set to same as ZMK version above
     - name: zmk-unicode
       remote: urob
-      revision: v0.3.2
+      revision: v0.3
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main

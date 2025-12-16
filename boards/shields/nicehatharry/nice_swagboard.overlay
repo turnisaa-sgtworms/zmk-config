@@ -21,6 +21,6 @@ nice_view_spi: &spi0 {
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+    cs-gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
 };
 

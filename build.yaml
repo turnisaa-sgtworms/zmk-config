@@ -59,8 +59,8 @@ include:
  - board: seeeduino_xiao_ble
    shield: pueo_dongle
    cmake-args: -DCONFIG_ZMK_STUDIO=y
- - board: seeeduino_xiao_ble
-   shield: swagboard_dongle
+ - board: nice_nano_v2
+   shield: swagboard_dongle nice_swagboard nice_epaper
    cmake-args: -DCONFIG_ZMK_STUDIO=y
  - board: nice_nano_v2
    shield: swagboard_left nice_swagboard nice_epaper

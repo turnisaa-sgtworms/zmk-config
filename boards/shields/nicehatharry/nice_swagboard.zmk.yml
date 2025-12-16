@@ -1,0 +1,7 @@
+file_format: "1"
+id: nice_swagboard
+name: nice_swagboard
+type: shield
+url: 
+requires: [i2c_oled]
+exposes: [nice_view_header]

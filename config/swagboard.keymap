@@ -33,7 +33,7 @@ combos { compatible = "zmk,combos";
 		cbo_v 				{ timeout-ms = <50>; 	key-positions = < 	0 8  		>; 	bindings = <	&kp V				>; 	layers = <	0		>; 	};
 		cbo_j 				{ timeout-ms = <50>; 	key-positions = < 	1 9    		>; 	bindings = <	&kp J				>;	layers = <	0		>; 	};
         cbo_x				{ timeout-ms = <50>; 	key-positions = < 	2 10		>; 	bindings = <	&kp X				>;	layers = <	0		>; 	};
-        cbo_repeat			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&mage_repeat		>;	layers = <	0		>; 	};
+        cbo_repeat			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&mage_rep			>;	layers = <	0		>; 	};
         cbo_k 				{ timeout-ms = <50>; 	key-positions = < 	4 12		>; 	bindings = <	&kp K				>;	layers = <	0		>; 	};
         cbo_m 				{ timeout-ms = <50>; 	key-positions = < 	5 13		>; 	bindings = <	&kp M				>;	layers = <	0		>; 	};
         cbo_g 				{ timeout-ms = <50>; 	key-positions = < 	6 14		>; 	bindings = <	&kp G				>;	layers = <	0		>; 	};

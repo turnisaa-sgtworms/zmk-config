@@ -9,7 +9,7 @@ behaviors { // -----------------------------------------------------------------
 keymap { compatible = "zmk,keymap";
 		zero 	{ display-name = "zero - default"; // -------------------
 		bindings = < &hml LALT C &hml LCTRL I &hml LGUI A &hml LSHIFT E &hmr RSHIFT T &hmr RGUI H &hmr LCTRL S &hmr LALT N
-                     &kp W &kp Y &oamt 0 O &uemt 0 U &kp D &kp L &kp F &kp P 
+                     &kp W &kp Y &oamt 0 O &uemt 0 U &kp D &kp L &kp G &kp P 
                      &sk LSHIFT &lt 2 SPACE &lt 1 R &sk RSHIFT >; };
 		one 	{ display-name = "one - symbols"; // --------------------
 		bindings = < &amt LS(MINUS)	N3 &amt LS(N7) N2 &amt EQUAL N1	&amt SEMI N0 &amt COLON N5 &amt LS(N8) N6 &amt LS(N1) N7 &amt LS(FSLH) N8
@@ -36,7 +36,7 @@ combos { compatible = "zmk,combos";
         cbo_repeat			{ timeout-ms = <50>; 	key-positions = < 	3 11		>; 	bindings = <	&mage_rep			>;	layers = <	0		>; 	};
         cbo_k 				{ timeout-ms = <50>; 	key-positions = < 	4 12		>; 	bindings = <	&kp K				>;	layers = <	0		>; 	};
         cbo_m 				{ timeout-ms = <50>; 	key-positions = < 	5 13		>; 	bindings = <	&kp M				>;	layers = <	0		>; 	};
-        cbo_g 				{ timeout-ms = <50>; 	key-positions = < 	6 14		>; 	bindings = <	&kp G				>;	layers = <	0		>; 	};
+        cbo_f 				{ timeout-ms = <50>; 	key-positions = < 	6 14		>; 	bindings = <	&kp F				>;	layers = <	0		>; 	};
         cbo_b 				{ timeout-ms = <50>; 	key-positions = < 	7 15		>; 	bindings = <	&kp B				>;	layers = <	0		>; 	};
         cbo_ze 				{ timeout-ms = <50>; 	key-positions = < 	10 11		>; 	bindings = <	&zemt Z 0			>;	layers = <	0		>; 	};
         cbo_qu				{ timeout-ms = <50>; 	key-positions = < 	12 13		>; 	bindings = <	&qumt Q 0			>; 	layers = <	0		>; 	};

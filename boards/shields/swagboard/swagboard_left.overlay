@@ -1,7 +1,7 @@
 #include "swagboard.dtsi"
 
 / {
-    kscan0: kscan0 {
+    kscan_facedown: kscan_facedown { // solder jumpers on TOP SIDE
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
 
@@ -18,8 +18,25 @@
             , <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             ;
     };
+    kscan_faceup: kscan_faceup { // solder jumpers on BOTTOM SIDE
+        compatible = "zmk,kscan-gpio-direct";
+        wakeup-source;
+
+        input-gpios
+            = <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            ;
+    };
 };
 
 &physical_layout_swagboard {
-    kscan = <&kscan0>;
+    kscan = <&kscan_facedown>;
 };

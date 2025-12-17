@@ -70,12 +70,3 @@ include:
    shield: settings_reset
  - board: nice_nano_v2
    shield: settings_reset
- - board: seeeduino_xiao_ble
-   shield: swagboard_dongle nice_swagboard nice_epaper
-   cmake-args: -DCONFIG_ZMK_STUDIO=y
- - board: nice_nano_v2
-   shield: swagboard_left nice_swagboard nice_epaper
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
- - board: nice_nano_v2
-   shield: swagboard_right nice_swagboard nice_epaper
-   cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n

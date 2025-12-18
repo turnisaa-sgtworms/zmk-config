@@ -31,6 +31,8 @@ macros { //---------------------------------------------------------------------
 						bindings = < 	&macro_tap 		&kp LS(COMMA) 	&kp LS(DOT) 	&kp LEFT 		   >; 	 };
 		bar: bar 	{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
 						bindings = < 	&macro_tap 		&kp LS(BSLH) 	&kp LS(BSLH) 	&kp LEFT 		   >; 	 };
+		rsp: rsp	{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
+						bindings = <	&macro_tap 		&kp SPACE		&kp LEFT					 	   >; 	 };
 		qu: qu 		{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
 						bindings = <	&macro_tap 		&kp Q 			&kp U						 	   >; 	 };
 		ze: ze 		{ wait-ms = <10>; tap-ms = <10>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; 
@@ -86,6 +88,8 @@ behaviors { //------------------------------------------------------------------
 									tapping-term-ms = <150>; bindings = <&abt>, <&kp>; display-name = "abt Mod-Tap"; 		};
 		barmt: bar_mod_tap { 	compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 									tapping-term-ms = <150>; bindings = <&bar>, <&kp>; display-name = "bar Mod-Tap"; 		};
+		rspmt: rsp_mod_tap { 	compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
+									tapping-term-ms = <150>; bindings = <&rsp>, <&kp>; display-name = "rsp Mod-Tap";		};
 		qumt: qu_mod_tap { 		compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
 									tapping-term-ms = <150>; bindings = <&kp>, <&qu>; display-name = "qu Mod-Tap"; 			};
 		zemt: ze_mod_tap { 		compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; 
@@ -181,7 +185,7 @@ behaviors { //------------------------------------------------------------------
 			#define _1b1 	&kp LSHIFT
 			#define _1b2 	&kp LS(COMMA)
 			#define _1b3 	&quomt 0 DQT
-			#define _1b4 	&kp COMMA
+			#define _1b4 	&rspmt 0 COMMA
 			#define _1b5 	&none
 	
 	// right hand

@@ -91,7 +91,9 @@ combos { compatible = "zmk,combos";
 		cbo_down 			{ timeout-ms = <30>; 	key-positions = < 	9 16		>; 	bindings = <	&amt LC(DOWN)  DOWN	>; 	layers = <	0		>;	};
 		cbo_right 			{ timeout-ms = <30>; 	key-positions = < 	11 17		>; 	bindings = <	&amt LC(RIGHT) RIGHT>;	layers = <	0		>;	};
 		// layers ----------------------------------------------------------------------------------------------------------------------------------------
-		cbo_default 		{ timeout-ms = <50>;	key-positions = < 	10 11 14 15 >;	bindings = <	&to 0				>; 							};
+		cbo_default 		{ timeout-ms = <50>;	key-positions = < 	10 11 14 15	>;	bindings = <	&to 0				>; 							};
+		cbo_default_l 		{ timeout-ms = <50>;	key-positions = < 	10 11 		>;	bindings = <	&to 0				>; 	layers = <	4 5 6	>;	};
+		cbo_default_r		{ timeout-ms = <50>;	key-positions = < 	14 15 		>;	bindings = <	&to 0				>; 	layers = <	4 5 6	>;	};
 		cbo_fps 			{ timeout-ms = <50>; 	key-positions = < 	9 10 11		>; 	bindings = <	&to 6				>; 							};
 		cbo_qwer			{ timeout-ms = <50>; 	key-positions = < 	8 9 11 19	>; 	bindings = <	&to 4				>; 							};
 		cbo_minecraft		{ timeout-ms = <50>; 	key-positions = < 	1 8 9 11	>; 	bindings = <	&to 5				>; 							};
